@@ -3,135 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>deviny</title>
-    <style>
-        :root {
-            --bg: #050505;
-            --zinc-500: #71717a;
-            --zinc-800: #27272a;
-            --accent: rgba(255, 255, 255, 0.05);
-        }
+    <title>Deviny. Спорт. Тренеры. Прогресс.</title>
+    
+    <link rel="icon" href="assets/favicon.png?v=1" type="image/png">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: var(--bg);
-            color: white;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            selection-background-color: white;
-            selection-color: black;
-        }
-
-        #glow {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            background: radial-gradient(circle at center, var(--accent) 0%, transparent 80%);
-            transition: transform 0.1s ease-out;
-            z-index: 0;
-        }
-
-        main {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            animation: fadeIn 1.5s ease-out;
-        }
-
-        .logo {
-            font-size: clamp(3rem, 10vw, 6rem);
-            font-weight: 200;
-            letter-spacing: -0.05em;
-            margin-bottom: 0.5rem;
-        }
-
-        .logo span {
-            color: var(--zinc-500);
-        }
-
-        .line {
-            height: 1px;
-            width: 100%;
-            background: linear-gradient(90deg, transparent, var(--zinc-800), transparent);
-            margin-top: 10px;
-        }
-
-        .status {
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.4em;
-            color: var(--zinc-500);
-            margin-top: 20px;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 40px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-            z-index: 1;
-        }
-
-        .scroll-line {
-            width: 1px;
-            height: 40px;
-            background: linear-gradient(to bottom, var(--zinc-800), transparent);
-        }
-
-        .copyright {
-            font-family: ui-monospace, monospace;
-            font-size: 10px;
-            color: var(--zinc-800);
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="components/header/header.css">
+    <link rel="stylesheet" href="components/hero/hero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <div id="glow"></div>
-
-    <main>
-        <h1 class="logo">deviny<span>.me</span></h1>
-        <div class="line"></div>
-        <p class="status">Coming Soon</p>
-    </main>
-
-    <footer>
-        <div class="scroll-line"></div>
-        <span class="copyright" id="year-label">2026</span>
-    </footer>
-
-    <script>
-        const glow = document.getElementById('glow');
-        
-        window.addEventListener('mousemove', (e) => {
-            const x = e.clientX - window.innerWidth / 2;
-            const y = e.clientY - window.innerHeight / 2;
+    <header class="header">
+        <div class="container header-wrapper">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Deviny Logo" class="logo-img">
+            </a>
             
-            glow.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
-        }); 
-    </script>
+            <nav class="nav">
+                <a href="#" class="nav-link active">Лента</a>
+                <a href="#" class="nav-link">Профи</a>
+                <a href="#" class="nav-link">Лидерборд</a>
+                <a href="#" class="nav-link">GymBro</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-primary btn-sm">Скачать App</button>
+                <button class="burger-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge reveal">
+                    <i class="fa-solid fa-trophy" style="color: #ca8a04;"></i> Global Fitness Ecosystem
+                </div>
+                
+                <h1 class="reveal" style="transition-delay: 0.1s;">Твой спорт.<br>Твой тренер.<br><span class="highlight">Твой уровень.</span></h1>
+                
+                <p class="reveal" style="transition-delay: 0.2s;">
+                    Единая платформа для атлетов, тренеров и нутрициологов. 
+                    Находи GymBro, покупай программы, качай уровень (XP) и залетай в глобальный рейтинг.
+                </p>
+
+                <div class="hero-btns reveal" style="transition-delay: 0.3s;">
+                    <button class="btn btn-primary">
+                        <i class="fa-brands fa-apple"></i> App Store
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fa-brands fa-google-play"></i> Google Play
+                    </button>
+                </div>
+
+                <div class="trust-block reveal" style="transition-delay: 0.4s;">
+                    <div class="avatars-group">
+                        <div class="avatar">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&h=64&q=80" alt="User 1">
+                        </div>
+                        <div class="avatar">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=64&h=64&q=80" alt="User 2">
+                        </div>
+                        <div class="avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=64&h=64&q=80" alt="User 3">
+                        </div>
+                    </div>
+                    <div class="trust-text">
+                        50,000+ программ
+                        <span>куплено пользователями</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal" style="transition-delay: 0.3s;">
+                <div class="phone-mockup">
+                    <div class="notch"></div>
+                    <div class="screen">
+                        
+                        <div class="status-bar">
+                            <span class="current-time">18:20</span>
+                            <span>
+                                <i class="fa-solid fa-signal"></i> 
+                                <i class="fa-solid fa-wifi"></i> 
+                                <i class="fa-solid fa-battery-full"></i>
+                            </span>
+                        </div>
+
+                        <div class="app-header">
+                            <img src="assets/logo.png" alt="Deviny" class="app-logo-img">
+                            <i class="fa-regular fa-bell" style="font-size: 20px;"></i>
+                        </div>
+
+                        <div class="app-feed">
+                            <div class="feed-post">
+                                <div class="post-header">
+                                    <div class="u-avatar-lg" style="background: #333;"></div>
+                                    <div class="u-info">
+                                        <h4>Дмитрий | Powerlifting</h4>
+                                        <p>Только что • GymBro Arena</p>
+                                    </div>
+                                    <div style="margin-left: auto; display: flex; gap: 4px; align-items: center;">
+                                        <i class="fa-solid fa-crown" style="color: #ffd633; font-size: 12px;"></i>
+                                        <span style="font-size: 10px; font-weight: 800;">LVL 4</span>
+                                    </div>
+                                </div>
+                                <div class="post-visual">
+                                    <div class="workout-tag">
+                                        <div class="rec-dot"></div>
+                                        <i class="fa-solid fa-dumbbell"></i>
+                                        <span>DEADLIFT 200KG • PR</span>
+                                    </div>
+                                    <div style="position: absolute; bottom: 12px; right: 12px; background: #ffd633; color: #000; font-size: 10px; font-weight: 800; padding: 4px 8px; border-radius: 6px;">
+                                        +500 XP
+                                    </div>
+                                </div>
+                                <div class="post-actions">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-regular fa-comment"></i>
+                                    <i class="fa-solid fa-share" style="margin-left: auto;"></i>
+                                </div>
+                            </div>
+
+                             <div class="feed-post">
+                                <div class="post-header">
+                                    <div class="u-avatar-lg" style="background: #a7f3d0;"></div>
+                                    <div class="u-info">
+                                        <h4 style="display: flex; align-items: center; gap: 4px;">
+                                            Елена Нутрициолог
+                                            <i class="fa-solid fa-circle-check" style="color: var(--primary); font-size: 12px;"></i>
+                                        </h4>
+                                        <p>1 ч. назад • Meal Program</p>
+                                    </div>
+                                </div>
+                                <div class="post-text-content">
+                                    Готов новый план "Кето-сушка" на 30 дней! 🥑 Полный расчет КБЖУ и список продуктов. Скидка 50% для парных аккаунтов!
+                                </div>
+                                <div class="trainer-badge">
+                                    <i class="fa-solid fa-carrot" style="color: var(--primary); font-size: 10px;"></i>
+                                    Питание
+                                </div>
+                                <div class="post-actions">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-cart-shopping" style="color: var(--primary);"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="app-tab-bar">
+                            <div class="tab-item active"><i class="fa-solid fa-house"></i></div>
+                            <div class="tab-item"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <div class="tab-btn-add"><i class="fa-solid fa-plus"></i></div>
+                            <div class="tab-item"><i class="fa-solid fa-ranking-star"></i></div>
+                            <div class="tab-item"><i class="fa-regular fa-user"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="float-card float-1">
+                    <div class="icon-box icon-yellow">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+                    <div>
+                        <div style="font-size: 12px; color: #6b7280;">Поиск партнера</div>
+                        <div style="font-weight: 700; color: #111;">GymBro Найден!</div>
+                    </div>
+                </div>
+
+                <div class="float-card float-2">
+                    <div class="icon-box icon-green">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </div>
+                    <div>
+                        <div style="font-size: 12px; color: #6b7280;">Уровень</div>
+                        <div style="font-weight: 700; color: #111;">Продвинутый</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
