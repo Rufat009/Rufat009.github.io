@@ -6,8 +6,49 @@
     padding-top: 100px;
     padding-bottom: 60px;
     overflow: hidden;
-    background: radial-gradient(circle at 60% 20%, rgba(255, 214, 51, 0.08) 0%, transparent 50%),
-                radial-gradient(circle at 10% 80%, rgba(5, 150, 255, 0.03) 0%, transparent 50%);
+    background-color: #fff;
+    
+    /* ТЕХНИЧЕСКАЯ СЕТКА (Сделал чуть четче - 0.05) */
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+/* АНИМИРОВАННОЕ ПЯТНО 1 (Желтое) */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -5%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 214, 51, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: 0;
+    animation: blob-float 15s infinite alternate ease-in-out;
+}
+
+/* АНИМИРОВАННОЕ ПЯТНО 2 (Голубое) */
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+    animation: blob-float-2 20s infinite alternate-reverse ease-in-out;
+}
+
+/* ВАЖНО: Поднимаем контент над фоном */
+.hero > .container {
+    position: relative;
+    z-index: 1;
 }
 
 .hero-grid {
@@ -104,7 +145,6 @@
     font-weight: 500;
 }
 
-/* --- ТЕЛЕФОН --- */
 .hero-visual {
     position: relative;
     display: flex;
@@ -128,7 +168,6 @@
     transition: transform 0.5s ease;
     flex-shrink: 0;
     z-index: 2;
-    /* ВАЖНО: Сбрасываем выравнивание текста внутри телефона на левое */
     text-align: left; 
 }
 
@@ -210,9 +249,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    /* Разрешаем скролл внутри телефона, если контент не влезает */
     overflow-y: auto; 
-    /* Скрываем скроллбар */
     scrollbar-width: none; 
 }
 .app-feed::-webkit-scrollbar { 
@@ -224,7 +261,6 @@
     border-radius: 18px;
     padding: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-    /* Защита от переполнения */
     flex-shrink: 0; 
 }
 
@@ -247,7 +283,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Гарантируем выравнивание слева */
     align-items: flex-start; 
 }
 
@@ -324,7 +359,6 @@
     color: #333;
     line-height: 1.4;
     margin-bottom: 10px;
-    /* Убеждаемся что текст слева */
     text-align: left; 
 }
 
@@ -476,14 +510,12 @@
     }
 
     .phone-mockup {
-        /* Делаем телефон чуть меньше на совсем маленьких экранах */
         width: 280px;
         height: 560px;
     }
     
-    /* Уменьшаем контент внутри телефона для маленьких экранов */
     .post-visual {
-        height: 140px; /* Уменьшаем высоту картинки */
+        height: 140px;
     }
     
     .feed-post {
