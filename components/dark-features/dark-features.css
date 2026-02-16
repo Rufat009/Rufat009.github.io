@@ -1,13 +1,11 @@
-/* Dark features - RADICALLY REDESIGNED with unusual & beautiful effects */
 .dark-features {
-  padding: 60px 0;
+  padding: 100px 0;
   color: #fff;
   background: #000;
   position: relative;
   overflow: hidden;
 }
 
-/* Animated background orbs */
 .dark-features::before {
   content: "";
   position: absolute;
@@ -54,48 +52,48 @@
   overflow: visible;
 }
 
-/* Header section */
 .dark-intro {
-  margin-bottom: 48px;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 50px;
   position: relative;
   z-index: 2;
 }
 
+.dark-subtitle {
+  font-size: 12px;
+  font-weight: 800;
+  color: #ffd633;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  display: block;
+}
+
 .dark-intro h2 {
-  font-size: clamp(32px, 4vw, 52px);
-  margin: 0 0 12px 0;
-  line-height: 1.15;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 800;
+  margin: 0 0 16px 0;
+  line-height: 1.1;
   background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.85) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: -0.02em;
-  font-weight: 800;
   display: inline-block;
 }
 
 .dark-intro .lead {
-  color: rgba(255,255,255,0.75);
-  margin: 12px 0 24px 0;
+  color: #a1a1aa;
+  margin: 0 auto;
   font-size: 16px;
   line-height: 1.6;
-  max-width: 560px;
 }
 
 .dark-intro .btn {
-  margin-top: 0;
-  background: linear-gradient(135deg, #ffd633 0%, #ffca00 100%);
-  box-shadow: 0 12px 32px rgba(255,214,51,0.3);
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   display: none;
 }
 
-.dark-intro .btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 48px rgba(255,214,51,0.4);
-}
-
-/* Grid layout - 4 columns in a row */
 .dark-masonry {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -106,23 +104,21 @@
   z-index: 2;
 }
 
-/* Card base styles */
 .dark-card {
   display: flex;
   flex-direction: column;
   padding: 32px;
-  border-radius: 20px;
+  border-radius: 24px;
   background: rgba(255,255,255,0.02);
   border: 1.5px solid rgba(255,255,255,0.1);
   transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  min-height: 300px;
+  min-height: 320px;
   justify-content: space-between;
 }
 
-/* Gradient overlays per card - decorative top accent line */
 .dark-card::before {
   content: "";
   position: absolute;
@@ -145,23 +141,6 @@
   justify-content: space-between;
 }
 
-/* Individual card color schemes - simple uniform style */
-.dark-card {
-  background: rgba(255,255,255,0.02);
-  border-color: rgba(255,255,255,0.08);
-}
-
-.dark-card::before {
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
-}
-
-.dark-card .icon {
-  background: rgba(255,214,51,0.15);
-  color: #ffd633;
-  box-shadow: 0 12px 32px rgba(255,214,51,0.2);
-}
-
-/* Icon base */
 .dark-card .icon {
   width: 60px;
   height: 60px;
@@ -170,29 +149,31 @@
   justify-content: center;
   border-radius: 16px;
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   flex-shrink: 0;
   transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  background: rgba(255,214,51,0.15);
+  color: #ffd633;
+  box-shadow: 0 12px 32px rgba(255,214,51,0.2);
 }
 
 .dark-card h3 {
   font-size: 18px;
   font-weight: 800;
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
   color: #fff;
   letter-spacing: -0.01em;
   transition: color 0.5s ease;
 }
 
 .dark-card p {
-  font-size: 14px;
+  font-size: 15px;
   color: rgba(255,255,255,0.68);
   line-height: 1.6;
   margin: 0;
   transition: color 0.5s ease;
 }
 
-/* Hover effects - uniform */
 .dark-card:hover {
   transform: translateY(-12px);
   border-color: rgba(255,255,255,0.15);
@@ -216,13 +197,12 @@
   color: rgba(255,255,255,0.85);
 }
 
-/* Numbered badge - simple uniform */
 .dark-card::after {
   content: counter(card-number);
   counter-increment: card-number;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 24px;
+  right: 24px;
   width: 48px;
   height: 48px;
   display: flex;
@@ -243,31 +223,44 @@
   border-color: rgba(255,214,51,0.25);
 }
 
-/* Responsive - Awesome adaptive design */
-/* Tablet landscape (1200px and down) */
 @media (max-width: 1200px) {
   .dark-features {
-    padding: 50px 0;
+    padding: 80px 0;
   }
 
   .dark-masonry {
     gap: 20px;
   }
 
-  .dark-intro h2 {
-    font-size: clamp(28px, 3.5vw, 48px);
-  }
-
   .dark-card {
     padding: 28px;
-    min-height: 290px;
+    min-height: 300px;
   }
 }
 
-/* Tablet (1024px and down) */
 @media (max-width: 1024px) {
+  .dark-masonry {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .dark-intro h2 {
+    font-size: clamp(28px, 3.5vw, 40px);
+  }
+
+  .dark-intro .lead {
+    font-size: 16px;
+  }
+
+  .dark-card {
+    padding: 24px;
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
   .dark-features {
-    padding: 45px 0;
+    padding: 60px 0;
   }
 
   .dark-intro {
@@ -276,212 +269,51 @@
 
   .dark-masonry {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .dark-intro h2 {
-    font-size: clamp(26px, 3vw, 40px);
-  }
-
-  .dark-intro .lead {
-    max-width: 100%;
-    font-size: 15px;
-    margin-bottom: 20px;
-  }
-
-  .dark-card {
-    padding: 24px;
-    min-height: 260px;
-  }
-
-  .dark-card .icon {
-    width: 56px;
-    height: 56px;
-    font-size: 26px;
-    margin-bottom: 16px;
-  }
-
-  .dark-card h3 {
-    font-size: 17px;
-  }
-
-  .dark-card p {
-    font-size: 13.5px;
-  }
-
-  .dark-card::after {
-    width: 44px;
-    height: 44px;
-    font-size: 18px;
-  }
-}
-
-/* Small tablet (768px and down) */
-@media (max-width: 768px) {
-  .dark-features {
-    padding: 40px 0;
-  }
-
-  .dark-intro {
-    margin-bottom: 35px;
-  }
-
-  .dark-masonry {
-    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
 
   .dark-intro h2 {
-    font-size: clamp(22px, 5vw, 35px);
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 12px;
   }
 
   .dark-intro .lead {
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 15px;
   }
 
   .dark-card {
     padding: 20px;
-    min-height: 240px;
+    min-height: 260px;
   }
 
   .dark-card .icon {
     width: 52px;
     height: 52px;
     font-size: 24px;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 
   .dark-card h3 {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 8px;
-  }
-
-  .dark-card p {
-    font-size: 13px;
-    line-height: 1.55;
   }
 
   .dark-card::after {
     width: 40px;
     height: 40px;
     font-size: 16px;
-    top: 16px;
-    right: 16px;
+    top: 20px;
+    right: 20px;
   }
 }
 
-/* Mobile (640px and down) */
 @media (max-width: 640px) {
-  .dark-features {
-    padding: 35px 0;
-  }
-
-  .dark-intro {
-    margin-bottom: 30px;
-  }
-
   .dark-masonry {
     grid-template-columns: 1fr;
-    gap: 14px;
-  }
-
-  .dark-intro h2 {
-    font-size: clamp(20px, 5.5vw, 28px);
-    margin-bottom: 8px;
-  }
-
-  .dark-intro .lead {
-    font-size: 13.5px;
-    line-height: 1.55;
-    margin-bottom: 18px;
+    gap: 16px;
   }
 
   .dark-card {
-    padding: 18px;
-    min-height: 220px;
-    border-radius: 16px;
-  }
-
-  .dark-card .icon {
-    width: 48px;
-    height: 48px;
-    font-size: 22px;
-    margin-bottom: 12px;
-    border-radius: 14px;
-  }
-
-  .dark-card h3 {
-    font-size: 15px;
-    margin-bottom: 6px;
-  }
-
-  .dark-card p {
-    font-size: 12px;
-    line-height: 1.5;
-  }
-
-  .dark-card:hover {
-    transform: translateY(-8px);
-  }
-
-  .dark-card::after {
-    width: 36px;
-    height: 36px;
-    font-size: 14px;
-    top: 12px;
-    right: 12px;
-  }
-}
-
-/* Small mobile (480px and down) */
-@media (max-width: 480px) {
-  .dark-features {
-    padding: 30px 0;
-  }
-
-  .dark-intro {
-    margin-bottom: 25px;
-  }
-
-  .dark-masonry {
-    gap: 12px;
-  }
-
-  .dark-intro h2 {
-    font-size: clamp(18px, 6vw, 26px);
-    margin-bottom: 6px;
-  }
-
-  .dark-intro .lead {
-    font-size: 13px;
-    margin-bottom: 16px;
-  }
-
-  .dark-card {
-    padding: 16px;
-    min-height: 200px;
-  }
-
-  .dark-card .icon {
-    width: 44px;
-    height: 44px;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  .dark-card h3 {
-    font-size: 14px;
-  }
-
-  .dark-card p {
-    font-size: 11.5px;
-  }
-
-  .dark-card::after {
-    width: 32px;
-    height: 32px;
-    font-size: 12px;
+    min-height: 240px;
   }
 }

@@ -1,0 +1,124 @@
+/* components/cta/cta.css */
+.cta-section {
+    padding: 120px 0;
+    background-color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: #fffbeb;
+    color: #d97706;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+
+.cta-content h2 {
+    font-size: clamp(36px, 6vw, 64px);
+    font-weight: 900;
+    color: #111;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -0.04em;
+}
+
+.cta-content p {
+    font-size: clamp(18px, 2vw, 20px);
+    color: #6b7280;
+    margin-bottom: 48px;
+    line-height: 1.6;
+}
+
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.download-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #000;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 16px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.download-link i {
+    font-size: 30px;
+}
+
+.link-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.link-text .label {
+    font-size: 10px;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.link-text .platform {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.download-link:hover {
+    transform: translateY(-5px);
+    background: #ffd633;
+    color: #000;
+    box-shadow: 0 20px 40px rgba(255, 214, 51, 0.2);
+}
+
+.cta-info-link {
+    color: #111;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap 0.3s;
+}
+
+.cta-info-link:hover {
+    gap: 12px;
+    color: #ffd633;
+}
+
+@media (max-width: 640px) {
+    .cta-section {
+        padding: 80px 0;
+    }
+    
+    .cta-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .download-link {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+}
