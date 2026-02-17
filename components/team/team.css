@@ -45,26 +45,35 @@
 .team-modern-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .modern-card {
     background: #fff;
     border: 1px solid #f3f4f6;
-    border-radius: 28px;
-    padding: 16px;
+    border-radius: 24px;
+    /* Уменьшил внутренние отступы карточки */
+    padding: 20px 16px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .modern-photo {
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 20px;
+    /* Увеличил размер фото */
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 24px;
+    /* Уменьшил отступ от фото до имени */
+    margin-bottom: 16px;
     background: #f9fafb;
+    border: 4px solid #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
 }
 
 .modern-photo img {
@@ -75,31 +84,34 @@
 }
 
 .modern-info {
-    text-align: center;
+    width: 100%;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
 .modern-info h3 {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 800;
     color: #111;
     margin-bottom: 4px;
 }
 
 .modern-role {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     color: #ffd633;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    margin-bottom: 24px;
+    /* Уменьшил отступ от роли до кнопки */
+    margin-bottom: 16px;
     display: block;
+    min-height: 30px;
 }
 
 .modern-social {
     margin-top: auto;
+    width: 100%;
 }
 
 .modern-ln-btn {
@@ -108,30 +120,30 @@
     justify-content: center;
     gap: 8px;
     width: 100%;
-    padding: 12px;
-    background: #f8fafc;
-    border-radius: 14px;
+    padding: 10px;
+    background: #f0f6fd;
+    border-radius: 12px;
     color: #1e293b;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     transition: all 0.3s ease;
     border: 1px solid #f1f5f9;
 }
 
 .modern-ln-btn i {
-    font-size: 18px;
+    font-size: 16px;
     color: #0a66c2;
     transition: color 0.3s;
 }
 
 .modern-card:hover {
     border-color: #ffd633;
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.05);
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.08);
 }
 
 .modern-card:hover .modern-photo img {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .modern-ln-btn:hover {
@@ -185,7 +197,7 @@
 @media (max-width: 1024px) {
     .team-modern-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        max-width: 700px;
     }
 }
 
@@ -210,7 +222,8 @@
     }
 
     .modern-card {
-        flex: 0 0 calc(100vw - 60px);
+        /* Чуть увеличил ширину карточки на мобилке, чтобы крупное фото влезло комфортно */
+        flex: 0 0 290px; 
         scroll-snap-align: center;
     }
 

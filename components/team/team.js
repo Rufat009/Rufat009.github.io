@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateSliderUI = () => {
         if (!grid || dots.length === 0) return;
-        const cardWidth = grid.querySelector('.modern-card').offsetWidth + 20;
+        const cardWidth = grid.querySelector('.modern-card').offsetWidth + 16;
         const index = Math.round(grid.scrollLeft / cardWidth);
         
         dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
-            const cardWidth = grid.querySelector('.modern-card').offsetWidth + 20;
+            const cardWidth = grid.querySelector('.modern-card').offsetWidth + 16;
             grid.scrollTo({
                 left: cardWidth * index,
                 behavior: 'smooth'

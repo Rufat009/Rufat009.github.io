@@ -1,0 +1,259 @@
+/* components/about/about.css */
+.about-page-wrapper {
+    background-color: #fff;
+}
+
+.section-padding { padding: 100px 0; }
+.bg-dark { background-color: #050505; }
+.text-white { color: #fff; }
+
+.about-hero {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 0;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(75deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.3) 100%);
+    z-index: 1;
+}
+
+.about-hero-container {
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero-text {
+    max-width: 800px;
+}
+
+.about-hero-text h1 {
+    font-size: clamp(38px, 7vw, 72px);
+    font-weight: 950;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.about-hero-text h1 span {
+    color: #ffd633;
+}
+
+.about-hero-text p {
+    font-size: 22px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+}
+
+.discipline-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.discipline-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.discipline-item.reverse { direction: rtl; }
+.discipline-item.reverse .discipline-content { direction: ltr; }
+
+.discipline-image {
+    width: 100%;
+    aspect-ratio: 16 / 10; 
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.discipline-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.discipline-content h2 {
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.discipline-content p {
+    font-size: 18px;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.section-header { text-align: center; margin-bottom: 60px; }
+.section-header h2 { font-size: 40px; font-weight: 900; }
+
+.why-interactive-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.why-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+    cursor: pointer;
+}
+
+.why-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 214, 51, 0.1);
+    color: #ffd633;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.why-card h4 { font-size: 20px; font-weight: 800; margin-bottom: 12px; }
+.why-card p { color: #9ca3af; line-height: 1.5; font-size: 15px; }
+
+.eco-system-wrapper {
+    background: #fcfcfd;
+    border-radius: 40px;
+    padding: 80px 40px;
+    border: 1px solid #f1f5f9;
+}
+
+.eco-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+
+.eco-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 800;
+    color: #64748b;
+    margin-bottom: 16px;
+}
+
+.eco-header h2 {
+    font-size: 42px;
+    font-weight: 950;
+    margin-bottom: 16px;
+}
+
+.eco-bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.eco-bento-card {
+    background: #fff;
+    border: 1px solid #f1f5f9;
+    padding: 24px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.eco-bento-wide {
+    grid-column: span 2;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.eco-bento-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    background: #f8fafc;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #ca8a04;
+    border: 1px solid #f1f5f9;
+}
+
+.eco-bento-card h3 { font-size: 18px; font-weight: 800; margin-bottom: 8px; }
+.eco-bento-card p { font-size: 14px; color: #64748b; line-height: 1.5; }
+
+.eco-highlight-gold {
+    background: linear-gradient(135deg, #ffffff 0%, #fefce8 100%);
+    border-color: #fef08a;
+}
+
+.eco-highlight-dark {
+    background: #0f172a;
+    color: #fff;
+    border: none;
+}
+
+.eco-highlight-dark h3 { color: #fff; }
+.eco-highlight-dark .eco-bento-icon { background: rgba(255,255,255,0.1); color: #ffd633; border: none; }
+
+.eco-bento-tag {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 4px 8px;
+    background: #fef08a;
+    color: #854d0e;
+    font-size: 10px;
+    font-weight: 900;
+    border-radius: 6px;
+}
+
+.tag-dark { background: rgba(255,255,255,0.1); color: #fff; }
+
+.eco-bento-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.04); }
+
+@media (max-width: 1100px) {
+    .eco-bento-grid { grid-template-columns: repeat(2, 1fr); }
+    .eco-bento-wide { grid-column: span 1; flex-direction: column; align-items: flex-start; gap: 16px; }
+}
+
+@media (max-width: 768px) {
+    .section-padding { padding: 60px 0; }
+    .discipline-grid { gap: 40px; }
+    .discipline-item, .why-interactive-grid, .eco-bento-grid { grid-template-columns: 1fr; }
+    
+    .discipline-image {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .discipline-content {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .discipline-content h2 {
+        font-size: 32px;
+    }
+
+    .about-hero { min-height: 60vh; padding: 100px 0; background-attachment: scroll; }
+    .about-hero-text h1 { font-size: 42px; }
+    .eco-system-wrapper { padding: 40px 20px; }
+}
