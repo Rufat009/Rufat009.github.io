@@ -1,4 +1,4 @@
-/* --- TESTIMONIALS BLOCK --- */
+/* components/testimonials/testimonials.css */
 .testimonials-loved {
     background: #f9fafb;
     padding: 100px 0 80px 0;
@@ -88,7 +88,7 @@
     border-radius: 50%;
     flex-shrink: 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    object-fit: cover; /* Чтобы фото не сплющивалось */
+    object-fit: cover;
     background: #eee;
 }
 
@@ -114,16 +114,10 @@
     display: none;
 }
 
-/* --- TABLET --- */
 @media (max-width: 1024px) {
     .testimonials-loved {
         padding: 60px 0;
     }
-
-    .testimonials-header {
-        margin-bottom: 40px;
-    }
-
     .testimonials-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -131,70 +125,39 @@
     }
 }
 
-/* --- MOBILE --- */
 @media (max-width: 768px) {
     .testimonials-loved {
         padding: 50px 0;
     }
-
-    .testimonials-header {
-        margin-bottom: 30px;
-        padding: 0 20px;
-    }
-    
     .testimonials-header h2 {
         font-size: 28px;
     }
-
-    /* Скролл контейнер */
     .testimonials-grid {
         display: flex;
-        overflow-x: auto; 
-        scroll-snap-type: x mandatory; 
-        gap: 16px; 
-        padding: 0 20px; 
-        margin: 0;
-        width: 100%;
-        max-width: 100%;
-        -webkit-overflow-scrolling: touch;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        padding: 0 20px;
         scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
     }
-
     .testimonials-grid::-webkit-scrollbar {
         display: none;
     }
-
-    /* Карточки на мобильном */
     .testimonial-card {
-        min-width: 85vw; 
-        width: 85vw;
+        min-width: calc(100vw - 40px);
         scroll-snap-align: center;
-        margin: 0;
-        border-radius: 20px;
-        background: #fff;
-        border: 1px solid #e5e7eb;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-        
-        position: relative;
-        opacity: 1 !important;
-        pointer-events: auto !important;
-        left: auto !important;
-        transform: none !important;
     }
-
-    /* Навигация (Стрелки) */
     .testimonials-nav {
-        display: flex !important;
+        display: flex;
         justify-content: center;
         align-items: center;
         gap: 16px;
         margin-top: 30px;
-        width: 100%;
     }
-
     .testimonials-btn {
-        width: 48px;
-        height: 48px;
+        width: 44px;
+        height: 44px;
         border-radius: 50%;
         background: #fff;
         border: 1px solid #e5e7eb;
@@ -203,31 +166,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 18px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        font-size: 16px;
         transition: all 0.2s;
     }
-
-    .testimonials-btn:active {
-        background: #f3f4f6;
-        transform: scale(0.95);
-    }
-
     .testimonials-dots {
         display: flex;
         gap: 8px;
     }
-
     .dot {
         width: 8px;
         height: 8px;
         border-radius: 50%;
         background: #e5e7eb;
-        transition: background 0.3s;
+        cursor: pointer;
+        transition: all 0.3s;
     }
-
     .dot.active {
         background: #ffd633;
-        transform: scale(1.2);
+        transform: scale(1.3);
     }
 }

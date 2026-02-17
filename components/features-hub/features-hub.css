@@ -1,3 +1,4 @@
+/* components/features-hub/features-hub.css */
 .features-hub {
     background-color: #080808;
     padding: 100px 0 80px 0;
@@ -6,7 +7,6 @@
     overflow: hidden;
 }
 
-/* Текстурированный фон */
 .features-hub::before {
     content: '';
     position: absolute;
@@ -74,6 +74,7 @@
     justify-content: center;
     gap: 12px;
     margin-bottom: 50px;
+    padding: 10px 5px;
     flex-wrap: wrap;
 }
 
@@ -93,25 +94,8 @@
     backdrop-filter: blur(10px);
     position: relative;
     overflow: hidden;
+    white-space: nowrap;
 }
-
-.hub-tab::before {
-    content: '';
-    position: absolute;
-    top: 50%; left: 50%;
-    width: 0; height: 0;
-    background: rgba(255, 214, 51, 0.05);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    transition: width 0.6s ease, height 0.6s ease;
-}
-
-.hub-tab:hover::before {
-    width: 200px; height: 200px;
-}
-
-.hub-tab i { font-size: 16px; position: relative; z-index: 1; }
-.hub-tab span { position: relative; z-index: 1; }
 
 .hub-tab:hover {
     background: rgba(30, 30, 30, 0.9);
@@ -124,7 +108,7 @@
     background: #ffd633;
     color: #000;
     border-color: #ffd633;
-    box-shadow: 0 0 30px rgba(255, 214, 51, 0.3);
+    box-shadow: none;
 }
 
 .hub-content {
@@ -142,7 +126,6 @@
     display: grid;
 }
 
-/* АНИМАЦИЯ ПОЯВЛЕНИЯ - БЕЗ РАЗМЫТИЯ */
 .features-hub .reveal-item {
     opacity: 0;
     transform: translateY(30px);
@@ -150,18 +133,11 @@
                 transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.features-hub.reveal .reveal-item {
+.features-hub.active .reveal-item {
     opacity: 1;
     transform: translateY(0);
 }
 
-.features-hub .hub-subtitle { transition-delay: 0.1s; }
-.features-hub h2 { transition-delay: 0.2s; }
-.features-hub .hub-header p { transition-delay: 0.3s; }
-.features-hub .hub-tabs { transition-delay: 0.4s; }
-.features-hub .hub-content { transition-delay: 0.5s; }
-
-/* Анимация для карточек - тоже без размытия */
 .hub-grid.active .tech-card {
     animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     opacity: 0;
@@ -178,12 +154,6 @@
     }
 }
 
-.hub-grid.active .tech-card:nth-child(1) { animation-delay: 0.1s; }
-.hub-grid.active .tech-card:nth-child(2) { animation-delay: 0.2s; }
-.hub-grid.active .tech-card:nth-child(3) { animation-delay: 0.3s; }
-.hub-grid.active .tech-card:nth-child(4) { animation-delay: 0.4s; }
-
-/* Карточки */
 .tech-card {
     background: rgba(18, 18, 18, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -196,20 +166,6 @@
     flex-direction: column;
     align-items: flex-start;
     backdrop-filter: blur(5px);
-}
-
-.tech-card::after {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(135deg, rgba(255, 214, 51, 0.02) 0%, transparent 50%);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    pointer-events: none;
-}
-
-.tech-card:hover::after {
-    opacity: 1;
 }
 
 .tc-icon {
@@ -237,7 +193,6 @@
     font-size: 14px;
     color: #9ca3af;
     line-height: 1.6;
-    transition: color 0.3s ease;
 }
 
 .tech-card:hover {
@@ -247,36 +202,32 @@
     box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.8);
 }
 
-.tech-card:hover .tc-icon {
-    transform: scale(1.05);
-    background: rgba(255, 214, 51, 0.12);
-    color: #ffd633;
-    border-color: rgba(255, 214, 51, 0.2);
-}
-
-.tech-card:hover p {
-    color: #d1d5db;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .hub-tabs {
         justify-content: flex-start;
         overflow-x: auto;
-        padding-bottom: 12px;
         flex-wrap: nowrap;
+        padding: 15px 20px;
+        margin: 0 -20px 30px -20px;
         -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255, 214, 51, 0.2) transparent;
     }
-    
+
+    .hub-tabs::-webkit-scrollbar {
+        height: 3px;
+    }
+
+    .hub-tabs::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .hub-tabs::-webkit-scrollbar-thumb {
+        background: rgba(255, 214, 51, 0.2);
+        border-radius: 10px;
+    }
+
     .hub-tab {
         flex: 0 0 auto;
-    }
-    
-    .features-hub {
-        padding: 60px 0;
-    }
-    
-    .hub-subtitle::before,
-    .hub-subtitle::after {
-        display: none;
     }
 }

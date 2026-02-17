@@ -1,58 +1,69 @@
-document.addEventListener('DOMContentLoaded', () => {
+// script.js
+async function loadComponents() {
+    const headerPlaceholder = document.querySelector('#header-placeholder');
+    const footerPlaceholder = document.querySelector('#footer-placeholder');
+
+    if (headerPlaceholder) {
+        const response = await fetch('components/header/header.html');
+        headerPlaceholder.innerHTML = await response.text();
+    }
+
+    if (footerPlaceholder) {
+        const response = await fetch('components/footer/footer.html');
+        footerPlaceholder.innerHTML = await response.text();
+    }
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadComponents();
 
     const burgerBtn = document.querySelector('.burger-btn');
     const nav = document.querySelector('.nav');
-    const navLinks = document.querySelectorAll('.nav-link');
     const icon = burgerBtn ? burgerBtn.querySelector('i') : null;
+    const navLinks = document.querySelectorAll('.nav-link');
 
-    if (burgerBtn && nav) {
-        burgerBtn.addEventListener('click', () => {
-            nav.classList.toggle('active');
-            
-            if (nav.classList.contains('active')) {
+    const toggleMenu = (forceState = null) => {
+        const isOpen = forceState !== null ? forceState : !nav.classList.contains('active');
+        nav.classList.toggle('active', isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+        if (icon) {
+            if (isOpen) {
                 icon.classList.remove('fa-bars');
                 icon.classList.add('fa-xmark');
-                document.body.style.overflow = 'hidden';
             } else {
                 icon.classList.remove('fa-xmark');
                 icon.classList.add('fa-bars');
-                document.body.style.overflow = '';
+            }
+        }
+    };
+
+    if (burgerBtn && nav) {
+        burgerBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMenu();
+        });
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => toggleMenu(false));
+        });
+        document.addEventListener('click', (e) => {
+            if (nav.classList.contains('active') && !nav.contains(e.target) && !burgerBtn.contains(e.target)) {
+                toggleMenu(false);
             }
         });
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('active');
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-                document.body.style.overflow = '';
-            });
-        });
     }
-
-    const observerOptions = {
-        threshold: 0.1, 
-        rootMargin: "0px 0px -50px 0px"
-    };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                observer.unobserve(entry.target); 
+                observer.unobserve(entry.target);
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
-    const revealElements = document.querySelectorAll('.reveal');
-    revealElements.forEach(el => observer.observe(el));
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
     const darkCards = document.querySelectorAll('.dark-card');
-    darkCards.forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(40px)';
-    });
-
     const cardObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
@@ -64,151 +75,94 @@ document.addEventListener('DOMContentLoaded', () => {
                 cardObserver.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    }, { threshold: 0.1 });
 
-    darkCards.forEach(card => cardObserver.observe(card));
+    darkCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(40px)';
+        cardObserver.observe(card);
+    });
 
-    function updateClock() {
-        const now = new Date();
-        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-        const timeElement = document.querySelector('.current-time');
-        if (timeElement) {
-            timeElement.textContent = timeString;
-        }
-    }
+    const updateTime = () => {
+        const el = document.querySelector('.current-time');
+        if (el) el.textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    };
+    updateTime();
+    setInterval(updateTime, 1000);
 
-    updateClock();
-    setInterval(updateClock, 1000);
-
-    const cards = document.querySelectorAll('.tilt-card');
-    cards.forEach(card => {
+    document.querySelectorAll('.tilt-card').forEach(card => {
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            const rotateX = ((y - centerY) / centerY) * -15;
-            const rotateY = ((x - centerX) / centerX) * 15;
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+            const rX = ((y - rect.height / 2) / (rect.height / 2)) * -15;
+            const rY = ((x - rect.width / 2) / (rect.width / 2)) * 15;
+            card.style.transform = `perspective(1000px) rotateX(${rX}deg) rotateY(${rY}deg) scale3d(1.02, 1.02, 1.02)`;
             const glare = card.querySelector('.card-glare');
-            if(glare) {
-                glare.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 80%)`;
-            }
+            if(glare) glare.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 80%)`;
         });
         card.addEventListener('mouseleave', () => {
             card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
             const glare = card.querySelector('.card-glare');
-            if(glare) {
-                glare.style.background = `transparent`;
-            }
+            if(glare) glare.style.background = 'transparent';
         });
     });
 
-    const hubTabs = document.querySelectorAll('.hub-tab');
-    const hubGrids = document.querySelectorAll('.hub-grid');
-
-    if (hubTabs.length > 0 && hubGrids.length > 0) {
-        hubTabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const targetId = tab.getAttribute('data-target');
-                
-                hubTabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-
-                hubGrids.forEach(grid => {
-                    grid.classList.remove('active');
-                    if(grid.id === targetId) {
-                        grid.classList.add('active');
-                    }
-                });
-            });
+    document.querySelectorAll('.hub-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            const id = tab.getAttribute('data-target');
+            document.querySelectorAll('.hub-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            document.querySelectorAll('.hub-grid').forEach(g => g.classList.toggle('active', g.id === id));
         });
-    }
+    });
 
     const tGrid = document.querySelector('.testimonials-grid');
-    const tPrev = document.querySelector('.testimonials-prev');
-    const tNext = document.querySelector('.testimonials-next');
     const tDots = document.querySelectorAll('.testimonials-dots .dot');
-
-    if (tGrid && tPrev && tNext) {
+    if (tGrid && tDots.length > 0) {
         const getCardWidth = () => {
             const card = tGrid.querySelector('.testimonial-card');
-            return card ? card.offsetWidth + 16 : 0; 
+            return card ? card.offsetWidth + 16 : 0;
         };
-
-        tNext.addEventListener('click', () => {
+        const updateDots = () => {
+            const index = Math.round(tGrid.scrollLeft / getCardWidth());
+            tDots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+        };
+        tDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                tGrid.scrollTo({ left: getCardWidth() * index, behavior: 'smooth' });
+            });
+        });
+        document.querySelector('.testimonials-next')?.addEventListener('click', () => {
             tGrid.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
         });
-
-        tPrev.addEventListener('click', () => {
+        document.querySelector('.testimonials-prev')?.addEventListener('click', () => {
             tGrid.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
         });
-
-        tGrid.addEventListener('scroll', () => {
-            const scrollLeft = tGrid.scrollLeft;
-            const width = getCardWidth();
-            if (width === 0) return;
-            
-            const index = Math.round(scrollLeft / width);
-            
-            tDots.forEach(d => d.classList.remove('active'));
-            if (tDots[index]) {
-                tDots[index].classList.add('active');
-            }
-        });
+        tGrid.addEventListener('scroll', updateDots);
     }
 
-    // ========== ПРОСТЕЙШИЙ РАБОЧИЙ FAQ ==========
-    const faqItems = document.querySelectorAll('.faq-item');
-    
-    if (faqItems.length > 0) {
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            const answer = item.querySelector('.faq-answer');
-            
-            // Убираем всё лишнее
-            question.onclick = function(e) {
-                e.preventDefault();
-                
-                // Проверяем текущее состояние
-                const isOpen = item.classList.contains('is-open');
-                
-                // Закрываем все остальные
-                faqItems.forEach(otherItem => {
-                    if (otherItem !== item) {
-                        otherItem.classList.remove('is-open');
-                        const otherAnswer = otherItem.querySelector('.faq-answer');
-                        if (otherAnswer) {
-                            otherAnswer.style.maxHeight = null;
-                        }
-                    }
-                });
-                
-                // Открываем или закрываем текущий
-                if (!isOpen) {
-                    // Открываем
-                    item.classList.add('is-open');
-                    answer.style.maxHeight = answer.scrollHeight + 'px';
-                } else {
-                    // Закрываем
-                    item.classList.remove('is-open');
-                    answer.style.maxHeight = null;
-                }
-            };
-        });
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.querySelector('.faq-question').onclick = (e) => {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
+            const isOpen = item.classList.contains('is-open');
+            document.querySelectorAll('.faq-item').forEach(o => {
+                o.classList.remove('is-open');
+                o.querySelector('.faq-answer').style.maxHeight = null;
+            });
+            if (!isOpen) {
+                item.classList.add('is-open');
+                const a = item.querySelector('.faq-answer');
+                a.style.maxHeight = a.scrollHeight + 'px';
             }
-        });
+        };
     });
 
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+    }); 
 });
