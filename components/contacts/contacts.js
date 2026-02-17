@@ -1,4 +1,4 @@
-// components/contacts/contacts.js
+/* components/contacts/contacts.js */
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contact-form');
     if (form) {
@@ -14,24 +14,29 @@ document.addEventListener('DOMContentLoaded', () => {
                     method: 'POST',
                     body: formData
                 });
-                const result = await response.json();
+                const text = await response.text();
+                let result;
+                try {
+                    result = JSON.parse(text);
+                } catch (e) {
+                    alert("CRITICAL PHP ERROR (Check this out): " + text);
+                    return;
+                }
                 if (result.status === 'success') {
                     btn.innerHTML = '<span>Message Sent!</span> <i class="fa-solid fa-check"></i>';
                     btn.style.background = '#10b981';
                     form.reset();
                 } else {
-                    throw new Error(result.message);
+                    alert("MAILER ERROR: " + result.message);
                 }
             } catch (error) {
-                console.error('Error:', error);
-                btn.innerHTML = '<span>Error! Try again</span> <i class="fa-solid fa-xmark"></i>';
-                btn.style.background = '#ef4444';
+                alert("NETWORK/JS ERROR: " + error.message);
             } finally {
                 setTimeout(() => {
                     btn.disabled = false;
                     btn.innerHTML = originalText;
                     btn.style.background = '';
-                }, 4000);
+                }, 5000);
             }
         });
     }
