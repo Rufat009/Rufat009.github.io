@@ -12,7 +12,7 @@
     min-height: 80vh;
     display: flex;
     align-items: center;
-    background-image: url('https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=2000');
+    background-image: url('../../assets/about/image1.jfif');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
