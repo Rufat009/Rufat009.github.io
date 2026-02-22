@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="components/contacts/contacts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
     <header class="header" id="header-placeholder"></header>
     <main class="contacts-page-wrapper">
@@ -20,7 +22,8 @@
                     <div class="contacts-info reveal">
                         <span class="startup-badge">Get in Touch</span>
                         <h1>Let’s Shape the Future of <span>Sports</span> Together</h1>
-                        <p>Have questions about the platform, partnership inquiries, or just want to say hi? We’re always open to professional dialogue.</p>
+                        <p>Have questions about the platform, partnership inquiries, or just want to say hi? We’re
+                            always open to professional dialogue.</p>
                         <div class="info-items">
                             <a href="mailto:contact@deviny.me" class="info-item">
                                 <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
@@ -33,37 +36,43 @@
                         <div class="social-box">
                             <p>Follow our progress</p>
                             <div class="social-links-row">
-                                <a href="https://www.linkedin.com/company/deviny" target="_blank" class="social-circle"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="https://www.instagram.com/deviny.me/" target="_blank" class="social-circle"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="https://x.com/devinyMe" target="_blank" class="social-circle"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.linkedin.com/company/deviny" target="_blank"
+                                    class="social-circle"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/deviny.me/" target="_blank" class="social-circle"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="https://x.com/devinyMe" target="_blank" class="social-circle"><i
+                                        class="fa-brands fa-x-twitter"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="contacts-form-container reveal" style="transition-delay: 0.1s;">
                         <form class="modern-form" id="contact-form">
                             <div class="form-group">
-                                <label for="name">КАК К ВАМ ОБРАЩАТЬСЯ</label>
-                                <input type="text" id="name" name="name" placeholder="например: Тимур" required>
+                                <label for="name">HOW SHOULD WE ADDRESS YOU?</label>
+                                <input type="text" id="name" name="name" placeholder="e.g.: Rufat" required>
                             </div>
                             <div class="form-group">
-                                <label for="contact_details">КОНТАКТНЫЕ ДАННЫЕ</label>
-                                <input type="text" id="contact_details" name="contact_details" placeholder="@tguser... | +994..." required>
+                                <label for="contact_details">CONTACT DETAILS</label>
+                                <input type="text" id="contact_details" name="contact_details"
+                                    placeholder="@tguser... | +994..." required>
                             </div>
                             <div class="form-group">
-                                <label>ГДЕ ВАМ ОТВЕТИТЬ?</label>
+                                <label>WHERE SHOULD WE REPLY?</label>
                                 <div class="reply-choice-group" id="reply-choice-group">
-                                    <button type="button" class="reply-btn active" data-value="Telegram">TELEGRAM</button>
+                                    <button type="button" class="reply-btn active"
+                                        data-value="Telegram">TELEGRAM</button>
                                     <button type="button" class="reply-btn" data-value="WhatsApp">WHATSAPP</button>
                                     <button type="button" class="reply-btn" data-value="Email">EMAIL</button>
                                 </div>
                                 <input type="hidden" name="reply_method" id="reply_method" value="Telegram" required>
                             </div>
                             <div class="form-group">
-                                <label for="message">СУТЬ ЗАДАЧИ</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Опишите проект..." required></textarea>
+                                <label for="message">PROJECT DETAILS</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Describe your project..."
+                                    required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary btn-full submit-btn-yellow">
-                                <span>ОТПРАВИТЬ ЗАЯВКУ</span>
+                                <span>SEND REQUEST</span>
                             </button>
                         </form>
                     </div>
@@ -75,4 +84,5 @@
     <script src="script.js"></script>
     <script src="components/contacts/contacts.js"></script>
 </body>
+
 </html>
