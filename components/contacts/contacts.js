@@ -1,4 +1,4 @@
-/* components/contacts/contacts.js */
+// components/contacts/contacts.js
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contact-form');
     if (form) {
@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const btn = form.querySelector('button[type="submit"]');
             const originalText = btn.innerHTML;
             const formData = new FormData(form);
+            
+            formData.append('access_key', 'd65989bf-2ada-4894-92f6-2623d96a01d4');
+            formData.append('subject', 'Новая заявка с сайта Deviny');
             
             btn.disabled = true;
             btn.innerHTML = '<span>ОТПРАВКА...</span> <i class="fa-solid fa-spinner fa-spin"></i>';
@@ -24,22 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
             errorBox.textContent = '';
             
             try {
-                const response = await fetch('send-to-telegram.php', {
+                const response = await fetch('https://api.web3forms.com/submit', {
                     method: 'POST',
                     body: formData
                 });
-                const text = await response.text();
-                let result;
-                try {
-                    result = JSON.parse(text);
-                } catch (e) {
-                    errorBox.textContent = "CRITICAL PHP ERROR: " + text;
-                    btn.innerHTML = originalText;
-                    btn.disabled = false;
-                    return;
-                }
                 
-                if (result.status === 'success') {
+                const result = await response.json();
+                
+                if (result.success) {
                     btn.innerHTML = '<span>ЗАЯВКА ОТПРАВЛЕНА</span> <i class="fa-solid fa-check"></i>';
                     btn.classList.add('success');
                     form.reset();
@@ -55,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     btn.innerHTML = originalText;
                 }
             } catch (error) {
-                errorBox.textContent = "Сетевая ошибка: " + error.message;
+                errorBox.textContent = "Сетевая ошибка. Проверьте интернет-соединение.";
                 btn.innerHTML = originalText;
             } finally {
                 setTimeout(() => {
@@ -77,4 +72,4 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-});
+});     
