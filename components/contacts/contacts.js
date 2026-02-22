@@ -4,13 +4,27 @@ document.addEventListener('DOMContentLoaded', () => {
     if (form) {
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const btn = form.querySelector('button');
+            const btn = form.querySelector('button[type="submit"]');
             const originalText = btn.innerHTML;
             const formData = new FormData(form);
+            
             btn.disabled = true;
-            btn.innerHTML = '<span>Sending...</span> <i class="fa-solid fa-spinner fa-spin"></i>';
+            btn.innerHTML = '<span>ОТПРАВКА...</span> <i class="fa-solid fa-spinner fa-spin"></i>';
+            
+            let errorBox = form.querySelector('.form-error-box');
+            if (!errorBox) {
+                errorBox = document.createElement('div');
+                errorBox.className = 'form-error-box';
+                errorBox.style.marginTop = '16px';
+                errorBox.style.color = '#ef4444';
+                errorBox.style.fontSize = '14px';
+                errorBox.style.textAlign = 'center';
+                form.appendChild(errorBox);
+            }
+            errorBox.textContent = '';
+            
             try {
-                const response = await fetch('send-mail.php', {
+                const response = await fetch('send-to-telegram.php', {
                     method: 'POST',
                     body: formData
                 });
@@ -19,25 +33,48 @@ document.addEventListener('DOMContentLoaded', () => {
                 try {
                     result = JSON.parse(text);
                 } catch (e) {
-                    alert("CRITICAL PHP ERROR (Check this out): " + text);
+                    errorBox.textContent = "CRITICAL PHP ERROR: " + text;
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
                     return;
                 }
+                
                 if (result.status === 'success') {
-                    btn.innerHTML = '<span>Message Sent!</span> <i class="fa-solid fa-check"></i>';
-                    btn.style.background = '#10b981';
+                    btn.innerHTML = '<span>ЗАЯВКА ОТПРАВЛЕНА</span> <i class="fa-solid fa-check"></i>';
+                    btn.classList.add('success');
                     form.reset();
+                    
+                    const replyBtns = document.querySelectorAll('.reply-btn');
+                    replyBtns.forEach(b => b.classList.remove('active'));
+                    if(replyBtns.length > 0) {
+                        replyBtns[0].classList.add('active');
+                    }
+                    document.getElementById('reply_method').value = 'Telegram';
                 } else {
-                    alert("MAILER ERROR: " + result.message);
+                    errorBox.textContent = "Ошибка отправки: " + result.message;
+                    btn.innerHTML = originalText;
                 }
             } catch (error) {
-                alert("NETWORK/JS ERROR: " + error.message);
+                errorBox.textContent = "Сетевая ошибка: " + error.message;
+                btn.innerHTML = originalText;
             } finally {
                 setTimeout(() => {
                     btn.disabled = false;
                     btn.innerHTML = originalText;
-                    btn.style.background = '';
-                }, 5000);
+                    btn.classList.remove('success');
+                    errorBox.textContent = '';
+                }, 4000);
             }
+        });
+
+        const replyBtns = document.querySelectorAll('.reply-btn');
+        const replyInput = document.getElementById('reply_method');
+        replyBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                replyBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                replyInput.value = btn.dataset.value;
+            });
         });
     }
 });

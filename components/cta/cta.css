@@ -50,6 +50,7 @@
     flex-wrap: wrap;
 }
 
+/*
 .download-link {
     display: flex;
     align-items: center;
@@ -61,10 +62,13 @@
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+*/
 
+/*
 .download-link i {
     font-size: 30px;
 }
+*/
 
 .link-text {
     display: flex;
@@ -83,8 +87,11 @@
     font-weight: 700;
 }
 
+/*
 .download-link:hover {
     transform: translateY(-5px);
+}
+*/
     background: #ffd633;
     color: #000;
     box-shadow: 0 20px 40px rgba(255, 214, 51, 0.2);
@@ -116,9 +123,11 @@
         align-items: center;
     }
     
+    /*
     .download-link {
         width: 100%;
         max-width: 280px;
         justify-content: center;
     }
+    */
 }

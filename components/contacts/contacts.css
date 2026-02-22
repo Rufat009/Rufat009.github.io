@@ -19,7 +19,6 @@
     align-items: center;
 }
 
-/* Info Side */
 .contacts-info h1 {
     font-size: clamp(34px, 5vw, 56px);
     font-weight: 950;
@@ -119,7 +118,6 @@
     transform: translateY(-3px);
 }
 
-/* Form Side */
 .contacts-form-container {
     background: #fff;
     border: 1px solid #f1f5f9;
@@ -131,13 +129,13 @@
 .modern-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 
 .form-group label {
@@ -149,15 +147,20 @@
 }
 
 .form-group input, 
-.form-group select, 
 .form-group textarea {
-    padding: 14px 18px;
+    padding: 16px 20px;
     border-radius: 12px;
     border: 1px solid #e2e8f0;
     font-family: inherit;
     font-size: 15px;
     transition: all 0.2s;
     background: #fcfcfd;
+    color: #0f172a;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #94a3b8;
 }
 
 .form-group input:focus, 
@@ -168,11 +171,70 @@
     box-shadow: 0 0 0 4px rgba(254, 240, 138, 0.3);
 }
 
-.btn-full {
+.reply-choice-group {
+    display: flex;
+    gap: 16px;
+    margin-top: 4px;
+}
+
+.reply-btn {
+    flex: 1 1 0;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 14px 0;
+    cursor: pointer;
+    font-weight: 700;
+    color: #64748b;
+    font-size: 14px;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.reply-btn.active {
+    background: #fcd34d;
+    color: #000;
+    border-color: #fcd34d;
+    box-shadow: none;
+}
+
+.reply-btn:hover:not(.active) {
+    border-color: #cbd5e1;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+.submit-btn-yellow {
     width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: center;
     gap: 12px;
-    padding: 16px;
+    background: #fcd34d;
+    color: #000;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 18px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+}
+
+.submit-btn-yellow:hover {
+    background: #fbbf24;
+}
+
+.submit-btn-yellow:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.submit-btn-yellow.success {
+    background: #10b981;
+    color: #fff;
 }
 
 @media (max-width: 968px) {
@@ -194,5 +256,9 @@
 @media (max-width: 480px) {
     .contacts-form-container {
         padding: 24px;
+    }
+    .reply-choice-group {
+        flex-direction: column;
+        gap: 8px;
     }
 }
