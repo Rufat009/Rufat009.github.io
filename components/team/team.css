@@ -81,10 +81,18 @@
 
 .team-modern-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 24px;
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.modern-card {
+    grid-column: span 2;
+}
+
+.team-modern-grid .modern-card:nth-child(4) {
+    grid-column: 2 / span 2;
 }
 
 .modern-card {
