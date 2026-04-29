@@ -16,6 +16,7 @@ async function loadComponents() {
 
 document.addEventListener('DOMContentLoaded', async () => {
     await loadComponents();
+    window.DevinyI18n?.init();
 
     const burgerBtn = document.querySelector('.burger-btn');
     const nav = document.querySelector('.nav');

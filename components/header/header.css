@@ -87,6 +87,99 @@
     flex-shrink: 0;
 }
 
+.language-switcher {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.language-btn {
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    color: #111;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 800;
+    transition: all 0.2s ease;
+}
+
+.language-btn:hover,
+.language-switcher.is-open .language-btn {
+    border-color: #ffd633;
+    background: #fff;
+}
+
+.language-btn .fa-globe {
+    color: #ca8a04;
+}
+
+.language-btn .fa-chevron-down {
+    font-size: 10px;
+    transition: transform 0.2s ease;
+}
+
+.language-switcher.is-open .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.language-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    min-width: 170px;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: all 0.2s ease;
+}
+
+.language-switcher.is-open .language-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-menu button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    color: #111;
+    cursor: pointer;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.language-menu button:hover,
+.language-menu button.active {
+    background: #fff7cc;
+}
+
+.language-menu button.active::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ca8a04;
+}
+
 .btn-sm {
     padding: 10px 20px;
     font-size: 14px;
@@ -152,9 +245,28 @@
 
 @media (max-width: 480px) {
     .btn-sm {
-        padding: 8px 16px;
+        padding: 8px 12px;
         font-size: 12px;
         border-radius: 8px;
+    }
+
+    .header-actions {
+        gap: 8px;
+    }
+
+    .language-btn {
+        width: 40px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .language-btn .fa-globe,
+    .language-btn .fa-chevron-down {
+        display: none;
+    }
+
+    .language-menu {
+        right: -48px;
     }
 
     .logo-img {

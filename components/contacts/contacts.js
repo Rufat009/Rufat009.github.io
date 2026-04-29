@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const formData = new FormData(form);
             
             formData.append('access_key', 'd65989bf-2ada-4894-92f6-2623d96a01d4');
-            formData.append('subject', 'Новая заявка с сайта Deviny');
+            formData.append('subject', window.DevinyI18n?.message('formSubject') || 'New request from Deviny website');
             
             btn.disabled = true;
-            btn.innerHTML = '<span>ОТПРАВКА...</span> <i class="fa-solid fa-spinner fa-spin"></i>';
+            btn.innerHTML = `<span>${window.DevinyI18n?.message('sending') || 'SENDING...'}</span> <i class="fa-solid fa-spinner fa-spin"></i>`;
             
             let errorBox = form.querySelector('.form-error-box');
             if (!errorBox) {
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const result = await response.json();
                 
                 if (result.success) {
-                    btn.innerHTML = '<span>ЗАЯВКА ОТПРАВЛЕНА</span> <i class="fa-solid fa-check"></i>';
+                    btn.innerHTML = `<span>${window.DevinyI18n?.message('sent') || 'REQUEST SENT'}</span> <i class="fa-solid fa-check"></i>`;
                     btn.classList.add('success');
                     form.reset();
                     
@@ -46,11 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                     document.getElementById('reply_method').value = 'Telegram';
                 } else {
-                    errorBox.textContent = "Ошибка отправки: " + result.message;
+                    errorBox.textContent = (window.DevinyI18n?.message('sendError') || 'Sending error: ') + result.message;
                     btn.innerHTML = originalText;
                 }
             } catch (error) {
-                errorBox.textContent = "Сетевая ошибка. Проверьте интернет-соединение.";
+                errorBox.textContent = window.DevinyI18n?.message('networkError') || 'Network error. Check your internet connection.';
                 btn.innerHTML = originalText;
             } finally {
                 setTimeout(() => {
@@ -72,4 +72,4 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-});     
+});
