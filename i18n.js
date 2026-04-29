@@ -165,6 +165,10 @@ const DEVINY_I18N = {
             ru: 'Предложить идею',
             az: 'İdeya təklif et'
         },
+        'Get Started': {
+            ru: 'Начать',
+            az: 'Başla'
+        },
         '50,000+ programs': {
             ru: '50 000+ программ',
             az: '50 000+ proqram'
