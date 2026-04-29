@@ -169,6 +169,18 @@ const DEVINY_I18N = {
             ru: 'Начать',
             az: 'Başla'
         },
+        'Build Your Profile': {
+            ru: 'Создать профиль',
+            az: 'Profilini yarat'
+        },
+        'Start Your Journey': {
+            ru: 'Начать путь',
+            az: 'Yoluna başla'
+        },
+        'Create Your Account': {
+            ru: 'Создать аккаунт',
+            az: 'Hesab yarat'
+        },
         '50,000+ programs': {
             ru: '50 000+ программ',
             az: '50 000+ proqram'

@@ -107,6 +107,18 @@ a {
     gap: 8px;
 }
 
+.section-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+    position: relative;
+    z-index: 2;
+}
+
+.section-cta .btn {
+    min-width: 190px;
+}
+
 .reveal {
     opacity: 0;
     transform: translateY(30px);
