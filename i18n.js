@@ -1193,6 +1193,41 @@ const DEVINY_I18N = {
         applyAppLinkLang(safeLang);
     }
 
+    // Click-time safety net: even if applyAppLinkLang missed an element
+    // (dynamically injected components, race with click before init), we
+    // intercept any navigation toward app.deviny.me and inject ?lang=<current>.
+    let clickInterceptorInstalled = false;
+    function installAppLinkClickInterceptor() {
+        if (clickInterceptorInstalled) return;
+        clickInterceptorInstalled = true;
+
+        const APP_HOST = 'app.deviny.me';
+        const ensureLang = (rawUrl) => {
+            try {
+                const url = new URL(rawUrl, window.location.href);
+                if (url.host !== APP_HOST) return rawUrl;
+                url.searchParams.set('lang', currentLang());
+                return url.toString();
+            } catch {
+                return rawUrl;
+            }
+        };
+
+        document.addEventListener('click', (event) => {
+            // Walk up the DOM looking for an anchor.
+            let node = event.target;
+            while (node && node !== document) {
+                if (node.tagName === 'A' && node.href && node.href.includes(APP_HOST)) {
+                    const next = ensureLang(node.href);
+                    if (next !== node.href) node.href = next;
+                    return;
+                }
+                node = node.parentNode;
+            }
+        }, true);
+    }
+    installAppLinkClickInterceptor();
+
     /**
      * Append the current landing language as `?lang=<code>` to every link
      * pointing at the app (app.deviny.me). The app reads this param on first
@@ -1251,4 +1286,21 @@ const DEVINY_I18N = {
         t: translate,
         message: translateMessage
     };
+
+    // Eagerly patch app.deviny.me links AS SOON AS this script runs.
+    // i18n.js is included at the very end of <body>, so all CTA buttons
+    // already exist in the DOM. This guarantees that the very first click
+    // (even before DOMContentLoaded / init()) carries the right ?lang=.
+    try {
+        applyAppLinkLang(getSavedLang());
+    } catch (e) {
+        /* ignore */
+    }
+
+    // Re-patch after DOMContentLoaded too, in case anything was injected late.
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+            try { applyAppLinkLang(getSavedLang()); } catch (e) { /* ignore */ }
+        });
+    }
 })();
