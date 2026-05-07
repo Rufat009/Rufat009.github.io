@@ -1190,6 +1190,52 @@ const DEVINY_I18N = {
         applyHtmlTranslations(safeLang);
         applyTextTranslations(document.body, safeLang);
         setupSwitcher(safeLang);
+        applyAppLinkLang(safeLang);
+    }
+
+    /**
+     * Append the current landing language as `?lang=<code>` to every link
+     * pointing at the app (app.deviny.me). The app reads this param on first
+     * load and applies the same language so the user has a seamless transition.
+     *
+     * Handles both:
+     *   - <a href="https://app.deviny.me/...">
+     *   - elements with onclick="window.location.href='https://app.deviny.me'"
+     */
+    function applyAppLinkLang(lang) {
+        const APP_HOST = 'app.deviny.me';
+
+        const withLang = (rawUrl) => {
+            try {
+                // Resolve relative to current location to support protocol-relative URLs.
+                const url = new URL(rawUrl, window.location.href);
+                if (url.host !== APP_HOST) return rawUrl;
+                url.searchParams.set('lang', lang);
+                return url.toString();
+            } catch {
+                return rawUrl;
+            }
+        };
+
+        // 1. Plain anchor tags.
+        document.querySelectorAll('a[href]').forEach((a) => {
+            const href = a.getAttribute('href');
+            if (!href) return;
+            if (!href.includes(APP_HOST)) return;
+            const next = withLang(href);
+            if (next !== href) a.setAttribute('href', next);
+        });
+
+        // 2. Inline onclick="window.location.href='https://app.deviny.me...'"
+        document.querySelectorAll('[onclick*="' + APP_HOST + '"]').forEach((el) => {
+            const onclick = el.getAttribute('onclick');
+            if (!onclick) return;
+            const next = onclick.replace(
+                /(['"])(https?:\/\/app\.deviny\.me[^'"]*)\1/g,
+                (_match, quote, url) => `${quote}${withLang(url)}${quote}`
+            );
+            if (next !== onclick) el.setAttribute('onclick', next);
+        });
     }
 
     function setLanguage(lang) {
