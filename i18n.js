@@ -80,9 +80,9 @@ const DEVINY_I18N = {
                 az: 'Komandamız | Deviny-nin memarları'
             },
             description: {
-                en: 'Meet the founders and developers behind Deviny: Rufat Ahmedov, Emil Abdullaev, Tamerlan Dadashov, Timur Sikachevskiy, and the engineering team.',
-                ru: 'Познакомьтесь с основателями и разработчиками Deviny: Руфатом Ахмедовым, Эмилем Абдуллаевым, Тамерланом Дадашовым, Тимуром Сикачевским и инженерной командой.',
-                az: 'Deviny-nin arxasında duran təsisçilər və developer komanda ilə tanış olun: Rufat Əhmədov, Emil Abdullayev, Tamerlan Dadaşov, Timur Sikaçevskiy və mühəndis komandası.'
+                en: 'Meet the founders and developers behind Deviny: Rufat Ahmedov, Emil Abdullaev, Timur Sikachevskiy, and the engineering team.',
+                ru: 'Познакомьтесь с основателями и разработчиками Deviny: Руфатом Ахмедовым, Эмилем Абдуллаевым, Тимуром Сикачевским и инженерной командой.',
+                az: 'Deviny-nin arxasında duran təsisçilər və developer komanda ilə tanış olun: Rufat Əhmədov, Emil Abdullayev, Timur Sikaçevskiy və mühəndis komandası.'
             },
             ogTitle: {
                 en: 'Meet the Deviny Team',
