@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-20",
+  "reviewer": "/root/distributed_story_documenter",
+  "scope": "Independent read-only source finish review of illustration curation",
+  "disposition": "recapture",
+  "materialSourceDefects": [],
+  "verified": [
+    "28 capability IDs once per locale",
+    "decorative accessible image markup and responsive intrinsic sizing",
+    "WebP dimensions/bytes/hash/alpha match sidecars",
+    "single-column natural-height program sheets below 520px",
+    "ordered numbered training steps and reduced-motion fallback"
+  ],
+  "limitation": "No current desktop/mobile captures; prior browser/render security restriction respected.",
+  "build": "passed",
+  "static": {
+    "canonical": 12,
+    "utility": 3,
+    "redirects": 6,
+    "references": 420,
+    "images": 72,
+    "errors": []
+  },
+  "behavioral": [
+    "UI motion passed",
+    "Home motion passed",
+    "Navigation passed"
+  ]
+}

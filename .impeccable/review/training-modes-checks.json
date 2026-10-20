@@ -1,0 +1,46 @@
+{
+  "changed_html": [
+    "az/index.html",
+    "index.html",
+    "ru/index.html"
+  ],
+  "unchanged_html": 27,
+  "pages": {
+    "/": {
+      "http": 200,
+      "radio_controls": 3,
+      "panels": 3,
+      "initial_mode": "partner",
+      "photograph_removed": true,
+      "hero_frames": 1,
+      "sha256": "ba5fbc343eb95833109926e2a08a0d163609aae417ede74be8b240abafbca123"
+    },
+    "/ru/": {
+      "http": 200,
+      "radio_controls": 3,
+      "panels": 3,
+      "initial_mode": "partner",
+      "photograph_removed": true,
+      "hero_frames": 1,
+      "sha256": "041391dabcf0c0e4a0fb010d5029ceed248ff7156413b3520a5ecc8fbc0605ed"
+    },
+    "/az/": {
+      "http": 200,
+      "radio_controls": 3,
+      "panels": 3,
+      "initial_mode": "partner",
+      "photograph_removed": true,
+      "hero_frames": 1,
+      "sha256": "7094a3a7e9fe685887ca8baebb4b384525de1f836c955430d20b7e7e95828ac1"
+    }
+  },
+  "source_checks": {
+    "canonical_pages": 15,
+    "local_references": 405,
+    "image_elements": 69,
+    "errors": 0
+  },
+  "motion": "Existing controller unchanged; behavioral checks pass.",
+  "browser_review": "Unavailable under prior browser security denial. No renderer workaround; native radio operation and layout not runtime-verified.",
+  "claim_review": "Joint workout text says mark the session as shared; canonical server confirmation is not described as requiring both people to confirm. Backend GymBroService.cs693-730,944 inspected read-only."
+}

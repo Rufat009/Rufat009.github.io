@@ -1,4 +1,6 @@
-# robots.txt
 User-agent: *
 Allow: /
+Disallow: /docs/
+Disallow: /scripts/
+Disallow: /content/
 Sitemap: https://deviny.me/sitemap.xml

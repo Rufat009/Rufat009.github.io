@@ -1,0 +1,18 @@
+{
+  "time": "2026-10-18T13:38:20.931568+00:00",
+  "scope": "owner-approved hero feed illustration",
+  "source": "Deviny_IOS/Deviny/Deviny/Views/FeedView.swift",
+  "canonical_pages": 15,
+  "local_references": 390,
+  "image_elements": 63,
+  "layout_findings": [],
+  "local_render_verified": false,
+  "local_render_blocker": "Prior localhost browser security denial; no alternate renderer attempted",
+  "mockup_contains": "two localized demo posts; fictional first names; existing generated photographs; no engagement metrics",
+  "hashes": {
+    "scripts/build.py": "42f2484972060bbb52b9ab0f746c074a3a218c95b01d0d76683c296c595ad204",
+    "home.css": "ddd064a8d28ba4448d401640b483dd2e92987b0d83953762b8554aa933552d83",
+    "content/site.json": "c9e70eb34c6b70af54da703f98c7d20a8bc9a8417d266ab01c58c3454b11e722",
+    "ru/index.html": "58050d824cd54f2606b17e126bed6d08793d7e717093db8c33011f898868a5dc"
+  }
+}

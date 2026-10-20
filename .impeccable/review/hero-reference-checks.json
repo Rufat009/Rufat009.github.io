@@ -1,0 +1,20 @@
+{
+  "reference": "https://deviny.me/",
+  "browser_reference_inspected": true,
+  "local_render_verified": false,
+  "local_render_blocker": "Earlier localhost browser-security denial; no alternate renderer attempted",
+  "canonical_pages": 15,
+  "local_references": 378,
+  "images": 51,
+  "layout_before": [],
+  "layout_after": [],
+  "files": {
+    "scripts/build.py": "d65d0ec07a7a5f1b684594bbe6ab8d40a438bf4a8a3d503e4ed85408a746de42",
+    "content/site.json": "0c1cbb830dad98c734dfe126dab9b837417352beed7aba4ec82c22e37b6ba39d",
+    "home.css": "14f429c7c6135775e7b6cfa143c13a931b6d22c8ee3dbebf578612241c0d74bb",
+    "home.js": "28d2a6081b8ed1674e329179495ef22bb24dcc034630197658679de3c7a79e5a",
+    "index.html": "5a9c8c036ee9b3244afa319043de73f09633e20b026073ea17b85835c3021ae2",
+    "ru/index.html": "494770718bb70b79afc8b1ff348cc181737062563ff7e4003729807f680b50a8",
+    "az/index.html": "ff7a24ece24736a9f07bd7dbbd032c26b0ecf6c9abeaa1c8ea929fe995393ffc"
+  }
+}

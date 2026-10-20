@@ -1,0 +1,56 @@
+{
+  "locales": {
+    "en": {
+      "capabilities": 24,
+      "responsivePhotos": 3,
+      "privacyIcons": 3,
+      "http": 200
+    },
+    "ru": {
+      "capabilities": 24,
+      "responsivePhotos": 3,
+      "privacyIcons": 3,
+      "http": 200
+    },
+    "az": {
+      "capabilities": 24,
+      "responsivePhotos": 3,
+      "privacyIcons": 3,
+      "http": 200
+    }
+  },
+  "heroUnchanged": true,
+  "static": {
+    "canonical": 12,
+    "utility": 3,
+    "redirects": 6,
+    "references": 438,
+    "images": 75,
+    "errors": []
+  },
+  "visualReview": "recapture; localhost rendering unavailable under earlier security restriction",
+  "behaviorSuites": [
+    "product-scenes",
+    "ui-motion",
+    "home-motion",
+    "navigation"
+  ],
+  "independentReview": {
+    "reviewer": "distributed_story_documenter",
+    "disposition": "recapture",
+    "materialSourceDefects": [],
+    "verified": [
+      "24 unique capabilities per locale",
+      "no broken anchors or duplicate IDs",
+      "6 WebP hashes and byte sizes match provenance",
+      "no-JS program content",
+      "decorative privacy SVG/theme inheritance",
+      "rejected imagery and communication absent"
+    ],
+    "unverified": [
+      "rendered crops",
+      "mobile composition",
+      "visual acceptance"
+    ]
+  }
+}

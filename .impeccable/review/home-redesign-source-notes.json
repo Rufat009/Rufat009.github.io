@@ -1,0 +1,30 @@
+{
+  "scope": "source only; current rendered screenshots unavailable due prior localhost browser policy denial",
+  "detector": {
+    "run_count": 1,
+    "findings": 58,
+    "advisory_design_system": 49,
+    "warning_instances": 9,
+    "after_run_changes": [
+      "Replaced warm device shadow with neutral #00000026 offset shadow",
+      "Pause brief photo entrance when hidden or outside viewport"
+    ],
+    "unresolved": [
+      "Rendered contrast/overflow/200% text require current browser captures",
+      "Static print/media context and summary padding warnings require rendered interpretation"
+    ],
+    "repeated": false
+  },
+  "provenance_scan": {
+    "rasters": 4,
+    "missing": 0
+  },
+  "preview_http": {
+    "/": 200,
+    "/ru/": 200,
+    "/az/": 200,
+    "/home.css": 200,
+    "/home.js": 200,
+    "/assets/product/community-hero.webp": 200
+  }
+}

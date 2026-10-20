@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://deviny.me/</loc>
-    <lastmod>2026-02-22</lastmod>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://deviny.me/about.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://deviny.me/team.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://deviny.me/contacts.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <priority>0.7</priority>
-  </url>
+<url><loc>https://deviny.me/</loc></url>
+<url><loc>https://deviny.me/specialists.html</loc></url>
+<url><loc>https://deviny.me/about.html</loc></url>
+<url><loc>https://deviny.me/contacts.html</loc></url>
+<url><loc>https://deviny.me/ru/</loc></url>
+<url><loc>https://deviny.me/ru/specialists.html</loc></url>
+<url><loc>https://deviny.me/ru/about.html</loc></url>
+<url><loc>https://deviny.me/ru/contacts.html</loc></url>
+<url><loc>https://deviny.me/az/</loc></url>
+<url><loc>https://deviny.me/az/specialists.html</loc></url>
+<url><loc>https://deviny.me/az/about.html</loc></url>
+<url><loc>https://deviny.me/az/contacts.html</loc></url>
 </urlset>

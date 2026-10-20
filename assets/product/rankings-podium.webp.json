@@ -1,0 +1,20 @@
+{
+  "prompt": "Use case: stylized-concept. Asset type: transparent editorial 3D illustration for the rankings section of Deviny, a fitness community website. Primary request: a beautifully proportioned three-level winners' podium, with the center platform highest and two lower side platforms. One small sculptural gold trophy rests on the center platform, not a giant trophy. Understated modern physical still life, a designed ceramic object rather than a game reward or app icon. Palette strictly warm off-white #f7f7f2, graphite green #252d26, muted warm gold #e8c77f. Center platform warm off-white, side platforms graphite and pale sage, small gold accent in trophy. Matte ceramic and fine satin surfaces, believable subtle material texture, softly rounded architectural edges, broad soft studio light, gentle contact shadow under the objects. Near-frontal three-quarter view, slightly above eye level of podium, complete whole object visible with generous breathing room on every side. Landscape composition around 4:3. Isolated on a genuinely transparent background; no backdrop plane or colored rectangle. No words, numbers, medals with lettering, logos, confetti, sparkles, glow, people, leaderboard UI, charts, extra props or decorative floating objects. This is an illustrative podium, not evidence of an actual Deviny ranking or award.",
+  "createdAt": "2026-10-20T13:28:32.329Z",
+  "bytes": 74188,
+  "sha256": "62b1ceb6194f1d0e3b65e52a34f6d502975bb25e8cad3034583d4c6c2a5c9e00",
+  "dimensions": [
+    1080,
+    810
+  ],
+  "mode": "RGBA",
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "origin": "Built-in image_gen",
+  "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-85598873-2310-4fd1-902c-7736524c2c33.png",
+  "promptStorage": "sidecar",
+  "date": "2026-10-20",
+  "processing": "Proportional resize and WebP export; original alpha preserved. No artwork repainting or background removal."
+}

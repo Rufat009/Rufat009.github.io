@@ -1,0 +1,31 @@
+[
+  {
+    "url": "https://deviny.me/",
+    "final_url": "https://deviny.me/",
+    "status": 200,
+    "bytes": 41761,
+    "sha256": "bec648a6161aae9f321eaa15ec75746a05876ceb44585dfc91fe6580c5c01e61"
+  },
+  {
+    "url": "https://app.deviny.me/",
+    "final_url": "https://app.deviny.me/",
+    "status": 200,
+    "bytes": 20217,
+    "sha256": "9fd31005615d6da413168a1bba73e7a16c1b499c787f40fcef590f0f7c299e12"
+  },
+  {
+    "url": "https://api.deviny.me/legal/privacy.html",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://api.deviny.me/legal/terms.html",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://deviny.me/contacts.html",
+    "final_url": "https://deviny.me/contacts.html",
+    "status": 200,
+    "bytes": 5734,
+    "sha256": "65fbd57625f858f6a22685103b48fa6205462db0c7547635790b84ae3724500d"
+  }
+]

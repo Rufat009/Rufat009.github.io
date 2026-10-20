@@ -1,0 +1,62 @@
+[
+  {
+    "path": "",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 25
+  },
+  {
+    "path": "ru/",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 25
+  },
+  {
+    "path": "az/",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 25
+  },
+  {
+    "path": "",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 25
+  },
+  {
+    "path": "ru/",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 25
+  },
+  {
+    "path": "az/",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 25
+  }
+]

@@ -1,0 +1,1853 @@
+{
+  "en": {
+    "langName": "English",
+    "locale": "en_US",
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "navApp": "People",
+    "navSupport": "Programs",
+    "navPros": "For specialists",
+    "navAbout": "About",
+    "navTeam": "Team",
+    "navContact": "Contact",
+    "language": "Language",
+    "cta": "Download the app",
+    "learn": "Explore Deviny",
+    "contact": "Contact the team",
+    "back": "Back to home",
+    "privacy": "Privacy policy (EN)",
+    "terms": "Terms of use (EN)",
+    "footer": "People, programs and training in one app.",
+    "rights": "© 2026 Deviny",
+    "heroTitle": "Train.<br><em>Find your people.</em>",
+    "heroText": "Deviny connects finding a training partner or specialist with getting to your next workout. Train together or on your own, with your own plan or a program.",
+    "loopTitle": "From a plan<br><em>to a workout.</em>",
+    "loopText": "With a partner, with a program or on your own — explore a workout in Deviny.",
+    "programTitle": "Choose a program.<br>Meet its creator.",
+    "programText": "A ready-made training or nutrition plan when you want help choosing an approach.",
+    "photoAlt": "An athlete performing an exercise with a dumbbell.",
+    "supportTitle": "Who do you want<br>to train with?",
+    "supportRows": [
+      [
+        "A training partner",
+        "GymBro is partner discovery in Deviny. Set your preferences and meet people who enjoy a similar way of training."
+      ],
+      [
+        "A trainer or nutritionist",
+        "Explore experience, professional documents and programs. Get to know a specialist’s approach before choosing."
+      ],
+      [
+        "Your community",
+        "Find clubs around your interests, discuss workouts and follow people in the feed. Share what you choose."
+      ]
+    ],
+    "proTitle": "Are you a trainer or nutritionist?",
+    "proText": "Create programs and work with clients in Deviny.",
+    "proLink": "Tools for specialists",
+    "trustTitle": "What matters to your clients",
+    "trustRows": [
+      [
+        "A clear profile",
+        "Clients can view your professional documents and their review status."
+      ],
+      [
+        "Content before purchase",
+        "The author, description and program content help people understand their choice."
+      ],
+      [
+        "A team you can reach",
+        "Contact the team with questions about using Deviny."
+      ]
+    ],
+    "faqTitle": "Before you begin",
+    "faqs": [
+      [
+        "How do I start using Deviny?",
+        "Deviny will be available in App Store and Google Play soon. After release, download the app and create an account."
+      ],
+      [
+        "Do I have to choose a program or a specialist?",
+        "No. You can train independently, find partners and talk with other people. A specialist’s program is an option when you want a ready-made plan."
+      ],
+      [
+        "Does a program include personal support?",
+        "This depends on the offer you choose. Check what is included and whether personal support or consultations are part of it."
+      ],
+      [
+        "Who can see my results?",
+        "You choose which results to share and who can see them. You appear in GymBro discovery only after enabling visibility."
+      ]
+    ],
+    "finalTitle": "Join<br>Deviny.",
+    "finalText": "Find people, choose programs and train with Deviny. Coming soon to App Store and Google Play.",
+    "titles": {
+      "home": "Deviny — people, programs and training in one app",
+      "specialists": "Deviny for trainers and nutritionists",
+      "about": "About Deviny and the team",
+      "team": "The people behind Deviny",
+      "contacts": "Contact Deviny — Questions and support",
+      "notfound": "Page not found — Deviny"
+    },
+    "descriptions": {
+      "home": "Find training partners, meet trainers and nutritionists, choose programs and share results. Connect your fitness life with Deviny.",
+      "specialists": "Deviny for trainers and nutritionists: profiles, programs, clients and schedules. Explore the tools for your work.",
+      "about": "We are building Deviny as a place to find your people and turn plans into workouts. Designers and developers work on the app together.",
+      "team": "Meet the people behind Deviny and find their existing professional profiles.",
+      "contacts": "Contact Deviny with questions about the app, support or partnerships. Email contact@deviny.me or use the contact form.",
+      "notfound": "The address may have changed, or the link may contain a typo. Return to the homepage or contact the team."
+    },
+    "specialistTitle": "Your practice.<br><em>In one place.</em>",
+    "specialistText": "An app for trainers and nutritionists: create programs and organize your work with clients.",
+    "specialistCta": "Ask a question",
+    "roles": [
+      [
+        "For trainers",
+        "Create training programs, work with students and follow their workout completion."
+      ],
+      [
+        "For nutritionists",
+        "Create nutrition programs, work with your client list and plan meetings."
+      ]
+    ],
+    "proStepsTitle": "How to get started",
+    "proSteps": [
+      [
+        "Create your profile",
+        "Choose trainer or nutritionist and introduce yourself."
+      ],
+      [
+        "Add your documents",
+        "Submit your professional certificates for review."
+      ],
+      [
+        "Publish a program",
+        "Add your program’s content and terms for clients."
+      ]
+    ],
+    "proPilotTitle": "Clear terms.",
+    "proPilotText": "Explain what your offer includes: a program, personal support or consultations. Clients should know what they will get before choosing.",
+    "aboutTitle": "Fitness starts<br><em>with people.</em>",
+    "aboutText": "We are building Deviny as a place to find your people and turn plans into workouts. Designers and developers work on the app together.",
+    "aboutTeam": "Meet the team",
+    "teamTitle": "The Deviny<br><em>team.</em>",
+    "teamText": "Meet the team working on Deviny.",
+    "teamRoles": [
+      "Founder & CEO",
+      "Team Lead & Backend Developer",
+      "Product Design & Frontend Lead",
+      "Database Administrator"
+    ],
+    "profile": "LinkedIn profile",
+    "teamEnd": "Have something to build together?",
+    "teamEndText": "Contact us about collaboration or working with Deviny.",
+    "contactTitle": "Contact<br><em>Deviny.</em>",
+    "contactText": "Ask about the app, support or working together. Leave a contact so we can reply.",
+    "emailLabel": "Write directly",
+    "formTitle": "Send a message",
+    "topic": "What would you like to discuss?",
+    "topics": [
+      "Questions and support",
+      "Tools for specialists",
+      "Partnerships"
+    ],
+    "name": "Your name",
+    "namePlaceholder": "How should we address you?",
+    "reply": "Where should we reply?",
+    "details": "Your contact details",
+    "detailsPlaceholder": "Email address, @username or phone number",
+    "message": "Your message",
+    "messagePlaceholder": "Tell us what you need help with or would like to discuss.",
+    "formDisclosure": "We use the contact details you provide to reply to your message.",
+    "send": "Send message",
+    "nojs": "Email us at contact@deviny.me.",
+    "messages": {
+      "sending": "Sending…",
+      "success": "Your message has been sent. The team will reply using the contact details you provided.",
+      "failure": "We could not complete your request. Your message is still in the form. Try again or email contact@deviny.me.",
+      "network": "The connection was interrupted. Your message has been kept. Try again or email contact@deviny.me.",
+      "required": "Please complete this field.",
+      "name": "Tell us what to call you.",
+      "email": "Enter a valid email address.",
+      "details": "Enter a valid contact: an email, a Telegram username or a phone number.",
+      "message": "Please write at least 10 characters.",
+      "invalid": "Check the highlighted fields before sending.",
+      "subject": "New request from Deviny website"
+    },
+    "programPurchase": "If a program is paid, its price and what is included are shown before purchase.",
+    "supportText": "A workout partner, a specialist whose approach suits you or people with shared interests — choose whom to connect with.",
+    "homePhotoAlt": "Three adults talking between exercises in a bright gym.",
+    "homeProgramKinds": [
+      [
+        "Training",
+        "A trainer’s program with exercises and an order of sessions."
+      ],
+      [
+        "Nutrition",
+        "A nutritionist’s program explaining the approach and providing materials."
+      ]
+    ],
+    "heroPeopleLabel": "Training partners",
+    "heroPeopleTitle": "Find your people",
+    "heroProgramLabel": "Programs",
+    "heroProgramTitle": "Find your plan",
+    "heroFeed": {
+      "description": "Deviny feed illustration: posts about training together and a trainer’s session. Demonstration profiles, photos and captions.",
+      "athleteName": "Alina",
+      "athleteRole": "Athlete",
+      "athletePost": "A good workout. A better laugh. Already planning the next one.",
+      "trainerName": "Maria",
+      "trainerRole": "Trainer",
+      "trainerPost": "Today is about technique. It all starts with a movement.",
+      "today": "Today",
+      "nav": [
+        "Feed",
+        "Programs",
+        "Chats",
+        "Workouts",
+        "Profile"
+      ]
+    },
+    "trainingModeLabel": "Choose a way to train",
+    "trainingModes": [
+      {
+        "id": "solo",
+        "label": "On your own",
+        "title": "Your plan.<br>Your pace.",
+        "text": "Choose your own exercises and the order of your session.",
+        "journey": [
+          [
+            "Build a session",
+            "Choose exercises for your plan."
+          ],
+          [
+            "Train",
+            "Record exercises and sets."
+          ],
+          [
+            "Save your results",
+            "The session stays in your history."
+          ],
+          [
+            "Keep going",
+            "Review your past results."
+          ]
+        ],
+        "journeyLabel": "Your own workout"
+      },
+      {
+        "id": "partner",
+        "label": "With a partner",
+        "title": "Your people.<br>A shared workout.",
+        "text": "Arrange a session and save a record that you trained together.",
+        "journey": [
+          [
+            "Find a partner",
+            "Meet and confirm each other as partners."
+          ],
+          [
+            "Make a plan",
+            "Arrange a session in chat."
+          ],
+          [
+            "Train together",
+            "Do your shared workout."
+          ],
+          [
+            "Save a record",
+            "Mark that you trained together."
+          ]
+        ],
+        "journeyLabel": "A shared workout"
+      },
+      {
+        "id": "program",
+        "label": "With a program",
+        "title": "A plan to follow.<br>A clear next step.",
+        "text": "Pick up from the session where you left off.",
+        "journey": [
+          [
+            "Choose a program",
+            "Explore its author and content."
+          ],
+          [
+            "Open a session",
+            "Go to the session where you left off."
+          ],
+          [
+            "Do the workout",
+            "Save your results."
+          ],
+          [
+            "Keep going",
+            "Return for your next session."
+          ]
+        ],
+        "journeyLabel": "A workout from your plan"
+      }
+    ],
+    "navStart": "Download",
+    "navFaq": "Questions and answers",
+    "specialistFinalTitle": "Your programs.<br>Your clients.",
+    "specialistFinalText": "When the app launches, complete your profile and submit your documents for review. Contact the team with questions about getting started.",
+    "aboutPurposeTitle": "Why bring it together",
+    "aboutPurposeText": "Meeting a partner, choosing a program, training and talking afterwards are connected. We bring that journey into one product to help people move from intention to action.",
+    "aboutChoiceTitle": "You choose your path",
+    "aboutChoiceText": "Training independently, following a specialist’s program and joining conversations are your choices. You decide whom to connect with and which results to share.",
+    "aboutTeamTitle": "The Deviny team",
+    "aboutTeamText": "The people building the product. Get to know the team through their professional profiles.",
+    "changeTopic": "A different question",
+    "contactModes": {
+      "specialist": {
+        "heading": [
+          "Tools for",
+          "your work."
+        ],
+        "title": "Questions about specialist tools — Deviny",
+        "text": "Ask about profiles, programs and working with clients in Deviny.",
+        "formTitle": "Your question",
+        "send": "Send message",
+        "messagePlaceholder": "What would you like to know about working in Deviny?",
+        "success": "Your message has been sent. The team will reply using the contact you provided.",
+        "subject": "Question about Deviny specialist tools"
+      },
+      "support": {
+        "heading": [
+          "Get in touch",
+          "with Deviny."
+        ],
+        "title": "Contact Deviny",
+        "text": "Ask about the app, support or working together. Leave a contact so we can reply.",
+        "formTitle": "Send a message",
+        "send": "Send message",
+        "messagePlaceholder": "Tell us what you need help with or would like to discuss.",
+        "success": "Your message has been sent. The team will reply using the contact you provided.",
+        "subject": "Message from the Deviny website"
+      },
+      "collaboration": {
+        "heading": [
+          "Let’s work",
+          "together."
+        ],
+        "title": "Partnerships — Deviny",
+        "text": "Have an idea for a partnership? Tell us about it and leave a contact for a reply.",
+        "formTitle": "Your idea",
+        "send": "Send message",
+        "messagePlaceholder": "Tell us about your project and how you would like to work together.",
+        "success": "Your message has been sent. The team will reply using the contact you provided.",
+        "subject": "Deviny partnership inquiry"
+      }
+    },
+    "notFoundTitle": "This page seems<br><em>to be missing.</em>",
+    "notFoundText": "The address may have changed, or the link may contain a typo. Return to the homepage or contact the team.",
+    "homeLink": "Back to home",
+    "notFoundContact": "Contact the team",
+    "releaseNote": "Coming soon to App Store and Google Play",
+    "storeAction": "Get it on",
+    "socialTitle": "Train.\nFind your people.",
+    "socialText": "People, programs and training in one app.",
+    "specialistWorkspace": {
+      "label": "Programs, clients and your schedule in Deviny",
+      "tools": [
+        [
+          "Programs",
+          "Training and nutrition"
+        ],
+        [
+          "Clients",
+          "Work with your people"
+        ],
+        [
+          "Schedule",
+          "Plan your meetings"
+        ]
+      ]
+    },
+    "proVerificationNote": "Programs can be published after your documents are approved.",
+    "navFeatures": "Features",
+    "capabilitiesTitle": "Inside Deviny",
+    "capabilitiesNavigation": "Choose a topic",
+    "featureGroups": [
+      {
+        "id": "community",
+        "title": "Clubs and community",
+        "text": "Connect through shared interests and keep in touch between workouts.",
+        "items": [
+          {
+            "id": "clubs",
+            "title": "Your club",
+            "text": "Find a club or create your own. Invite friends and meet other members."
+          },
+          {
+            "id": "club-challenges",
+            "title": "Shared challenges",
+            "text": "Take part in club challenges and work towards a shared goal."
+          },
+          {
+            "id": "club-activity",
+            "title": "Club activity",
+            "text": "Follow members’ activity and your contribution to the club ranking."
+          },
+          {
+            "id": "discussions",
+            "title": "Discussions",
+            "text": "Start topics, ask questions and exchange experience."
+          },
+          {
+            "id": "social-feed",
+            "title": "The feed",
+            "text": "Share posts, photos and workout results. Comment, like and repost."
+          },
+          {
+            "id": "friends",
+            "title": "Friends and follows",
+            "text": "Add people you know and follow people whose experience interests you."
+          },
+          {
+            "id": "gymbro",
+            "title": "A GymBro partner",
+            "text": "Set your preferences and find someone to train with. Confirm each other as partners."
+          }
+        ]
+      },
+      {
+        "id": "communication",
+        "title": "Chats and calls",
+        "text": "Arrange a workout, share how it went or talk about something in private.",
+        "items": [
+          {
+            "id": "direct-chat",
+            "title": "Direct messages",
+            "text": "Find someone to talk to and continue in a personal conversation."
+          },
+          {
+            "id": "chat-media",
+            "title": "Photos and voice messages",
+            "text": "Show something in a photo or explain it by voice when typing is inconvenient."
+          },
+          {
+            "id": "calls",
+            "title": "Audio and video calls",
+            "text": "Talk by voice or video. Specialist meetings follow the terms of the chosen offer."
+          },
+          {
+            "id": "message-notifications",
+            "title": "Notifications and read status",
+            "text": "Notice new messages and see whether the other person has read yours."
+          }
+        ]
+      },
+      {
+        "id": "training-tools",
+        "title": "Workouts and your journey",
+        "text": "Train your way and return to what you have already done.",
+        "items": [
+          {
+            "id": "exercise-catalog",
+            "title": "Exercises and technique",
+            "text": "Find exercises with filters and explore visual movement demonstrations."
+          },
+          {
+            "id": "workout-editor",
+            "title": "Your own workout",
+            "text": "Build a session and record exercises, weight, reps and sets."
+          },
+          {
+            "id": "workout-history",
+            "title": "History and repeat workouts",
+            "text": "Open a past session or repeat it without building everything again."
+          },
+          {
+            "id": "journey",
+            "title": "My Journey",
+            "text": "See your activity and program completion in one place."
+          },
+          {
+            "id": "achievements",
+            "title": "Achievements and levels",
+            "text": "Discover new achievements and see your level grow."
+          },
+          {
+            "id": "leaderboards",
+            "title": "Rankings",
+            "text": "Compare training consistency and progress against your own past results. In clubs, see each member’s contribution."
+          }
+        ]
+      },
+      {
+        "id": "program-tools",
+        "title": "Programs and specialists",
+        "text": "Choose an approach to training or nutrition and get to know its author.",
+        "items": [
+          {
+            "id": "program-catalog",
+            "title": "Training and nutrition",
+            "text": "Choose training programs and programs from nutritionists."
+          },
+          {
+            "id": "authors-reviews",
+            "title": "Author, content and reviews",
+            "text": "Compare the content, reviews and creator’s professional documents before choosing."
+          },
+          {
+            "id": "search-filters",
+            "title": "Search and filters",
+            "text": "Find people, programs, clubs, exercises and discussions. Refine your choice in catalogs."
+          },
+          {
+            "id": "program-library",
+            "title": "Your programs",
+            "text": "Your purchased materials are collected in your library."
+          },
+          {
+            "id": "professional-tools",
+            "title": "Professional tools",
+            "text": "Create programs, work with clients, plan meetings and view sales statistics. Tools depend on your chosen role."
+          }
+        ]
+      },
+      {
+        "id": "personal",
+        "title": "Your space",
+        "text": "Choose what others see and how you prefer to use the app.",
+        "items": [
+          {
+            "id": "public-profile",
+            "title": "Profile and sharing",
+            "text": "Share your profile, posts and workouts."
+          },
+          {
+            "id": "privacy",
+            "title": "Privacy",
+            "text": "Choose who sees your results. Turn on GymBro discovery visibility separately."
+          },
+          {
+            "id": "safety",
+            "title": "Blocking and reports",
+            "text": "Block unwanted contacts and report content."
+          },
+          {
+            "id": "app-lock",
+            "title": "PIN and biometrics",
+            "text": "Use a PIN or your device’s biometrics."
+          },
+          {
+            "id": "appearance",
+            "title": "Language and appearance",
+            "text": "Three languages: English, Russian and Azerbaijani. Two appearance themes."
+          },
+          {
+            "id": "referrals",
+            "title": "Invite friends",
+            "text": "Invite friends with your personal link or code."
+          }
+        ]
+      }
+    ],
+    "landingStories": {
+      "peopleTitle": "Start with<br><em>your people.</em>",
+      "peopleText": "Meet people, exchange experience and find someone you want to keep training with.",
+      "partnerAction": "Explore training together",
+      "clubsTitle": "Your club.<br>A shared goal.<br><em>More together.</em>",
+      "clubsText": "Build your community or join a club that suits you. Activity, challenges and each member’s contribution are part of club life.",
+      "clubWord": "Club",
+      "clubLabels": [
+        "People",
+        "Shared goal",
+        "Activity"
+      ],
+      "chatTitle": "Talk your way.<br><em>Stay connected.</em>",
+      "chatText": "Arrange a session, show something in a photo or talk in private — right in Deviny.",
+      "mediaTitle": "Photos.<br>Voice messages.",
+      "callsTitle": "Audio.<br>Video.",
+      "progressTitle": "Every workout<br><em>stays with you.</em>",
+      "progressText": "History, achievements and rankings help you see what you have already done.",
+      "privacyTitle": "Your space.<br><em>Your rules.</em>",
+      "privacyWord": "You decide."
+    },
+    "productScenes": {
+      "programChoice": "Choose a program type",
+      "programRoutes": [
+        [
+          "Author and content",
+          "Workout plan",
+          "Your results"
+        ],
+        [
+          "Specialist and approach",
+          "Program materials",
+          "Your library"
+        ]
+      ],
+      "partnerYou": "You",
+      "partnerOther": "Partner",
+      "partnerTags": [
+        "City",
+        "Time",
+        "Goal"
+      ],
+      "partnerMatch": "Partner discovery by city, time and goals"
+    },
+    "lowerScenes": {
+      "themeLabel": "Explore light and dark appearance",
+      "light": "Light",
+      "dark": "Dark",
+      "privacyLabel": "You decide what to share.",
+      "faqText": "A few answers to help you get started and find your format.",
+      "faqHelp": "Still have a question?",
+      "faqAction": "Contact the team"
+    },
+    "realisticMediaAlts": {
+      "club-outdoors-photo": "Runners talking together in a park",
+      "program-strength-photo": "A dumbbell and notebook for planning workouts",
+      "program-nutrition-photo": "A bowl with grains, chicken and vegetables"
+    },
+    "specialistWorkflow": [
+      [
+        "Build your program",
+        "Trainers create workout plans; nutritionists create nutrition programs. Add content and explain what clients receive."
+      ],
+      [
+        "Open a client’s details",
+        "Find their profile and purchased programs together. Trainers can also follow workout completion."
+      ],
+      [
+        "Plan a meeting",
+        "Choose a date and time, add a participant and details. Find your meetings in the schedule."
+      ]
+    ]
+  },
+  "ru": {
+    "langName": "Русский",
+    "locale": "ru_RU",
+    "skip": "Перейти к содержимому",
+    "menu": "Меню",
+    "navApp": "Люди",
+    "navSupport": "Программы",
+    "navPros": "Специалистам",
+    "navAbout": "О Deviny",
+    "navTeam": "Команда",
+    "navContact": "Контакты",
+    "language": "Язык",
+    "cta": "Скачать приложение",
+    "learn": "Что есть в Deviny",
+    "contact": "Написать команде",
+    "back": "На главную",
+    "privacy": "Конфиденциальность (EN)",
+    "terms": "Условия использования (EN)",
+    "footer": "Люди, программы и тренировки в одном приложении.",
+    "rights": "© 2026 Deviny",
+    "heroTitle": "Тренируйтесь.<br><em>Находите своих.</em>",
+    "heroText": "Deviny — приложение, где можно найти партнёра или специалиста и перейти от знакомства к тренировкам. Занимайтесь вместе или самостоятельно, по своему плану или программе.",
+    "loopTitle": "От плана —<br><em>к тренировке.</em>",
+    "loopText": "С партнёром, по программе или самостоятельно — посмотрите, как проходит занятие в Deviny.",
+    "programTitle": "Выберите программу.<br>Познакомьтесь с автором.",
+    "programText": "Готовый план тренировок или питания — когда нужна помощь с выбором подхода.",
+    "photoAlt": "Спортсменка выполняет упражнение с гантелью.",
+    "supportTitle": "С кем вы хотите<br>тренироваться?",
+    "supportRows": [
+      [
+        "Партнёр для тренировок",
+        "GymBro — поиск партнёров в Deviny. Укажите предпочтения и познакомьтесь с теми, кому подходит похожий формат занятий."
+      ],
+      [
+        "Тренер или нутрициолог",
+        "Посмотрите опыт, профессиональные документы и программы. Познакомьтесь с подходом специалиста, прежде чем выбирать."
+      ],
+      [
+        "Своё сообщество",
+        "Находите клубы по интересам, обсуждайте занятия и следите за людьми в ленте. Делитесь тем, чем хотите."
+      ]
+    ],
+    "proTitle": "Вы тренер или нутрициолог?",
+    "proText": "Создавайте программы и работайте с клиентами в Deviny.",
+    "proLink": "Возможности для специалистов",
+    "trustTitle": "Что важно вашим клиентам",
+    "trustRows": [
+      [
+        "Понятный профиль",
+        "Клиент может посмотреть ваши профессиональные документы и их статус проверки."
+      ],
+      [
+        "Содержание до покупки",
+        "Автор, описание и состав программы помогают понять, что человек выбирает."
+      ],
+      [
+        "Связь с командой",
+        "Вопросы о работе Deviny можно задать команде."
+      ]
+    ],
+    "faqTitle": "Перед началом",
+    "faqs": [
+      [
+        "Как начать пользоваться Deviny?",
+        "Deviny скоро появится в App Store и Google Play. После выхода скачайте приложение и создайте аккаунт."
+      ],
+      [
+        "Обязательно выбирать программу или специалиста?",
+        "Нет. Можно тренироваться самостоятельно, находить партнёров и общаться. Программа специалиста — отдельный выбор, когда вам нужен готовый план."
+      ],
+      [
+        "Входит ли личная помощь специалиста в программу?",
+        "Это зависит от выбранного предложения. Посмотрите, что входит в программу и предусмотрены ли сопровождение или консультации."
+      ],
+      [
+        "Кто увидит мои результаты?",
+        "Вы выбираете, какие результаты публиковать и кому они видны. В поиске GymBro вы появляетесь только после включения видимости."
+      ]
+    ],
+    "finalTitle": "Присоединяйтесь<br>к Deviny.",
+    "finalText": "Находите людей, выбирайте программы и занимайтесь в Deviny. Скоро в App Store и Google Play.",
+    "titles": {
+      "home": "Deviny — люди, программы и тренировки в одном приложении",
+      "specialists": "Deviny для тренеров и нутрициологов",
+      "about": "О Deviny и команде",
+      "team": "Команда Deviny",
+      "contacts": "Связаться с Deviny — Вопросы и поддержка",
+      "notfound": "Страница не найдена — Deviny"
+    },
+    "descriptions": {
+      "home": "Находите партнёров для тренировок, знакомьтесь с тренерами и нутрициологами, выбирайте программы и делитесь результатами. Всё это — в Deviny.",
+      "specialists": "Deviny для тренеров и нутрициологов: профиль, программы, клиенты и расписание. Узнайте о возможностях для вашей работы.",
+      "about": "Мы развиваем Deviny как место, где можно найти своих людей и превратить планы в занятия. Над приложением вместе работают дизайнеры и разработчики.",
+      "team": "Люди, которые работают над Deviny, и ссылки на их профессиональные профили.",
+      "contacts": "Напишите Deviny по вопросам о приложении, поддержке или сотрудничестве. contact@deviny.me и форма обратной связи.",
+      "notfound": "Возможно, адрес изменился или в ссылке есть ошибка. Вернитесь на главную или напишите команде."
+    },
+    "specialistTitle": "Ваша практика.<br><em>В одном месте.</em>",
+    "specialistText": "Приложение для тренеров и нутрициологов: создавайте программы и организуйте работу с клиентами.",
+    "specialistCta": "Задать вопрос",
+    "roles": [
+      [
+        "Тренерам",
+        "Создавайте тренировочные программы, работайте с учениками и следите за выполнением занятий."
+      ],
+      [
+        "Нутрициологам",
+        "Создавайте программы питания, работайте со списком клиентов и планируйте встречи."
+      ]
+    ],
+    "proStepsTitle": "Как начать работу",
+    "proSteps": [
+      [
+        "Заполните профиль",
+        "Выберите роль тренера или нутрициолога. Расскажите о себе."
+      ],
+      [
+        "Добавьте документы",
+        "Отправьте профессиональные сертификаты на проверку."
+      ],
+      [
+        "Опубликуйте программу",
+        "Добавьте содержание программы и условия для клиентов."
+      ]
+    ],
+    "proPilotTitle": "Понятные условия.",
+    "proPilotText": "Укажите, что входит в ваше предложение: программа, личное сопровождение или консультации. Клиент должен заранее понимать, что получает.",
+    "aboutTitle": "Фитнес начинается<br><em>с людей.</em>",
+    "aboutText": "Мы развиваем Deviny как место, где можно найти своих людей и превратить планы в занятия. Над приложением вместе работают дизайнеры и разработчики.",
+    "aboutTeam": "Познакомиться с командой",
+    "teamTitle": "Команда<br><em>Deviny.</em>",
+    "teamText": "Команда, которая работает над Deviny.",
+    "teamRoles": [
+      "Основатель и CEO",
+      "Руководитель команды и backend-разработчик",
+      "Руководитель продуктового дизайна и frontend",
+      "Администратор баз данных"
+    ],
+    "profile": "Профиль в LinkedIn",
+    "teamEnd": "Есть идея для сотрудничества?",
+    "teamEndText": "Напишите нам о совместной работе или развитии Deviny.",
+    "contactTitle": "Связаться<br><em>с Deviny.</em>",
+    "contactText": "Задайте вопрос о приложении, поддержке или сотрудничестве. Оставьте контакт, чтобы мы могли ответить.",
+    "emailLabel": "Написать напрямую",
+    "formTitle": "Отправить сообщение",
+    "topic": "Что хотите обсудить?",
+    "topics": [
+      "Вопросы и поддержка",
+      "Инструменты для специалистов",
+      "Сотрудничество"
+    ],
+    "name": "Ваше имя",
+    "namePlaceholder": "Как к вам обращаться?",
+    "reply": "Где вам ответить?",
+    "details": "Контакт для ответа",
+    "detailsPlaceholder": "Email, @имя в Telegram или номер телефона",
+    "message": "Сообщение",
+    "messagePlaceholder": "Расскажите, с чем нужна помощь или что хотите обсудить.",
+    "formDisclosure": "Используем указанный контакт, чтобы ответить на ваше сообщение.",
+    "send": "Отправить сообщение",
+    "nojs": "Напишите нам на contact@deviny.me.",
+    "messages": {
+      "sending": "Отправляем…",
+      "success": "Сообщение отправлено. Команда ответит по указанному вами контакту.",
+      "failure": "Не удалось завершить отправку. Текст остался в форме. Повторите попытку или напишите на contact@deviny.me.",
+      "network": "Соединение прервалось. Сообщение осталось в форме. Повторите попытку или напишите на contact@deviny.me.",
+      "required": "Заполните это поле.",
+      "name": "Укажите, как к вам обращаться.",
+      "email": "Введите корректный email.",
+      "details": "Укажите корректный контакт: email, имя в Telegram или номер телефона.",
+      "message": "Напишите не менее 10 символов.",
+      "invalid": "Проверьте выделенные поля перед отправкой.",
+      "subject": "Новое обращение с сайта Deviny"
+    },
+    "programPurchase": "Если программа платная, её стоимость и состав предложения указаны до покупки.",
+    "supportText": "Партнёр для занятий, специалист с подходящим подходом или люди с общими интересами — выбирайте, с кем быть на связи.",
+    "homePhotoAlt": "Трое взрослых общаются между упражнениями в светлом тренажёрном зале.",
+    "homeProgramKinds": [
+      [
+        "Тренировки",
+        "Программа тренера с упражнениями и порядком занятий."
+      ],
+      [
+        "Питание",
+        "Программа нутрициолога с описанием подхода и материалами."
+      ]
+    ],
+    "heroPeopleLabel": "Партнёры",
+    "heroPeopleTitle": "Тренируйтесь вместе",
+    "heroProgramLabel": "Программы",
+    "heroProgramTitle": "Найдите свой план",
+    "heroFeed": {
+      "description": "Пример ленты Deviny: публикации о совместной тренировке и занятии с тренером. Демонстрационные профили, фотографии и тексты.",
+      "athleteName": "Алина",
+      "athleteRole": "Атлет",
+      "athletePost": "Потренировались. Посмеялись. Уже планируем следующую встречу.",
+      "trainerName": "Мария",
+      "trainerRole": "Тренер",
+      "trainerPost": "Сегодня работаем над техникой. Всё начинается с движения.",
+      "today": "Сегодня",
+      "nav": [
+        "Лента",
+        "Программы",
+        "Чаты",
+        "Тренировки",
+        "Профиль"
+      ]
+    },
+    "trainingModeLabel": "Выберите формат тренировки",
+    "trainingModes": [
+      {
+        "id": "solo",
+        "label": "Свой план",
+        "title": "Ваш план.<br>Ваш темп.",
+        "text": "Вы сами выбираете упражнения и порядок занятия.",
+        "journey": [
+          [
+            "Соберите занятие",
+            "Выберите упражнения под свой план."
+          ],
+          [
+            "Потренируйтесь",
+            "Отмечайте упражнения и подходы."
+          ],
+          [
+            "Сохраните результат",
+            "Занятие останется в истории."
+          ],
+          [
+            "Продолжайте",
+            "Сверьтесь с прошлыми результатами."
+          ]
+        ],
+        "journeyLabel": "Своя тренировка"
+      },
+      {
+        "id": "partner",
+        "label": "С партнёром",
+        "title": "Свой человек.<br>Общая тренировка.",
+        "text": "Договоритесь о занятии и сохраните отметку, что тренировались вместе.",
+        "journey": [
+          [
+            "Найдите партнёра",
+            "Познакомьтесь и подтвердите друг друга как партнёров."
+          ],
+          [
+            "Договоритесь",
+            "Обсудите занятие в чате."
+          ],
+          [
+            "Потренируйтесь вместе",
+            "Проведите совместное занятие."
+          ],
+          [
+            "Сохраните отметку",
+            "Укажите, что тренировались вместе."
+          ]
+        ],
+        "journeyLabel": "Общая тренировка"
+      },
+      {
+        "id": "program",
+        "label": "По программе",
+        "title": "Есть план.<br>Понятен следующий шаг.",
+        "text": "Продолжайте с того занятия, где остановились.",
+        "journey": [
+          [
+            "Выберите программу",
+            "Посмотрите автора и содержание."
+          ],
+          [
+            "Откройте занятие",
+            "Перейдите к занятию, на котором остановились."
+          ],
+          [
+            "Выполните тренировку",
+            "Сохраните результат."
+          ],
+          [
+            "Продолжайте",
+            "Возвращайтесь к следующему занятию."
+          ]
+        ],
+        "journeyLabel": "Тренировка по плану"
+      }
+    ],
+    "navStart": "Скачать",
+    "navFaq": "Вопросы и ответы",
+    "specialistFinalTitle": "Ваши программы.<br>Ваши клиенты.",
+    "specialistFinalText": "После выхода приложения заполните профиль и отправьте документы на проверку. Вопросы о начале работы можно задать команде.",
+    "aboutPurposeTitle": "Зачем мы это объединили",
+    "aboutPurposeText": "Знакомство с партнёром, выбор программы, тренировка и разговор после неё связаны между собой. Мы собираем этот путь в одном продукте, чтобы человеку было проще перейти от намерения к действию.",
+    "aboutChoiceTitle": "Вы выбираете свой путь",
+    "aboutChoiceText": "Самостоятельные занятия, программа специалиста и общение — ваш выбор. Вы решаете, с кем связываться и какие результаты показывать.",
+    "aboutTeamTitle": "Команда Deviny",
+    "aboutTeamText": "Люди, которые создают продукт. Познакомьтесь с командой через профессиональные профили.",
+    "changeTopic": "Другой вопрос",
+    "contactModes": {
+      "specialist": {
+        "heading": [
+          "Возможности",
+          "для вашей работы."
+        ],
+        "title": "Вопросы об инструментах специалиста — Deviny",
+        "text": "Задайте вопрос о профиле, программах и работе с клиентами в Deviny.",
+        "formTitle": "Ваш вопрос",
+        "send": "Отправить сообщение",
+        "messagePlaceholder": "Что вы хотите узнать о работе в Deviny?",
+        "success": "Сообщение отправлено. Команда ответит по указанному вами контакту.",
+        "subject": "Вопрос об инструментах специалиста Deviny"
+      },
+      "support": {
+        "heading": [
+          "Связаться",
+          "с Deviny."
+        ],
+        "title": "Связаться с Deviny",
+        "text": "Задайте вопрос о приложении, поддержке или сотрудничестве. Оставьте контакт, чтобы мы могли ответить.",
+        "formTitle": "Отправить сообщение",
+        "send": "Отправить сообщение",
+        "messagePlaceholder": "Расскажите, с чем нужна помощь или что хотите обсудить.",
+        "success": "Сообщение отправлено. Команда ответит по указанному вами контакту.",
+        "subject": "Обращение с сайта Deviny"
+      },
+      "collaboration": {
+        "heading": [
+          "Давайте работать",
+          "вместе."
+        ],
+        "title": "Сотрудничество — Deviny",
+        "text": "Есть идея для сотрудничества? Расскажите о ней и оставьте контакт для ответа.",
+        "formTitle": "Ваша идея",
+        "send": "Отправить сообщение",
+        "messagePlaceholder": "Расскажите о своём проекте и о том, что хотите предложить.",
+        "success": "Сообщение отправлено. Команда ответит по указанному вами контакту.",
+        "subject": "Сотрудничество с Deviny"
+      }
+    },
+    "notFoundTitle": "Кажется, эта страница<br><em>потерялась.</em>",
+    "notFoundText": "Возможно, адрес изменился или в ссылке есть ошибка. Вернитесь на главную или напишите команде.",
+    "homeLink": "На главную",
+    "notFoundContact": "Связаться с командой",
+    "releaseNote": "Скоро в App Store и Google Play",
+    "storeAction": "Скачать в",
+    "socialTitle": "Тренируйтесь.\nНаходите своих.",
+    "socialText": "Люди, программы и тренировки в одном приложении.",
+    "specialistWorkspace": {
+      "label": "Программы, клиенты и расписание в Deviny",
+      "tools": [
+        [
+          "Программы",
+          "Тренировки и питание"
+        ],
+        [
+          "Клиенты",
+          "Работа с людьми"
+        ],
+        [
+          "Расписание",
+          "Планирование встреч"
+        ]
+      ]
+    },
+    "proVerificationNote": "Публиковать программы можно после одобрения документов.",
+    "navFeatures": "Возможности",
+    "capabilitiesTitle": "Что есть в Deviny",
+    "capabilitiesNavigation": "Выберите тему",
+    "featureGroups": [
+      {
+        "id": "community",
+        "title": "Клубы и сообщество",
+        "text": "Собирайтесь вокруг общих интересов и поддерживайте связь между занятиями.",
+        "items": [
+          {
+            "id": "clubs",
+            "title": "Свой клуб",
+            "text": "Найдите подходящий клуб или создайте свой. Приглашайте друзей и знакомьтесь с участниками."
+          },
+          {
+            "id": "club-challenges",
+            "title": "Общие испытания",
+            "text": "Участвуйте в клубных испытаниях и двигайтесь к общей цели."
+          },
+          {
+            "id": "club-activity",
+            "title": "Жизнь клуба",
+            "text": "Следите за активностью участников и своим вкладом в клубный рейтинг."
+          },
+          {
+            "id": "discussions",
+            "title": "Обсуждения",
+            "text": "Создавайте темы, задавайте вопросы и обменивайтесь опытом."
+          },
+          {
+            "id": "social-feed",
+            "title": "Лента",
+            "text": "Публикуйте записи, фото и результаты тренировок. Отвечайте в комментариях, ставьте лайки и делайте репосты."
+          },
+          {
+            "id": "friends",
+            "title": "Друзья и подписки",
+            "text": "Добавляйте знакомых и следите за людьми, чей опыт вам интересен."
+          },
+          {
+            "id": "gymbro",
+            "title": "Партнёр GymBro",
+            "text": "Укажите предпочтения и найдите человека, с которым удобно заниматься. Подтвердите друг друга как партнёров."
+          }
+        ]
+      },
+      {
+        "id": "communication",
+        "title": "Чаты и звонки",
+        "text": "Договоритесь о тренировке, поделитесь впечатлениями или обсудите важное лично.",
+        "items": [
+          {
+            "id": "direct-chat",
+            "title": "Личные сообщения",
+            "text": "Находите собеседников и продолжайте общение в отдельном диалоге."
+          },
+          {
+            "id": "chat-media",
+            "title": "Фото и голосовые",
+            "text": "Покажите что-то на фото или объясните голосом, когда писать неудобно."
+          },
+          {
+            "id": "calls",
+            "title": "Аудио- и видеозвонки",
+            "text": "Общайтесь голосом и по видео. Встречи со специалистом — по условиям выбранного формата."
+          },
+          {
+            "id": "message-notifications",
+            "title": "Уведомления и прочтение",
+            "text": "Замечайте новые сообщения и смотрите, прочитал ли их собеседник."
+          }
+        ]
+      },
+      {
+        "id": "training-tools",
+        "title": "Тренировки и ваш путь",
+        "text": "Занимайтесь в своём формате и возвращайтесь к тому, что уже сделали.",
+        "items": [
+          {
+            "id": "exercise-catalog",
+            "title": "Упражнения и техника",
+            "text": "Находите упражнения с помощью фильтров и смотрите наглядный показ движений."
+          },
+          {
+            "id": "workout-editor",
+            "title": "Своя тренировка",
+            "text": "Собирайте занятие и записывайте упражнения, вес, повторения и подходы."
+          },
+          {
+            "id": "workout-history",
+            "title": "История и повтор занятий",
+            "text": "Откройте прошлую тренировку или повторите её, чтобы не собирать всё заново."
+          },
+          {
+            "id": "journey",
+            "title": "«Мой путь»",
+            "text": "Смотрите свою активность и выполнение программ в одном разделе."
+          },
+          {
+            "id": "achievements",
+            "title": "Достижения и уровни",
+            "text": "Замечайте новые достижения и рост своего уровня."
+          },
+          {
+            "id": "leaderboards",
+            "title": "Рейтинги",
+            "text": "Сравнивайте регулярность занятий и прогресс относительно своих прошлых результатов. В клубе следите за вкладом участников."
+          }
+        ]
+      },
+      {
+        "id": "program-tools",
+        "title": "Программы и специалисты",
+        "text": "Выбирайте подход к занятиям и питанию, понимая, кто стоит за программой.",
+        "items": [
+          {
+            "id": "program-catalog",
+            "title": "Тренировки и питание",
+            "text": "Выбирайте тренировочные программы и программы нутрициологов."
+          },
+          {
+            "id": "authors-reviews",
+            "title": "Автор, содержание и отзывы",
+            "text": "Сравните содержание, отзывы и профессиональные документы автора перед выбором."
+          },
+          {
+            "id": "search-filters",
+            "title": "Поиск и фильтры",
+            "text": "Ищите людей, программы, клубы, упражнения и обсуждения. Уточняйте выбор в каталогах."
+          },
+          {
+            "id": "program-library",
+            "title": "Ваши программы",
+            "text": "Приобретённые материалы собраны в вашей библиотеке."
+          },
+          {
+            "id": "professional-tools",
+            "title": "Инструменты специалиста",
+            "text": "Создавайте программы, работайте с клиентами, планируйте встречи и смотрите статистику продаж. Инструменты зависят от выбранной роли."
+          }
+        ]
+      },
+      {
+        "id": "personal",
+        "title": "Ваше пространство",
+        "text": "Настраивайте, что видят другие и как вам удобно пользоваться приложением.",
+        "items": [
+          {
+            "id": "public-profile",
+            "title": "Профиль и ссылки",
+            "text": "Делитесь профилем, публикациями и тренировками."
+          },
+          {
+            "id": "privacy",
+            "title": "Приватность",
+            "text": "Выбирайте, кто видит результаты. Видимость в поиске GymBro включается отдельно."
+          },
+          {
+            "id": "safety",
+            "title": "Блокировка и жалобы",
+            "text": "Блокируйте нежелательные контакты и отправляйте жалобы."
+          },
+          {
+            "id": "app-lock",
+            "title": "PIN и биометрия",
+            "text": "Используйте PIN или биометрию устройства."
+          },
+          {
+            "id": "appearance",
+            "title": "Язык и оформление",
+            "text": "Три языка: русский, английский и азербайджанский. Две темы оформления."
+          },
+          {
+            "id": "referrals",
+            "title": "Приглашения друзей",
+            "text": "Приглашайте по личной ссылке или коду."
+          }
+        ]
+      }
+    ],
+    "landingStories": {
+      "peopleTitle": "Сначала —<br><em>свои люди.</em>",
+      "peopleText": "Знакомьтесь, делитесь опытом и находите тех, с кем хочется продолжать занятия.",
+      "partnerAction": "Как тренироваться вместе",
+      "clubsTitle": "Ваш клуб.<br>Общая цель.<br><em>Больше вместе.</em>",
+      "clubsText": "Соберите своё сообщество или присоединитесь к подходящему клубу. Общая активность, испытания и вклад каждого — часть его жизни.",
+      "clubWord": "Клуб",
+      "clubLabels": [
+        "Люди",
+        "Общая цель",
+        "Активность"
+      ],
+      "chatTitle": "Общение,<br><em>как вам удобно.</em>",
+      "chatText": "Договоритесь о занятии, покажите что-то на фото или обсудите лично — прямо в Deviny.",
+      "mediaTitle": "Фото.<br>Голосовые.",
+      "callsTitle": "Аудио.<br>Видео.",
+      "progressTitle": "Каждое занятие<br><em>остаётся с вами.</em>",
+      "progressText": "История, достижения и рейтинги помогают увидеть, что уже сделано.",
+      "privacyTitle": "Ваше пространство.<br><em>Ваши правила.</em>",
+      "privacyWord": "Вы решаете."
+    },
+    "productScenes": {
+      "programChoice": "Выберите вид программы",
+      "programRoutes": [
+        [
+          "Автор и содержание",
+          "План занятий",
+          "Ваши результаты"
+        ],
+        [
+          "Специалист и подход",
+          "Материалы программы",
+          "Ваша библиотека"
+        ]
+      ],
+      "partnerYou": "Вы",
+      "partnerOther": "Партнёр",
+      "partnerTags": [
+        "Город",
+        "Время",
+        "Цель"
+      ],
+      "partnerMatch": "Поиск партнёра по городу, времени и целям"
+    },
+    "lowerScenes": {
+      "themeLabel": "Посмотрите светлое и тёмное оформление",
+      "light": "Светлая",
+      "dark": "Тёмная",
+      "privacyLabel": "Вы решаете, чем делиться.",
+      "faqText": "Коротко о том, как начать и выбрать свой формат.",
+      "faqHelp": "Остался вопрос?",
+      "faqAction": "Написать команде"
+    },
+    "realisticMediaAlts": {
+      "club-outdoors-photo": "Участники совместной пробежки общаются в парке",
+      "program-strength-photo": "Гантель и блокнот для плана тренировок",
+      "program-nutrition-photo": "Блюдо с крупой, курицей и овощами"
+    },
+    "specialistWorkflow": [
+      [
+        "Составьте программу",
+        "Тренеры составляют планы занятий, нутрициологи — программы питания. Добавьте содержание и условия для клиентов."
+      ],
+      [
+        "Откройте данные клиента",
+        "Профиль и приобретённые программы собраны вместе. Тренерам также доступно выполнение тренировок."
+      ],
+      [
+        "Запланируйте встречу",
+        "Выберите день и время, укажите участника и детали. Возвращайтесь к встречам в расписании."
+      ]
+    ]
+  },
+  "az": {
+    "langName": "Azərbaycanca",
+    "locale": "az_AZ",
+    "skip": "Məzmuna keç",
+    "menu": "Menyu",
+    "navApp": "İnsanlar",
+    "navSupport": "Proqramlar",
+    "navPros": "Mütəxəssislərə",
+    "navAbout": "Haqqımızda",
+    "navTeam": "Komanda",
+    "navContact": "Əlaqə",
+    "language": "Dil",
+    "cta": "Tətbiqi yükləyin",
+    "learn": "Deviny ilə tanış olun",
+    "contact": "Komandaya yazın",
+    "back": "Ana səhifəyə",
+    "privacy": "Məxfilik siyasəti (EN)",
+    "terms": "İstifadə şərtləri (EN)",
+    "footer": "İnsanlar, proqramlar və məşqlər bir tətbiqdə.",
+    "rights": "© 2026 Deviny",
+    "heroTitle": "Məşq edin.<br><em>Birlikdə davam edin.</em>",
+    "heroText": "Deviny-də məşq yoldaşı və ya mütəxəssis tapın, tanışlıqdan məşqə keçin. Birlikdə və ya tək, öz planınızla və ya proqram üzrə məşq edin.",
+    "loopTitle": "Plandan<br><em>məşqə.</em>",
+    "loopText": "Məşq yoldaşı ilə, proqram üzrə və ya tək — Deviny-də məşqin necə keçdiyinə baxın.",
+    "programTitle": "Proqram seçin.<br>Müəllifi ilə tanış olun.",
+    "programText": "Yanaşma seçməkdə köməyə ehtiyacınız olduqda hazır məşq və ya qidalanma planı.",
+    "photoAlt": "Qantellə hərəkət yerinə yetirən idmançı.",
+    "supportTitle": "Kiminlə məşq etmək<br>istəyirsiniz?",
+    "supportRows": [
+      [
+        "Məşq yoldaşı",
+        "GymBro — Deviny-də məşq yoldaşı axtarışıdır. Seçimlərinizi qeyd edin və oxşar məşq formasını seçən insanlarla tanış olun."
+      ],
+      [
+        "Məşqçi və ya nutrisioloq",
+        "Təcrübə, peşə sənədləri və proqramlara baxın. Seçim etməzdən əvvəl mütəxəssisin yanaşması ilə tanış olun."
+      ],
+      [
+        "Öz icmanız",
+        "Maraqlarınıza uyğun klublar tapın, məşqləri müzakirə edin və lentdə insanları izləyin. İstədiyinizi paylaşın."
+      ]
+    ],
+    "proTitle": "Məşqçi və ya nutrisioloqsunuz?",
+    "proText": "Deviny-də proqramlar yaradın və müştərilərlə işləyin.",
+    "proLink": "Mütəxəssislər üçün imkanlar",
+    "trustTitle": "Müştəriləriniz üçün vacib olanlar",
+    "trustRows": [
+      [
+        "Aydın profil",
+        "Müştəri peşəkar sənədlərinizi və onların yoxlama statusunu görə bilər."
+      ],
+      [
+        "Alışdan əvvəl məzmun",
+        "Müəllif, təsvir və proqramın məzmunu insana nə seçdiyini anlamağa kömək edir."
+      ],
+      [
+        "Komanda ilə əlaqə",
+        "Deviny-dən istifadə barədə suallarınızı komandaya ünvanlayın."
+      ]
+    ],
+    "faqTitle": "Başlamazdan əvvəl",
+    "faqs": [
+      [
+        "Deviny-dən istifadəyə necə başlaya bilərəm?",
+        "Deviny tezliklə App Store və Google Play-də yayımlanacaq. Yayımlandıqdan sonra tətbiqi yükləyin və hesab yaradın."
+      ],
+      [
+        "Proqram və ya mütəxəssis seçmək mütləqdirmi?",
+        "Xeyr. Müstəqil məşq edə, məşq yoldaşları tapa və ünsiyyət qura bilərsiniz. Hazır plana ehtiyacınız olduqda mütəxəssisin proqramını seçə bilərsiniz."
+      ],
+      [
+        "Proqrama mütəxəssisin fərdi dəstəyi daxildirmi?",
+        "Bu, seçdiyiniz təklifdən asılıdır. Proqrama nələrin daxil olduğunu, fərdi dəstək və ya konsultasiyanın nəzərdə tutulub-tutulmadığını yoxlayın."
+      ],
+      [
+        "Nəticələrimi kim görə bilər?",
+        "Hansı nəticələri və kimlərlə paylaşacağınızı özünüz seçirsiniz. GymBro axtarışında yalnız görünmə funksiyasını aktivləşdirdikdən sonra görünürsünüz."
+      ]
+    ],
+    "finalTitle": "Deviny-yə<br>qoşulun.",
+    "finalText": "İnsanlarla tanış olun, proqram seçin və Deviny ilə məşq edin. Tezliklə App Store və Google Play-də.",
+    "titles": {
+      "home": "Deviny — insanlar, proqramlar və məşqlər bir tətbiqdə",
+      "specialists": "Məşqçilər və nutrisioloqlar üçün Deviny",
+      "about": "Deviny və komanda haqqında",
+      "team": "Deviny komandası",
+      "contacts": "Deviny ilə əlaqə — Suallar və dəstək",
+      "notfound": "Səhifə tapılmadı — Deviny"
+    },
+    "descriptions": {
+      "home": "Məşq yoldaşları tapın, məşqçi və nutrisioloqlarla tanış olun, proqram seçin və nəticələrinizi paylaşın. Bütün bunlar Deviny-də.",
+      "specialists": "Məşqçilər və nutrisioloqlar üçün Deviny: profil, proqramlar, müştərilər və təqvim. İşiniz üçün imkanlarla tanış olun.",
+      "about": "Deviny-ni sizə uyğun insanları tapmaq və planları məşqə çevirmək üçün bir məkan kimi inkişaf etdiririk. Tətbiq üzərində dizaynerlər və proqramçılar birlikdə çalışırlar.",
+      "team": "Deviny üzərində işləyən insanlarla və onların peşəkar profilləri ilə tanış olun.",
+      "contacts": "Tətbiq, dəstək və ya əməkdaşlıq barədə Deviny-yə yazın. contact@deviny.me və əlaqə forması.",
+      "notfound": "Ünvan dəyişmiş və ya keçiddə səhv ola bilər. Ana səhifəyə qayıdın və ya komanda ilə əlaqə saxlayın."
+    },
+    "specialistTitle": "Peşəkar işiniz.<br><em>Bir yerdə.</em>",
+    "specialistText": "Məşqçilər və nutrisioloqlar üçün tətbiq: proqramlar yaradın və müştərilərlə işinizi təşkil edin.",
+    "specialistCta": "Sual verin",
+    "roles": [
+      [
+        "Məşqçilərə",
+        "Məşq proqramları yaradın, tələbələrlə işləyin və məşqlərin tamamlanmasını izləyin."
+      ],
+      [
+        "Nutrisioloqlara",
+        "Qidalanma proqramları yaradın, müştəri siyahısı ilə işləyin və görüşlər planlaşdırın."
+      ]
+    ],
+    "proStepsTitle": "İşə necə başlamaq olar",
+    "proSteps": [
+      [
+        "Profilinizi yaradın",
+        "Məşqçi və ya nutrisioloq rolunu seçin. Özünüzü təqdim edin."
+      ],
+      [
+        "Sənədlərinizi əlavə edin",
+        "Peşəkar sertifikatlarınızı yoxlamaya göndərin."
+      ],
+      [
+        "Proqram dərc edin",
+        "Proqramın məzmununu və müştərilər üçün şərtləri əlavə edin."
+      ]
+    ],
+    "proPilotTitle": "Aydın şərtlər.",
+    "proPilotText": "Təklifinizə nələrin daxil olduğunu göstərin: proqram, fərdi dəstək və ya konsultasiya. Müştəri nə əldə etdiyini əvvəlcədən anlamalıdır.",
+    "aboutTitle": "Fitnes insanlarla<br><em>başlayır.</em>",
+    "aboutText": "Deviny-ni sizə uyğun insanları tapmaq və planları məşqə çevirmək üçün bir məkan kimi inkişaf etdiririk. Tətbiq üzərində dizaynerlər və proqramçılar birlikdə çalışırlar.",
+    "aboutTeam": "Komanda ilə tanış olun",
+    "teamTitle": "Deviny<br><em>komandası.</em>",
+    "teamText": "Deviny üzərində çalışan komanda ilə tanış olun.",
+    "teamRoles": [
+      "Təsisçi və CEO",
+      "Komanda rəhbəri və backend proqramçısı",
+      "Məhsul dizaynı və frontend rəhbəri",
+      "Verilənlər bazası administratoru"
+    ],
+    "profile": "LinkedIn profili",
+    "teamEnd": "Əməkdaşlıq fikriniz var?",
+    "teamEndText": "Birgə iş və ya Deviny-nin inkişafı barədə bizə yazın.",
+    "contactTitle": "Deviny ilə<br><em>əlaqə.</em>",
+    "contactText": "Tətbiq, dəstək və ya əməkdaşlıq barədə sual verin. Cavab üçün əlaqə məlumatınızı qeyd edin.",
+    "emailLabel": "Birbaşa yazın",
+    "formTitle": "Mesaj göndərin",
+    "topic": "Nəyi müzakirə etmək istəyirsiniz?",
+    "topics": [
+      "Suallar və dəstək",
+      "Mütəxəssislər üçün alətlər",
+      "Əməkdaşlıq"
+    ],
+    "name": "Adınız",
+    "namePlaceholder": "Sizə necə müraciət edək?",
+    "reply": "Harada cavab verək?",
+    "details": "Əlaqə məlumatınız",
+    "detailsPlaceholder": "Email, Telegram-da @istifadəçi adı və ya telefon",
+    "message": "Mesajınız",
+    "messagePlaceholder": "Hansı köməyə ehtiyacınız olduğunu və ya nəyi müzakirə etmək istədiyinizi yazın.",
+    "formDisclosure": "Mesajınıza cavab vermək üçün qeyd etdiyiniz əlaqə məlumatından istifadə edirik.",
+    "send": "Mesajı göndər",
+    "nojs": "Bizə contact@deviny.me ünvanına yazın.",
+    "messages": {
+      "sending": "Göndərilir…",
+      "success": "Mesajınız göndərildi. Komanda qeyd etdiyiniz əlaqə vasitəsi ilə cavab verəcək.",
+      "failure": "Göndərməni tamamlamaq mümkün olmadı. Mesajınız formadadır. Yenidən cəhd edin və ya contact@deviny.me ünvanına yazın.",
+      "network": "Bağlantı kəsildi. Mesajınız saxlanılıb. Yenidən cəhd edin və ya contact@deviny.me ünvanına yazın.",
+      "required": "Bu sahəni doldurun.",
+      "name": "Sizə necə müraciət edək?",
+      "email": "Düzgün email ünvanı daxil edin.",
+      "details": "Düzgün əlaqə məlumatı daxil edin: email, Telegram adı və ya telefon nömrəsi.",
+      "message": "Ən azı 10 simvol yazın.",
+      "invalid": "Göndərməzdən əvvəl işarələnmiş sahələri yoxlayın.",
+      "subject": "Deviny saytından yeni müraciət"
+    },
+    "programPurchase": "Proqram ödənişlidirsə, qiyməti və təklifə daxil olanlar alışdan əvvəl göstərilir.",
+    "supportText": "Məşq yoldaşı, yanaşması sizə uyğun mütəxəssis və ya ortaq maraqları olan insanlar — kiminlə ünsiyyət quracağınızı seçin.",
+    "homePhotoAlt": "Üç yetkin insan işıqlı idman zalında məşqlər arasında söhbət edir.",
+    "homeProgramKinds": [
+      [
+        "Məşqlər",
+        "Hərəkətlər və məşq ardıcıllığı olan məşqçi proqramı."
+      ],
+      [
+        "Qidalanma",
+        "Nutrisioloqun yanaşmasını izah edən və materiallar təqdim edən proqram."
+      ]
+    ],
+    "heroPeopleLabel": "Məşq yoldaşları",
+    "heroPeopleTitle": "Birlikdə məşq edin",
+    "heroProgramLabel": "Proqramlar",
+    "heroProgramTitle": "Planınızı tapın",
+    "heroFeed": {
+      "description": "Deviny lentinin nümunəsi: birlikdə məşq və məşqçi ilə məşğələ haqqında paylaşımlar. Nümayiş profilləri, fotoları və mətnləri.",
+      "athleteName": "Alina",
+      "athleteRole": "İdmançı",
+      "athletePost": "Məşq etdik. Güldük. Növbəti görüşü artıq planlaşdırırıq.",
+      "trainerName": "Mariya",
+      "trainerRole": "Məşqçi",
+      "trainerPost": "Bu gün texnika üzərində işləyirik. Hər şey hərəkətlə başlayır.",
+      "today": "Bu gün",
+      "nav": [
+        "Lent",
+        "Proqramlar",
+        "Çatlar",
+        "Məşqlər",
+        "Profil"
+      ]
+    },
+    "trainingModeLabel": "Məşq formasını seçin",
+    "trainingModes": [
+      {
+        "id": "solo",
+        "label": "Tək",
+        "title": "Öz planınız.<br>Öz tempiniz.",
+        "text": "Hərəkətləri və məşqin ardıcıllığını özünüz seçin.",
+        "journey": [
+          [
+            "Məşq qurun",
+            "Planınız üçün hərəkətlər seçin."
+          ],
+          [
+            "Məşq edin",
+            "Hərəkətləri və setləri qeyd edin."
+          ],
+          [
+            "Nəticəni saxlayın",
+            "Məşq tarixçənizdə qalır."
+          ],
+          [
+            "Davam edin",
+            "Keçmiş nəticələrə baxın."
+          ]
+        ],
+        "journeyLabel": "Fərdi məşq"
+      },
+      {
+        "id": "partner",
+        "label": "Məşq yoldaşı ilə",
+        "title": "Sizə uyğun insan.<br>Birgə məşq.",
+        "text": "Məşq barədə razılaşın və birlikdə məşq etdiyinizi qeyd edin.",
+        "journey": [
+          [
+            "Məşq yoldaşı tapın",
+            "Tanış olun və bir-birinizi məşq yoldaşı kimi təsdiqləyin."
+          ],
+          [
+            "Razılaşın",
+            "Çatda məşqi planlaşdırın."
+          ],
+          [
+            "Birlikdə məşq edin",
+            "Birgə məşqinizi keçirin."
+          ],
+          [
+            "Qeydi saxlayın",
+            "Birlikdə məşq etdiyinizi qeyd edin."
+          ]
+        ],
+        "journeyLabel": "Birgə məşq"
+      },
+      {
+        "id": "program",
+        "label": "Proqram üzrə",
+        "title": "Plan var.<br>Növbəti addım aydındır.",
+        "text": "Qaldığınız məşqdən davam edin.",
+        "journey": [
+          [
+            "Proqram seçin",
+            "Müəllif və məzmunla tanış olun."
+          ],
+          [
+            "Məşqi açın",
+            "Qaldığınız məşqə keçin."
+          ],
+          [
+            "Məşqi yerinə yetirin",
+            "Nəticəni saxlayın."
+          ],
+          [
+            "Davam edin",
+            "Növbəti məşq üçün qayıdın."
+          ]
+        ],
+        "journeyLabel": "Plan üzrə məşq"
+      }
+    ],
+    "navStart": "Yükləyin",
+    "navFaq": "Suallar və cavablar",
+    "specialistFinalTitle": "Proqramlarınız.<br>Müştəriləriniz.",
+    "specialistFinalText": "Tətbiq yayımlandıqda profilinizi doldurun və sənədlərinizi yoxlamaya göndərin. İşə başlamaq barədə suallarınızı komandaya ünvanlayın.",
+    "aboutPurposeTitle": "Niyə bunları birləşdiririk",
+    "aboutPurposeText": "Məşq yoldaşı ilə tanışlıq, proqram seçimi, məşq və ondan sonrakı ünsiyyət bir-biri ilə bağlıdır. İnsanların niyyətdən fəaliyyətə keçməsini asanlaşdırmaq üçün bu yolu bir məhsulda birləşdiririk.",
+    "aboutChoiceTitle": "Yolunuzu özünüz seçirsiniz",
+    "aboutChoiceText": "Tək məşq etmək, mütəxəssisin proqramını izləmək və ünsiyyətə qoşulmaq sizin seçiminizdir. Kiminlə əlaqə quracağınıza və hansı nəticələri paylaşacağınıza özünüz qərar verirsiniz.",
+    "aboutTeamTitle": "Deviny komandası",
+    "aboutTeamText": "Məhsulu yaradan insanlar. Peşəkar profilləri vasitəsilə komanda ilə tanış olun.",
+    "changeTopic": "Başqa sual",
+    "contactModes": {
+      "specialist": {
+        "heading": [
+          "İşiniz üçün",
+          "imkanlar."
+        ],
+        "title": "Mütəxəssis alətləri barədə suallar — Deviny",
+        "text": "Deviny-də profil, proqramlar və müştərilərlə iş barədə sual verin.",
+        "formTitle": "Sualınız",
+        "send": "Mesaj göndər",
+        "messagePlaceholder": "Deviny-də iş barədə nəyi bilmək istəyirsiniz?",
+        "success": "Mesaj göndərildi. Komanda göstərdiyiniz əlaqə vasitəsilə cavab verəcək.",
+        "subject": "Deviny mütəxəssis alətləri barədə sual"
+      },
+      "support": {
+        "heading": [
+          "Deviny ilə",
+          "əlaqə saxlayın."
+        ],
+        "title": "Deviny ilə əlaqə",
+        "text": "Tətbiq, dəstək və ya əməkdaşlıq barədə sual verin. Cavab üçün əlaqə məlumatınızı qeyd edin.",
+        "formTitle": "Mesaj göndərin",
+        "send": "Mesaj göndər",
+        "messagePlaceholder": "Hansı köməyə ehtiyacınız olduğunu və ya nəyi müzakirə etmək istədiyinizi yazın.",
+        "success": "Mesaj göndərildi. Komanda göstərdiyiniz əlaqə vasitəsilə cavab verəcək.",
+        "subject": "Deviny saytından müraciət"
+      },
+      "collaboration": {
+        "heading": [
+          "Gəlin birlikdə",
+          "işləyək."
+        ],
+        "title": "Əməkdaşlıq — Deviny",
+        "text": "Əməkdaşlıq ideyanız var? Bu barədə yazın və cavab üçün əlaqə məlumatınızı qeyd edin.",
+        "formTitle": "İdeyanız",
+        "send": "Mesaj göndər",
+        "messagePlaceholder": "Layihəniz və əməkdaşlıq təklifiniz barədə danışın.",
+        "success": "Mesaj göndərildi. Komanda göstərdiyiniz əlaqə vasitəsilə cavab verəcək.",
+        "subject": "Deviny əməkdaşlıq təklifi"
+      }
+    },
+    "notFoundTitle": "Deyəsən, bu səhifə<br><em>tapılmır.</em>",
+    "notFoundText": "Ünvan dəyişmiş və ya keçiddə səhv ola bilər. Ana səhifəyə qayıdın və ya komanda ilə əlaqə saxlayın.",
+    "homeLink": "Ana səhifəyə",
+    "notFoundContact": "Komanda ilə əlaqə",
+    "releaseNote": "Tezliklə App Store və Google Play-də",
+    "storeAction": "Yükləyin",
+    "socialTitle": "Məşq edin.\nBirlikdə davam edin.",
+    "socialText": "İnsanlar, proqramlar və məşqlər bir tətbiqdə.",
+    "specialistWorkspace": {
+      "label": "Deviny-də proqramlar, müştərilər və təqvim",
+      "tools": [
+        [
+          "Proqramlar",
+          "Məşq və qidalanma"
+        ],
+        [
+          "Müştərilər",
+          "İnsanlarla iş"
+        ],
+        [
+          "Təqvim",
+          "Görüşləri planlaşdırın"
+        ]
+      ]
+    },
+    "proVerificationNote": "Sənədlər təsdiqləndikdən sonra proqram dərc edə bilərsiniz.",
+    "navFeatures": "İmkanlar",
+    "capabilitiesTitle": "Deviny-də nələr var",
+    "capabilitiesNavigation": "Mövzu seçin",
+    "featureGroups": [
+      {
+        "id": "community",
+        "title": "Klublar və icma",
+        "text": "Ortaq maraqlar ətrafında birləşin və məşqlər arasında əlaqəni qoruyun.",
+        "items": [
+          {
+            "id": "clubs",
+            "title": "Öz klubunuz",
+            "text": "Uyğun klub tapın və ya öz klubunuzu yaradın. Dostlarınızı dəvət edin və üzvlərlə tanış olun."
+          },
+          {
+            "id": "club-challenges",
+            "title": "Birgə sınaqlar",
+            "text": "Klub sınaqlarında iştirak edin və ortaq məqsədə doğru irəliləyin."
+          },
+          {
+            "id": "club-activity",
+            "title": "Klub fəaliyyəti",
+            "text": "Üzvlərin fəaliyyətini və klub reytinqinə töhfənizi izləyin."
+          },
+          {
+            "id": "discussions",
+            "title": "Müzakirələr",
+            "text": "Mövzular yaradın, suallar verin və təcrübə mübadiləsi aparın."
+          },
+          {
+            "id": "social-feed",
+            "title": "Lent",
+            "text": "Yazı, foto və məşq nəticələri paylaşın. Şərh yazın, bəyənin və yenidən paylaşın."
+          },
+          {
+            "id": "friends",
+            "title": "Dostlar və izləmə",
+            "text": "Tanışlarınızı əlavə edin və təcrübəsi sizi maraqlandıran insanları izləyin."
+          },
+          {
+            "id": "gymbro",
+            "title": "GymBro məşq yoldaşı",
+            "text": "Seçimlərinizi qeyd edin və birlikdə məşq edəcəyiniz insanı tapın. Bir-birinizi məşq yoldaşı kimi təsdiqləyin."
+          }
+        ]
+      },
+      {
+        "id": "communication",
+        "title": "Çatlar və zənglər",
+        "text": "Məşq barədə razılaşın, təəssüratları bölüşün və ya şəxsi söhbət edin.",
+        "items": [
+          {
+            "id": "direct-chat",
+            "title": "Şəxsi mesajlar",
+            "text": "Həmsöhbət tapın və şəxsi dialoqda ünsiyyəti davam etdirin."
+          },
+          {
+            "id": "chat-media",
+            "title": "Foto və səsli mesajlar",
+            "text": "Yazmaq rahat olmadıqda foto göstərin və ya səsli mesaj göndərin."
+          },
+          {
+            "id": "calls",
+            "title": "Səsli və video zənglər",
+            "text": "Səs və ya video ilə danışın. Mütəxəssislə görüşlər seçilmiş təklifin şərtlərinə uyğundur."
+          },
+          {
+            "id": "message-notifications",
+            "title": "Bildirişlər və oxunma statusu",
+            "text": "Yeni mesajları görün və həmsöhbətinizin mesajınızı oxuyub-oxumadığını bilin."
+          }
+        ]
+      },
+      {
+        "id": "training-tools",
+        "title": "Məşqlər və yolunuz",
+        "text": "Öz formatınızda məşq edin və etdiklərinizə yenidən baxın.",
+        "items": [
+          {
+            "id": "exercise-catalog",
+            "title": "Hərəkətlər və texnika",
+            "text": "Filtrlərlə hərəkətlər tapın və hərəkətlərin əyani göstərilməsinə baxın."
+          },
+          {
+            "id": "workout-editor",
+            "title": "Öz məşqiniz",
+            "text": "Məşq qurun, hərəkətləri, çəkini, təkrarları və setləri qeyd edin."
+          },
+          {
+            "id": "workout-history",
+            "title": "Tarixçə və təkrar məşq",
+            "text": "Keçmiş məşqi açın və ya yenidən qurmadan təkrarlayın."
+          },
+          {
+            "id": "journey",
+            "title": "Mənim yolum",
+            "text": "Fəaliyyətinizə və proqramların tamamlanmasına bir yerdə baxın."
+          },
+          {
+            "id": "achievements",
+            "title": "Nailiyyətlər və səviyyələr",
+            "text": "Yeni nailiyyətlərinizi və səviyyənizin yüksəlməsini görün."
+          },
+          {
+            "id": "leaderboards",
+            "title": "Reytinqlər",
+            "text": "Məşq müntəzəmliyini və öz əvvəlki nəticələrinizə görə irəliləyişi müqayisə edin. Klubda üzvlərin töhfəsini izləyin."
+          }
+        ]
+      },
+      {
+        "id": "program-tools",
+        "title": "Proqramlar və mütəxəssislər",
+        "text": "Məşq və qidalanma yanaşmasını seçin, proqramın müəllifini tanıyın.",
+        "items": [
+          {
+            "id": "program-catalog",
+            "title": "Məşq və qidalanma",
+            "text": "Məşq proqramlarını və nutrisioloqların proqramlarını seçin."
+          },
+          {
+            "id": "authors-reviews",
+            "title": "Müəllif, məzmun və rəylər",
+            "text": "Seçimdən əvvəl məzmunu, rəyləri və müəllifin peşəkar sənədlərini müqayisə edin."
+          },
+          {
+            "id": "search-filters",
+            "title": "Axtarış və filtrlər",
+            "text": "İnsanlar, proqramlar, klublar, hərəkətlər və müzakirələr tapın. Kataloqlarda seçiminizi dəqiqləşdirin."
+          },
+          {
+            "id": "program-library",
+            "title": "Proqramlarınız",
+            "text": "Alınmış materiallar kitabxananızda toplanır."
+          },
+          {
+            "id": "professional-tools",
+            "title": "Peşəkar alətlər",
+            "text": "Proqramlar yaradın, müştərilərlə işləyin, görüşlər planlaşdırın və satış statistikasına baxın. Alətlər seçdiyiniz roldan asılıdır."
+          }
+        ]
+      },
+      {
+        "id": "personal",
+        "title": "Şəxsi məkanınız",
+        "text": "Başqalarının nə gördüyünü və tətbiqdən necə istifadə etdiyinizi seçin.",
+        "items": [
+          {
+            "id": "public-profile",
+            "title": "Profil və paylaşım",
+            "text": "Profilinizi, paylaşımlarınızı və məşqlərinizi bölüşün."
+          },
+          {
+            "id": "privacy",
+            "title": "Məxfilik",
+            "text": "Nəticələrinizi kimin gördüyünü seçin. GymBro axtarışında görünməni ayrıca aktivləşdirin."
+          },
+          {
+            "id": "safety",
+            "title": "Bloklama və şikayətlər",
+            "text": "İstənməyən əlaqələri bloklayın və şikayət göndərin."
+          },
+          {
+            "id": "app-lock",
+            "title": "PIN və biometrika",
+            "text": "PIN və ya cihazın biometrikasından istifadə edin."
+          },
+          {
+            "id": "appearance",
+            "title": "Dil və görünüş",
+            "text": "Üç dil: Azərbaycan, rus və ingilis. İki görünüş mövzusu."
+          },
+          {
+            "id": "referrals",
+            "title": "Dostları dəvət edin",
+            "text": "Şəxsi link və ya kodla dostlarınızı dəvət edin."
+          }
+        ]
+      }
+    ],
+    "landingStories": {
+      "peopleTitle": "Əvvəlcə —<br><em>sizə uyğun insanlar.</em>",
+      "peopleText": "Tanış olun, təcrübə bölüşün və birlikdə məşqə davam etmək istədiyiniz insanları tapın.",
+      "partnerAction": "Birgə məşqlə tanış olun",
+      "clubsTitle": "Öz klubunuz.<br>Ortaq məqsəd.<br><em>Birlikdə daha çox.</em>",
+      "clubsText": "İcmanızı yaradın və ya sizə uyğun kluba qoşulun. Fəaliyyət, sınaqlar və hər üzvün töhfəsi klub həyatının bir hissəsidir.",
+      "clubWord": "Klub",
+      "clubLabels": [
+        "İnsanlar",
+        "Ortaq məqsəd",
+        "Fəaliyyət"
+      ],
+      "chatTitle": "Sizə rahat olan<br><em>şəkildə danışın.</em>",
+      "chatText": "Məşq barədə razılaşın, foto göstərin və ya şəxsi söhbət edin — birbaşa Deviny-də.",
+      "mediaTitle": "Foto.<br>Səsli mesajlar.",
+      "callsTitle": "Səsli.<br>Video.",
+      "progressTitle": "Hər məşq<br><em>sizinlə qalır.</em>",
+      "progressText": "Tarixçə, nailiyyətlər və reytinqlər artıq etdiklərinizi görməyə kömək edir.",
+      "privacyTitle": "Öz məkanınız.<br><em>Öz qaydalarınız.</em>",
+      "privacyWord": "Siz seçirsiniz."
+    },
+    "productScenes": {
+      "programChoice": "Proqram növünü seçin",
+      "programRoutes": [
+        [
+          "Müəllif və məzmun",
+          "Məşq planı",
+          "Nəticələriniz"
+        ],
+        [
+          "Mütəxəssis və yanaşma",
+          "Proqram materialları",
+          "Kitabxananız"
+        ]
+      ],
+      "partnerYou": "Siz",
+      "partnerOther": "Tərəfdaş",
+      "partnerTags": [
+        "Şəhər",
+        "Vaxt",
+        "Məqsəd"
+      ],
+      "partnerMatch": "Şəhər, vaxt və məqsədlərə görə tərəfdaş axtarışı"
+    },
+    "lowerScenes": {
+      "themeLabel": "Açıq və tünd görünüşə baxın",
+      "light": "Açıq",
+      "dark": "Tünd",
+      "privacyLabel": "Nəyi paylaşacağınıza siz qərar verirsiniz.",
+      "faqText": "Başlamaq və öz formatınızı seçmək üçün qısa cavablar.",
+      "faqHelp": "Sualınız qaldı?",
+      "faqAction": "Komandaya yazın"
+    },
+    "realisticMediaAlts": {
+      "club-outdoors-photo": "Parkda söhbət edən qaçış iştirakçıları",
+      "program-strength-photo": "Məşq planı üçün qantel və dəftər",
+      "program-nutrition-photo": "Taxıl, toyuq və tərəvəzli yemək"
+    },
+    "specialistWorkflow": [
+      [
+        "Proqramınızı hazırlayın",
+        "Məşqçilər məşq planları, nutrisioloqlar qidalanma proqramları yaradır. Məzmunu və müştərilər üçün şərtləri əlavə edin."
+      ],
+      [
+        "Müştəri məlumatlarını açın",
+        "Profil və alınmış proqramlar bir yerdədir. Məşqçilər məşqlərin tamamlanmasını da izləyə bilərlər."
+      ],
+      [
+        "Görüş planlaşdırın",
+        "Günü və vaxtı seçin, iştirakçını və təfərrüatları əlavə edin. Görüşlərinizə təqvimdə qayıdın."
+      ]
+    ]
+  }
+}

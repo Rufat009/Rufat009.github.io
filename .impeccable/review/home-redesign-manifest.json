@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-18",
+  "head": "bb5122fdc0e473d8568713b769f645baf14c3280",
+  "revision_kind": "uncommitted working-tree files; hash manifest identifies current implementation",
+  "files": {
+    "scripts/build.py": {
+      "sha256": "7280bb7bf19f469794d184a87bab4b45d3c00a5d63e84392e1ddef20a83b5209",
+      "bytes": 15709
+    },
+    "content/site.json": {
+      "sha256": "cdc8f25557ba2c2ae9c153f21e501b7c8881eb9d1991a670aab507f187ba6797",
+      "bytes": 39889
+    },
+    "content/distribution.json": {
+      "sha256": "9aa4579681e130ca8f99539d1b2562f30ccc3d62bf8448e8e0a15a9923fb6587",
+      "bytes": 28
+    },
+    "global.css": {
+      "sha256": "791b2d8b2c9cafaa6cb06de69670273d5b3a403feb0b12739603038e13e27c9e",
+      "bytes": 24531
+    },
+    "home.css": {
+      "sha256": "547b0f849c8621bd60a9c8da94ef2f2eae94b873b8e11f9d46d70042916ab9c7",
+      "bytes": 10288
+    },
+    "home.js": {
+      "sha256": "97dcff1dd5fa0ab293f7e3dca90222f431453f9e959e50ce33e647c8eec1806d",
+      "bytes": 2706
+    },
+    "script.js": {
+      "sha256": "70e19c36052e1eb739e4bb7e4c67e9f9d32353f1548020e412cd5da7fe1346e0",
+      "bytes": 1497
+    },
+    "index.html": {
+      "sha256": "34c1f1871b514a422ac86bb8fe94f778f09b17204ee66e2f492600ccc4400cf8",
+      "bytes": 11571
+    },
+    "ru/index.html": {
+      "sha256": "1977d08d3d1b8e6997b766e8b99b393fa9d0e91f7e9b50fae3f9019a68804867",
+      "bytes": 14594
+    },
+    "az/index.html": {
+      "sha256": "3e2b011bdc4ef7e434147c32edc4d7bcbc4929f3bdcbddb7a85cb670da5d4a31",
+      "bytes": 12421
+    },
+    "assets/product/community-hero.webp": {
+      "sha256": "4cb4c0559328053b971246df84aa4a77abc9c7f6a502bfd01ff2f3d96ccb2ece",
+      "bytes": 160230
+    }
+  }
+}

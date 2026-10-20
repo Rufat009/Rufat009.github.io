@@ -1,0 +1,36 @@
+{
+  "canonical_preview": {
+    "/": 200,
+    "/specialists.html": 200,
+    "/about.html": 200,
+    "/contacts.html": 200,
+    "/ru/": 200,
+    "/ru/specialists.html": 200,
+    "/ru/about.html": 200,
+    "/ru/contacts.html": 200,
+    "/az/": 200,
+    "/az/specialists.html": 200,
+    "/az/about.html": 200,
+    "/az/contacts.html": 200
+  },
+  "custom_404": {
+    "/": {
+      "status": 404,
+      "language": "en",
+      "custom_page": true
+    },
+    "/ru/": {
+      "status": 404,
+      "language": "ru",
+      "custom_page": true
+    },
+    "/az/": {
+      "status": 404,
+      "language": "az",
+      "custom_page": true
+    }
+  },
+  "legacy_team_paths": true,
+  "assets_current": true,
+  "visual_review": "Not performed; prior browser security denial remains."
+}

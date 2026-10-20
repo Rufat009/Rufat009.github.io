@@ -1,0 +1,45 @@
+{
+  "scope": "Ordinary homepage extension; source documentation only",
+  "filesChanged": [
+    "PRODUCT.md",
+    "DESIGN.md",
+    ".impeccable/design.json",
+    ".impeccable/surfaces/scripts-build-py.md",
+    "README.md",
+    "docs/qa-report.md"
+  ],
+  "sourceRead": [
+    "scripts/build.py",
+    "home.css"
+  ],
+  "globalTokens": "DESIGN.md frontmatter and design.json extensions preserved byte-for-byte in value",
+  "reviewDisposition": "recapture",
+  "renderedAcceptance": false,
+  "reason": "Prior browser security denial; no current screenshots and no rendering workaround used",
+  "sourceChecksFromBuildHandoff": {
+    "canonicalPages": 12,
+    "utilityPages": 3,
+    "redirects": 6,
+    "localReferences": 414,
+    "imageEntries": 66,
+    "featureIdsPerHomepage": 28,
+    "locales": [
+      "en",
+      "ru",
+      "az"
+    ],
+    "featureOccurrence": "exactly once",
+    "storePair": true,
+    "passingBehaviorSuites": [
+      "ui-motion",
+      "home-motion",
+      "navigation"
+    ]
+  },
+  "limits": [
+    "No source/generated HTML/assets modified by documentation handoff",
+    "No build, render or publish run",
+    "Historical records retained; five-topic-index description explicitly superseded",
+    "No unrelated global drift repaired"
+  ]
+}

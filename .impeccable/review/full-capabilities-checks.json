@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-20",
+  "scope": "Complete product highlights on homepage",
+  "visibleFeatureGroups": 5,
+  "visibleFeatureEntries": 28,
+  "locales": [
+    "en",
+    "ru",
+    "az"
+  ],
+  "evidence": "docs/evidence/landing-feature-coverage-20261020.json",
+  "checks": {
+    "static": "pass: 12 canonical, 3 utility, 6 legacy redirects, 426 local references, 66 images",
+    "httpSource": "pass: 28 entries, 5 groups and existing store actions on all 3 homepages",
+    "uiMotion": "pass: existing simulated behavior suite",
+    "homeMotion": "pass: existing simulated behavior suite",
+    "navigation": "pass",
+    "detector": "Context-reviewed section-divider/print-style signals; no measured browser defect inferred",
+    "browser": "unavailable under earlier restriction"
+  },
+  "nativeChanges": false,
+  "backendChanges": false,
+  "deployment": false,
+  "liveSubmissions": false
+}

@@ -1,0 +1,24 @@
+{
+  "origin": "Built-in image_gen",
+  "date": "2026-10-20",
+  "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-5cdbd23b-a0b4-48af-8028-5202fc220dbc.png",
+  "prompt": "Use case: stylized-concept. Asset type: transparent editorial 3D illustration for the training-partner section of Deviny, a fitness community website. Create a coherent small human scene, not an icon: two fictional adult friends in a relaxed gym moment, one woman seated on a low simple off-white exercise bench tightening her training shoe, her male training partner standing next to her holding one rolled mat and talking to her naturally. Both look engaged, friendly and ordinary, no bodybuilding. Complete bodies, hands, feet and bench visible with credible anatomy and clear separation. Tasteful contemporary ceramic-sculpture realism, simplified calm facial details and soft fabric texture, matte satin materials. Palette warm off-white #f7f7f2, graphite green #252d26, pale sage, one muted warm gold #e8c77f garment. Shared activity and encouragement, not a personal-training service or testimonial. Front three-quarter view, landscape 4:3 composition with generous breathing room, compact grouping and soft grounded contact shadows. Soft broad studio light. Genuinely transparent background; no floor plane, room, backdrop rectangle, lettering, logos, UI, labels, metrics, badges, floating props, confetti, glow or decorative outline. All people are fictional illustrative figures, not actual Deviny members.",
+  "promptStorage": "sidecar",
+  "dimensions": [
+    560,
+    420
+  ],
+  "originalDimensions": [
+    1448,
+    1086
+  ],
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "mode": "RGBA",
+  "bytes": 37602,
+  "sha256": "52e70a1148afc7cc47d599cf31137c9d809f827627b0f4e95cb9b6a45f5a4ca9",
+  "processing": "Proportional resize and WebP export; original transparency preserved. No repainting, content edits or background removal.",
+  "usage": "Conceptual editorial illustration; fictional people, no real-user or product-screenshot claim."
+}

@@ -1,0 +1,96 @@
+{
+  "pages": [
+    {
+      "page": "index.html",
+      "internal_ui_copy": [],
+      "animation_control": false,
+      "source_captions": false
+    },
+    {
+      "page": "specialists.html",
+      "internal_ui_copy": [],
+      "animation_control": false,
+      "source_captions": false
+    },
+    {
+      "page": "about.html",
+      "internal_ui_copy": [],
+      "animation_control": false,
+      "source_captions": false
+    },
+    {
+      "page": "team.html",
+      "internal_ui_copy": [],
+      "animation_control": false,
+      "source_captions": false
+    },
+    {
+      "page": "contacts.html",
+      "internal_ui_copy": [],
+      "animation_control": false,
+      "source_captions": false
+    },
+    {
+      "page": "ru/index.html",
+      "internal_ui_copy": [],
+      "animation_control": false,
+      "source_captions": false
+    },
+    {
+      "page": "ru/specialists.html",
+      "internal_ui_copy": [],
+      "animation_control": false,
+      "source_captions": false
+    },
+    {
+      "page": "ru/about.html",
+      "internal_ui_copy": [],
+      "animation_control": false,
+      "source_captions": false
+    },
+    {
+      "page": "ru/team.html",
+      "internal_ui_copy": [],
+      "animation_control": false,
+      "source_captions": false
+    },
+    {
+      "page": "ru/contacts.html",
+      "internal_ui_copy": [],
+      "animation_control": false,
+      "source_captions": false
+    },
+    {
+      "page": "az/index.html",
+      "internal_ui_copy": [],
+      "animation_control": false,
+      "source_captions": false
+    },
+    {
+      "page": "az/specialists.html",
+      "internal_ui_copy": [],
+      "animation_control": false,
+      "source_captions": false
+    },
+    {
+      "page": "az/about.html",
+      "internal_ui_copy": [],
+      "animation_control": false,
+      "source_captions": false
+    },
+    {
+      "page": "az/team.html",
+      "internal_ui_copy": [],
+      "animation_control": false,
+      "source_captions": false
+    },
+    {
+      "page": "az/contacts.html",
+      "internal_ui_copy": [],
+      "animation_control": false,
+      "source_captions": false
+    }
+  ],
+  "automatic_motion": "One 4.2-second entrance; no infinite CSS animation. Pointer and scroll interaction remain.",
+  "verification": "Source and generated HTML checks; no current browser capture."
+}

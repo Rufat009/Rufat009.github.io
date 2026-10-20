@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local native-app diagnostics do not belong in the public website repository.
+/docs/evidence/native-*
+/docs/evidence/source-state-before.json
+/docs/evidence/source-state-after.json

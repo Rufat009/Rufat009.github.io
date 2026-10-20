@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-18",
+  "scope": "source and copy review; no current browser render",
+  "original_findings": {
+    "concrete_primary_value": "resolved",
+    "honest_primary_action": "resolved",
+    "audiences_separated": "resolved",
+    "package_complexity": "resolved",
+    "jargon_and_repetition": "resolved",
+    "scenario_demonstration": "partial — real exercise selection only; current sets and history screens absent"
+  },
+  "followup_findings": {
+    "support_inclusion_depends_on_offer": "resolved in RU/EN/AZ",
+    "unlimited_access_promise_removed": "resolved in RU/EN/AZ — no duration promise remains"
+  },
+  "install_funnel_complete": false,
+  "install_url": null,
+  "browser_verification": "pending — localhost tool policy denial",
+  "source_detector": {
+    "findings": 36,
+    "repeated": false,
+    "bounded_fixes_after_run": [
+      "language text increased to 12px",
+      "explicit light print surfaces"
+    ],
+    "remaining_status": "not cleared; current rendered verification required"
+  },
+  "strategic_status": "superseded: owner rejected the tracker-first category; original clarity review did not validate positioning",
+  "superseded_by": "docs/positioning-correction-20261018.md"
+}

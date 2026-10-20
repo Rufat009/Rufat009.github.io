@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-20",
+  "reviewer": "/root/distributed_story_documenter",
+  "scope": "Expanded editorial story: four new scenes and scene-specific compositions",
+  "disposition": "recapture",
+  "materialSourceDefects": [],
+  "verified": [
+    "All28 capability IDs once per locale",
+    "Copy and approved hero template unchanged",
+    "Eight new WebP exports match sidecar dimensions/bytes/SHA256/alpha",
+    "Exact prompt/source provenance",
+    "Decorative responsive image markup with lazy loading and intrinsic size",
+    "Final CSS overrides remove earlier tall/rotated cards and provide mobile stacking"
+  ],
+  "renderedVisualAcceptance": false,
+  "limitation": "No current page captures; prior browser/render restriction respected.",
+  "build": "pass",
+  "static": {
+    "canonical": 12,
+    "utility": 3,
+    "redirects": 6,
+    "references": 432,
+    "images": 84,
+    "errors": []
+  },
+  "behavioral": [
+    "UI motion passed",
+    "Home motion passed",
+    "Navigation passed"
+  ]
+}

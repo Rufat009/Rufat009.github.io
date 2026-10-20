@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-20",
+  "scope": "Professional getting-started section",
+  "locales": [
+    "en",
+    "ru",
+    "az"
+  ],
+  "steps": [
+    "profile",
+    "documents and review",
+    "program publication"
+  ],
+  "checks": {
+    "static": "pass: 411 local references, zero errors",
+    "httpSource": "pass: three locales, three stages, approval prerequisite, store links retained",
+    "detector": "existing print/palette signals only",
+    "rendered": "unavailable under prior restriction"
+  },
+  "runtimeChanges": false,
+  "deployment": false
+}

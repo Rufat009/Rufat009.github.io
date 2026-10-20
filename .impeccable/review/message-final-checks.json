@@ -1,0 +1,52 @@
+{
+  "source_only": true,
+  "http": [
+    {
+      "language": "en",
+      "status": 200,
+      "primary_actions": 3,
+      "mode": "access"
+    },
+    {
+      "language": "ru",
+      "status": 200,
+      "primary_actions": 3,
+      "mode": "access"
+    },
+    {
+      "language": "az",
+      "status": 200,
+      "primary_actions": 3,
+      "mode": "access"
+    }
+  ],
+  "cta_modes": [
+    {
+      "mode": "access",
+      "languages": [
+        "en",
+        "ru",
+        "az"
+      ],
+      "fixture_persisted": false
+    },
+    {
+      "mode": "appstore",
+      "languages": [
+        "en",
+        "ru",
+        "az"
+      ],
+      "fixture_persisted": false
+    },
+    {
+      "mode": "testflight",
+      "languages": [
+        "en",
+        "ru",
+        "az"
+      ],
+      "fixture_persisted": false
+    }
+  ]
+}

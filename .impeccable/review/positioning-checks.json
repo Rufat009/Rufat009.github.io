@@ -1,0 +1,48 @@
+{
+  "scope": "source/HTTP only; no browser render or native run",
+  "positioning": "people, specialists, programs and training; owner-confirmed correction",
+  "languages": [
+    {
+      "language": "en",
+      "canonical_pages_checked": 5,
+      "people_before_programs_before_training": true,
+      "obsolete_category_absent": true,
+      "http_status": 200,
+      "current_mode": "access"
+    },
+    {
+      "language": "ru",
+      "canonical_pages_checked": 5,
+      "people_before_programs_before_training": true,
+      "obsolete_category_absent": true,
+      "http_status": 200,
+      "current_mode": "access"
+    },
+    {
+      "language": "az",
+      "canonical_pages_checked": 5,
+      "people_before_programs_before_training": true,
+      "obsolete_category_absent": true,
+      "http_status": 200,
+      "current_mode": "access"
+    }
+  ],
+  "cta_modes": [
+    {
+      "mode": "access",
+      "languages_checked": 3,
+      "fixture_written_to_public_files": false
+    },
+    {
+      "mode": "appstore",
+      "languages_checked": 3,
+      "fixture_written_to_public_files": false
+    },
+    {
+      "mode": "testflight",
+      "languages_checked": 3,
+      "fixture_written_to_public_files": false
+    }
+  ],
+  "install_url": null
+}

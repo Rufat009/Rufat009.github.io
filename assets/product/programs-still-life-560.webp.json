@@ -1,0 +1,24 @@
+{
+  "origin": "Built-in image_gen",
+  "date": "2026-10-20",
+  "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-652c5cc7-7d90-4960-b6e3-c641b3561b76.png",
+  "prompt": "Use case: stylized-concept. Asset type: transparent editorial 3D still-life illustration for Deviny's training and nutrition programs section. Create one art-directed physical still life that unites planning, movement and food. An open substantial off-white notebook angled diagonally with completely blank softly curved pages, a graphite elastic resistance band loosely folded beside it, and one shallow pale-sage ceramic bowl with recognizable simple broccoli, tomato and grain ingredients, a muted warm-gold bookmark ribbon connecting the notebook visually. Three primary objects only, composed as one sculptural arrangement with sensible real-world proportions. Premium matte ceramic and fine natural paper materials, subtle texture, softly rounded edges, believable broad studio lighting and restrained soft contact shadows. Palette warm off-white #f7f7f2, graphite green #252d26, quiet sage, small warm gold #e8c77f, natural subdued food colors. View from slightly above at three-quarter angle, whole objects visible, elegant landscape 4:3 composition, generous breathing room. Genuinely transparent background, no tabletop plane or solid rectangle. No text, letters, numbers, calendars, fake schedules, progress charts, UI, phone, logos, medical or outcome claims, sparkles, badges, confetti or extra floating decoration. A conceptual illustration of two kinds of programs, not a product screenshot.",
+  "promptStorage": "sidecar",
+  "dimensions": [
+    560,
+    420
+  ],
+  "originalDimensions": [
+    1448,
+    1086
+  ],
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "mode": "RGBA",
+  "bytes": 36858,
+  "sha256": "f3633caad17f87d6e3eb3a460a2227f1a50109c1b0d730da30c6c722d46740da",
+  "processing": "Proportional resize and WebP export; original transparency preserved. No repainting, content edits or background removal.",
+  "usage": "Conceptual editorial illustration; fictional people, no real-user or product-screenshot claim."
+}

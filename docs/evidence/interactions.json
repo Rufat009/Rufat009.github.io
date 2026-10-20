@@ -1,0 +1,68 @@
+[
+  {
+    "case": "mobile menu opens",
+    "expanded": "true",
+    "visible": true
+  },
+  {
+    "case": "escape restores focus",
+    "expanded": "false",
+    "focused": "menu-toggle"
+  },
+  {
+    "case": "athlete secondary action",
+    "url": "http://127.0.0.1:4173/ru/#how-works"
+  },
+  {
+    "case": "language preserves anchor",
+    "lang": "az",
+    "url": "http://127.0.0.1:4173/az/#how-works"
+  },
+  {
+    "case": "FAQ keyboard",
+    "open": ""
+  },
+  {
+    "case": "specialist route",
+    "url": "http://127.0.0.1:4173/az/specialists.html"
+  },
+  {
+    "case": "specialist CTA",
+    "topic": "specialist",
+    "url": "http://127.0.0.1:4173/az/contacts.html?topic=specialist"
+  },
+  {
+    "case": "draft and selected topic survive language change",
+    "message": "This draft should survive a language change.",
+    "name": "QA language draft",
+    "topic": "support",
+    "url": "http://127.0.0.1:4173/ru/contacts.html?topic=specialist"
+  },
+  {
+    "case": "first keyboard focus is skip link",
+    "focused": "skip-link",
+    "outline": "2.72727px"
+  },
+  {
+    "case": "page scripts removed",
+    "h1": "Тренируйтесь.\nСледите за\nпрогрессом.",
+    "jsClass": false,
+    "navVisible": "flex",
+    "overflow": false,
+    "scripts": 0
+  },
+  {
+    "case": "native FAQ without page scripts",
+    "open": ""
+  },
+  {
+    "case": "legacy language and anchor",
+    "url": "http://127.0.0.1:4173/ru/#options"
+  },
+  {
+    "case": "legacy extensionless route",
+    "canonical": "https://deviny.me/about.html",
+    "h1": "Training is a process.\nGive it a home.",
+    "url": "http://127.0.0.1:4173/about/"
+  }
+]

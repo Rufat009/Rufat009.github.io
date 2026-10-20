@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-20",
+  "httpAndSource": {
+    "en": {
+      "home": {
+        "status": 200,
+        "sourceWordsIncludingInactivePanels": 898
+      },
+      "specialists": {
+        "status": 200,
+        "sourceWordsIncludingInactivePanels": 277
+      },
+      "about": {
+        "status": 200,
+        "sourceWordsIncludingInactivePanels": 147
+      },
+      "contacts": {
+        "status": 200,
+        "sourceWordsIncludingInactivePanels": 81
+      }
+    },
+    "ru": {
+      "home": {
+        "status": 200,
+        "sourceWordsIncludingInactivePanels": 761
+      },
+      "specialists": {
+        "status": 200,
+        "sourceWordsIncludingInactivePanels": 233
+      },
+      "about": {
+        "status": 200,
+        "sourceWordsIncludingInactivePanels": 141
+      },
+      "contacts": {
+        "status": 200,
+        "sourceWordsIncludingInactivePanels": 65
+      }
+    },
+    "az": {
+      "home": {
+        "status": 200,
+        "sourceWordsIncludingInactivePanels": 755
+      },
+      "specialists": {
+        "status": 200,
+        "sourceWordsIncludingInactivePanels": 224
+      },
+      "about": {
+        "status": 200,
+        "sourceWordsIncludingInactivePanels": 135
+      },
+      "contacts": {
+        "status": 200,
+        "sourceWordsIncludingInactivePanels": 69
+      }
+    }
+  },
+  "heroTemplateUnchanged": true,
+  "featureCoverage": 24,
+  "static": {
+    "canonical": 12,
+    "utility": 3,
+    "redirects": 6,
+    "references": 438,
+    "images": 75,
+    "errors": []
+  },
+  "independentReview": {
+    "agent": "distributed_story_documenter",
+    "findings": [],
+    "disposition": "recapture"
+  },
+  "visualAcceptance": "Pending: earlier browser security restriction; no rendering workaround used",
+  "behaviorSuites": {
+    "product-scenes": "passed",
+    "ui-motion": "passed",
+    "home-motion": "passed",
+    "navigation": "passed",
+    "contact-flow": "passed; no requests sent"
+  },
+  "releaseDependencies": [
+    "Real store listings when launched",
+    "Public legal document availability/approval: latest automated check returned Cloudflare1010",
+    "Rendered mobile/desktop acceptance",
+    "Analytics destination remains unconfigured"
+  ],
+  "deployment": false,
+  "issuesResolved": [
+    "A1 duplicate program/training/progress explanations",
+    "A2 personal space hierarchy",
+    "A3 plain-language copy across3locales",
+    "A4 concrete professional workflow",
+    "A5 Download label and specialist destination",
+    "A6 shared footer focus",
+    "A7 obsolete CSS and current documentation summary"
+  ],
+  "detector": "One pre-existing bounded form-feedback layout-transition warning; no measured jank."
+}

@@ -1,0 +1,24 @@
+{
+  "origin": "Built-in image_gen",
+  "date": "2026-10-20",
+  "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-301a1110-3f7b-446c-a07a-3f695aedbbcb.png",
+  "prompt": "Use case: stylized-concept. Asset type: transparent editorial 3D human scene for the communication section of Deviny, a fitness community website on a dark graphite surface. One fictional adult woman with dark hair wearing an off-white sweatshirt, pale sage relaxed trousers and muted gold over-ear headphones. She sits naturally sideways on a low small off-white rectangular bench, recording a voice message into a graphite smartphone held gently in one hand close to her mouth, a relaxed friendly expression, other hand resting naturally on her knee. Phone back visible to viewer, screen turned entirely toward her, no UI. A quiet recognizable everyday moment of staying in touch around training. Complete figure and bench visible, plausible hands and anatomy. Sophisticated sculptural ceramic realism, matte textured fabric, tasteful simplified facial details, not a plastic toy or separate icon. Palette warm off-white #f7f7f2, graphite green #252d26, pale sage, restrained muted warm gold #e8c77f. Broad soft studio light with clear silhouette designed to read on dark graphite, subtle contact shadow. Three-quarter near-frontal view, compact landscape 4:3 composition with generous margin. Genuinely transparent background, no backdrop/floor plane, no words, speech bubbles, waveform graphics, logos, labels, app screenshot, proof of real users, sparkles, glow, rings or extra props.",
+  "promptStorage": "sidecar",
+  "dimensions": [
+    1080,
+    810
+  ],
+  "originalDimensions": [
+    1448,
+    1086
+  ],
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "mode": "RGBA",
+  "bytes": 70586,
+  "sha256": "7c2b3537460818d1badc10e8fe7f43846e3ec567cacc4304f5a93618a9f8894e",
+  "processing": "Proportional resize and WebP export; original transparency preserved. No repainting, content edits or background removal.",
+  "usage": "Conceptual editorial illustration; fictional people, no real-user or product-screenshot claim."
+}

@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-20T09:02:06.476082+00:00",
+  "method": "public GET, no credentials or protection bypass",
+  "results": [
+    {
+      "url": "https://api.deviny.me/legal/privacy.html",
+      "http_status": 403,
+      "result": "automated_request_blocked",
+      "reason": "Cloudflare 1010: browser integrity protection; origin access not established"
+    },
+    {
+      "url": "https://api.deviny.me/legal/terms.html",
+      "http_status": 403,
+      "result": "automated_request_blocked",
+      "reason": "Cloudflare 1010: browser integrity protection; origin access not established"
+    }
+  ],
+  "scope": "Response availability only; no legal approval or live form submission."
+}

@@ -1,0 +1,13 @@
+{
+  "removedUnusedCssBytes": {
+    "global.css": 5032,
+    "home.css": 773
+  },
+  "removedFamilies": [
+    "hero-cover",
+    "workflow-screen",
+    "screen-frame",
+    "home-need"
+  ],
+  "preserved": "Active templates, scripts, historical assets and unrelated user changes"
+}

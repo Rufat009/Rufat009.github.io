@@ -1,0 +1,40 @@
+[
+  {
+    "case": "pointer parallax",
+    "state": "on",
+    "vars": "--photo-x: 6.50px; --photo-y: 3.76px; --phone-x: -5.63px; --phone-y: -3.14px; --phone-tilt: -2.17deg; --word-x: 3.03px; --word-y: 0.00px; --label-x: -2.17px; --label-y: 0.00px;"
+  },
+  {
+    "case": "offscreen automatic suspension",
+    "playState": "paused",
+    "pressed": "true",
+    "state": "off",
+    "vars": "--photo-x: -1.10px; --photo-y: -5.29px; --phone-x: 0.95px; --phone-y: 2.12px; --phone-tilt: 0.37deg; --word-x: -0.51px; --word-y: -3.25px; --label-x: 0.37px; --label-y: -1.20px;"
+  },
+  {
+    "case": "keyboard pause confirmed",
+    "motion": "off",
+    "playState": "paused",
+    "pressed": "false",
+    "vars": "--photo-x: -1.10px; --photo-y: -5.29px; --phone-x: 0.95px; --phone-y: 2.12px; --phone-tilt: 0.37deg; --word-x: -0.51px; --word-y: -3.25px; --label-x: 0.37px; --label-y: -1.20px;"
+  },
+  {
+    "case": "resume confirmed",
+    "motion": "on",
+    "playState": "running"
+  },
+  {
+    "case": "reduced motion startup emulation",
+    "animation": "none",
+    "hiddenControl": true,
+    "motionClass": false,
+    "sceneStyle": null,
+    "state": "off"
+  },
+  {
+    "case": "page scroll and offscreen suspension",
+    "scrollY": 3754.54541015625,
+    "state": "off",
+    "vars": "--photo-x: 0.00px; --photo-y: -6.50px; --phone-x: 0.00px; --phone-y: 3.12px; --phone-tilt: 0.00deg; --word-x: 0.00px; --word-y: -3.25px; --label-x: 0.00px; --label-y: -1.20px;"
+  }
+]

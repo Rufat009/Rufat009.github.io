@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-20",
+  "scope": "Replace access funnel with owner-authorized App Store and Google Play placeholders",
+  "distribution": {
+    "appStoreUrl": "https://apps.apple.com/",
+    "googlePlayUrl": "https://play.google.com/store/apps",
+    "linksArePlaceholders": true
+  },
+  "checks": {
+    "static": "pass: 12 canonical, 3 utility, 6 legacy, 408 local references, 66 images",
+    "contact": "pass: three inquiry topics in EN/RU/AZ; no live submissions",
+    "navigation": "pass",
+    "uiMotion": "pass",
+    "homeMotion": "pass",
+    "rendered": "unavailable under prior browser restriction"
+  },
+  "deployment": "not performed"
+}

@@ -1,0 +1,18 @@
+{
+  "method": "Built-in image_gen",
+  "promptStorage": "sidecar",
+  "prompt": "Use case: photorealistic-natural. Asset type: close-up editorial food photograph for the nutrition-program option of a refined fitness website, landscape 3:2. A real home kitchen tabletop in soft natural side daylight. One shallow matte off-white ceramic bowl contains a believable simple lunch with cooked bulgur grains, sliced roasted chicken, fresh green leaves and cut tomatoes arranged naturally rather than rigid separate compartments. Beside the bowl, a linen napkin and small wooden cutting board with half an avocado and a few herb leaves; only these few objects, no styled clutter. Camera at a gentle three-quarter overhead angle, bowl prominent, realistic appetizing food textures with uneven cuts and natural moisture, soft grounded shadows, believable optical depth. Quiet pale warm stone table, charcoal linen and muted green food tones, slight natural gold in cooked grains. Real contemporary food editorial photograph, neither a diet advertisement nor a medical or nutritional prescription. Keep all important objects in the central region for a wide 2.3:1 crop. No hands, people, text, recipe, numbers, calorie labels, logos, devices, screens or watermarks. Absolutely photographic realism, not a 3D render, ceramic food, cartoon, clay, polished toy surfaces, dramatic filters or oversaturated food. No transparency, fill the full rectangle.",
+  "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-6bba6bb6-fd46-4505-a8a1-e65086676159.png",
+  "sourceDimensions": [
+    1900,
+    828
+  ],
+  "dimensions": [
+    560,
+    244
+  ],
+  "bytes": 38946,
+  "sha256": "989ffa5c50b6f0120b4a320ea44b6e135fcf244028efcaf92a6147a503c50854",
+  "processing": "Proportional Lanczos resize and WebP quality 83; no content edits",
+  "usage": "Fictional editorial illustration; not actual Deviny members or app UI"
+}

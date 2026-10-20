@@ -1,0 +1,15 @@
+{
+  "path": "assets/product/training-together-840.webp",
+  "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-877c6856-7fba-44cd-aacb-299174792f80.png",
+  "generator": "Built-in image_gen",
+  "createdAt": "2026-10-18T17:20:59.122327+00:00",
+  "prompt": "Use case: photorealistic-natural.\nAsset type: wide editorial photograph for a Deviny fitness-community landing-page section, replacing an app screenshot. Generate a single finished landscape photograph, approximately 1800 by 1000 pixels. No webpage, no mockup, no text.\nScene: a beautiful but believable small urban strength-training gym with pale warm concrete, tall daylight windows, a few dark metal weight racks in the softly focused background, uncluttered rubber floor.\nSubjects: two fictional ordinary athletic adults about 28–35, a woman with dark hair in a simple ponytail wearing a muted mustard-gold training T-shirt and charcoal leggings, and a man with short dark hair wearing a plain charcoal T-shirt and dark shorts. They are training together. The woman is completing a comfortable controlled goblet squat with one modest kettlebell held correctly at chest height. Her training partner stands naturally nearby, engaged and encouraging without touching her, a relaxed genuine expression. Natural achievable bodies, not professional bodybuilders. A candid shared moment, nobody posing for the camera.\nComposition: documentary 35mm environmental photography, eye-level, generous horizontal breathing room. Both people and their complete poses must fit comfortably inside the central 60% of the image, including hands and feet, so a center crop at 4:3 still works. People prominent enough to read clearly. Distinct separation between bodies, hands and equipment. Architectural window lines create quiet structure, no excessive background equipment.\nLight and color: soft warm morning daylight with credible shadows, neutral cream, charcoal and restrained gold matching a refined Deviny visual identity. Real skin texture, real fabric, softly cinematic but not heavily graded. Premium contemporary sports editorial, emotionally inviting, grounded and unforced.\nConstraints: anatomically coherent limbs and hands, realistic kettlebell handle and grip; no text, lettering, logos, watermarks, phones, UI, badges, diagrams, fake metrics, neon lighting or exaggerated muscles. Do not imply these are actual Deviny members.",
+  "dimensions": [
+    840,
+    468
+  ],
+  "bytes": 75430,
+  "sha256": "e4bb9eda930d634dddf63b8b7c23c4c4360c8e8a0014a712d7981c95e70d851b",
+  "processing": "WebP encoding; small variant resized proportionally. No compositing or content edits.",
+  "usage": "Editorial illustration of fictional adults training together. Not actual Deviny members, a testimonial, or a product screenshot."
+}

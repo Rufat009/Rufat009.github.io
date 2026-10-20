@@ -1,0 +1,31 @@
+{
+  "scope": "source only",
+  "pages": 15,
+  "homepage_checks": [
+    {
+      "language": "en",
+      "home_assets_isolated": true,
+      "old_cover_absent": true,
+      "primary_access_actions": 3,
+      "native_needs": 3,
+      "default_open_needs": 1
+    },
+    {
+      "language": "ru",
+      "home_assets_isolated": true,
+      "old_cover_absent": true,
+      "primary_access_actions": 3,
+      "native_needs": 3,
+      "default_open_needs": 1
+    },
+    {
+      "language": "az",
+      "home_assets_isolated": true,
+      "old_cover_absent": true,
+      "primary_access_actions": 3,
+      "native_needs": 3,
+      "default_open_needs": 1
+    }
+  ],
+  "rendered_verification": false
+}

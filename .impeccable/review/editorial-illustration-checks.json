@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-20",
+  "method": "HTTP source and asset checks; no browser rendering",
+  "locales": [
+    {
+      "locale": "en",
+      "status": 200,
+      "capabilities": 28,
+      "exactlyOnce": true,
+      "stores": {
+        "appStoreUrl": 2,
+        "googlePlayUrl": 2
+      }
+    },
+    {
+      "locale": "ru",
+      "status": 200,
+      "capabilities": 28,
+      "exactlyOnce": true,
+      "stores": {
+        "appStoreUrl": 2,
+        "googlePlayUrl": 2
+      }
+    },
+    {
+      "locale": "az",
+      "status": 200,
+      "capabilities": 28,
+      "exactlyOnce": true,
+      "stores": {
+        "appStoreUrl": 2,
+        "googlePlayUrl": 2
+      }
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/product/clubs-scene.webp",
+      "status": 200,
+      "bytes": 176982,
+      "dimensions": [
+        1080,
+        810
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "promptStorage": "sidecar"
+    },
+    {
+      "path": "assets/product/clubs-scene-560.webp",
+      "status": 200,
+      "bytes": 65740,
+      "dimensions": [
+        560,
+        420
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "promptStorage": "sidecar"
+    },
+    {
+      "path": "assets/product/rankings-podium.webp",
+      "status": 200,
+      "bytes": 74188,
+      "dimensions": [
+        1080,
+        810
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "promptStorage": "sidecar"
+    },
+    {
+      "path": "assets/product/rankings-podium-560.webp",
+      "status": 200,
+      "bytes": 24512,
+      "dimensions": [
+        560,
+        420
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "promptStorage": "sidecar"
+    }
+  ],
+  "renderedVisualAcceptance": false,
+  "limitation": "Earlier browser security restriction; no localhost rendering/capture workaround."
+}

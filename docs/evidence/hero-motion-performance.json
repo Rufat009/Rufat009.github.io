@@ -1,0 +1,350 @@
+[
+  {
+    "path": "",
+    "width": 390,
+    "vitals": {
+      "lcp": 208,
+      "cls": 0
+    },
+    "nav": [
+      {
+        "duration": 186,
+        "domContentLoaded": 74.5,
+        "responseStart": 2.5,
+        "transferSize": 16207
+      }
+    ],
+    "paint": [
+      {
+        "name": "first-paint",
+        "time": 252
+      },
+      {
+        "name": "first-contentful-paint",
+        "time": 252
+      }
+    ],
+    "resources": [
+      {
+        "url": "http://127.0.0.1:4173/global.css",
+        "bytes": 35788,
+        "duration": 24.599999994039536
+      },
+      {
+        "url": "http://127.0.0.1:4173/i18n.js",
+        "bytes": 2958,
+        "duration": 24.19999998807907
+      },
+      {
+        "url": "http://127.0.0.1:4173/script.js",
+        "bytes": 6465,
+        "duration": 36.900000005960464
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/training.webp",
+        "bytes": 126650,
+        "duration": 26.400000005960464
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/exercises-ru.webp",
+        "bytes": 52960,
+        "duration": 26.100000023841858
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/wordmark.webp",
+        "bytes": 13026,
+        "duration": 37.30000001192093
+      }
+    ]
+  },
+  {
+    "path": "ru/",
+    "width": 390,
+    "vitals": {
+      "lcp": 172,
+      "cls": 0
+    },
+    "nav": [
+      {
+        "duration": 162.09999999403954,
+        "domContentLoaded": 53.70000001788139,
+        "responseStart": 2.5999999940395355,
+        "transferSize": 21095
+      }
+    ],
+    "paint": [
+      {
+        "name": "first-paint",
+        "time": 172
+      },
+      {
+        "name": "first-contentful-paint",
+        "time": 172
+      }
+    ],
+    "resources": [
+      {
+        "url": "http://127.0.0.1:4173/global.css",
+        "bytes": 35788,
+        "duration": 15.599999994039536
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/exercises-ru.webp",
+        "bytes": 52960,
+        "duration": 14.400000005960464
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/training.webp",
+        "bytes": 126650,
+        "duration": 15.199999988079071
+      },
+      {
+        "url": "http://127.0.0.1:4173/i18n.js",
+        "bytes": 2958,
+        "duration": 17
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/wordmark.webp",
+        "bytes": 13026,
+        "duration": 23.799999982118607
+      },
+      {
+        "url": "http://127.0.0.1:4173/script.js",
+        "bytes": 6465,
+        "duration": 21
+      }
+    ]
+  },
+  {
+    "path": "az/",
+    "width": 390,
+    "vitals": {
+      "lcp": 192,
+      "cls": 0
+    },
+    "nav": [
+      {
+        "duration": 167.2999999821186,
+        "domContentLoaded": 59,
+        "responseStart": 3.0999999940395355,
+        "transferSize": 17246
+      }
+    ],
+    "paint": [
+      {
+        "name": "first-paint",
+        "time": 192
+      },
+      {
+        "name": "first-contentful-paint",
+        "time": 192
+      }
+    ],
+    "resources": [
+      {
+        "url": "http://127.0.0.1:4173/global.css",
+        "bytes": 35788,
+        "duration": 16.299999982118607
+      },
+      {
+        "url": "http://127.0.0.1:4173/i18n.js",
+        "bytes": 2958,
+        "duration": 17.80000001192093
+      },
+      {
+        "url": "http://127.0.0.1:4173/script.js",
+        "bytes": 6465,
+        "duration": 22.900000005960464
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/exercises-ru.webp",
+        "bytes": 52960,
+        "duration": 15.200000017881393
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/training.webp",
+        "bytes": 126650,
+        "duration": 17.200000017881393
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/wordmark.webp",
+        "bytes": 13026,
+        "duration": 26.400000005960464
+      }
+    ]
+  },
+  {
+    "path": "",
+    "width": 1440,
+    "vitals": {
+      "lcp": 108,
+      "cls": 0
+    },
+    "nav": [
+      {
+        "duration": 167.5,
+        "domContentLoaded": 58.30000001192093,
+        "responseStart": 2.5999999940395355,
+        "transferSize": 16207
+      }
+    ],
+    "paint": [
+      {
+        "name": "first-paint",
+        "time": 108
+      },
+      {
+        "name": "first-contentful-paint",
+        "time": 108
+      }
+    ],
+    "resources": [
+      {
+        "url": "http://127.0.0.1:4173/global.css",
+        "bytes": 35788,
+        "duration": 15.5
+      },
+      {
+        "url": "http://127.0.0.1:4173/i18n.js",
+        "bytes": 2958,
+        "duration": 17.600000023841858
+      },
+      {
+        "url": "http://127.0.0.1:4173/script.js",
+        "bytes": 6465,
+        "duration": 22.200000017881393
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/exercises-ru.webp",
+        "bytes": 52960,
+        "duration": 14.599999994039536
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/training.webp",
+        "bytes": 126650,
+        "duration": 16.69999998807907
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/wordmark.webp",
+        "bytes": 13026,
+        "duration": 25.69999998807907
+      }
+    ]
+  },
+  {
+    "path": "ru/",
+    "width": 1440,
+    "vitals": {
+      "lcp": 200,
+      "cls": 0
+    },
+    "nav": [
+      {
+        "duration": 161.09999999403954,
+        "domContentLoaded": 58.80000001192093,
+        "responseStart": 3,
+        "transferSize": 21095
+      }
+    ],
+    "paint": [
+      {
+        "name": "first-paint",
+        "time": 200
+      },
+      {
+        "name": "first-contentful-paint",
+        "time": 200
+      }
+    ],
+    "resources": [
+      {
+        "url": "http://127.0.0.1:4173/global.css",
+        "bytes": 35788,
+        "duration": 13.5
+      },
+      {
+        "url": "http://127.0.0.1:4173/i18n.js",
+        "bytes": 2958,
+        "duration": 14.800000011920929
+      },
+      {
+        "url": "http://127.0.0.1:4173/script.js",
+        "bytes": 6465,
+        "duration": 18.599999994039536
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/training.webp",
+        "bytes": 126650,
+        "duration": 12.800000011920929
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/exercises-ru.webp",
+        "bytes": 52960,
+        "duration": 14.200000017881393
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/wordmark.webp",
+        "bytes": 13026,
+        "duration": 23.599999994039536
+      }
+    ]
+  },
+  {
+    "path": "az/",
+    "width": 1440,
+    "vitals": {
+      "lcp": 184,
+      "cls": 0
+    },
+    "nav": [
+      {
+        "duration": 188.40000000596046,
+        "domContentLoaded": 60,
+        "responseStart": 3,
+        "transferSize": 17246
+      }
+    ],
+    "paint": [
+      {
+        "name": "first-paint",
+        "time": 184
+      },
+      {
+        "name": "first-contentful-paint",
+        "time": 184
+      }
+    ],
+    "resources": [
+      {
+        "url": "http://127.0.0.1:4173/global.css",
+        "bytes": 35788,
+        "duration": 16.200000017881393
+      },
+      {
+        "url": "http://127.0.0.1:4173/i18n.js",
+        "bytes": 2958,
+        "duration": 18.299999982118607
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/training.webp",
+        "bytes": 126650,
+        "duration": 18.299999982118607
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/wordmark.webp",
+        "bytes": 13026,
+        "duration": 29.19999998807907
+      },
+      {
+        "url": "http://127.0.0.1:4173/script.js",
+        "bytes": 6465,
+        "duration": 23.599999994039536
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/product/exercises-ru.webp",
+        "bytes": 52960,
+        "duration": 17.099999994039536
+      }
+    ]
+  }
+]

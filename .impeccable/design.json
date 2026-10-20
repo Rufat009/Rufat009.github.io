@@ -1,0 +1,701 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T17:36:50.278868+00:00",
+  "title": "Design System: Deviny",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Shared background",
+        "tonalRamp": [
+          "oklch(15% 0.00661 106.52)",
+          "oklch(26% 0.00661 106.52)",
+          "oklch(37% 0.00661 106.52)",
+          "oklch(48% 0.00661 106.52)",
+          "oklch(59% 0.00661 106.52)",
+          "oklch(70% 0.00661 106.52)",
+          "oklch(82% 0.00661 106.52)",
+          "oklch(95% 0.00661 106.52)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.00955 119.58)",
+          "oklch(26% 0.00955 119.58)",
+          "oklch(37% 0.00955 119.58)",
+          "oklch(48% 0.00955 119.58)",
+          "oklch(59% 0.00955 119.58)",
+          "oklch(70% 0.00955 119.58)",
+          "oklch(82% 0.00955 119.58)",
+          "oklch(95% 0.00955 119.58)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Shared rule",
+        "tonalRamp": [
+          "oklch(15% 0.01589 126.85)",
+          "oklch(26% 0.01589 126.85)",
+          "oklch(37% 0.01589 126.85)",
+          "oklch(48% 0.01589 126.85)",
+          "oklch(59% 0.01589 126.85)",
+          "oklch(70% 0.01589 126.85)",
+          "oklch(82% 0.01589 126.85)",
+          "oklch(95% 0.01589 126.85)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Shared graphite text",
+        "tonalRamp": [
+          "oklch(15% 0.01581 152.82)",
+          "oklch(26% 0.01581 152.82)",
+          "oklch(37% 0.01581 152.82)",
+          "oklch(48% 0.01581 152.82)",
+          "oklch(59% 0.01581 152.82)",
+          "oklch(70% 0.01581 152.82)",
+          "oklch(82% 0.01581 152.82)",
+          "oklch(95% 0.01581 152.82)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Shared supporting text",
+        "tonalRamp": [
+          "oklch(15% 0.01861 139.44)",
+          "oklch(26% 0.01861 139.44)",
+          "oklch(37% 0.01861 139.44)",
+          "oklch(48% 0.01861 139.44)",
+          "oklch(59% 0.01861 139.44)",
+          "oklch(70% 0.01861 139.44)",
+          "oklch(82% 0.01861 139.44)",
+          "oklch(95% 0.01861 139.44)"
+        ]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Shared gold accent",
+        "tonalRamp": [
+          "oklch(15% 0.08796 83.61)",
+          "oklch(26% 0.08796 83.61)",
+          "oklch(37% 0.08796 83.61)",
+          "oklch(48% 0.08796 83.61)",
+          "oklch(59% 0.08796 83.61)",
+          "oklch(70% 0.08796 83.61)",
+          "oklch(82% 0.08796 83.61)",
+          "oklch(95% 0.08796 83.61)"
+        ]
+      },
+      "gold-field": {
+        "role": "primary",
+        "displayName": "Gold field",
+        "tonalRamp": [
+          "oklch(15% 0.09809 85.75)",
+          "oklch(26% 0.09809 85.75)",
+          "oklch(37% 0.09809 85.75)",
+          "oklch(48% 0.09809 85.75)",
+          "oklch(59% 0.09809 85.75)",
+          "oklch(70% 0.09809 85.75)",
+          "oklch(82% 0.09809 85.75)",
+          "oklch(95% 0.09809 85.75)"
+        ]
+      },
+      "inverse-text": {
+        "role": "neutral",
+        "displayName": "Inverse text",
+        "tonalRamp": [
+          "oklch(15% 0.00930 113.16)",
+          "oklch(26% 0.00930 113.16)",
+          "oklch(37% 0.00930 113.16)",
+          "oklch(48% 0.00930 113.16)",
+          "oklch(59% 0.00930 113.16)",
+          "oklch(70% 0.00930 113.16)",
+          "oklch(82% 0.00930 113.16)",
+          "oklch(95% 0.00930 113.16)"
+        ]
+      },
+      "inverse-muted": {
+        "role": "neutral",
+        "displayName": "Inverse muted",
+        "tonalRamp": [
+          "oklch(15% 0.02071 128.74)",
+          "oklch(26% 0.02071 128.74)",
+          "oklch(37% 0.02071 128.74)",
+          "oklch(48% 0.02071 128.74)",
+          "oklch(59% 0.02071 128.74)",
+          "oklch(70% 0.02071 128.74)",
+          "oklch(82% 0.02071 128.74)",
+          "oklch(95% 0.02071 128.74)"
+        ]
+      },
+      "inverse-line": {
+        "role": "neutral",
+        "displayName": "Inverse line",
+        "tonalRamp": [
+          "oklch(15% 0.02641 138.99)",
+          "oklch(26% 0.02641 138.99)",
+          "oklch(37% 0.02641 138.99)",
+          "oklch(48% 0.02641 138.99)",
+          "oklch(59% 0.02641 138.99)",
+          "oklch(70% 0.02641 138.99)",
+          "oklch(82% 0.02641 138.99)",
+          "oklch(95% 0.02641 138.99)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15% 0.00000 0.00)",
+          "oklch(26% 0.00000 0.00)",
+          "oklch(37% 0.00000 0.00)",
+          "oklch(48% 0.00000 0.00)",
+          "oklch(59% 0.00000 0.00)",
+          "oklch(70% 0.00000 0.00)",
+          "oklch(82% 0.00000 0.00)",
+          "oklch(95% 0.00000 0.00)"
+        ]
+      },
+      "button-hover": {
+        "role": "neutral",
+        "displayName": "Button hover",
+        "tonalRamp": [
+          "oklch(15% 0.03123 139.80)",
+          "oklch(26% 0.03123 139.80)",
+          "oklch(37% 0.03123 139.80)",
+          "oklch(48% 0.03123 139.80)",
+          "oklch(59% 0.03123 139.80)",
+          "oklch(70% 0.03123 139.80)",
+          "oklch(82% 0.03123 139.80)",
+          "oklch(95% 0.03123 139.80)"
+        ]
+      },
+      "button-disabled": {
+        "role": "neutral",
+        "displayName": "Button disabled",
+        "tonalRamp": [
+          "oklch(15% 0.03423 134.59)",
+          "oklch(26% 0.03423 134.59)",
+          "oklch(37% 0.03423 134.59)",
+          "oklch(48% 0.03423 134.59)",
+          "oklch(59% 0.03423 134.59)",
+          "oklch(70% 0.03423 134.59)",
+          "oklch(82% 0.03423 134.59)",
+          "oklch(95% 0.03423 134.59)"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Focus",
+        "tonalRamp": [
+          "oklch(15% 0.09743 80.47)",
+          "oklch(26% 0.09743 80.47)",
+          "oklch(37% 0.09743 80.47)",
+          "oklch(48% 0.09743 80.47)",
+          "oklch(59% 0.09743 80.47)",
+          "oklch(70% 0.09743 80.47)",
+          "oklch(82% 0.09743 80.47)",
+          "oklch(95% 0.09743 80.47)"
+        ]
+      },
+      "input-surface": {
+        "role": "neutral",
+        "displayName": "Input surface",
+        "tonalRamp": [
+          "oklch(15% 0.00536 117.92)",
+          "oklch(26% 0.00536 117.92)",
+          "oklch(37% 0.00536 117.92)",
+          "oklch(48% 0.00536 117.92)",
+          "oklch(59% 0.00536 117.92)",
+          "oklch(70% 0.00536 117.92)",
+          "oklch(82% 0.00536 117.92)",
+          "oklch(95% 0.00536 117.92)"
+        ]
+      },
+      "input-line": {
+        "role": "neutral",
+        "displayName": "Input line",
+        "tonalRamp": [
+          "oklch(15% 0.02384 132.62)",
+          "oklch(26% 0.02384 132.62)",
+          "oklch(37% 0.02384 132.62)",
+          "oklch(48% 0.02384 132.62)",
+          "oklch(59% 0.02384 132.62)",
+          "oklch(70% 0.02384 132.62)",
+          "oklch(82% 0.02384 132.62)",
+          "oklch(95% 0.02384 132.62)"
+        ]
+      },
+      "placeholder": {
+        "role": "neutral",
+        "displayName": "Placeholder",
+        "tonalRamp": [
+          "oklch(15% 0.02539 132.73)",
+          "oklch(26% 0.02539 132.73)",
+          "oklch(37% 0.02539 132.73)",
+          "oklch(48% 0.02539 132.73)",
+          "oklch(59% 0.02539 132.73)",
+          "oklch(70% 0.02539 132.73)",
+          "oklch(82% 0.02539 132.73)",
+          "oklch(95% 0.02539 132.73)"
+        ]
+      },
+      "invalid-line": {
+        "role": "neutral",
+        "displayName": "Invalid line",
+        "tonalRamp": [
+          "oklch(15% 0.14211 24.09)",
+          "oklch(26% 0.14211 24.09)",
+          "oklch(37% 0.14211 24.09)",
+          "oklch(48% 0.14211 24.09)",
+          "oklch(59% 0.14211 24.09)",
+          "oklch(70% 0.14211 24.09)",
+          "oklch(82% 0.14211 24.09)",
+          "oklch(95% 0.14211 24.09)"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Error",
+        "tonalRamp": [
+          "oklch(15% 0.15027 25.30)",
+          "oklch(26% 0.15027 25.30)",
+          "oklch(37% 0.15027 25.30)",
+          "oklch(48% 0.15027 25.30)",
+          "oklch(59% 0.15027 25.30)",
+          "oklch(70% 0.15027 25.30)",
+          "oklch(82% 0.15027 25.30)",
+          "oklch(95% 0.15027 25.30)"
+        ]
+      },
+      "success": {
+        "role": "neutral",
+        "displayName": "Success",
+        "tonalRamp": [
+          "oklch(15% 0.07850 149.00)",
+          "oklch(26% 0.07850 149.00)",
+          "oklch(37% 0.07850 149.00)",
+          "oklch(48% 0.07850 149.00)",
+          "oklch(59% 0.07850 149.00)",
+          "oklch(70% 0.07850 149.00)",
+          "oklch(82% 0.07850 149.00)",
+          "oklch(95% 0.07850 149.00)"
+        ]
+      },
+      "success-surface": {
+        "role": "neutral",
+        "displayName": "Success surface",
+        "tonalRamp": [
+          "oklch(15% 0.02838 138.72)",
+          "oklch(26% 0.02838 138.72)",
+          "oklch(37% 0.02838 138.72)",
+          "oklch(48% 0.02838 138.72)",
+          "oklch(59% 0.02838 138.72)",
+          "oklch(70% 0.02838 138.72)",
+          "oklch(82% 0.02838 138.72)",
+          "oklch(95% 0.02838 138.72)"
+        ]
+      },
+      "home-bg": {
+        "role": "neutral",
+        "displayName": "Home light ground",
+        "tonalRamp": [
+          "oklch(15% 0.00660 106.52)",
+          "oklch(26% 0.00660 106.52)",
+          "oklch(37% 0.00660 106.52)",
+          "oklch(48% 0.00660 106.52)",
+          "oklch(59% 0.00660 106.52)",
+          "oklch(70% 0.00660 106.52)",
+          "oklch(82% 0.00660 106.52)",
+          "oklch(95% 0.00660 106.52)"
+        ]
+      },
+      "home-text": {
+        "role": "neutral",
+        "displayName": "Home graphite text",
+        "tonalRamp": [
+          "oklch(15% 0.01386 145.18)",
+          "oklch(26% 0.01386 145.18)",
+          "oklch(37% 0.01386 145.18)",
+          "oklch(48% 0.01386 145.18)",
+          "oklch(59% 0.01386 145.18)",
+          "oklch(70% 0.01386 145.18)",
+          "oklch(82% 0.01386 145.18)",
+          "oklch(95% 0.01386 145.18)"
+        ]
+      },
+      "home-muted": {
+        "role": "neutral",
+        "displayName": "Home supporting text",
+        "tonalRamp": [
+          "oklch(15% 0.01664 138.73)",
+          "oklch(26% 0.01664 138.73)",
+          "oklch(37% 0.01664 138.73)",
+          "oklch(48% 0.01664 138.73)",
+          "oklch(59% 0.01664 138.73)",
+          "oklch(70% 0.01664 138.73)",
+          "oklch(82% 0.01664 138.73)",
+          "oklch(95% 0.01664 138.73)"
+        ]
+      },
+      "home-line": {
+        "role": "neutral",
+        "displayName": "Home rule",
+        "tonalRamp": [
+          "oklch(15% 0.01548 123.07)",
+          "oklch(26% 0.01548 123.07)",
+          "oklch(37% 0.01548 123.07)",
+          "oklch(48% 0.01548 123.07)",
+          "oklch(59% 0.01548 123.07)",
+          "oklch(70% 0.01548 123.07)",
+          "oklch(82% 0.01548 123.07)",
+          "oklch(95% 0.01548 123.07)"
+        ]
+      },
+      "home-gold": {
+        "role": "primary",
+        "displayName": "Home gold accent",
+        "tonalRamp": [
+          "oklch(15% 0.08719 81.29)",
+          "oklch(26% 0.08719 81.29)",
+          "oklch(37% 0.08719 81.29)",
+          "oklch(48% 0.08719 81.29)",
+          "oklch(59% 0.08719 81.29)",
+          "oklch(70% 0.08719 81.29)",
+          "oklch(82% 0.08719 81.29)",
+          "oklch(95% 0.08719 81.29)"
+        ]
+      },
+      "home-graphite": {
+        "role": "neutral",
+        "displayName": "Home graphite field",
+        "tonalRamp": [
+          "oklch(15% 0.01684 148.67)",
+          "oklch(26% 0.01684 148.67)",
+          "oklch(37% 0.01684 148.67)",
+          "oklch(48% 0.01684 148.67)",
+          "oklch(59% 0.01684 148.67)",
+          "oklch(70% 0.01684 148.67)",
+          "oklch(82% 0.01684 148.67)",
+          "oklch(95% 0.01684 148.67)"
+        ]
+      },
+      "home-inverse-muted": {
+        "role": "neutral",
+        "displayName": "Home programs supporting text",
+        "tonalRamp": [
+          "oklch(15% 0.01890 127.18)",
+          "oklch(26% 0.01890 127.18)",
+          "oklch(37% 0.01890 127.18)",
+          "oklch(48% 0.01890 127.18)",
+          "oklch(59% 0.01890 127.18)",
+          "oklch(70% 0.01890 127.18)",
+          "oklch(82% 0.01890 127.18)",
+          "oklch(95% 0.01890 127.18)"
+        ]
+      },
+      "home-inverse-line": {
+        "role": "neutral",
+        "displayName": "Home programs rule",
+        "tonalRamp": [
+          "oklch(15% 0.02722 133.64)",
+          "oklch(26% 0.02722 133.64)",
+          "oklch(37% 0.02722 133.64)",
+          "oklch(48% 0.02722 133.64)",
+          "oklch(59% 0.02722 133.64)",
+          "oklch(70% 0.02722 133.64)",
+          "oklch(82% 0.02722 133.64)",
+          "oklch(95% 0.02722 133.64)"
+        ]
+      },
+      "home-button-active": {
+        "role": "neutral",
+        "displayName": "Home button active",
+        "tonalRamp": [
+          "oklch(15% 0.01543 149.09)",
+          "oklch(26% 0.01543 149.09)",
+          "oklch(37% 0.01543 149.09)",
+          "oklch(48% 0.01543 149.09)",
+          "oklch(59% 0.01543 149.09)",
+          "oklch(70% 0.01543 149.09)",
+          "oklch(82% 0.01543 149.09)",
+          "oklch(95% 0.01543 149.09)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Shared display",
+        "purpose": "Base nonhome page headings."
+      },
+      "headline": {
+        "displayName": "Shared headline",
+        "purpose": "Base nonhome section headings."
+      },
+      "title": {
+        "displayName": "Shared title",
+        "purpose": "Base third-level headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default shared page text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Shared form labels and legends."
+      },
+      "home-display": {
+        "displayName": "Home display",
+        "purpose": "Homepage introductory heading only; responsive variants remain page-scoped."
+      },
+      "home-headline": {
+        "displayName": "Home headline",
+        "purpose": "Shared homepage h2 scale for people, programs, training and FAQ: clamp(2.35rem,4.2vw,3.75rem), line-height 1.1."
+      }
+    },
+    "shadows": [
+      {
+        "name": "action-hover",
+        "value": "0 6px 16px #20282219",
+        "purpose": "Shared primary action hover, inherited on the homepage."
+      },
+      {
+        "name": "home-proof-phone",
+        "value": "drop-shadow(14px 28px 24px #00000021) drop-shadow(2px 5px 5px #00000026)",
+        "purpose": "Licensed iPhone frame in the hero; the lower training diagrams use flat tonal fields without shadows."
+      }
+    ],
+    "motion": [
+      {
+        "name": "action-transition",
+        "value": "0.2s ease",
+        "purpose": "Shared button background/shadow and arrow transform."
+      },
+      {
+        "name": "home-disclosure-marker",
+        "value": "0.2s ease; rotate(45deg) when open",
+        "purpose": "Homepage need and FAQ SVG plus markers; reduced motion removes transition."
+      },
+      {
+        "name": "home-device-entrance",
+        "value": "0.9s cubic-bezier(.16,1,.3,1); clip-path and translateY(24px → 0), rotate(3deg → 0)",
+        "purpose": "One coordinated entrance: gold mask/connection line and two feature links finish within 1s; no automatic loop."
+      },
+      {
+        "name": "home-device-base-transform",
+        "value": "translate3d(var(--scene-x),var(--scene-y),0) rotate(calc(-5deg + var(--scene-turn)))",
+        "purpose": "Natural iPhone proportions; pointer-driven planar rotation bounded to ±1.12°. No perspective distortion."
+      },
+      {
+        "name": "home-pointer-parallax",
+        "value": "x: ±14px; y: ±9px",
+        "purpose": "Whole hero responds to a fine mouse pointer. Coarse pointers are ignored."
+      },
+      {
+        "name": "home-scroll-parallax",
+        "value": "clamp(factor, -0.6, 0.6) × 32px; × 13px at width ≤700px",
+        "purpose": "Native scrolling; bounded to ±19.2px desktop and ±7.8px mobile."
+      },
+      {
+        "name": "home-interpolation",
+        "value": "1 - 0.9^(elapsed / (1000/60)); delta threshold 0.05px",
+        "purpose": "Time-based interpolation, stopped when settled; no idle frame loop."
+      },
+      {
+        "name": "home-visibility",
+        "value": "IntersectionObserver + document.hidden",
+        "purpose": "Pause the entrance and cancel parallax frames while outside the viewport or in a hidden document. will-change is used only while moving."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Disable entrance and transitions; preserve the static −5° planar rotation with no parallax offsets. Training diagrams and controls also lose transitions and transforms."
+      },
+      {
+        "name": "home-training-selection",
+        "value": "opacity 260ms; translateY(8px → 0) 260ms cubic-bezier(.16,1,.3,1)",
+        "purpose": "Whole scenario copy and semantic workflow list crossfade with delayed outgoing visibility. Native radio/CSS fallback and immediate inert/aria-hidden state preserved."
+      },
+      {
+        "name": "ui-motion-tokens",
+        "value": "--motion-fast:160ms; --motion-state:260ms; --motion-view:220ms; --motion-ease:cubic-bezier(.16,1,.3,1)",
+        "purpose": "Shared short feedback, state and native document transitions."
+      },
+      {
+        "name": "ui-height-reveal",
+        "value": "300ms open / 220ms close; cubic-bezier(.16,1,.3,1)",
+        "purpose": "Measured menu and disclosure height plus content opacity using Web Animations. Interruptible; natural sizing restored on completion; resize/visibility/reduced-motion settle running transitions. Native fallback preserved."
+      },
+      {
+        "name": "ui-document-navigation",
+        "value": "@view-transition navigation:auto; root opacity 220ms",
+        "purpose": "Progressive same-origin page/language navigation crossfade. Ordinary links/history remain unchanged; reduced motion disables navigation transition."
+      },
+      {
+        "name": "ui-anchor-scroll",
+        "value": "scroll-behavior:smooth",
+        "purpose": "Native section navigation; reduced motion uses auto."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "shared-medium",
+        "value": "max-width: 1150px"
+      },
+      {
+        "name": "shared-menu-and-tablet",
+        "value": "max-width: 800px"
+      },
+      {
+        "name": "shared-phone",
+        "value": "max-width: 620px"
+      },
+      {
+        "name": "shared-desktop-menu-reset",
+        "value": "min-width: 801px"
+      },
+      {
+        "name": "home-heading-stack",
+        "value": "max-width: 950px"
+      },
+      {
+        "name": "home-single-column",
+        "value": "max-width: 700px"
+      },
+      {
+        "name": "home-compact-phone",
+        "value": "max-width: 420px"
+      }
+    ],
+    "routes": {
+      "core": [
+        "home",
+        "specialists",
+        "about",
+        "contacts"
+      ],
+      "locales": [
+        "en",
+        "ru",
+        "az"
+      ],
+      "canonicalCount": 12,
+      "utility": "Localized 404, noindex",
+      "compatibility": "Legacy team.html and team/ redirect to localized about.html#team",
+      "contactModes": {
+        "support": "Questions and support",
+        "specialist": "Questions about professional tools",
+        "collaboration": "Partnership inquiry"
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Shared primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Shared action on nonhome routes. Homepage dimensions and active state have a separate preview.",
+      "html": "<button class=\"ds-button\" type=\"button\"><span>Download the app</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:54px;padding:15px 23px;border:1px solid transparent;border-radius:10px;background:var(--text,#202822);color:#fff;font-family:'Deviny Sans',Arial,sans-serif;font-size:.9375rem;font-weight:500;text-decoration:none;line-height:1.4;max-width:100%;cursor:pointer;transition:background .2s,box-shadow .2s}.ds-button:hover{background:#3e4b3b;box-shadow:0 6px 16px #20282219}.ds-button svg{width:21px;height:24px;flex:none;transition:transform .2s}.ds-button:hover svg{transform:translateX(3px)}.ds-button:focus-visible{outline:3px solid #89651d;outline-offset:5px;}.ds-button:disabled{cursor:wait;background:#66735f;box-shadow:none}@media(prefers-reduced-motion:reduce){.ds-button,.ds-button svg{transition:none}}"
+    },
+    {
+      "name": "Shared compact header action",
+      "kind": "button",
+      "refersTo": "button-small",
+      "description": "Shared compact header action, hidden at 1150px. Homepage uses an 8px radius, 46px minimum height and 20px gap.",
+      "html": "<a class=\"ds-button ds-button-small\" href=\"/#get-started\">Download the app<svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:54px;padding:15px 23px;border:1px solid transparent;border-radius:10px;background:var(--text,#202822);color:#fff;font-family:'Deviny Sans',Arial,sans-serif;font-size:.9375rem;font-weight:500;text-decoration:none;line-height:1.4;max-width:100%;cursor:pointer;transition:background .2s,box-shadow .2s}.ds-button:hover{background:#3e4b3b;box-shadow:0 6px 16px #20282219}.ds-button svg{width:21px;height:24px;flex:none;transition:transform .2s}.ds-button:hover svg{transform:translateX(3px)}.ds-button:focus-visible{outline:3px solid #89651d;outline-offset:5px;}.ds-button:disabled{cursor:wait;background:#66735f;box-shadow:none}@media(prefers-reduced-motion:reduce){.ds-button,.ds-button svg{transition:none}}.ds-button-small{font-size:.8125rem;min-height:45px;padding:11px 16px;gap:18px}"
+    },
+    {
+      "name": "Text link",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "Shared arrow link with hover underline; homepage raises the minimum height from 44px to 48px.",
+      "html": "<a class=\"ds-text-link\" href=\"/#how-works\">Explore Deviny<svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-text-link{display:inline-flex;align-items:center;gap:15px;min-height:44px;max-width:100%;font-family:'Deviny Sans',Arial,sans-serif;color:var(--text,#202822);font-size:.9375rem;font-weight:500;text-decoration:none;text-underline-offset:.23em;line-height:1.45}.ds-text-link svg{width:20px;height:24px;flex:none}.ds-text-link:hover{text-decoration:underline}.ds-text-link:focus-visible{outline:3px solid #89651d;outline-offset:5px;}"
+    },
+    {
+      "name": "Labeled input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Contact field with persistent label and the source invalid-state selector.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-name\">Your name</label><input class=\"ds-input\" id=\"ds-name\" name=\"name\" autocomplete=\"name\" required maxlength=\"100\" placeholder=\"How should we address you?\" aria-describedby=\"ds-name-error\"><p class=\"ds-field-error\" id=\"ds-name-error\"></p></div>",
+      "css": ".ds-field{min-width:0;font-family:'Deviny Sans',Arial,sans-serif;color:var(--text,#202822)}.ds-field label{display:block;font-size:.875rem;font-weight:500;line-height:1.6;margin-bottom:9px}.ds-input{width:100%;border:1px solid #969f90;border-radius:8px;background:#fbfcf8;color:var(--text,#202822);padding:12px 14px;min-height:48px;font-family:'Deviny Sans',Arial,sans-serif;font-size:1rem;line-height:1.5}.ds-input::placeholder{color:#677061;opacity:1}.ds-input:focus-visible{outline:3px solid #89651d;outline-offset:5px;}.ds-input[aria-invalid=true]{border-color:#a03535}.ds-field-error{color:#9b2929;font-size:.875rem;line-height:1.5;margin:7px 0 0}.ds-field-error:empty{display:none}"
+    },
+    {
+      "name": "Navigation links",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Desktop source navigation and language links. Mobile disclosure depends on the live site JavaScript and is not simulated here.",
+      "html": "<div class=\"ds-header-links\"><nav class=\"ds-nav\" aria-label=\"Menu\"><a href=\"/#how-works\">Explore</a><a href=\"/#features\">Programs</a><a href=\"/specialists.html\" aria-current=\"page\">For specialists</a></nav><nav class=\"ds-languages\" aria-label=\"Language\"><a href=\"/\" lang=\"en\" hreflang=\"en\" aria-label=\"English\" aria-current=\"true\">EN</a><a href=\"/ru/\" lang=\"ru\" hreflang=\"ru\" aria-label=\"Русский\">RU</a><a href=\"/az/\" lang=\"az\" hreflang=\"az\" aria-label=\"Azərbaycan\">AZ</a></nav></div>",
+      "css": ".ds-header-links{display:flex;align-items:center;gap:30px;font-family:'Deviny Sans',Arial,sans-serif;color:var(--text,#202822)}.ds-nav{display:flex;align-items:center;gap:28px}.ds-nav a{font-size:.875rem;text-decoration:none;min-height:44px;display:flex;align-items:center;color:var(--muted,#596157);text-underline-offset:.23em}.ds-nav a:hover,.ds-nav [aria-current]{color:var(--text,#202822);text-decoration:underline}.ds-languages{display:flex;gap:1px}.ds-languages a{font-size:.75rem;display:grid;place-items:center;min-height:44px;min-width:31px;text-decoration:none;color:var(--muted,#596157)}.ds-languages [aria-current]{color:var(--text,#202822);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}.ds-header-links a:focus-visible{outline:3px solid #89651d;outline-offset:5px;}"
+    },
+    {
+      "name": "Reply choices",
+      "kind": "input",
+      "refersTo": "reply-option",
+      "description": "Native radio choices with the implemented checked treatment. No extra hover or disabled style is authored.",
+      "html": "<fieldset class=\"ds-replies\"><legend>Where should we reply?</legend><div class=\"ds-options\"><label><input type=\"radio\" name=\"ds-reply\" value=\"Email\" checked><span>Email</span></label><label><input type=\"radio\" name=\"ds-reply\" value=\"Telegram\"><span>Telegram</span></label><label><input type=\"radio\" name=\"ds-reply\" value=\"WhatsApp\"><span>WhatsApp</span></label></div></fieldset>",
+      "css": ".ds-replies{border:0;padding:0;margin:0;min-width:0;font-family:'Deviny Sans',Arial,sans-serif;color:var(--text,#202822)}.ds-replies legend{display:block;font-size:.875rem;font-weight:500;line-height:1.6;margin-bottom:9px}.ds-options{display:flex;flex-wrap:wrap;gap:10px}.ds-options label{display:flex;align-items:center;gap:8px;border:1px solid #969f90;border-radius:8px;padding:10px 12px;cursor:pointer;font-size:.875rem;line-height:1.6;min-height:44px}.ds-options label:has(:checked){color:var(--text,#202822);border-color:var(--text,#202822);background:#f8f9f4}.ds-options input{accent-color:#3e4b3b;width:16px;height:16px;margin:0}.ds-options input:focus-visible{outline:3px solid #89651d;outline-offset:5px;}@media(max-width:620px){.ds-options{gap:7px}.ds-options label{padding:9px;font-size:.8125rem}}"
+    },
+    {
+      "name": "Homepage FAQ row",
+      "kind": "custom",
+      "refersTo": "home-faq",
+      "description": "Current home FAQ: native independent details, regular-weight summary and rotating SVG marker. No separate hover color is authored.",
+      "html": "<details class=\"ds-home-faq\"><summary>How do I start using Deviny?<svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5v14\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/></svg></summary><p>Deviny will be available in App Store and Google Play soon. After release, download the app and create an account.</p></details>",
+      "css": ".ds-home-faq{--text:#232923;--muted:#596057;--line:#d4d8cd;--gold:#806124;font-family:'Deviny Sans',Arial,sans-serif;color:var(--text);border-bottom:1px solid var(--line);border-top:1px solid var(--line)}.ds-home-faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;font-size:1.125rem;font-weight:400;line-height:1.5;padding:25px 0;gap:30px}.ds-home-faq summary::-webkit-details-marker{display:none}.ds-home-faq summary svg{width:23px;height:24px;flex:none;color:var(--gold);transition:transform .2s}.ds-home-faq[open] summary svg{transform:rotate(45deg)}.ds-home-faq summary:focus-visible{outline:3px solid #89651d;outline-offset:5px}.ds-home-faq>p{margin:0;font-size:1rem;line-height:1.75;padding:0 48px 28px 0;max-width:780px;color:var(--muted)}@media(max-width:700px){.ds-home-faq summary{font-size:1rem;padding-block:22px;gap:20px}.ds-home-faq>p{padding-right:30px;font-size:.9375rem}}@media(prefers-reduced-motion:reduce){.ds-home-faq summary svg{transition:none}}"
+    },
+    {
+      "name": "Contact form panel",
+      "kind": "card",
+      "refersTo": "form-panel",
+      "description": "Abbreviated source contact panel, with a non-submitting button for preview. The live form has additional fields and feedback.",
+      "html": "<section class=\"ds-panel\"><h2>Send a message</h2><div class=\"ds-form\"><div class=\"ds-field\"><label for=\"ds-panel-name\">Your name</label><input class=\"ds-input\" id=\"ds-panel-name\" placeholder=\"How should we address you?\" autocomplete=\"name\"></div><button class=\"ds-button ds-submit\" type=\"button\"><span>Send message</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button></div></section>",
+      "css": ".ds-field{min-width:0;font-family:'Deviny Sans',Arial,sans-serif;color:var(--text,#202822)}.ds-field label{display:block;font-size:.875rem;font-weight:500;line-height:1.6;margin-bottom:9px}.ds-input{width:100%;border:1px solid #969f90;border-radius:8px;background:#fbfcf8;color:var(--text,#202822);padding:12px 14px;min-height:48px;font-family:'Deviny Sans',Arial,sans-serif;font-size:1rem;line-height:1.5}.ds-input::placeholder{color:#677061;opacity:1}.ds-input:focus-visible{outline:3px solid #89651d;outline-offset:5px;}.ds-input[aria-invalid=true]{border-color:#a03535}.ds-field-error{color:#9b2929;font-size:.875rem;line-height:1.5;margin:7px 0 0}.ds-field-error:empty{display:none}.ds-button{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:54px;padding:15px 23px;border:1px solid transparent;border-radius:10px;background:var(--text,#202822);color:#fff;font-family:'Deviny Sans',Arial,sans-serif;font-size:.9375rem;font-weight:500;text-decoration:none;line-height:1.4;max-width:100%;cursor:pointer;transition:background .2s,box-shadow .2s}.ds-button:hover{background:#3e4b3b;box-shadow:0 6px 16px #20282219}.ds-button svg{width:21px;height:24px;flex:none;transition:transform .2s}.ds-button:hover svg{transform:translateX(3px)}.ds-button:focus-visible{outline:3px solid #89651d;outline-offset:5px;}.ds-button:disabled{cursor:wait;background:#66735f;box-shadow:none}@media(prefers-reduced-motion:reduce){.ds-button,.ds-button svg{transition:none}}.ds-panel{border-radius:16px;background:var(--surface,#eaece5);padding:36px;font-family:'Deviny Sans',Arial,sans-serif;color:var(--text,#202822)}.ds-panel h2{margin:0 0 30px;font-size:1.6rem;font-weight:500;line-height:1.08;letter-spacing:-.035em;text-wrap:balance}.ds-form{display:grid;gap:22px}.ds-submit{width:100%;justify-content:space-between}@media(max-width:1150px){.ds-panel{padding:28px}}@media(max-width:620px){.ds-panel{padding:26px 20px}.ds-panel h2{font-size:1.45rem}.ds-submit{font-size:.9375rem;gap:12px;padding-inline:16px}}"
+    },
+    {
+      "name": "Homepage primary action",
+      "kind": "button",
+      "refersTo": "home-button-primary",
+      "description": "Homepage hero and closing action: 12px radius, 60px minimum height, gold circular arrow; 56px high on small phones.",
+      "html": "<a class=\"ds-home-button\" href=\"/#get-started\">Download the app<svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-home-button{--text:#232923;display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:60px;padding:14px 16px 14px 23px;border:1px solid transparent;border-radius:12px;background:var(--text);color:#fff;font-family:'Deviny Sans',Arial,sans-serif;font-size:.9375rem;font-weight:500;text-decoration:none;line-height:1.4;max-width:100%;transition:background .2s,box-shadow .2s}.ds-home-button:hover{background:#3e4b3b;box-shadow:0 6px 16px #20282219}.ds-home-button:active{background:#171e18}.ds-home-button svg{width:32px;height:32px;padding:7px;border-radius:50%;background:#e8c77f;color:#232923;flex:none;transition:transform .2s}.ds-home-button:hover svg{transform:rotate(-35deg)}.ds-home-button:focus-visible{outline:3px solid #89651d;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-home-button,.ds-home-button svg{transition:none}}"
+    },
+    {
+      "name": "Homepage people scenarios",
+      "kind": "custom",
+      "refersTo": "home-need",
+      "description": "Historical disclosure preview retained from the earlier homepage; the current people section is an open semantic split. Native FAQ disclosures remain in use.",
+      "html": "<div class=\"ds-home-needs\"><details class=\"ds-home-need\" name=\"ds-home-needs\" open><summary>A training partner<svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5v14\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/></svg></summary><p>Look for someone to train with through GymBro. Add your preferences, get to know each other and confirm the connection if you want to train together.</p></details><details class=\"ds-home-need\" name=\"ds-home-needs\" ><summary>A trainer or nutritionist<svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5v14\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/></svg></summary><p>Get to know specialists through their experience, documents and programs. Choose an approach that suits your needs.</p></details><details class=\"ds-home-need\" name=\"ds-home-needs\" ><summary>Your community<svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5v14\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/></svg></summary><p>Share workouts in the feed, join discussions and find clubs around your interests. Follow people whose experience matters to you.</p></details></div>",
+      "css": ".ds-home-needs{--text:#232923;--muted:#596057;--line:#d4d8cd;--gold:#806124;font-family:'Deviny Sans',Arial,sans-serif;color:var(--text);border-top:1px solid var(--line)}.ds-home-need{border-bottom:1px solid var(--line)}.ds-home-need summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;font-size:clamp(1.3rem,1.9vw,1.75rem);font-weight:500;line-height:1.3;gap:25px;padding:25px 0}.ds-home-need summary::-webkit-details-marker{display:none}.ds-home-need summary svg{color:var(--gold);width:24px;height:24px;flex:none;margin-top:4px;transition:transform .2s}.ds-home-need[open] summary svg{transform:rotate(45deg)}.ds-home-need summary:hover{color:var(--gold)}.ds-home-need summary:focus-visible{outline:3px solid #89651d;outline-offset:5px}.ds-home-need>p{margin:0;color:var(--muted);font-size:1rem;line-height:1.75;padding:0 44px 28px 0;max-width:550px}@media(max-width:700px){.ds-home-need summary{font-size:1.4rem;padding-block:23px}.ds-home-need>p{padding-right:30px}}@media(prefers-reduced-motion:reduce){.ds-home-need summary svg{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "",
+    "overview": "This is a source-derived record of the website after the authorized homepage replacement on October 18, 2026. The shared visual base is a self-hosted sans serif, light neutral ground, graphite text, gold accents, rounded controls and ruled content. The Deviny name and existing logo are established assets. The homepage adds a campaign-scale typographic hierarchy and broad light, graphite and gold areas. Its composition is page-specific; the surface direction remains in `.impeccable/surfaces/scripts-build-py.md` and is not a new global brand requirement.\n\n`global.css` supplies the shared styles. The builder loads `home.css` and `home.js` only on the EN, RU and AZ homepages. Frontmatter names prefixed `home-` describe those overrides; unprefixed names describe the shared base. Other routes retain their shared layouts and components. Obsolete image-cover styles still present in `global.css` are not the current homepage and do not define this record.\n\n**Rendered QA is pending.** The prior localhost browser security denial remains in force, with no workaround used. There are no current desktop/mobile captures and no basis for claiming owner-approved branding or visual verification. `.impeccable/review/home-redesign-source-notes.json` records 58 detector findings: 49 old-design-system advisories and 9 warning instances. The warnings have not been declared clean; contrast, overflow, enlarged text and media-context findings still require rendered review. The finish verdict in `.impeccable/review/home-redesign-verdict.md` is `recapture`, requesting current full-page desktop (1440px) and mobile (390px) evidence before a new finish review. The source provenance scan covered 4 rasters with 0 missing records; provenance is not visual QA.\n\nOctober 20 ordinary extension: the repetitive five-topic feature index is superseded by a distributed semantic homepage story: people/GymBro, gold club emblem, program-format sheets, graphite communication, training/tools, staggered progression, privacy/choice and professional tools, then FAQ/stores. All 28 feature IDs occur once per EN/RU/AZ homepage. Global token metadata is preserved; these compositions belong to the surface brief. Program sheets stack up to 520px with auto height, 24px headings and 15px body text. The current independent source review disposition is recapture; no current page screenshots or desktop/mobile visual acceptance are available under the prior browser security denial. No new raster, font or dependency was introduced.",
+    "keyCharacteristics": [
+      "One shared type family, with a larger, tighter homepage hierarchy.",
+      "A reference-led hero: invitation and action on the left; a light feed illustration with people and photographs in the device on the right.",
+      "Broad graphite and gold homepage sections, with thin rules instead of a repeated card grid.",
+      "Native expandable rows and training-mode radio controls, visible focus and native scrolling.",
+      "One brief device entrance with bounded layered parallax and reduced-motion support.",
+      "Distinct semantic homepage sections distribute all confirmed capabilities without a repetitive public feature index; the approved first viewport remains."
+    ],
+    "rules": [],
+    "dos": [
+      "Do keep homepage overrides scoped to the three homepages and preserve shared components on other routes.",
+      "Do use the self-hosted Deviny Sans family with its fallback stack and license.",
+      "Do preserve native disclosures and radios, visible labels, keyboard focus, native scrolling and reduced-motion behavior.",
+      "Do keep image provenance internal and public image descriptions factual."
+    ],
+    "donts": [
+      "Don't treat source documentation or provenance checks as rendered QA or owner-approved branding.",
+      "Don't promote unused legacy styles, synthetic preview ramps or one-off photo/device details into general tokens.",
+      "Don't present the owner-approved feed mockup or generated editorial photographs as runtime screenshots, actual members or testimonials.",
+      "Don't add a public motion pause control; preserve the brief entrance and system/visibility safeguards."
+    ]
+  }
+}

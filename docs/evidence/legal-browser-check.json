@@ -1,0 +1,12 @@
+{
+  "checked": "2026-09-24",
+  "privacy": {
+    "url": "https://api.deviny.me/legal/privacy.html",
+    "visible_h1": "Privacy policy"
+  },
+  "terms": {
+    "url": "https://api.deviny.me/legal/terms.html",
+    "visible_h1": "Terms of use"
+  },
+  "note": "Both documents rendered in the browser; automated urllib requests received HTTP 403. Legal support address is Info@deviny.com."
+}

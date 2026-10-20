@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-20",
+  "scope": "Professional page first section only",
+  "locales": [
+    "en",
+    "ru",
+    "az"
+  ],
+  "visual": "Editorial practice headline, connected professional tools on graphite/gold, open audience strip",
+  "checks": {
+    "static": "pass: 12 canonical / 3 utility / 6 redirects / 411 local references / 66 images",
+    "http": "pass: all three professional routes",
+    "contact": "pass, isolated mocks",
+    "navigation": "pass",
+    "sharedMotion": "pass, simulated behavior",
+    "detector": "no new hero findings; existing print/palette signals only",
+    "browser": "unavailable under prior restriction"
+  },
+  "productionChanges": false,
+  "liveSubmissions": false
+}

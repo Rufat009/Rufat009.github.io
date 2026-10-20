@@ -1,0 +1,18 @@
+{
+  "method": "Built-in image_gen",
+  "promptStorage": "sidecar",
+  "prompt": "Use case: photorealistic-natural. Asset type: close-up editorial photograph illustrating a training program on a refined fitness website, landscape 3:2. A quiet, believable real gym still life: one worn dark iron adjustable dumbbell on a black rubber floor beside the edge of a pale wood workout bench; an open real paper training notebook and simple black pencil lie on the bench, and a folded off-white cotton towel hangs naturally over its near edge. Notebook pages have only subtle faint empty ruled lines, absolutely no legible text or numbers. Camera low three-quarter close-up with dumbbell and notebook both recognizable and sharp enough, natural optical shallow depth in the far gym background. Soft side daylight, genuine granular rubber, matte iron with small scuffs, wood grain, unretouched paper and woven cotton. A small subdued ochre towel stripe is the only gold accent. Palette graphite green-black, off-white and warm pale wood, sophisticated natural sports equipment photography. Objects have real-world scale and grounded contact shadows. Compose the essential subjects around the middle of frame so a wide 2.3:1 crop remains meaningful. No people, logos, phones, UI, app screenshots, claims, scores, measurements or watermarks. Strictly an actual-looking camera photograph, not a 3D render, sculptural still life, ceramic imitation, cartoon, floating objects, glow or icon. No transparency, full rectangular image.",
+  "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-238c2291-8a6d-46d8-b8a6-288135a15dfe.png",
+  "sourceDimensions": [
+    1536,
+    1024
+  ],
+  "dimensions": [
+    1080,
+    720
+  ],
+  "bytes": 134902,
+  "sha256": "a077eb38c273d054787880f3e83a656659cdf24fe736135cd82892c56a9f6ddd",
+  "processing": "Proportional Lanczos resize and WebP quality 83; no content edits",
+  "usage": "Fictional editorial illustration; not actual Deviny members or app UI"
+}

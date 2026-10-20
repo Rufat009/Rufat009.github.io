@@ -1,169 +1,165 @@
-// script.js
-async function loadComponents() {
-    const headerPlaceholder = document.querySelector('#header-placeholder');
-    const footerPlaceholder = document.querySelector('#footer-placeholder');
+/* Small progressive enhancements; content and navigation are rendered in HTML. */
+(() => {
+  document.documentElement.classList.add('js');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+  const mobile = matchMedia('(max-width: 800px)');
+  const motions = new Map();
+  const easing = 'cubic-bezier(.16,1,.3,1)';
 
-    if (headerPlaceholder) {
-        const response = await fetch('components/header/header.html');
-        headerPlaceholder.innerHTML = await response.text();
+  // Read the current rendered size before cancelling, so a second click reverses
+  // from the current position instead of jumping to either endpoint.
+  function slide(element, open, {reveal, complete, closedHeight = 0, content = element, wasOpen}) {
+    const from = element.getBoundingClientRect().height;
+    const opacity = wasOpen ? getComputedStyle(content).opacity : '0';
+    const previous = motions.get(element);
+    if (previous) {
+      previous.animations.forEach(animation => animation.cancel());
+      motions.delete(element);
     }
-
-    if (footerPlaceholder) {
-        const response = await fetch('components/footer/footer.html');
-        footerPlaceholder.innerHTML = await response.text();
-    }
-}
-
-document.addEventListener('DOMContentLoaded', async () => {
-    await loadComponents();
-    window.DevinyI18n?.init();
-
-    const burgerBtn = document.querySelector('.burger-btn');
-    const nav = document.querySelector('.nav');
-    const icon = burgerBtn ? burgerBtn.querySelector('i') : null;
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    const toggleMenu = (forceState = null) => {
-        const isOpen = forceState !== null ? forceState : !nav.classList.contains('active');
-        nav.classList.toggle('active', isOpen);
-        document.body.style.overflow = isOpen ? 'hidden' : '';
-        if (icon) {
-            if (isOpen) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-xmark');
-            } else {
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-            }
-        }
+    element.style.removeProperty('height');
+    reveal();
+    const to = open ? element.getBoundingClientRect().height : closedHeight;
+    const cleanup = () => {
+      element.style.removeProperty('height');
+      element.style.removeProperty('overflow');
+      complete();
     };
-
-    if (burgerBtn && nav) {
-        burgerBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            toggleMenu();
-        });
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => toggleMenu(false));
-        });
-        document.addEventListener('click', (e) => {
-            if (nav.classList.contains('active') && !nav.contains(e.target) && !burgerBtn.contains(e.target)) {
-                toggleMenu(false);
-            }
-        });
+    if (reduce.matches || !element.animate || Math.abs(to - from) < 1) {
+      cleanup();
+      return;
     }
+    element.style.height = `${from}px`;
+    element.style.overflow = 'hidden';
+    const options = {duration: open ? 300 : 220, easing, fill: 'both'};
+    const size = element.animate([{height: `${from}px`}, {height: `${to}px`}], options);
+    const fade = content.animate([{opacity}, {opacity: open ? '1' : '0'}], {...options, easing: 'ease'});
+    const state = {animations: [size, fade], finish: () => {
+      if (motions.get(element) !== state) return;
+      motions.delete(element);
+      state.animations.forEach(animation => { animation.onfinish = null; animation.cancel(); });
+      cleanup();
+    }};
+    motions.set(element, state);
+    size.onfinish = state.finish;
+  }
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
-
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    const darkCards = document.querySelectorAll('.dark-card');
-    const cardObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
-            if (entry.isIntersecting) {
-                setTimeout(() => {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                    entry.target.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-                }, index * 80);
-                cardObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-
-    darkCards.forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(40px)';
-        cardObserver.observe(card);
-    });
-
-    const updateTime = () => {
-        const el = document.querySelector('.current-time');
-        if (el) el.textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    };
-    updateTime();
-    setInterval(updateTime, 1000);
-
-    document.querySelectorAll('.tilt-card').forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            const rX = ((y - rect.height / 2) / (rect.height / 2)) * -15;
-            const rY = ((x - rect.width / 2) / (rect.width / 2)) * 15;
-            card.style.transform = `perspective(1000px) rotateX(${rX}deg) rotateY(${rY}deg) scale3d(1.02, 1.02, 1.02)`;
-            const glare = card.querySelector('.card-glare');
-            if(glare) glare.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 80%)`;
-        });
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
-            const glare = card.querySelector('.card-glare');
-            if(glare) glare.style.background = 'transparent';
-        });
-    });
-
-    document.querySelectorAll('.hub-tab').forEach(tab => {
-        tab.addEventListener('click', () => {
-            const id = tab.getAttribute('data-target');
-            document.querySelectorAll('.hub-tab').forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
-            document.querySelectorAll('.hub-grid').forEach(g => g.classList.toggle('active', g.id === id));
-        });
-    });
-
-    const tGrid = document.querySelector('.testimonials-grid');
-    const tDots = document.querySelectorAll('.testimonials-dots .dot');
-    if (tGrid && tDots.length > 0) {
-        const getCardWidth = () => {
-            const card = tGrid.querySelector('.testimonial-card');
-            return card ? card.offsetWidth + 16 : 0;
-        };
-        const updateDots = () => {
-            const index = Math.round(tGrid.scrollLeft / getCardWidth());
-            tDots.forEach((dot, i) => dot.classList.toggle('active', i === index));
-        };
-        tDots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                tGrid.scrollTo({ left: getCardWidth() * index, behavior: 'smooth' });
-            });
-        });
-        document.querySelector('.testimonials-next')?.addEventListener('click', () => {
-            tGrid.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
-        });
-        document.querySelector('.testimonials-prev')?.addEventListener('click', () => {
-            tGrid.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
-        });
-        tGrid.addEventListener('scroll', updateDots);
+  const groups = new Map();
+  document.querySelectorAll('details').forEach(details => {
+    const summary = details.querySelector('summary');
+    const content = details.querySelector('.disclosure-content');
+    if (!summary || !content || !details.animate) return;
+    const group = details.getAttribute('name');
+    // Native grouping remains in the HTML fallback. Enhanced grouping lets the
+    // previous row finish closing instead of the browser collapsing it instantly.
+    details.removeAttribute('name');
+    const state = {open: details.open, setOpen};
+    if (group) {
+      if (!groups.has(group)) groups.set(group, []);
+      groups.get(group).push(state);
     }
-
-    document.querySelectorAll('.faq-item').forEach(item => {
-        item.querySelector('.faq-question').onclick = (e) => {
-            e.preventDefault();
-            const isOpen = item.classList.contains('is-open');
-            document.querySelectorAll('.faq-item').forEach(o => {
-                o.classList.remove('is-open');
-                o.querySelector('.faq-answer').style.maxHeight = null;
-            });
-            if (!isOpen) {
-                item.classList.add('is-open');
-                const a = item.querySelector('.faq-answer');
-                a.style.maxHeight = a.scrollHeight + 'px';
-            }
-        };
+    function setOpen(open) {
+      if (state.open === open) return;
+      const wasOpen = details.open;
+      state.open = open;
+      summary.setAttribute('aria-expanded', String(open));
+      content.inert = !open;
+      if (!open && content.contains(document.activeElement)) summary.focus({preventScroll: true});
+      const style = getComputedStyle(details);
+      const closedHeight = summary.getBoundingClientRect().height
+        + parseFloat(style.borderTopWidth || 0) + parseFloat(style.borderBottomWidth || 0);
+      slide(details, open, {
+        reveal: () => { details.open = true; },
+        complete: () => { details.open = state.open; },
+        closedHeight, content, wasOpen,
+      });
+    }
+    summary.setAttribute('aria-expanded', String(state.open));
+    content.inert = !state.open;
+    summary.addEventListener('click', event => {
+      event.preventDefault();
+      const open = !state.open;
+      if (open && group) groups.get(group).forEach(other => { if (other !== state) other.setOpen(false); });
+      setOpen(open);
     });
+    // Browser find-in-page or another native action may reveal a closed row.
+    details.addEventListener('toggle', () => {
+      if (motions.has(details) || state.open === details.open) return;
+      state.open = details.open;
+      summary.setAttribute('aria-expanded', String(state.open));
+      content.inert = !state.open;
+      if (state.open && group) groups.get(group).forEach(other => { if (other !== state) other.setOpen(false); });
+    });
+  });
 
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-        a.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) target.scrollIntoView({ behavior: 'smooth' });
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('primary-nav');
+  let menuOpen = false;
+  const setMenu = (open, animate = true) => {
+    const wasOpen = menuOpen;
+    menuOpen = open && mobile.matches;
+    toggle?.setAttribute('aria-expanded', String(menuOpen));
+    if (!nav) return;
+    nav.inert = mobile.matches && !menuOpen;
+    if (nav.inert) nav.setAttribute('aria-hidden', 'true');
+    else nav.removeAttribute('aria-hidden');
+    const complete = () => nav.classList.toggle('is-open', menuOpen);
+    if (!animate || !mobile.matches) {
+      motions.get(nav)?.finish();
+      complete();
+      return;
+    }
+    if (wasOpen === menuOpen) return;
+    slide(nav, menuOpen, {
+      wasOpen: nav.classList.contains('is-open'),
+      reveal: () => nav.classList.add('is-open'),
+      complete,
+    });
+  };
+  const closeMenu = (restoreFocus = false) => {
+    const focusWithin = nav?.contains(document.activeElement);
+    setMenu(false);
+    if (restoreFocus || focusWithin) toggle?.focus({preventScroll: true});
+  };
+  setMenu(false, false);
+  toggle?.addEventListener('click', () => setMenu(!menuOpen));
+  nav?.addEventListener('click', event => {
+    if (event.target.closest('a')) closeMenu();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') closeMenu(true);
+  });
+  document.addEventListener('click', event => {
+    if (!event.target.closest('.site-header')) closeMenu();
+  });
+  mobile.addEventListener('change', () => setMenu(false, false));
+  // A resize or accessibility preference change settles into the requested state.
+  const settle = () => [...motions.values()].forEach(state => state.finish());
+  addEventListener('resize', settle, {passive: true});
+  reduce.addEventListener('change', () => { if (reduce.matches) settle(); });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) settle(); });
+
+  // Opacity can finish fading after selection changes; inert excludes outgoing
+  // links from keyboard and assistive navigation immediately.
+  if (globalThis.CSS?.supports('selector(:has(input:checked))')) {
+    document.querySelectorAll('.training-explorer').forEach(explorer => {
+      const sync = () => {
+        const selected = explorer.querySelector('input[name="training-mode"]:checked');
+        if (!selected) return;
+        explorer.querySelectorAll('[data-training-mode]').forEach(panel => {
+          const active = panel.dataset.trainingMode === selected.value;
+          panel.inert = !active;
+          panel.setAttribute('aria-hidden', String(!active));
         });
-    }); 
-});
+      };
+      explorer.addEventListener('change', sync);
+      sync();
+    });
+  }
+  // Preserve legacy inbound anchors without carrying obsolete claims into the page.
+  const aliases = {'#pricing':'#options', '#cta':'#get-started', '#testimonials':'#why-choose'};
+  if (aliases[location.hash]) {
+    const hash = aliases[location.hash];
+    history.replaceState(null, '', location.pathname + location.search + hash);
+    document.querySelector(hash)?.scrollIntoView();
+  }
+})();

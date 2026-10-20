@@ -1,0 +1,14 @@
+{
+  "scope": "Hero composition around owner-approved iPhone frame",
+  "canonical_pages": 15,
+  "local_references": 399,
+  "images": 72,
+  "source_errors": [],
+  "preview_http": {
+    "/": 200,
+    "/ru/": 200,
+    "/az/": 200
+  },
+  "motion_behavior": "Passed scripts/check-home-motion.cjs: bounds, settling, exit, visibility, coarse pointer, mobile travel, reduced motion",
+  "visual_review": "Not performed; earlier browser security denial remains in force. No rendering workaround used."
+}

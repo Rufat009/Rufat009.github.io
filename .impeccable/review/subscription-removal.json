@@ -1,0 +1,26 @@
+{
+  "canonical_pages_checked": [
+    "index.html",
+    "specialists.html",
+    "about.html",
+    "team.html",
+    "contacts.html",
+    "ru/index.html",
+    "ru/specialists.html",
+    "ru/about.html",
+    "ru/team.html",
+    "ru/contacts.html",
+    "az/index.html",
+    "az/specialists.html",
+    "az/about.html",
+    "az/team.html",
+    "az/contacts.html"
+  ],
+  "aliases_checked": 12,
+  "live_homepages_checked": [
+    "en",
+    "ru",
+    "az"
+  ],
+  "subscription_mentions": 0
+}

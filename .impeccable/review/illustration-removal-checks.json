@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-20",
+  "change": "Remove all six rejected stylized editorial illustrations and rebalance text layouts",
+  "heroAndCopyUnchanged": true,
+  "locales": [
+    {
+      "locale": "en",
+      "http": 200,
+      "capabilities": 28,
+      "illustrationReferences": 0
+    },
+    {
+      "locale": "ru",
+      "http": 200,
+      "capabilities": 28,
+      "illustrationReferences": 0
+    },
+    {
+      "locale": "az",
+      "http": 200,
+      "capabilities": 28,
+      "illustrationReferences": 0
+    }
+  ],
+  "renderedVisualAcceptance": false,
+  "limitation": "Prior browser security restriction; HTTP/source only.",
+  "independentReview": {
+    "reviewer": "/root/distributed_story_documenter",
+    "disposition": "recapture",
+    "materialSourceDefects": [],
+    "verified": "No rejected assets/helper in builder/CSS/generated homepages, all28 capability IDs and anchors retained, copy hash unchanged, text layouts rebalanced."
+  }
+}

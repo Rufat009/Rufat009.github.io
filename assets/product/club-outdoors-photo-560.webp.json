@@ -1,0 +1,18 @@
+{
+  "method": "Built-in image_gen",
+  "promptStorage": "sidecar",
+  "prompt": "Use case: photorealistic-natural. Asset type: editorial landscape photograph for a fitness community website, approximately 3:2 landscape. A candid documentary photograph of four fictional ordinary adult recreational runners walking together along the edge of an urban park after an easy training session. Two women and two men around 25–40, believable varied everyday athletic builds, naturally interacting with each other instead of posing for the camera. One person listens, two talk, another smiles subtly, no synchronized poses, no staged high five. One holds a plain reusable bottle. Medium-wide framing from the side at chest height, all four people fit within the central 75% of the image, heads and hands entirely visible, crop around mid-thigh. Trees, pale stone path and distant unfocused low architecture, not a famous location. Quiet cloudy late-afternoon daylight; tactile natural skin, real fabric seams and creases, believable hands, authentic optical depth, restrained 35mm sports-editorial photography. Clothing palette graphite, dark sage, off-white, one muted ochre running jacket; natural muted greenery. Carefully composed but not glossy generic fitness advertising. Absolutely photographic realism, not 3D rendering, not illustration, not clay, not sculpture, not cartoon, not plastic skin, not cinematic orange/teal grading. No phones, screens, text, logos, medals, race numbers, signage, watermarks or exaggerated muscles. Fictional scene, not an image of real Deviny users. No transparency, fill the entire rectangular photograph.",
+  "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-5edee5c6-40c8-4e0f-bd96-eaf271e57881.png",
+  "sourceDimensions": [
+    1536,
+    1024
+  ],
+  "dimensions": [
+    560,
+    373
+  ],
+  "bytes": 36820,
+  "sha256": "7f35c0dd8ce3cbace085cae6eac995ac5be0e8ea65ab5ef8f8b2af5f6433fdef",
+  "processing": "Proportional Lanczos resize and WebP quality 83; no content edits",
+  "usage": "Fictional editorial illustration; not actual Deviny members or app UI"
+}

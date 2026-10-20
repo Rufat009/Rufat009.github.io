@@ -1,0 +1,25 @@
+{
+  "path": "assets/product/iphone-17-pro-silver.webp",
+  "source": "https://tryhoverify.com/images/devices/iphone_17_pro/silver.webp",
+  "source_page": "https://tryhoverify.com/tools/device-frames/iphone-17-pro/",
+  "creator": "UnveelWorks Private Limited / Hoverify",
+  "license": "https://tryhoverify.com/tools/device-frames/license/",
+  "license_version": "2026-09-16",
+  "usage": "Licensed website illustration. Independently drawn device frame; not Apple artwork. Do not redistribute as a reusable frame or mockup tool.",
+  "processing": "None; original transparent WebP retained byte for byte",
+  "dimensions": [
+    1332,
+    2748
+  ],
+  "screen": {
+    "left": 63,
+    "top": 63,
+    "width": 1206,
+    "height": 2622,
+    "radius": 186
+  },
+  "bytes": 34566,
+  "sha256": "71f75add6eab872f299ccce7a8a6bc343df9e52b1993de12e8f052dd4bf69ccb",
+  "retrieved_at": "2026-10-18T16:32:46.219745+00:00",
+  "prompt": "Source asset, not generated: original Hoverify iPhone 17 Pro Silver frame. https://tryhoverify.com/images/devices/iphone_17_pro/silver.webp"
+}

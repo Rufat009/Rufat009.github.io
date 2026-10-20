@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-20",
+  "scope": "Remove communication section; redesign progress, privacy and FAQ",
+  "locales": [
+    {
+      "locale": "en",
+      "http": 200,
+      "capabilities": 24,
+      "communicationSection": false,
+      "podiumPlaces": 3,
+      "nativeThemeOptions": 2,
+      "groupedFaq": 4,
+      "firstFaqOpen": true
+    },
+    {
+      "locale": "ru",
+      "http": 200,
+      "capabilities": 24,
+      "communicationSection": false,
+      "podiumPlaces": 3,
+      "nativeThemeOptions": 2,
+      "groupedFaq": 4,
+      "firstFaqOpen": true
+    },
+    {
+      "locale": "az",
+      "http": 200,
+      "capabilities": 24,
+      "communicationSection": false,
+      "podiumPlaces": 3,
+      "nativeThemeOptions": 2,
+      "groupedFaq": 4,
+      "firstFaqOpen": true
+    }
+  ],
+  "removedCapabilityIDs": [
+    "calls",
+    "chat-media",
+    "direct-chat",
+    "message-notifications"
+  ],
+  "checks": {
+    "build": "pass",
+    "static": "12 canonical, 3 utility, 6 redirects, 429 references, 66 images, zero errors",
+    "behavior": "Program preview, disclosure/UI motion, hero motion and navigation passed"
+  },
+  "renderedVisualAcceptance": false,
+  "limitation": "Prior browser/render restriction respected; source/HTTP and simulated behavior checks only.",
+  "independentReview": {
+    "reviewer": "/root/distributed_story_documenter",
+    "disposition": "recapture",
+    "finding": "Duplicated .programs-story h2 h2 selector introduced during chat CSS removal",
+    "resolution": "Corrected to .programs-story h2; source assertion and final static check passed.",
+    "otherSourceDefects": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "origin": "Built-in image_gen",
+  "date": "2026-10-20",
+  "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-d11b0ba6-4e4a-4405-8e47-22df4f95a069.png",
+  "prompt": "Use case: stylized-concept. Asset type: transparent editorial 3D still-life illustration for the actual-workout section of Deviny, a fitness community website. One striking compact physical arrangement of three useful pieces of exercise equipment: a graphite dumbbell with simple cylindrical weights lying diagonally in the foreground, an off-white rolled exercise mat with its spiral end clearly visible behind it, and a slender pale-sage reusable water bottle with a muted warm-gold cap standing beside the mat. Believable relative scale, all objects whole, tidy purposeful grouping, no levitation. Premium art-directed ceramic and satin-rubber materials, fine restrained natural texture, softly rounded manufactured edges, broad soft studio lighting, gentle grounded shadows. Palette warm off-white #f7f7f2, graphite green #252d26, pale sage and small muted warm gold #e8c77f. Three-quarter angle slightly from above, landscape 4:3 composition with generous breathing room. Truly transparent background, no floor/backdrop plane or rectangle. No people, notebook, food, phone, UI, text, lettering, numerical weight markings, logos, charts, fake metrics, medals, sparkles, glow, confetti or unrelated props. This is a purposeful editorial still life, not a single app icon.",
+  "promptStorage": "sidecar",
+  "dimensions": [
+    560,
+    420
+  ],
+  "originalDimensions": [
+    1448,
+    1086
+  ],
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "mode": "RGBA",
+  "bytes": 32408,
+  "sha256": "6439578558c11563413c59c4d09025185342411bf95ce1ccb99cda49c2b9733c",
+  "processing": "Proportional resize and WebP export; original transparency preserved. No repainting, content edits or background removal.",
+  "usage": "Conceptual editorial illustration; fictional people, no real-user or product-screenshot claim."
+}

@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-20",
+  "method": "Source/HTTP checks, not rendered page evidence",
+  "heroAndCopyUnchanged": true,
+  "locales": [
+    {
+      "locale": "en",
+      "http": 200,
+      "capabilities": 28,
+      "exactlyOnce": true,
+      "illustrations": 6,
+      "stores": {
+        "appStoreUrl": 2,
+        "googlePlayUrl": 2
+      }
+    },
+    {
+      "locale": "ru",
+      "http": 200,
+      "capabilities": 28,
+      "exactlyOnce": true,
+      "illustrations": 6,
+      "stores": {
+        "appStoreUrl": 2,
+        "googlePlayUrl": 2
+      }
+    },
+    {
+      "locale": "az",
+      "http": 200,
+      "capabilities": 28,
+      "exactlyOnce": true,
+      "illustrations": 6,
+      "stores": {
+        "appStoreUrl": 2,
+        "googlePlayUrl": 2
+      }
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/product/gymbro-partners.webp",
+      "bytes": 96492,
+      "dimensions": [
+        1080,
+        810
+      ],
+      "http": 200,
+      "promptStorage": "sidecar"
+    },
+    {
+      "path": "assets/product/gymbro-partners-560.webp",
+      "bytes": 37602,
+      "dimensions": [
+        560,
+        420
+      ],
+      "http": 200,
+      "promptStorage": "sidecar"
+    },
+    {
+      "path": "assets/product/programs-still-life.webp",
+      "bytes": 103522,
+      "dimensions": [
+        1080,
+        810
+      ],
+      "http": 200,
+      "promptStorage": "sidecar"
+    },
+    {
+      "path": "assets/product/programs-still-life-560.webp",
+      "bytes": 36858,
+      "dimensions": [
+        560,
+        420
+      ],
+      "http": 200,
+      "promptStorage": "sidecar"
+    },
+    {
+      "path": "assets/product/voice-conversation.webp",
+      "bytes": 70586,
+      "dimensions": [
+        1080,
+        810
+      ],
+      "http": 200,
+      "promptStorage": "sidecar"
+    },
+    {
+      "path": "assets/product/voice-conversation-560.webp",
+      "bytes": 25166,
+      "dimensions": [
+        560,
+        420
+      ],
+      "http": 200,
+      "promptStorage": "sidecar"
+    },
+    {
+      "path": "assets/product/workout-equipment.webp",
+      "bytes": 95996,
+      "dimensions": [
+        1080,
+        810
+      ],
+      "http": 200,
+      "promptStorage": "sidecar"
+    },
+    {
+      "path": "assets/product/workout-equipment-560.webp",
+      "bytes": 32408,
+      "dimensions": [
+        560,
+        420
+      ],
+      "http": 200,
+      "promptStorage": "sidecar"
+    },
+    {
+      "path": "assets/product/clubs-scene.webp",
+      "bytes": 176982,
+      "dimensions": [
+        1080,
+        810
+      ],
+      "http": 200,
+      "promptStorage": "sidecar"
+    },
+    {
+      "path": "assets/product/clubs-scene-560.webp",
+      "bytes": 65740,
+      "dimensions": [
+        560,
+        420
+      ],
+      "http": 200,
+      "promptStorage": "sidecar"
+    },
+    {
+      "path": "assets/product/rankings-podium.webp",
+      "bytes": 74188,
+      "dimensions": [
+        1080,
+        810
+      ],
+      "http": 200,
+      "promptStorage": "sidecar"
+    },
+    {
+      "path": "assets/product/rankings-podium-560.webp",
+      "bytes": 24512,
+      "dimensions": [
+        560,
+        420
+      ],
+      "http": 200,
+      "promptStorage": "sidecar"
+    }
+  ],
+  "renderedVisualAcceptance": false,
+  "limitation": "Previous browser security restriction respected; no rendering workaround."
+}

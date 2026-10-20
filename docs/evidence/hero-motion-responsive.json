@@ -1,0 +1,96 @@
+{
+  "normal": [
+    {
+      "path": "/",
+      "scrollWidth": 360,
+      "width": 360
+    },
+    {
+      "path": "/ru/",
+      "scrollWidth": 360,
+      "width": 360
+    },
+    {
+      "path": "/az/",
+      "scrollWidth": 360,
+      "width": 360
+    },
+    {
+      "path": "/",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "path": "/ru/",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "path": "/az/",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "path": "/",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "path": "/ru/",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "path": "/az/",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "path": "/",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "path": "/ru/",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "path": "/az/",
+      "scrollWidth": 1440,
+      "width": 1440
+    }
+  ],
+  "text200": [
+    {
+      "path": "/__qa__/",
+      "scrollWidth": 360,
+      "width": 360
+    },
+    {
+      "path": "/__qa__/ru/",
+      "scrollWidth": 360,
+      "width": 360
+    },
+    {
+      "path": "/__qa__/az/",
+      "scrollWidth": 360,
+      "width": 360
+    },
+    {
+      "path": "/__qa__/",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "path": "/__qa__/ru/",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "path": "/__qa__/az/",
+      "scrollWidth": 1440,
+      "width": 1440
+    }
+  ]
+}

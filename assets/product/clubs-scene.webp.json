@@ -1,0 +1,20 @@
+{
+  "prompt": "Use case: stylized-concept. Asset type: transparent editorial 3D illustration for the clubs section of Deviny, a fitness community website. Primary request: a small cohesive sculptural scene of four adult human figures gathering in an open circle, gently interacting around a common open center, conveying a welcoming club and shared activity. Figures have calm natural standing poses and simplified, tasteful facial features, adult proportions, no exaggerated athletic muscles; one figure holds a small rolled exercise mat. All four are visible and have plausible anatomy. This should feel like a carefully art-directed ceramic sculpture photographed in a studio, not four separate app icons, not a cartoon sticker or plastic toy collection. Palette strictly warm off-white #f7f7f2, graphite green #252d26, muted warm gold #e8c77f and quiet pale sage. One gold garment/accent only, the remaining figures off-white and graphite/sage. Matte ceramic and fine satin surfaces, subtle natural texture, softly rounded details, broad soft studio light, gentle grounded contact shadows. Three-quarter view slightly from above; grouped compactly in a landscape 4:3 composition with clean silhouette and generous breathing room around every side. Isolated on a genuinely transparent background, no backdrop plane, no badge, no circle outline, no enclosure, no text, names, statistics, numerals, logos, phones, screens, confetti, glow or extra floating decoration. These are fictional sculptural figures representing community, not actual Deviny members.",
+  "createdAt": "2026-10-20T13:28:32.293Z",
+  "bytes": 176982,
+  "sha256": "6eaf62a44a936c01941035c8eccf5ec423d249a9156447033702295f6e22d1b2",
+  "dimensions": [
+    1080,
+    810
+  ],
+  "mode": "RGBA",
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "origin": "Built-in image_gen",
+  "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-98412f47-d895-46f3-b45b-63766e956870.png",
+  "promptStorage": "sidecar",
+  "date": "2026-10-20",
+  "processing": "Proportional resize and WebP export; original alpha preserved. No artwork repainting or background removal."
+}

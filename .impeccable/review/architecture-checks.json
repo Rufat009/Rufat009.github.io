@@ -1,0 +1,52 @@
+{
+  "canonical_pages": 12,
+  "localized_404": 3,
+  "legacy_team_documents": 6,
+  "local_references": 414,
+  "images": 66,
+  "source_errors": 0,
+  "locale_checks": {
+    "en": {
+      "about_team_members": 4,
+      "specialist_actions": 3,
+      "training_workflows": 3,
+      "contact_modes": 3
+    },
+    "ru": {
+      "about_team_members": 4,
+      "specialist_actions": 3,
+      "training_workflows": 3,
+      "contact_modes": 3
+    },
+    "az": {
+      "about_team_members": 4,
+      "specialist_actions": 3,
+      "training_workflows": 3,
+      "contact_modes": 3
+    }
+  },
+  "behavior_checks": [
+    "contact: all locales, intent, optional access fields, reply channels, validation, drafts, success, failure, network, malformed response, timeout, duplicates",
+    "navigation: 404 locales, explicit language, draft limits, pending protection, old team paths",
+    "UI motion and unchanged hero motion: passed"
+  ],
+  "preview": "12 canonical routes HTTP200 match generated source; localized missing routes HTTP404 with recovery HTML (architecture-preview-checks.json)",
+  "legal_checks": [
+    {
+      "url": "https://api.deviny.me/legal/privacy.html",
+      "http_status": 403,
+      "result": "automated_request_blocked",
+      "reason": "Cloudflare 1010: browser integrity protection; origin access not established"
+    },
+    {
+      "url": "https://api.deviny.me/legal/terms.html",
+      "http_status": 403,
+      "result": "automated_request_blocked",
+      "reason": "Cloudflare 1010: browser integrity protection; origin access not established"
+    }
+  ],
+  "legal_source": "Backend October9 legal handoff and HTML explicitly mark source drafts as awaiting legal review/publication. Not published by this change; existing external links retained.",
+  "visual_review": "Unavailable under prior browser security restriction; no capture workaround. DOM/layout/WAAPI fixtures are behavior tests, not rendered validation.",
+  "live_delivery": "No live messages sent. Web3Forms states and payload checked with isolated mocks.",
+  "publication": "Local source/preview only; no push, deployment, Cloudflare or sibling changes."
+}

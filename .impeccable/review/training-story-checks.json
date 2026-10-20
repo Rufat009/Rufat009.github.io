@@ -1,0 +1,37 @@
+{
+  "scope": "Replace the rejected training section",
+  "changed_html": [
+    "index.html",
+    "ru/index.html",
+    "az/index.html"
+  ],
+  "unchanged_html": 27,
+  "preview": {
+    "/": {
+      "http": 200,
+      "training_notes": 2,
+      "phone_frames": 1,
+      "old_screenshot": false
+    },
+    "/ru/": {
+      "http": 200,
+      "training_notes": 2,
+      "phone_frames": 1,
+      "old_screenshot": false
+    },
+    "/az/": {
+      "http": 200,
+      "training_notes": 2,
+      "phone_frames": 1,
+      "old_screenshot": false
+    }
+  },
+  "asset_review": "Generated source image inspected; both subjects and kettlebell pose visible. Responsive image sources present. No browser-based layout review.",
+  "source_checks": {
+    "pages": 15,
+    "references": 399,
+    "images": 72,
+    "errors": 0
+  },
+  "browser_review": "Unavailable under the earlier security denial; no workaround attempted."
+}

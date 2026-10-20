@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-20",
+  "scope": "Distributed homepage product story",
+  "sections": [
+    "people and GymBro",
+    "clubs",
+    "program formats and author choice",
+    "communication formats",
+    "training scenarios and tools",
+    "progression",
+    "personal choices",
+    "professional tools"
+  ],
+  "features": {
+    "expected": 28,
+    "renderedEachLocale": 28,
+    "duplicateIds": 0,
+    "coverage": "all original confirmed IDs retained exactly once"
+  },
+  "checks": {
+    "static": "pass: 12 canonical, 3 utility, 6 legacy redirects, 414 references, 66 images",
+    "http": "pass: EN/RU/AZ source coverage and both stores; final stylesheet served",
+    "uiMotion": "pass, simulated",
+    "homeMotion": "pass, simulated",
+    "navigation": "pass",
+    "detector": ".impeccable/review/distributed-story-detector.json; once, context reviewed",
+    "independentReview": {
+      "agent": "distributed_story_finish_reviewer",
+      "disposition": "recapture",
+      "source": "No established material source defect; mobile program-sheet density refinement confirmed resolved in source.",
+      "visual": "No fresh desktop/mobile capture available under earlier browser restriction; no visual acceptance claimed."
+    },
+    "cssParser": "No dedicated CSS parser available; no dependency added. Source review and existing static checks used, without claiming rendered CSS validation."
+  },
+  "newRasterAssets": 0,
+  "nativeOrBackendEdits": false,
+  "deployment": false
+}

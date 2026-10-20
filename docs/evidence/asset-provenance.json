@@ -1,0 +1,122 @@
+[
+  {
+    "path": "assets/product/wordmark.webp",
+    "source": "Deviny_IOS/Deviny/Deviny/Assets.xcassets/DevinyFrontendLogoWhite.imageset/logo-white.png",
+    "bytes": 12726,
+    "sha256": "78e720557ce07e804bb5135378df56c7b120700b81a4f2f504971869fa4a85ee",
+    "processing": "resize and WebP compression only; no content synthesis",
+    "provenance_metadata": "Adjacent .json sidecar produced by Impeccable, or embedded in supported formats."
+  },
+  {
+    "path": "assets/product/training.webp",
+    "source": "Deviny_IOS/Deviny/Deviny/Assets.xcassets/WelcomeHeroDark.imageset/welcome-hero-dark.png",
+    "bytes": 126350,
+    "sha256": "88635a6618d4adea1f6e758c289dd3587da238b8c414e92150182e185e39cc20",
+    "processing": "resize and WebP compression only; no content synthesis",
+    "provenance_metadata": "Adjacent .json sidecar produced by Impeccable, or embedded in supported formats."
+  },
+  {
+    "path": "assets/product/exercises-ru.webp",
+    "source": "docs/evidence/exercises-ru.png — actual iPhone 17 Pro simulator capture, iOS 26.5, 24 September 2026",
+    "bytes": 52660,
+    "sha256": "ade40e0d6eaa16c191e04353a2494d99aafda1c59bb83408c08548d849be96b8",
+    "processing": "resize and WebP compression only; no content synthesis",
+    "provenance_metadata": "Adjacent .json sidecar produced by Impeccable, or embedded in supported formats."
+  },
+  {
+    "path": "assets/team/rufat.webp",
+    "source": "existing landing assets/team/rufat.png",
+    "bytes": 7910,
+    "sha256": "4e006604a47f6232ddccb911f2f7a652ed408a0f44ecdfea3a20c82197e7ea4a",
+    "processing": "resize and WebP compression only",
+    "provenance_metadata": "Adjacent .json sidecar produced by Impeccable, or embedded in supported formats."
+  },
+  {
+    "path": "assets/team/emil.webp",
+    "source": "existing landing assets/team/emil.png",
+    "bytes": 43052,
+    "sha256": "9a50945169663248cd072c2c5c414aba527c834cd5554240d30e7ada48cc3b99",
+    "processing": "resize and WebP compression only",
+    "provenance_metadata": "Adjacent .json sidecar produced by Impeccable, or embedded in supported formats."
+  },
+  {
+    "path": "assets/team/tima.webp",
+    "source": "existing landing assets/team/tima.png",
+    "bytes": 31392,
+    "sha256": "94d3229d494ad2275b17e36eca35618f8a16cd386943ebd2883d6f51c98b9587",
+    "processing": "resize and WebP compression only",
+    "provenance_metadata": "Adjacent .json sidecar produced by Impeccable, or embedded in supported formats."
+  },
+  {
+    "path": "assets/team/arxun.webp",
+    "source": "existing landing assets/team/arxun.png",
+    "bytes": 2760,
+    "sha256": "5e72db9a8478b438a256aa531c8e06ec750de6d14ec60f4fc19d0fd723b2c9fd",
+    "processing": "resize and WebP compression only",
+    "provenance_metadata": "Adjacent .json sidecar produced by Impeccable, or embedded in supported formats."
+  },
+  {
+    "path": "assets/product/community-hero.webp",
+    "source": "Built-in image_gen, 2026-10-18; source PNG in the adjacent sidecar",
+    "bytes": 160230,
+    "sha256": "4cb4c0559328053b971246df84aa4a77abc9c7f6a502bfd01ff2f3d96ccb2ece",
+    "processing": "WebP compression only, original 1642×958 pixels retained",
+    "usage": "Atmospheric editorial illustration of fictional adults; not actual Deviny members, testimonial or product screenshot",
+    "prompt": "assets/product/community-hero.webp.json",
+    "provenance_metadata": "Exact generation prompt embedded in WebP XMP and adjacent JSON; Impeccable scan 0 missing."
+  },
+  {
+    "path": "assets/product/iphone-17-pro-silver.webp",
+    "source": "https://tryhoverify.com/images/devices/iphone_17_pro/silver.webp",
+    "source_page": "https://tryhoverify.com/tools/device-frames/iphone-17-pro/",
+    "creator": "UnveelWorks Private Limited / Hoverify",
+    "license": "https://tryhoverify.com/tools/device-frames/license/",
+    "license_version": "2026-09-16",
+    "usage": "Licensed website illustration. Independently drawn device frame; not Apple artwork. Do not redistribute as a reusable frame or mockup tool.",
+    "processing": "None; original transparent WebP retained byte for byte",
+    "dimensions": [
+      1332,
+      2748
+    ],
+    "screen": {
+      "left": 63,
+      "top": 63,
+      "width": 1206,
+      "height": 2622,
+      "radius": 186
+    },
+    "bytes": 34566,
+    "sha256": "71f75add6eab872f299ccce7a8a6bc343df9e52b1993de12e8f052dd4bf69ccb",
+    "retrieved_at": "2026-10-18T16:32:46.219745+00:00"
+  },
+  {
+    "path": "assets/product/training-together.webp",
+    "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-877c6856-7fba-44cd-aacb-299174792f80.png",
+    "generator": "Built-in image_gen",
+    "createdAt": "2026-10-18T17:20:59.040322+00:00",
+    "dimensions": [
+      1681,
+      936
+    ],
+    "bytes": 189612,
+    "sha256": "e7edd90a4ecaa6c510246b293e5968768cadf04e97f82d6d02e073e24a242c15",
+    "processing": "WebP encoding; small variant resized proportionally. No compositing or content edits.",
+    "usage": "Editorial illustration of fictional adults training together. Not actual Deviny members, a testimonial, or a product screenshot.",
+    "prompt": "assets/product/training-together.webp.json"
+  },
+  {
+    "path": "assets/product/training-together-840.webp",
+    "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-877c6856-7fba-44cd-aacb-299174792f80.png",
+    "generator": "Built-in image_gen",
+    "createdAt": "2026-10-18T17:20:59.122327+00:00",
+    "dimensions": [
+      840,
+      468
+    ],
+    "bytes": 75430,
+    "sha256": "e4bb9eda930d634dddf63b8b7c23c4c4360c8e8a0014a712d7981c95e70d851b",
+    "processing": "WebP encoding; small variant resized proportionally. No compositing or content edits.",
+    "usage": "Editorial illustration of fictional adults training together. Not actual Deviny members, a testimonial, or a product screenshot.",
+    "prompt": "assets/product/training-together-840.webp.json"
+  }
+]

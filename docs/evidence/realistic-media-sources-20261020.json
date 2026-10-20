@@ -1,0 +1,65 @@
+{
+  "club-outdoors-photo": {
+    "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-5edee5c6-40c8-4e0f-bd96-eaf271e57881.png",
+    "sourceDimensions": [
+      1536,
+      1024
+    ],
+    "exports": [
+      {
+        "path": "assets/product/club-outdoors-photo.webp",
+        "width": 1080,
+        "height": 720,
+        "bytes": 90468
+      },
+      {
+        "path": "assets/product/club-outdoors-photo-560.webp",
+        "width": 560,
+        "height": 373,
+        "bytes": 36820
+      }
+    ]
+  },
+  "program-strength-photo": {
+    "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-238c2291-8a6d-46d8-b8a6-288135a15dfe.png",
+    "sourceDimensions": [
+      1536,
+      1024
+    ],
+    "exports": [
+      {
+        "path": "assets/product/program-strength-photo.webp",
+        "width": 1080,
+        "height": 720,
+        "bytes": 134902
+      },
+      {
+        "path": "assets/product/program-strength-photo-560.webp",
+        "width": 560,
+        "height": 373,
+        "bytes": 44448
+      }
+    ]
+  },
+  "program-nutrition-photo": {
+    "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-6bba6bb6-fd46-4505-a8a1-e65086676159.png",
+    "sourceDimensions": [
+      1900,
+      828
+    ],
+    "exports": [
+      {
+        "path": "assets/product/program-nutrition-photo.webp",
+        "width": 1080,
+        "height": 471,
+        "bytes": 116982
+      },
+      {
+        "path": "assets/product/program-nutrition-photo-560.webp",
+        "width": 560,
+        "height": 244,
+        "bytes": 38946
+      }
+    ]
+  }
+}

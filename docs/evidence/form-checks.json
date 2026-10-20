@@ -1,0 +1,157 @@
+[
+  {
+    "case": "ru empty fields",
+    "pass": true,
+    "requests": 0,
+    "focus": "name",
+    "invalidFields": 3
+  },
+  {
+    "case": "ru success",
+    "pass": true,
+    "requests": 1,
+    "focus": "form-status",
+    "cleared": true
+  },
+  {
+    "case": "en success",
+    "enabled": true,
+    "focused": "form-status",
+    "requests": "1",
+    "retained": false,
+    "state": "success",
+    "text": "Your message has been sent. The team will reply using the contact details you provided."
+  },
+  {
+    "case": "en failure",
+    "enabled": true,
+    "focused": "form-status",
+    "requests": "1",
+    "retained": true,
+    "state": "error",
+    "text": "We could not confirm delivery. Your message is still here. Try again or email contact@deviny.me."
+  },
+  {
+    "case": "en network",
+    "enabled": true,
+    "focused": "form-status",
+    "requests": "1",
+    "retained": true,
+    "state": "error",
+    "text": "The connection was interrupted. Your message has been kept. Try again or email contact@deviny.me."
+  },
+  {
+    "case": "en malformed",
+    "enabled": true,
+    "focused": "form-status",
+    "requests": "1",
+    "retained": true,
+    "state": "error",
+    "text": "We could not confirm delivery. Your message is still here. Try again or email contact@deviny.me."
+  },
+  {
+    "case": "ru success",
+    "enabled": true,
+    "focused": "form-status",
+    "requests": "1",
+    "retained": false,
+    "state": "success",
+    "text": "Сообщение отправлено. Команда ответит по указанному вами контакту."
+  },
+  {
+    "case": "ru failure",
+    "enabled": true,
+    "focused": "form-status",
+    "requests": "1",
+    "retained": true,
+    "state": "error",
+    "text": "Не удалось подтвердить доставку. Сообщение сохранено в форме. Попробуйте ещё раз или напишите на contact@deviny.me."
+  },
+  {
+    "case": "ru network",
+    "enabled": true,
+    "focused": "form-status",
+    "requests": "1",
+    "retained": true,
+    "state": "error",
+    "text": "Соединение прервалось. Сообщение осталось в форме. Повторите попытку или напишите на contact@deviny.me."
+  },
+  {
+    "case": "ru malformed",
+    "enabled": true,
+    "focused": "form-status",
+    "requests": "1",
+    "retained": true,
+    "state": "error",
+    "text": "Не удалось подтвердить доставку. Сообщение сохранено в форме. Попробуйте ещё раз или напишите на contact@deviny.me."
+  },
+  {
+    "case": "az success",
+    "enabled": true,
+    "focused": "form-status",
+    "requests": "1",
+    "retained": false,
+    "state": "success",
+    "text": "Mesajınız göndərildi. Komanda qeyd etdiyiniz əlaqə vasitəsi ilə cavab verəcək."
+  },
+  {
+    "case": "az failure",
+    "enabled": true,
+    "focused": "form-status",
+    "requests": "1",
+    "retained": true,
+    "state": "error",
+    "text": "Çatdırılmanı təsdiqləmək mümkün olmadı. Mesajınız formadadır. Yenidən cəhd edin və ya contact@deviny.me ünvanına yazın."
+  },
+  {
+    "case": "az network",
+    "enabled": true,
+    "focused": "form-status",
+    "requests": "1",
+    "retained": true,
+    "state": "error",
+    "text": "Bağlantı kəsildi. Mesajınız saxlanılıb. Yenidən cəhd edin və ya contact@deviny.me ünvanına yazın."
+  },
+  {
+    "case": "az malformed",
+    "enabled": true,
+    "focused": "form-status",
+    "requests": "1",
+    "retained": true,
+    "state": "error",
+    "text": "Çatdırılmanı təsdiqləmək mümkün olmadı. Mesajınız formadadır. Yenidən cəhd edin və ya contact@deviny.me ünvanına yazın."
+  },
+  {
+    "case": "pending duplicate protection",
+    "busy": "true",
+    "inputsDisabled": true,
+    "requests": "1",
+    "state": "pending",
+    "submitDisabled": true
+  },
+  {
+    "case": "after pending",
+    "enabled": true,
+    "requests": "1",
+    "state": "success"
+  },
+  {
+    "case": "invalid email and short message",
+    "invalid": [
+      "contact_details",
+      "message"
+    ],
+    "requests": "0"
+  },
+  {
+    "case": "WhatsApp requires digits",
+    "invalid": "true",
+    "requests": "0"
+  },
+  {
+    "case": "Telegram valid and retry after failure",
+    "requests": "2",
+    "retained": "Confirmed visually: @qa_demo. Value omitted by browser DOM snapshot.",
+    "state": "error"
+  }
+]

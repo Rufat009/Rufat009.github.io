@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-20",
+  "scope": "Approved deep-audit follow-through",
+  "changes": [
+    "Early discovery-to-training value",
+    "Reduced repeated copy; defined GymBro",
+    "Concrete program content and training paths",
+    "Professional store CTAs primary, questions secondary",
+    "Compact mobile hero and section spacing",
+    "Selected route-node/connector motion with reduced-motion fallback",
+    "Localized social cards and metadata"
+  ],
+  "checks": {
+    "static": "pass: 12 canonical, 3 utility, 6 legacy redirects, 408 local references, 66 images",
+    "contact": "pass, mocked only",
+    "navigation": "pass",
+    "uiMotion": "pass, simulated",
+    "homeMotion": "pass, simulated",
+    "http": "pass: six landing/professional routes and three social PNGs",
+    "socialCard": "RU PNG inspected; all files 1200x630",
+    "siteRendering": "unavailable under prior browser restriction"
+  },
+  "releaseDependencies": [
+    "Actual store listing URLs and released-state copy",
+    "Analytics destination for store-click measurement"
+  ],
+  "deployment": false
+}

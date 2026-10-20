@@ -1,0 +1,43 @@
+{
+  "html_changed": [
+    "index.html",
+    "ru/index.html",
+    "az/index.html"
+  ],
+  "other_html_unchanged": 27,
+  "routes": {
+    "/": {
+      "status": 200,
+      "platform_caption": false,
+      "matching_phone_frames": 2,
+      "faq_count": 4
+    },
+    "/ru/": {
+      "status": 200,
+      "platform_caption": false,
+      "matching_phone_frames": 2,
+      "faq_count": 4
+    },
+    "/az/": {
+      "status": 200,
+      "platform_caption": false,
+      "matching_phone_frames": 2,
+      "faq_count": 4
+    }
+  },
+  "source_color_contrast_ratios": {
+    "body": 6.04,
+    "gold_heading": 5.35,
+    "inverse_body": 8.81,
+    "gold_panel_body": 5.87,
+    "footer_focus": 8.71
+  },
+  "checks": {
+    "canonical_pages": 15,
+    "local_references": 402,
+    "image_elements": 75,
+    "errors": 0,
+    "motion_behavior": "passed"
+  },
+  "visual_verification": "Not performed. Existing localhost browser security denial remains in force; no alternate renderer used."
+}

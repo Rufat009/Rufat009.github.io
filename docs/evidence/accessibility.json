@@ -1,0 +1,266 @@
+[
+  {
+    "path": "",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 25
+  },
+  {
+    "path": "specialists.html",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 22
+  },
+  {
+    "path": "about.html",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 20
+  },
+  {
+    "path": "team.html",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20
+  },
+  {
+    "path": "contacts.html",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 25
+  },
+  {
+    "path": "ru/",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 25
+  },
+  {
+    "path": "ru/specialists.html",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 22
+  },
+  {
+    "path": "ru/about.html",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 20
+  },
+  {
+    "path": "ru/team.html",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20
+  },
+  {
+    "path": "ru/contacts.html",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 25
+  },
+  {
+    "path": "az/",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 25
+  },
+  {
+    "path": "az/specialists.html",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 22
+  },
+  {
+    "path": "az/about.html",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 20
+  },
+  {
+    "path": "az/team.html",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20
+  },
+  {
+    "path": "az/contacts.html",
+    "width": 390,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 25
+  },
+  {
+    "path": "",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 24
+  },
+  {
+    "path": "specialists.html",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 21
+  },
+  {
+    "path": "about.html",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 19
+  },
+  {
+    "path": "team.html",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19
+  },
+  {
+    "path": "contacts.html",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 25
+  },
+  {
+    "path": "ru/",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 24
+  },
+  {
+    "path": "ru/specialists.html",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 21
+  },
+  {
+    "path": "ru/about.html",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 19
+  },
+  {
+    "path": "ru/team.html",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19
+  },
+  {
+    "path": "ru/contacts.html",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 25
+  },
+  {
+    "path": "az/",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 24
+  },
+  {
+    "path": "az/specialists.html",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 21
+  },
+  {
+    "path": "az/about.html",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ],
+    "passes": 19
+  },
+  {
+    "path": "az/team.html",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19
+  },
+  {
+    "path": "az/contacts.html",
+    "width": 1440,
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 25
+  }
+]

@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-20",
+  "scope": [
+    "home",
+    "specialists",
+    "about",
+    "contacts",
+    "EN/RU/AZ source parity",
+    "shared CSS/JS"
+  ],
+  "method": "Read-only source and copy audit, direct viewing of image assets, static CSS detector, existing isolated behavioral suites. No site mutation or browser rendering.",
+  "limits": [
+    "Current desktop/mobile rendered composition unavailable under prior security restriction",
+    "No live form submission or store installation",
+    "No fresh native app runtime test; product claims compared with existing source evidence and owner decisions",
+    "English/Azerbaijani key coverage checked; native-speaker editorial acceptance not established"
+  ],
+  "integrityVerdict": "Coherent product-specific structure in source; final visual acceptance pending",
+  "scores": {
+    "accessibility": null,
+    "performanceSource": 3,
+    "responsive": null,
+    "themingSource": 3,
+    "implementationIntegritySource": 3,
+    "total": null,
+    "scaleMaximum": 4,
+    "reason": "Do not manufacture aggregate or WCAG/responsive acceptance without rendered evidence."
+  },
+  "checks": {
+    "static": {
+      "canonical": 12,
+      "utility": 3,
+      "redirects": 6,
+      "references": 438,
+      "images": 75,
+      "errors": []
+    },
+    "behavioral": [
+      "product-scenes passed",
+      "ui-motion passed",
+      "home-motion passed",
+      "navigation passed",
+      "contact-flow passed without network submissions"
+    ],
+    "ruMainSourceCounts": {
+      "homeWordsIncludingInactivePanels": 813,
+      "homeHeadingsIncludingInactivePanels": 38,
+      "specialistWords": 212,
+      "specialistHeadings": 13
+    }
+  },
+  "findings": [
+    {
+      "id": "A1",
+      "priority": "P2",
+      "kind": "content/design judgment",
+      "location": "programs_story, training_modes, progress_story",
+      "issue": "Plan selection, saved results and continuing from the current step repeat across program copy, preview routes, training scenarios and progress. This weakens forward movement.",
+      "recommendation": "Keep each feature, reduce duplicate explanations. Programs explain selection/author/content; training explains action; progress explains return/history/achievements."
+    },
+    {
+      "id": "A2",
+      "priority": "P2",
+      "kind": "content/design judgment",
+      "location": "personal_story, home.css .personal-story",
+      "issue": "Six settings/profile/invite explanations plus a theme preview occupy a full chapter before FAQ and download. Secondary features compete with the central reason to install.",
+      "recommendation": "Retain all six capabilities, compress profile/language/invite copy, give privacy and control the main emphasis. Do not add more decorations."
+    },
+    {
+      "id": "A3",
+      "priority": "P2",
+      "kind": "copy",
+      "location": "content/site.json ru featureGroups / homeProgramKinds",
+      "issue": "Internal or vague wording: подтвердите связь, текущий шаг, доступные рейтинги, с учётом роли аккаунта; redundant подходящий вам подход.",
+      "recommendation": "Use everyday terms while preserving scope: подтвердите друг друга как партнёров; продолжайте с того занятия, где остановились; инструменты зависят от выбранной роли; выберите подходящую программу. Confirm ranking criterion before naming it more specifically."
+    },
+    {
+      "id": "A4",
+      "priority": "P2",
+      "kind": "structure/design judgment",
+      "location": "specialists page",
+      "issue": "Programs/clients/schedule repeated in hero, diagram, audience copy and closing, while the middle explains registration and client reassurance more than daily professional work.",
+      "recommendation": "Replace repetition with one concise sourced workflow of creating a program, working with clients and planning meetings; no invented revenue or engagement guarantees."
+    },
+    {
+      "id": "A5",
+      "priority": "P2",
+      "kind": "navigation semantics",
+      "location": "scripts/build.py header: Как начать -> #get-started",
+      "issue": "The label promises instructions but lands at the closing store section.",
+      "recommendation": "Rename to Скачать or point to the actual getting-started FAQ; keep one stable meaning for the control."
+    },
+    {
+      "id": "A6",
+      "priority": "P2",
+      "kind": "verified CSS accessibility issue",
+      "location": "global.css:20,128; home.css:174",
+      "issue": "Non-home footer focus ring #89651d on #202822 has calculated contrast 2.84:1. The home footer already overrides it to a light gold.",
+      "recommendation": "Apply a shared light footer focus color across page types. This is a source-color calculation, not a full WCAG audit."
+    },
+    {
+      "id": "A7",
+      "priority": "P3",
+      "kind": "maintenance",
+      "location": "global.css historical .hero-cover/.workflow-screen; home.css .home-need; README.md",
+      "issue": "Unused legacy layout rules and append-only contradictory historical documentation increase maintenance risk. Detector reports many token-document discrepancies; these are not independently proven visual defects.",
+      "recommendation": "Remove only verified unused rules in a separate bounded cleanup and leave one clearly current documentation summary."
+    }
+  ],
+  "releaseDependencies": [
+    {
+      "priority": "P1 at launch",
+      "item": "Authorized generic store destinations cannot complete installation. Replace with real listings and update release copy when released; do not invent an access gate."
+    },
+    {
+      "priority": "P1 acceptance pending",
+      "item": "Rendered desktop/mobile, keyboard and enlarged-text review remains required; source tests cannot establish geometry or smoothness."
+    },
+    {
+      "priority": "P1 acceptance pending",
+      "item": "Public legal links previously returned Cloudflare 1010 to automation. Origin document availability/approval unverified, not a proven missing document."
+    },
+    {
+      "priority": "P2 measurement",
+      "item": "No connected store-click analytics destination; conversion improvement cannot be claimed."
+    }
+  ],
+  "positive": [
+    "Correct people-specialist-program-training positioning",
+    "Four page types suffice; no extra pages needed",
+    "Strong distinction between community, program choice and actual training",
+    "Realistic imagery supports existing topics without returning rejected cartoons",
+    "No fabricated reviews, user counts, subscription claims or access gate",
+    "Responsive WebP/lazy images and local font; small runtime scripts",
+    "Native FAQ and radios, keyboard program tabs, reduced-motion handling",
+    "Contact preserves drafts and handles network/malformed/timeout/duplicate states"
+  ],
+  "detectorInterpretation": {
+    "primary": 1,
+    "advisories": "177 typography,9 radius,49 color documentation mismatches; not 235 independently verified UI defects",
+    "primaryContext": "Small bounded contact feedback height/margin/padding transitions inside @supports; no measured jank or evidence of a release-blocking performance defect"
+  },
+  "overallRecommendation": "Keep current visual identity, approved hero and chapter order. Focus the final edit on repetition, plain language, professional benefit, navigation label and shared footer focus. No new blocks/pages/imagery required.",
+  "sourceChangesMade": false,
+  "followThrough": {
+    "status": "Source/content actions implemented",
+    "evidence": "final-polish-checks.json",
+    "releaseDependencies": "Remain explicitly pending; no real store listing, legal approval, analytics destination or rendered acceptance fabricated"
+  }
+}

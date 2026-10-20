@@ -1,0 +1,7 @@
+{
+  "file": "deviny-sans.woff2",
+  "source": "Deviny_IOS/Deviny/Deviny/Resources/GoogleSans/GoogleSans.ttf",
+  "license": "OFL.txt",
+  "processing": "Unicode subset for Latin, Cyrillic, Azerbaijani and punctuation; WOFF2 conversion with fontTools. Variable axes preserved.",
+  "bytes": 165812
+}

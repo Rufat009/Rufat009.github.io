@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-20",
+  "iosHead": "13cc2ce9e8c0c315ce21954d69c4f0429df985f9",
+  "backendHead": "a8e64ba6a97860458c1e26ec53555137e1133c24",
+  "basis": "Read-only source inspection, not a new native/runtime acceptance or a public release assertion. Store launch remains upcoming.",
+  "features": {
+    "clubs": [
+      "Views/ClubsView.swift",
+      "Services/ClubService.swift"
+    ],
+    "club-challenges": [
+      "Views/ClubsView.swift",
+      "Services/ClubService.swift"
+    ],
+    "club-activity": [
+      "Views/ClubPrimarySections.swift",
+      "Services/ClubService.swift"
+    ],
+    "discussions": [
+      "Views/DiscussionsView.swift",
+      "Services/DiscussionService.swift"
+    ],
+    "social-feed": [
+      "Views/FeedView.swift"
+    ],
+    "friends": [
+      "Views/FriendsView.swift",
+      "Views/FollowActionButton.swift"
+    ],
+    "gymbro": [
+      "Views/GymBroViews.swift",
+      "Services/GymBroService.swift"
+    ],
+    "direct-chat": [
+      "Views/ChatsView.swift",
+      "Services/ChatService.swift"
+    ],
+    "chat-media": [
+      "Views/ChatView.swift",
+      "ViewModels/ChatViewModel.swift"
+    ],
+    "calls": [
+      "Views/ChatView.swift",
+      "Views/CallView.swift"
+    ],
+    "message-notifications": [
+      "Views/ChatView.swift",
+      "Views/NotificationsView.swift"
+    ],
+    "exercise-catalog": [
+      "Views/WorkoutEditorView.swift",
+      "Views/ExerciseTechniquePreview.swift"
+    ],
+    "workout-editor": [
+      "Views/WorkoutEditorView.swift"
+    ],
+    "workout-history": [
+      "Views/WorkoutsView.swift",
+      "Views/WorkoutResultView.swift"
+    ],
+    "journey": [
+      "Views/JourneyView.swift"
+    ],
+    "achievements": [
+      "Views/AchievementsView.swift",
+      "Views/UserLevelCard.swift"
+    ],
+    "leaderboards": [
+      "Views/SafeLeaderboardSection.swift"
+    ],
+    "program-catalog": [
+      "Views/ProgramsView.swift",
+      "Services/ProgramService.swift"
+    ],
+    "authors-reviews": [
+      "Views/ProgramDetailView.swift",
+      "Views/ProgramReviewsView.swift"
+    ],
+    "search-filters": [
+      "Views/SearchView.swift",
+      "Services/SearchService.swift"
+    ],
+    "program-library": [
+      "Views/PurchasedProgramDetailView.swift",
+      "Services/ProgramProgressService.swift"
+    ],
+    "professional-tools": [
+      "Views/ExpertDashboardView.swift",
+      "Views/StudentsView.swift",
+      "Views/ScheduleView.swift"
+    ],
+    "public-profile": [
+      "Views/ProfileShareItem.swift",
+      "Views/PostActionMenu.swift"
+    ],
+    "privacy": [
+      "Views/CorePrivacySettingsView.swift"
+    ],
+    "safety": [
+      "Views/SafetyReportSheet.swift",
+      "Views/ChatView.swift"
+    ],
+    "app-lock": [
+      "Views/AppLockView.swift"
+    ],
+    "appearance": [
+      "Views/ProfileSettingsView.swift",
+      "Views/LanguageSwitcher.swift"
+    ],
+    "referrals": [
+      "Views/ReferralView.swift",
+      "Services/ReferralService.swift"
+    ]
+  },
+  "backendChecks": [
+    "ClubsController.cs",
+    "DiscussionsController.cs",
+    "MeMessagesController.cs",
+    "ChatFileController.cs",
+    "CallsController.cs",
+    "ReferralsController.cs"
+  ],
+  "limits": {
+    "calls": "Implementation exists; docs/release-scope-and-contract-gates.md still requires physical-device/APNs acceptance. No unlimited, always-on or E2EE promise.",
+    "clubs": "Native reachable UI covers catalog/create/join/invites, members, challenges, activity and rankings. Club messages/events/announcements have API support but were not found in the current reachable native screen, so those are not advertised.",
+    "chat": "No unsupported group chat, message editing, forwarding, reactions, arbitrary-file or E2EE claims.",
+    "professional": "Tools vary by role; no revenue/profit/payout promise. Support/consultations are offer-dependent.",
+    "subscriptions": "Excluded by explicit owner decision.",
+    "referrals": "Invitation code/link only; no invented bonus or discount."
+  },
+  "presentation": "Distributed narrative; internal featureGroups organize copy, not repeated public chapters.",
+  "locations": {
+    "people-story": [
+      "gymbro",
+      "social-feed",
+      "friends",
+      "discussions"
+    ],
+    "clubs-story": [
+      "clubs",
+      "club-challenges",
+      "club-activity"
+    ],
+    "programs-story": [
+      "program-catalog",
+      "authors-reviews",
+      "search-filters",
+      "program-library"
+    ],
+    "talk-story": [
+      "direct-chat",
+      "chat-media",
+      "calls",
+      "message-notifications"
+    ],
+    "home-training": [
+      "exercise-catalog",
+      "workout-editor",
+      "workout-history"
+    ],
+    "progress-story": [
+      "journey",
+      "achievements",
+      "leaderboards"
+    ],
+    "personal-story": [
+      "privacy",
+      "safety",
+      "app-lock",
+      "public-profile",
+      "appearance",
+      "referrals"
+    ],
+    "home-professionals": [
+      "professional-tools"
+    ]
+  }
+}

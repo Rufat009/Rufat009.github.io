@@ -1,0 +1,20 @@
+{
+  "ios": {
+    "path": "/Users/milada/Documents/Deviny_IOS",
+    "head": "13cc2ce9e8c0c315ce21954d69c4f0429df985f9",
+    "branch": "master",
+    "tracked_diff_sha256": "bc7c753aeac675a7eb3361d12d53123c02bcd13fbc9dd23b3547030389e8ac7f"
+  },
+  "backend_local": {
+    "path": "/Users/milada/Documents/Deviny_Backend",
+    "head": "2338e67c99884beaef37bac3d095e17fbe31f3ca",
+    "branch": "tima",
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "website": {
+    "path": "/Users/milada/Documents/Rufat009.github.io",
+    "head": "bb5122fdc0e473d8568713b769f645baf14c3280",
+    "branch": "codex/deviny-product-site",
+    "tracked_diff_sha256": "7edd8f4e348e2db76ca463d67c206d35eb514b9d6b81731735af658f1f98e66c"
+  }
+}

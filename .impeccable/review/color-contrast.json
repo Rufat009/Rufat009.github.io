@@ -1,0 +1,68 @@
+{
+  "method": "Calculated from declared CSS colors; not browser computed-style or full accessibility audit. Image captions and interaction states require rendered review.",
+  "checks": [
+    {
+      "role": "body",
+      "foreground": "#202822",
+      "background": "#f5f5f0",
+      "ratio": 13.83,
+      "passes_body_AA": true
+    },
+    {
+      "role": "secondary",
+      "foreground": "#596157",
+      "background": "#f5f5f0",
+      "ratio": 5.87,
+      "passes_body_AA": true
+    },
+    {
+      "role": "gold small text",
+      "foreground": "#806324",
+      "background": "#f5f5f0",
+      "ratio": 5.15,
+      "passes_body_AA": true
+    },
+    {
+      "role": "primary action",
+      "foreground": "#ffffff",
+      "background": "#202822",
+      "ratio": 15.13,
+      "passes_body_AA": true
+    },
+    {
+      "role": "dark section text",
+      "foreground": "#c0c7b9",
+      "background": "#202822",
+      "ratio": 8.73,
+      "passes_body_AA": true
+    },
+    {
+      "role": "program band",
+      "foreground": "#4c452e",
+      "background": "#e8c77f",
+      "ratio": 5.87,
+      "passes_body_AA": true
+    },
+    {
+      "role": "input placeholder",
+      "foreground": "#677061",
+      "background": "#fbfcf8",
+      "ratio": 5.01,
+      "passes_body_AA": true
+    },
+    {
+      "role": "error",
+      "foreground": "#9b2929",
+      "background": "#eaece5",
+      "ratio": 6.43,
+      "passes_body_AA": true
+    },
+    {
+      "role": "success",
+      "foreground": "#285632",
+      "background": "#d8e6d4",
+      "ratio": 6.56,
+      "passes_body_AA": true
+    }
+  ]
+}
