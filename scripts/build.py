@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Render committed, crawlable HTML. Python stdlib only; no Pages build dependency."""
 import json
+from hashlib import sha256
 from pathlib import Path
 from html import escape as e
 from urllib.parse import urlsplit
@@ -15,6 +16,25 @@ for key, host in [('appStoreUrl', 'apps.apple.com'), ('googlePlayUrl', 'play.goo
 PAGES = ['home', 'specialists', 'about', 'contacts']
 ORIGIN = 'https://deviny.me'
 SAFE_REL = 'rel="noopener noreferrer"'
+
+def asset_url(path):
+    """A changed asset must never reuse a previous release's browser cache."""
+    version = sha256((ROOT / path.lstrip('/')).read_bytes()).hexdigest()[:16]
+    return f'{path}?v={version}'
+
+def page_assets(page):
+    styles = ['/global.css']
+    scripts = []
+    if page == 'home':
+        styles.append('/home.css')
+        scripts += ['/home.js', '/product-scenes.js']
+    if page == 'specialists':
+        styles.append('/specialists.css')
+    scripts += ['/i18n.js', '/script.js']
+    if page == 'contacts':
+        scripts.append('/components/contacts/contacts.js')
+    return ''.join(f'<link rel="stylesheet" href="{asset_url(path)}">' for path in styles) + ''.join(
+        f'<script src="{asset_url(path)}" defer></script>' for path in scripts)
 
 def url(lang, page='home'):
     suffix = {'home':'','notfound':'404.html'}.get(page, f'{page}.html')
@@ -257,12 +277,12 @@ def document(lang,page,c):
     address=url(lang,page)
     alternates='\n'.join(f'<link rel="alternate" hreflang="{l}" href="{ORIGIN}{url(l,page)}">' for l in COPY)
     return f'''<!doctype html>
-<html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f5f0"><title>{e(c['titles'][page])}</title><meta name="description" content="{e(c['descriptions'][page])}">{'<meta name="robots" content="noindex,follow">' if page=='notfound' else ''}<link rel="canonical" href="{ORIGIN}{address}">{alternates}<link rel="alternate" hreflang="x-default" href="{ORIGIN}{url('en',page)}"><meta property="og:type" content="website"><meta property="og:site_name" content="Deviny"><meta property="og:title" content="{e(c['titles'][page])}"><meta property="og:description" content="{e(c['descriptions'][page])}"><meta property="og:url" content="{ORIGIN}{address}"><meta property="og:locale" content="{c['locale']}"><meta property="og:image" content="https://deviny.me/assets/social/deviny-{lang}.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{e(c['socialTitle'].replace(chr(10), ' '))}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://deviny.me/assets/social/deviny-{lang}.png"><link rel="icon" type="image/png" href="/assets/favicon.png"><script>document.documentElement.classList.add("js")</script><link rel="preload" href="/assets/fonts/deviny-sans.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/global.css">{'<link rel="stylesheet" href="/home.css"><script src="/home.js" defer></script><script src="/product-scenes.js" defer></script>' if page=='home' else ''}{'<link rel="stylesheet" href="/specialists.css">' if page=='specialists' else ''}<script src="/i18n.js" defer></script><script src="/script.js" defer></script>{'<script src="/components/contacts/contacts.js" defer></script>' if page=='contacts' else ''}</head><body data-page="{page}">{header(lang,page,c)}<main id="main">{RENDER[page](lang,c)}</main>{footer(lang,c)}</body></html>'''
+<html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f5f0"><title>{e(c['titles'][page])}</title><meta name="description" content="{e(c['descriptions'][page])}">{'<meta name="robots" content="noindex,follow">' if page=='notfound' else ''}<link rel="canonical" href="{ORIGIN}{address}">{alternates}<link rel="alternate" hreflang="x-default" href="{ORIGIN}{url('en',page)}"><meta property="og:type" content="website"><meta property="og:site_name" content="Deviny"><meta property="og:title" content="{e(c['titles'][page])}"><meta property="og:description" content="{e(c['descriptions'][page])}"><meta property="og:url" content="{ORIGIN}{address}"><meta property="og:locale" content="{c['locale']}"><meta property="og:image" content="https://deviny.me/assets/social/deviny-{lang}.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{e(c['socialTitle'].replace(chr(10), ' '))}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://deviny.me/assets/social/deviny-{lang}.png"><link rel="icon" type="image/png" href="/assets/favicon.png"><script>document.documentElement.classList.add("js")</script><link rel="preload" href="/assets/fonts/deviny-sans.woff2" as="font" type="font/woff2" crossorigin>{page_assets(page)}</head><body data-page="{page}">{header(lang,page,c)}<main id="main">{RENDER[page](lang,c)}</main>{footer(lang,c)}</body></html>'''
 
 def team_redirect(lang,c):
     destination=url(lang,'about')+'#team'
     script = """const target=new URL(DESTINATION,location.origin);target.search=location.search;const chosen=target.searchParams.get('lang');if(['en','ru','az'].includes(chosen)){target.pathname=(chosen==='en'?'/':'/'+chosen+'/')+'about.html';target.searchParams.delete('lang');}target.hash=location.hash||'#team';location.replace(target.href);""".replace('DESTINATION',json.dumps(destination))
-    return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(c['titles']['about'])}</title><meta name="robots" content="noindex,follow"><link rel="canonical" href="{ORIGIN}{url(lang,'about')}"><script>{script}</script><meta http-equiv="refresh" content="0;url={destination}"><link rel="stylesheet" href="/global.css"></head><body><main class="wrap page-hero"><h1>{c['aboutTeamTitle']}</h1>{link(destination,c['aboutTeam'],'button')}</main></body></html>'''
+    return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(c['titles']['about'])}</title><meta name="robots" content="noindex,follow"><link rel="canonical" href="{ORIGIN}{url(lang,'about')}"><script>{script}</script><meta http-equiv="refresh" content="0;url={destination}"><link rel="stylesheet" href="{asset_url("/global.css")}"></head><body><main class="wrap page-hero"><h1>{c['aboutTeamTitle']}</h1>{link(destination,c['aboutTeam'],'button')}</main></body></html>'''
 
 def build():
     entries=[]

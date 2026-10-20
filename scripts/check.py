@@ -2,9 +2,10 @@
 """Check the committed static site without a browser or third-party packages."""
 import json
 import struct
+from hashlib import sha256
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlsplit, unquote
+from urllib.parse import urlsplit, unquote, parse_qs
 from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -29,6 +30,17 @@ def resolve(address):
 
 def check(condition, context, message):
     if not condition: errors.append(f'{context}: {message}')
+
+def check_asset_versions(page):
+    for tag, attrs in page.tags:
+        address = attrs.get('src') if tag == 'script' else attrs.get('href') if tag == 'link' and attrs.get('rel') == 'stylesheet' else None
+        if not address or not address.startswith('/'):
+            continue
+        target = resolve(address)
+        if target.is_file():
+            expected = sha256(target.read_bytes()).hexdigest()[:16]
+            check(parse_qs(urlsplit(address).query).get('v') == [expected],
+                  page.path.relative_to(ROOT), f'Missing or stale asset cache version: {address}')
 
 copy = json.loads((ROOT / 'content/site.json').read_text())
 check(set(copy) == {'en','ru','az'}, 'content', 'Expected all three languages')
@@ -60,6 +72,7 @@ images = 0
 for address in addresses:
     file = resolve(address)
     page = pages[file]
+    check_asset_versions(page)
     context = file.relative_to(ROOT)
     check(len(page.find('h1')) == 1, context, 'Must have exactly one h1')
     check(len(page.find('main')) == 1, context, 'Must have exactly one main landmark')
@@ -129,6 +142,7 @@ for address in addresses:
 for prefix in ['/','/ru/','/az/']:
     legacy = resolve(prefix+'team.html')
     redirect = Page(legacy)
+    check_asset_versions(redirect)
     destination = 'https://deviny.me'+prefix+'about.html'
     check(redirect.find('link', rel='canonical', href=destination), legacy.relative_to(ROOT), 'Team compatibility canonical is wrong')
     check(redirect.find('meta', name='robots', content='noindex,follow'), legacy.relative_to(ROOT), 'Team compatibility page must not be indexed')
