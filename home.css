@@ -131,7 +131,7 @@ body[data-page="home"] main .button:hover svg{transform:rotate(-35deg)}
 .training-choice input:focus-visible+span{outline:3px solid #89651d;outline-offset:4px;border-radius:3px}
 .training-intro>.text-link{margin-top:30px}
 .training-media{min-width:0;border-radius:16px;overflow:hidden;background:#eeeee6}
-.training-photo{display:block;width:100%;height:clamp(320px,32vw,460px);object-fit:cover;object-position:50% 48%}
+.training-photo{display:block;width:100%;height:clamp(320px,32vw,460px);object-fit:cover;object-position:50% 35%}
 .training-panels{display:grid}
 .training-panel{min-width:0;padding:26px 30px}
 .training-panel h3{font-size:1.25rem;line-height:1.35;font-weight:500;margin:0}
