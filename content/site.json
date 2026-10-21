@@ -600,8 +600,7 @@
       "club-outdoors-photo": "Runners talking together in a park",
       "program-strength-photo": "A dumbbell and notebook for planning workouts",
       "program-nutrition-photo": "A bowl with grains, chicken and vegetables",
-      "specialist-session-photo": "A trainer and client discussing a training plan in a studio",
-      "training-editorial-photo": "Two athletes greeting each other between sets in a gym"
+      "specialist-session-photo": "A trainer and client discussing a training plan in a studio"
     },
     "specialistWorkflow": [
       [
@@ -616,7 +615,38 @@
         "Plan a meeting",
         "Choose a date and time, add a participant and details. Find your meetings in the schedule."
       ]
-    ]
+    ],
+    "trainingScene": {
+      "lead": "Build your workout. Train together. Keep your result.",
+      "session": "Your workout",
+      "example": "Example session",
+      "exercises": [
+        [
+          "Squats",
+          "Legs"
+        ],
+        [
+          "Dumbbell press",
+          "Chest"
+        ],
+        [
+          "Cable row",
+          "Back"
+        ]
+      ],
+      "saved": "Workout saved",
+      "history": "Ready to revisit in your history",
+      "you": "You",
+      "together": "Better together.",
+      "partner": "Your partner is part of the session.",
+      "shared": "Trained together",
+      "sequenceLabel": "From your plan to your result",
+      "steps": [
+        "Choose exercises",
+        "Train with a partner",
+        "Save your result"
+      ]
+    }
   },
   "ru": {
     "langName": "Русский",
@@ -1219,8 +1249,7 @@
       "club-outdoors-photo": "Участники совместной пробежки общаются в парке",
       "program-strength-photo": "Гантель и блокнот для плана тренировок",
       "program-nutrition-photo": "Блюдо с крупой, курицей и овощами",
-      "specialist-session-photo": "Тренер и клиент обсуждают план занятий в студии",
-      "training-editorial-photo": "Два спортсмена приветствуют друг друга между подходами в зале"
+      "specialist-session-photo": "Тренер и клиент обсуждают план занятий в студии"
     },
     "specialistWorkflow": [
       [
@@ -1235,7 +1264,38 @@
         "Запланируйте встречу",
         "Выберите день и время, укажите участника и детали. Возвращайтесь к встречам в расписании."
       ]
-    ]
+    ],
+    "trainingScene": {
+      "lead": "Соберите занятие. Потренируйтесь вместе. Сохраните результат.",
+      "session": "Ваше занятие",
+      "example": "Пример тренировки",
+      "exercises": [
+        [
+          "Приседания",
+          "Ноги"
+        ],
+        [
+          "Жим гантелей",
+          "Грудь"
+        ],
+        [
+          "Тяга блока",
+          "Спина"
+        ]
+      ],
+      "saved": "Тренировка сохранена",
+      "history": "К ней можно вернуться в истории",
+      "you": "Вы",
+      "together": "Вместе — лучше.",
+      "partner": "Партнёр — часть вашей тренировки.",
+      "shared": "Тренировались вместе",
+      "sequenceLabel": "От плана к результату",
+      "steps": [
+        "Выберите упражнения",
+        "Занимайтесь вместе",
+        "Сохраните результат"
+      ]
+    }
   },
   "az": {
     "langName": "Azərbaycanca",
@@ -1838,8 +1898,7 @@
       "club-outdoors-photo": "Parkda söhbət edən qaçış iştirakçıları",
       "program-strength-photo": "Məşq planı üçün qantel və dəftər",
       "program-nutrition-photo": "Taxıl, toyuq və tərəvəzli yemək",
-      "specialist-session-photo": "Məşqçi və müştəri studiyada məşq planını müzakirə edir",
-      "training-editorial-photo": "İdman zalında setlər arasında bir-birini salamlayan iki idmançı"
+      "specialist-session-photo": "Məşqçi və müştəri studiyada məşq planını müzakirə edir"
     },
     "specialistWorkflow": [
       [
@@ -1854,6 +1913,37 @@
         "Görüş planlaşdırın",
         "Günü və vaxtı seçin, iştirakçını və təfərrüatları əlavə edin. Görüşlərinizə təqvimdə qayıdın."
       ]
-    ]
+    ],
+    "trainingScene": {
+      "lead": "Məşqinizi qurun. Birlikdə məşq edin. Nəticəni saxlayın.",
+      "session": "Sizin məşqiniz",
+      "example": "Məşq nümunəsi",
+      "exercises": [
+        [
+          "Çömbəlmə",
+          "Ayaqlar"
+        ],
+        [
+          "Qantellə sinə pressi",
+          "Sinə"
+        ],
+        [
+          "Blok dartması",
+          "Kürək"
+        ]
+      ],
+      "saved": "Məşq yadda saxlanıldı",
+      "history": "Tarixçədən yenidən aça bilərsiniz",
+      "you": "Siz",
+      "together": "Birlikdə daha yaxşı.",
+      "partner": "Tərəfdaşınız məşqinizin bir hissəsidir.",
+      "shared": "Birlikdə məşq etdiniz",
+      "sequenceLabel": "Plandan nəticəyə",
+      "steps": [
+        "Hərəkətləri seçin",
+        "Birlikdə məşq edin",
+        "Nəticəni saxlayın"
+      ]
+    }
   }
 }

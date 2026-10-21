@@ -27,7 +27,7 @@ def page_assets(page):
     scripts = []
     if page == 'home':
         styles.append('/home.css')
-        scripts += ['/home.js', '/product-scenes.js']
+        scripts += ['/home.js', '/product-scenes.js', '/training-scene.js']
     if page == 'specialists':
         styles.append('/specialists.css')
     scripts += ['/i18n.js', '/script.js']
@@ -124,14 +124,18 @@ def iphone_frame(content):
     return f'<div class="home-device-frame"><div class="home-device-screen">{content}</div><img class="home-device-shell" src="/assets/product/iphone-17-pro-silver.webp" width="1332" height="2748" alt="" aria-hidden="true" draggable="false" fetchpriority="high"></div>'
 
 def training_modes(lang,c):
-    """Choose a training format; keep the explanation brief and the image editorial."""
-    choices, panels = [], []
-    for mode in c['trainingModes']:
-        key = mode['id']
-        choices.append(f'<label class="training-choice"><input class="sr-only" type="radio" name="training-mode" value="{key}" aria-controls="training-{key}" {"checked" if key == "partner" else ""}><span>{e(mode["label"])}{arrow()}</span></label>')
-        panels.append(f'<article class="training-panel" id="training-{key}" data-training-mode="{key}" aria-labelledby="training-{key}-title"><h3 id="training-{key}-title">{e(mode["label"])}</h3><p>{e(mode["text"])}</p></article>')
-    photo = story_photo(c,'training-editorial-photo','training-photo','(max-width: 700px) calc(100vw - 36px), (max-width: 1100px) 50vw, 700px')
-    return f'''<section class="home-training wrap" id="training" aria-labelledby="training-title"><div class="training-explorer"><div class="training-intro"><h2 id="training-title">{c['loopTitle']}</h2><fieldset class="training-choices"><legend class="sr-only">{e(c['trainingModeLabel'])}</legend>{''.join(choices)}</fieldset>{primary_action(lang,c,'text-link')}</div><div class="training-media">{photo}<div class="training-panels">{''.join(panels)}</div></div></div><div class="training-kit" id="training-tools">{''.join(story_feature(c,key) for key in ['exercise-catalog','workout-editor','workout-history'])}</div></section>'''
+    """One illustrative workout, from exercise selection to a shared result."""
+    t = c['trainingScene']
+    check = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" pathLength="1"/></svg>'
+    rows = ''.join(f'<li class="workout-exercise" style="--row:{i}"><span class="exercise-order">{i+1:02d}</span><span class="exercise-name">{e(name)}<small>{e(group)}</small></span><span class="exercise-done">{check}</span></li>' for i,(name,group) in enumerate(t['exercises']))
+    return f'''<section class="home-training wrap" id="training" aria-labelledby="training-title">
+<div class="training-heading"><h2 id="training-title">{c['loopTitle']}</h2><p>{e(t['lead'])}</p></div>
+<div class="workout-stage" data-workout-scene>
+<div class="workout-sheet"><div class="workout-sheet-head"><h3>{e(t['session'])}</h3><span>{e(t['example'])}</span></div><ol class="workout-exercises">{rows}</ol><div class="workout-saved"><span class="workout-saved-check">{check}</span><span>{e(t['saved'])}<small>{e(t['history'])}</small></span></div></div>
+<div class="workout-partner"><div class="workout-people" aria-hidden="true"><span>{e(t['you'])}</span><span><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="11" r="5"/><path d="M6 28v-3a10 10 0 0 1 20 0v3"/></svg></span></div><h3>{e(t['together'])}</h3><p>{e(t['partner'])}</p><span class="workout-shared">{check}{e(t['shared'])}</span></div>
+<ol class="workout-sequence" aria-label="{e(t['sequenceLabel'])}">{''.join(f'<li style="--step:{i}">{e(label)}</li>' for i,label in enumerate(t['steps']))}</ol>
+</div><div class="training-kit" id="training-tools">{''.join(story_feature(c,key) for key in ['exercise-catalog','workout-editor','workout-history'])}</div>
+</section>'''
 
 def feature_record(c, key):
     return next(item for group in c['featureGroups'] for item in group['items'] if item['id'] == key)

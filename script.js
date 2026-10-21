@@ -138,23 +138,6 @@
   reduce.addEventListener('change', () => { if (reduce.matches) settle(); });
   document.addEventListener('visibilitychange', () => { if (document.hidden) settle(); });
 
-  // Opacity can finish fading after selection changes; inert excludes outgoing
-  // links from keyboard and assistive navigation immediately.
-  if (globalThis.CSS?.supports('selector(:has(input:checked))')) {
-    document.querySelectorAll('.training-explorer').forEach(explorer => {
-      const sync = () => {
-        const selected = explorer.querySelector('input[name="training-mode"]:checked');
-        if (!selected) return;
-        explorer.querySelectorAll('[data-training-mode]').forEach(panel => {
-          const active = panel.dataset.trainingMode === selected.value;
-          panel.inert = !active;
-          panel.setAttribute('aria-hidden', String(!active));
-        });
-      };
-      explorer.addEventListener('change', sync);
-      sync();
-    });
-  }
   // Preserve legacy inbound anchors without carrying obsolete claims into the page.
   const aliases = {'#pricing':'#options', '#cta':'#get-started', '#testimonials':'#why-choose'};
   if (aliases[location.hash]) {

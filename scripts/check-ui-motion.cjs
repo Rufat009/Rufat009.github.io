@@ -78,17 +78,10 @@ function fixture({reduced = false, mobile = true, waapi = true, has = true} = {}
   });
   const toggle = new Node('button'), nav = new Node('nav', 174);
   const navLink = new Node('link'); nav.children.push(navLink);
-  const panels = ['solo', 'partner', 'program'].map(value => {
-    const panel = new Node('panel'); panel.dataset.trainingMode = value; return panel;
-  });
-  const explorer = events({selected: {value: 'partner'}});
-  explorer.querySelector = () => explorer.selected;
-  explorer.querySelectorAll = () => panels;
   document.documentElement = new Node('html');
   document.querySelector = selector => selector === '.menu-toggle' ? toggle : null;
   document.getElementById = id => id === 'primary-nav' ? nav : null;
-  document.querySelectorAll = selector => selector === 'details' ? details
-    : selector === '.training-explorer' ? [explorer] : [];
+  document.querySelectorAll = selector => selector === 'details' ? details : [];
   const media = {
     reduce: events({matches: reduced}), mobile: events({matches: mobile}),
   };
@@ -108,7 +101,7 @@ function fixture({reduced = false, mobile = true, waapi = true, has = true} = {}
   const finish = () => nodes.forEach(node => {
     if (node.heightAnimation && !node.heightAnimation.cancelled) node.heightAnimation.finish();
   });
-  return {document, root, media, details, nav, navLink, toggle, panels, explorer, animations, finish};
+  return {document, root, media, details, nav, navLink, toggle, animations, finish};
 }
 
 const f = fixture();
@@ -187,10 +180,6 @@ f.details[2].summary.emit('click');
 assert.equal(f.details[2].open, false);
 assert.equal(f.animations.length, animationCount, 'Reduced motion never schedules height animation');
 
-f.explorer.selected.value = 'program'; f.explorer.emit('change');
-assert.deepEqual(f.panels.map(panel => panel.inert), [true, true, false]);
-assert.deepEqual(f.panels.map(panel => panel.getAttribute('aria-hidden')), ['true', 'true', 'false']);
-
 const reduced = fixture({reduced: true});
 reduced.toggle.emit('click');
 assert.equal(reduced.nav.classes.has('is-open'), true);
@@ -202,7 +191,6 @@ assert.equal(reduced.animations.length, 0);
 const fallback = fixture({waapi: false, has: false});
 assert.equal(fallback.details[0].getAttribute('name'), 'needs');
 assert.equal(fallback.details[0].summary.emit('click').defaultPrevented, undefined);
-assert.equal(fallback.panels.some(panel => panel.inert), false, 'All scenarios remain available without :has');
 fallback.toggle.emit('click');
 assert.equal(fallback.nav.classes.has('is-open'), true);
 assert.equal(fallback.animations.length, 0);
