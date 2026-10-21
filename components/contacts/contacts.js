@@ -20,6 +20,11 @@
   if (!validTopic(topic.value)) topic.value = 'support';
   let pending = false;
   let idleLabel = '';
+  const measure = (stage, topic, outcome) => {
+    try {
+      document.dispatchEvent(new CustomEvent('deviny:contact', {detail: {stage, topic, outcome}}));
+    } catch { /* Measurement must never affect support delivery. */ }
+  };
   const setError = (field, text) => {
     field.setAttribute('aria-invalid', String(Boolean(text)));
     document.getElementById(`${field.id}-error`).textContent = text;
@@ -113,11 +118,15 @@
     try {
       const data = new FormData(form);
       for (const field of ['name', 'contact_details', 'message']) data.set(field, String(data.get(field) || '').trim());
+      // Web3Forms uses this reserved field for the email's Reply-To header.
+      if (data.get('reply_method') === 'Email') data.set('replyto', data.get('contact_details'));
       controls.forEach(control => { control.disabled = true; });
+      measure('attempt', sentTopic);
       const response = await fetch(form.action, {method: 'POST', body: data, signal: controller.signal, credentials: 'omit', referrerPolicy: 'no-referrer'});
       let result;
       try { result = await response.json(); } catch { result = null; }
       if (!response.ok || result?.success !== true) throw new Error('delivery_unconfirmed');
+      measure('result', sentTopic, 'accepted');
       form.reset();
       topic.value = sentTopic;
       applyMode({clearStatus: false});
@@ -126,6 +135,7 @@
       status.textContent = mode.success;
       try { sessionStorage.removeItem('deviny_contact_language_draft'); } catch { /* Optional draft. */ }
     } catch (error) {
+      measure('result', sentTopic, error.message === 'delivery_unconfirmed' ? 'failed' : 'unconfirmed');
       status.dataset.state = 'error';
       status.textContent = error.message === 'delivery_unconfirmed' ? messages.failure : messages.network;
     } finally {

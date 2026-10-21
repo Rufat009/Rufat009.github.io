@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check the committed static site without a browser or third-party packages."""
 import json
+import re
 import struct
 from hashlib import sha256
 from html.parser import HTMLParser
@@ -57,6 +58,9 @@ for key, host in [('appStoreUrl','apps.apple.com'),('googlePlayUrl','play.google
     check(store.scheme == 'https' and store.hostname == host and not store.username and not store.password,
           'distribution', f'Invalid HTTPS store URL: {key}')
 check(isinstance(distribution.get('linksArePlaceholders'), bool), 'distribution', 'Declare whether store links are placeholders')
+analytics = json.loads((ROOT/'content/analytics.json').read_text())
+check(type(analytics.get('enabled')) is bool and analytics.get('provider') == 'plausible' and analytics.get('domain') == 'deviny.me',
+      'analytics', 'Expected an explicit enable switch and the configured destination')
 
 addresses = [e.text for e in ElementTree.parse(ROOT/'sitemap.xml').iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
 check(len(addresses) == 12 and len(set(addresses)) == 12, 'sitemap', 'Expected four canonical page types in three languages')
@@ -73,6 +77,9 @@ for address in addresses:
     page = pages[file]
     check_asset_versions(page)
     context = file.relative_to(ROOT)
+    embedded = re.search(r'<script type="application/json" id="analytics-config">(.*?)</script>', file.read_text())
+    check(embedded and json.loads(embedded.group(1)) == dict(analytics, linksArePlaceholders=distribution['linksArePlaceholders']),
+          context, 'Analytics configuration is missing or out of date')
     check(len(page.find('h1')) == 1, context, 'Must have exactly one h1')
     check(len(page.find('main')) == 1, context, 'Must have exactly one main landmark')
     check(len(page.ids) == len(set(page.ids)), context, 'Duplicate IDs')

@@ -1,0 +1,5 @@
+{
+  "enabled": false,
+  "provider": "plausible",
+  "domain": "deviny.me"
+}

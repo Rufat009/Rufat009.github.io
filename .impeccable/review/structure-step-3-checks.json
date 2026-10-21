@@ -1,0 +1,29 @@
+{
+  "en": {
+    "main_words_before": 722,
+    "main_words_after": 641,
+    "headings_before": 35,
+    "headings_after": 32,
+    "preserved_features": 21,
+    "approved_gymbro": "byte-identical",
+    "aria_references": "resolved"
+  },
+  "ru": {
+    "main_words_before": 628,
+    "main_words_after": 561,
+    "headings_before": 35,
+    "headings_after": 32,
+    "preserved_features": 21,
+    "approved_gymbro": "byte-identical",
+    "aria_references": "resolved"
+  },
+  "az": {
+    "main_words_before": 616,
+    "main_words_after": 548,
+    "headings_before": 35,
+    "headings_after": 32,
+    "preserved_features": 21,
+    "approved_gymbro": "byte-identical",
+    "aria_references": "resolved"
+  }
+}

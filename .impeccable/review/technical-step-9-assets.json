@@ -1,0 +1,827 @@
+{
+  "index.html": {
+    "html_bytes": 28862,
+    "html_gzip_bytes": 7126,
+    "unique_asset_bytes": 1129900,
+    "non_lazy_asset_bytes": 633502,
+    "assets": {
+      "assets/fonts/deviny-sans.woff2": {
+        "bytes": 165812,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "global.css": {
+        "bytes": 25840,
+        "gzip_bytes": 6494,
+        "lazy": false
+      },
+      "home.css": {
+        "bytes": 35348,
+        "gzip_bytes": 7882,
+        "lazy": false
+      },
+      "home.js": {
+        "bytes": 3319,
+        "gzip_bytes": 1184,
+        "lazy": false
+      },
+      "product-scenes.js": {
+        "bytes": 1442,
+        "gzip_bytes": 589,
+        "lazy": false
+      },
+      "i18n.js": {
+        "bytes": 3052,
+        "gzip_bytes": 1252,
+        "lazy": false
+      },
+      "script.js": {
+        "bytes": 7007,
+        "gzip_bytes": 2327,
+        "lazy": false
+      },
+      "assets/logo.png": {
+        "bytes": 70536,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/community-hero.webp": {
+        "bytes": 160230,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/training.webp": {
+        "bytes": 126350,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/iphone-17-pro-silver.webp": {
+        "bytes": 34566,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/gymbro-session-photo.webp": {
+        "bytes": 69198,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/club-outdoors-photo.webp": {
+        "bytes": 90468,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/program-strength-photo.webp": {
+        "bytes": 134902,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/program-nutrition-photo.webp": {
+        "bytes": 116982,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/specialist-session-photo.webp": {
+        "bytes": 72122,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/wordmark.webp": {
+        "bytes": 12726,
+        "gzip_bytes": null,
+        "lazy": true
+      }
+    }
+  },
+  "specialists.html": {
+    "html_bytes": 14156,
+    "html_gzip_bytes": 4106,
+    "unique_asset_bytes": 298295,
+    "non_lazy_asset_bytes": 285569,
+    "assets": {
+      "assets/fonts/deviny-sans.woff2": {
+        "bytes": 165812,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "global.css": {
+        "bytes": 25840,
+        "gzip_bytes": 6494,
+        "lazy": false
+      },
+      "specialists.css": {
+        "bytes": 13322,
+        "gzip_bytes": 3347,
+        "lazy": false
+      },
+      "i18n.js": {
+        "bytes": 3052,
+        "gzip_bytes": 1252,
+        "lazy": false
+      },
+      "script.js": {
+        "bytes": 7007,
+        "gzip_bytes": 2327,
+        "lazy": false
+      },
+      "assets/logo.png": {
+        "bytes": 70536,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/wordmark.webp": {
+        "bytes": 12726,
+        "gzip_bytes": null,
+        "lazy": true
+      }
+    }
+  },
+  "about.html": {
+    "html_bytes": 7916,
+    "html_gzip_bytes": 2397,
+    "unique_asset_bytes": 370087,
+    "non_lazy_asset_bytes": 272247,
+    "assets": {
+      "assets/fonts/deviny-sans.woff2": {
+        "bytes": 165812,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "global.css": {
+        "bytes": 25840,
+        "gzip_bytes": 6494,
+        "lazy": false
+      },
+      "i18n.js": {
+        "bytes": 3052,
+        "gzip_bytes": 1252,
+        "lazy": false
+      },
+      "script.js": {
+        "bytes": 7007,
+        "gzip_bytes": 2327,
+        "lazy": false
+      },
+      "assets/logo.png": {
+        "bytes": 70536,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/team/rufat.webp": {
+        "bytes": 7910,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/team/emil.webp": {
+        "bytes": 43052,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/team/tima.webp": {
+        "bytes": 31392,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/team/arxun.webp": {
+        "bytes": 2760,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/wordmark.webp": {
+        "bytes": 12726,
+        "gzip_bytes": null,
+        "lazy": true
+      }
+    }
+  },
+  "contacts.html": {
+    "html_bytes": 10304,
+    "html_gzip_bytes": 3310,
+    "unique_asset_bytes": 291772,
+    "non_lazy_asset_bytes": 279046,
+    "assets": {
+      "assets/fonts/deviny-sans.woff2": {
+        "bytes": 165812,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "global.css": {
+        "bytes": 25840,
+        "gzip_bytes": 6494,
+        "lazy": false
+      },
+      "i18n.js": {
+        "bytes": 3052,
+        "gzip_bytes": 1252,
+        "lazy": false
+      },
+      "script.js": {
+        "bytes": 7007,
+        "gzip_bytes": 2327,
+        "lazy": false
+      },
+      "components/contacts/contacts.js": {
+        "bytes": 6799,
+        "gzip_bytes": 2159,
+        "lazy": false
+      },
+      "assets/logo.png": {
+        "bytes": 70536,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/wordmark.webp": {
+        "bytes": 12726,
+        "gzip_bytes": null,
+        "lazy": true
+      }
+    }
+  },
+  "404.html": {
+    "html_bytes": 5235,
+    "html_gzip_bytes": 1777,
+    "unique_asset_bytes": 284973,
+    "non_lazy_asset_bytes": 272247,
+    "assets": {
+      "assets/fonts/deviny-sans.woff2": {
+        "bytes": 165812,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "global.css": {
+        "bytes": 25840,
+        "gzip_bytes": 6494,
+        "lazy": false
+      },
+      "i18n.js": {
+        "bytes": 3052,
+        "gzip_bytes": 1252,
+        "lazy": false
+      },
+      "script.js": {
+        "bytes": 7007,
+        "gzip_bytes": 2327,
+        "lazy": false
+      },
+      "assets/logo.png": {
+        "bytes": 70536,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/wordmark.webp": {
+        "bytes": 12726,
+        "gzip_bytes": null,
+        "lazy": true
+      }
+    }
+  },
+  "ru/index.html": {
+    "html_bytes": 33238,
+    "html_gzip_bytes": 8324,
+    "unique_asset_bytes": 1129900,
+    "non_lazy_asset_bytes": 633502,
+    "assets": {
+      "assets/fonts/deviny-sans.woff2": {
+        "bytes": 165812,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "global.css": {
+        "bytes": 25840,
+        "gzip_bytes": 6494,
+        "lazy": false
+      },
+      "home.css": {
+        "bytes": 35348,
+        "gzip_bytes": 7882,
+        "lazy": false
+      },
+      "home.js": {
+        "bytes": 3319,
+        "gzip_bytes": 1184,
+        "lazy": false
+      },
+      "product-scenes.js": {
+        "bytes": 1442,
+        "gzip_bytes": 589,
+        "lazy": false
+      },
+      "i18n.js": {
+        "bytes": 3052,
+        "gzip_bytes": 1252,
+        "lazy": false
+      },
+      "script.js": {
+        "bytes": 7007,
+        "gzip_bytes": 2327,
+        "lazy": false
+      },
+      "assets/logo.png": {
+        "bytes": 70536,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/community-hero.webp": {
+        "bytes": 160230,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/training.webp": {
+        "bytes": 126350,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/iphone-17-pro-silver.webp": {
+        "bytes": 34566,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/gymbro-session-photo.webp": {
+        "bytes": 69198,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/club-outdoors-photo.webp": {
+        "bytes": 90468,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/program-strength-photo.webp": {
+        "bytes": 134902,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/program-nutrition-photo.webp": {
+        "bytes": 116982,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/specialist-session-photo.webp": {
+        "bytes": 72122,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/wordmark.webp": {
+        "bytes": 12726,
+        "gzip_bytes": null,
+        "lazy": true
+      }
+    }
+  },
+  "ru/specialists.html": {
+    "html_bytes": 16121,
+    "html_gzip_bytes": 4673,
+    "unique_asset_bytes": 298295,
+    "non_lazy_asset_bytes": 285569,
+    "assets": {
+      "assets/fonts/deviny-sans.woff2": {
+        "bytes": 165812,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "global.css": {
+        "bytes": 25840,
+        "gzip_bytes": 6494,
+        "lazy": false
+      },
+      "specialists.css": {
+        "bytes": 13322,
+        "gzip_bytes": 3347,
+        "lazy": false
+      },
+      "i18n.js": {
+        "bytes": 3052,
+        "gzip_bytes": 1252,
+        "lazy": false
+      },
+      "script.js": {
+        "bytes": 7007,
+        "gzip_bytes": 2327,
+        "lazy": false
+      },
+      "assets/logo.png": {
+        "bytes": 70536,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/wordmark.webp": {
+        "bytes": 12726,
+        "gzip_bytes": null,
+        "lazy": true
+      }
+    }
+  },
+  "ru/about.html": {
+    "html_bytes": 9289,
+    "html_gzip_bytes": 2873,
+    "unique_asset_bytes": 370087,
+    "non_lazy_asset_bytes": 272247,
+    "assets": {
+      "assets/fonts/deviny-sans.woff2": {
+        "bytes": 165812,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "global.css": {
+        "bytes": 25840,
+        "gzip_bytes": 6494,
+        "lazy": false
+      },
+      "i18n.js": {
+        "bytes": 3052,
+        "gzip_bytes": 1252,
+        "lazy": false
+      },
+      "script.js": {
+        "bytes": 7007,
+        "gzip_bytes": 2327,
+        "lazy": false
+      },
+      "assets/logo.png": {
+        "bytes": 70536,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/team/rufat.webp": {
+        "bytes": 7910,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/team/emil.webp": {
+        "bytes": 43052,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/team/tima.webp": {
+        "bytes": 31392,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/team/arxun.webp": {
+        "bytes": 2760,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/wordmark.webp": {
+        "bytes": 12726,
+        "gzip_bytes": null,
+        "lazy": true
+      }
+    }
+  },
+  "ru/contacts.html": {
+    "html_bytes": 12453,
+    "html_gzip_bytes": 3805,
+    "unique_asset_bytes": 291772,
+    "non_lazy_asset_bytes": 279046,
+    "assets": {
+      "assets/fonts/deviny-sans.woff2": {
+        "bytes": 165812,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "global.css": {
+        "bytes": 25840,
+        "gzip_bytes": 6494,
+        "lazy": false
+      },
+      "i18n.js": {
+        "bytes": 3052,
+        "gzip_bytes": 1252,
+        "lazy": false
+      },
+      "script.js": {
+        "bytes": 7007,
+        "gzip_bytes": 2327,
+        "lazy": false
+      },
+      "components/contacts/contacts.js": {
+        "bytes": 6799,
+        "gzip_bytes": 2159,
+        "lazy": false
+      },
+      "assets/logo.png": {
+        "bytes": 70536,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/wordmark.webp": {
+        "bytes": 12726,
+        "gzip_bytes": null,
+        "lazy": true
+      }
+    }
+  },
+  "ru/404.html": {
+    "html_bytes": 5829,
+    "html_gzip_bytes": 2042,
+    "unique_asset_bytes": 284973,
+    "non_lazy_asset_bytes": 272247,
+    "assets": {
+      "assets/fonts/deviny-sans.woff2": {
+        "bytes": 165812,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "global.css": {
+        "bytes": 25840,
+        "gzip_bytes": 6494,
+        "lazy": false
+      },
+      "i18n.js": {
+        "bytes": 3052,
+        "gzip_bytes": 1252,
+        "lazy": false
+      },
+      "script.js": {
+        "bytes": 7007,
+        "gzip_bytes": 2327,
+        "lazy": false
+      },
+      "assets/logo.png": {
+        "bytes": 70536,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/wordmark.webp": {
+        "bytes": 12726,
+        "gzip_bytes": null,
+        "lazy": true
+      }
+    }
+  },
+  "az/index.html": {
+    "html_bytes": 30045,
+    "html_gzip_bytes": 7705,
+    "unique_asset_bytes": 1129900,
+    "non_lazy_asset_bytes": 633502,
+    "assets": {
+      "assets/fonts/deviny-sans.woff2": {
+        "bytes": 165812,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "global.css": {
+        "bytes": 25840,
+        "gzip_bytes": 6494,
+        "lazy": false
+      },
+      "home.css": {
+        "bytes": 35348,
+        "gzip_bytes": 7882,
+        "lazy": false
+      },
+      "home.js": {
+        "bytes": 3319,
+        "gzip_bytes": 1184,
+        "lazy": false
+      },
+      "product-scenes.js": {
+        "bytes": 1442,
+        "gzip_bytes": 589,
+        "lazy": false
+      },
+      "i18n.js": {
+        "bytes": 3052,
+        "gzip_bytes": 1252,
+        "lazy": false
+      },
+      "script.js": {
+        "bytes": 7007,
+        "gzip_bytes": 2327,
+        "lazy": false
+      },
+      "assets/logo.png": {
+        "bytes": 70536,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/community-hero.webp": {
+        "bytes": 160230,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/training.webp": {
+        "bytes": 126350,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/iphone-17-pro-silver.webp": {
+        "bytes": 34566,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/gymbro-session-photo.webp": {
+        "bytes": 69198,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/club-outdoors-photo.webp": {
+        "bytes": 90468,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/program-strength-photo.webp": {
+        "bytes": 134902,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/program-nutrition-photo.webp": {
+        "bytes": 116982,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/specialist-session-photo.webp": {
+        "bytes": 72122,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/wordmark.webp": {
+        "bytes": 12726,
+        "gzip_bytes": null,
+        "lazy": true
+      }
+    }
+  },
+  "az/specialists.html": {
+    "html_bytes": 14658,
+    "html_gzip_bytes": 4358,
+    "unique_asset_bytes": 298295,
+    "non_lazy_asset_bytes": 285569,
+    "assets": {
+      "assets/fonts/deviny-sans.woff2": {
+        "bytes": 165812,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "global.css": {
+        "bytes": 25840,
+        "gzip_bytes": 6494,
+        "lazy": false
+      },
+      "specialists.css": {
+        "bytes": 13322,
+        "gzip_bytes": 3347,
+        "lazy": false
+      },
+      "i18n.js": {
+        "bytes": 3052,
+        "gzip_bytes": 1252,
+        "lazy": false
+      },
+      "script.js": {
+        "bytes": 7007,
+        "gzip_bytes": 2327,
+        "lazy": false
+      },
+      "assets/logo.png": {
+        "bytes": 70536,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/wordmark.webp": {
+        "bytes": 12726,
+        "gzip_bytes": null,
+        "lazy": true
+      }
+    }
+  },
+  "az/about.html": {
+    "html_bytes": 8404,
+    "html_gzip_bytes": 2608,
+    "unique_asset_bytes": 370087,
+    "non_lazy_asset_bytes": 272247,
+    "assets": {
+      "assets/fonts/deviny-sans.woff2": {
+        "bytes": 165812,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "global.css": {
+        "bytes": 25840,
+        "gzip_bytes": 6494,
+        "lazy": false
+      },
+      "i18n.js": {
+        "bytes": 3052,
+        "gzip_bytes": 1252,
+        "lazy": false
+      },
+      "script.js": {
+        "bytes": 7007,
+        "gzip_bytes": 2327,
+        "lazy": false
+      },
+      "assets/logo.png": {
+        "bytes": 70536,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/team/rufat.webp": {
+        "bytes": 7910,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/team/emil.webp": {
+        "bytes": 43052,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/team/tima.webp": {
+        "bytes": 31392,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/team/arxun.webp": {
+        "bytes": 2760,
+        "gzip_bytes": null,
+        "lazy": true
+      },
+      "assets/product/wordmark.webp": {
+        "bytes": 12726,
+        "gzip_bytes": null,
+        "lazy": true
+      }
+    }
+  },
+  "az/contacts.html": {
+    "html_bytes": 10883,
+    "html_gzip_bytes": 3487,
+    "unique_asset_bytes": 291772,
+    "non_lazy_asset_bytes": 279046,
+    "assets": {
+      "assets/fonts/deviny-sans.woff2": {
+        "bytes": 165812,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "global.css": {
+        "bytes": 25840,
+        "gzip_bytes": 6494,
+        "lazy": false
+      },
+      "i18n.js": {
+        "bytes": 3052,
+        "gzip_bytes": 1252,
+        "lazy": false
+      },
+      "script.js": {
+        "bytes": 7007,
+        "gzip_bytes": 2327,
+        "lazy": false
+      },
+      "components/contacts/contacts.js": {
+        "bytes": 6799,
+        "gzip_bytes": 2159,
+        "lazy": false
+      },
+      "assets/logo.png": {
+        "bytes": 70536,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/wordmark.webp": {
+        "bytes": 12726,
+        "gzip_bytes": null,
+        "lazy": true
+      }
+    }
+  },
+  "az/404.html": {
+    "html_bytes": 5410,
+    "html_gzip_bytes": 1887,
+    "unique_asset_bytes": 284973,
+    "non_lazy_asset_bytes": 272247,
+    "assets": {
+      "assets/fonts/deviny-sans.woff2": {
+        "bytes": 165812,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "global.css": {
+        "bytes": 25840,
+        "gzip_bytes": 6494,
+        "lazy": false
+      },
+      "i18n.js": {
+        "bytes": 3052,
+        "gzip_bytes": 1252,
+        "lazy": false
+      },
+      "script.js": {
+        "bytes": 7007,
+        "gzip_bytes": 2327,
+        "lazy": false
+      },
+      "assets/logo.png": {
+        "bytes": 70536,
+        "gzip_bytes": null,
+        "lazy": false
+      },
+      "assets/product/wordmark.webp": {
+        "bytes": 12726,
+        "gzip_bytes": null,
+        "lazy": true
+      }
+    }
+  }
+}

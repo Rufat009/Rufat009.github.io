@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-21",
+  "task": "Step 4: reconcile legal release sources and website claims; remove fixed app language list",
+  "status": "Website corrections implemented; legal release approval pending",
+  "source": {
+    "repository": "Deviny-me/Deviny_Backend",
+    "sha": "a8e64ba6a97860458c1e26ec53555137e1133c24",
+    "files": [
+      "docs/legal-release-handoff.md",
+      "backend/src/Deviny.API/wwwroot/legal/privacy.html",
+      "backend/src/Deviny.API/wwwroot/legal/terms.html",
+      "backend/src/Deviny.API/wwwroot/legal/support.html"
+    ],
+    "inspection": "Fresh read-only bare clone; existing sibling checkout unchanged"
+  },
+  "implemented": [
+    "Removed fixed language enumeration from template and all three locale source records",
+    "Added launch qualification for program purchases and paid support; removed sales from professional-tools claim",
+    "Added source-confirmed 16+ account age to getting-started FAQ",
+    "Clarified Web3Forms transmission of name, contact and message; linked provider policy and associated disclosure with form",
+    "Removed unused persistent language preference write; route-based language navigation and temporary form drafts preserved"
+  ],
+  "website_data_inventory": {
+    "contact_submission": {
+      "destination": "https://api.web3forms.com/submit",
+      "fields": [
+        "name",
+        "contact_details",
+        "reply_method",
+        "message",
+        "topic",
+        "language",
+        "subject"
+      ],
+      "trigger": "Validated explicit form submission",
+      "purpose": "Route inquiry and allow a reply",
+      "retention": "Deviny mailbox retention and Web3Forms account settings unconfirmed"
+    },
+    "draft": {
+      "storage": "sessionStorage",
+      "key": "deviny_contact_language_draft",
+      "trigger": "User changes website language with form present",
+      "restoration_window": "10 minutes; consumed/removed on contact-page load; removed on successful send",
+      "note": "10 minutes is restore eligibility, not a background erasure timer; session storage can remain until consumed or tab session ends"
+    },
+    "hosting": "GitHub Pages; infrastructure processing must be covered separately from app Hetzner hosting",
+    "analytics": "No external analytics integration added or approved by this task"
+  },
+  "release_items": [
+    {
+      "item": "Approve exact EN/RU/AZ privacy, terms and support texts",
+      "state": "pending",
+      "evidence": "All nine source pages explicitly marked as prepared drafts"
+    },
+    {
+      "item": "Add website-specific data processing to approved privacy document",
+      "state": "pending",
+      "details": "GitHub Pages hosting, Web3Forms form processor, temporary language-switch form drafts, mailbox handling and retention; current app privacy draft does not describe these website flows"
+    },
+    {
+      "item": "Reconcile support/privacy mailbox routing",
+      "state": "pending",
+      "details": "Website owner confirmed contact@deviny.me; legal source and app use Info@deviny.com. Both may be valid but routing/coverage needs confirmation; no address silently changed."
+    },
+    {
+      "item": "Verify published legal versions and localized paths before changing footer links",
+      "state": "unverified",
+      "details": "Web reader could not access existing public privacy and terms URLs. Source files are not evidence of publication. Existing EN links and explicit language labels retained."
+    },
+    {
+      "item": "Review actual scope when enabling paid programs, specialist services or Android distribution",
+      "state": "pending",
+      "details": "Backend handoff declares initial free/social release. Published legal terms and store metadata must match actual release; Apple-specific draft is not proof of Google Play readiness."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://web3forms.com/privacy",
+      "checked": "2026-10-21",
+      "use": "Provider processing and retention policy; account-specific settings not inspected"
+    },
+    {
+      "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "checked": "2026-10-21",
+      "use": "Hosting provider privacy reference"
+    }
+  ],
+  "verification": {
+    "static": "12 canonical + 3 utility + 6 redirects; 432 local refs; 81 images; zero errors",
+    "behavior": "Contact flow, navigation, product scenes and UI motion passed; no messages submitted",
+    "locales": {
+      "en": {
+        "capabilities": 21,
+        "language_enumeration_removed": true,
+        "theme_controls": 2,
+        "aria_references": "resolved",
+        "processor_disclosure": "present"
+      },
+      "ru": {
+        "capabilities": 21,
+        "language_enumeration_removed": true,
+        "theme_controls": 2,
+        "aria_references": "resolved",
+        "processor_disclosure": "present"
+      },
+      "az": {
+        "capabilities": 21,
+        "language_enumeration_removed": true,
+        "theme_controls": 2,
+        "aria_references": "resolved",
+        "processor_disclosure": "present"
+      }
+    }
+  },
+  "limits": [
+    "No legal approval or global compliance certification",
+    "No publication, native changes, sibling changes or real contact submission",
+    "Fresh browser rendering remains unverified under the prior automatic-approval rejection"
+  ]
+}

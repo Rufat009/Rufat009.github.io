@@ -1,0 +1,288 @@
+{
+  "normal": [
+    {
+      "brokenImages": [],
+      "page": "/ru/",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "page": "/ru/",
+      "scroll": 360,
+      "width": 360
+    },
+    {
+      "brokenImages": [],
+      "page": "/ru/",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "page": "/ru/",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "page": "/ru/",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "page": "/ru/specialists.html",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "page": "/ru/specialists.html",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "page": "/ru/specialists.html",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "page": "/ru/specialists.html",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "page": "/ru/about.html",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "page": "/ru/about.html",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "page": "/ru/about.html",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "page": "/ru/about.html",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "page": "/ru/contacts.html",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "page": "/ru/contacts.html",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "page": "/ru/contacts.html",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "page": "/ru/contacts.html",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "page": "/",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "page": "/",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "page": "/",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "page": "/az/",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "page": "/az/",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "page": "/az/",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "page": "/specialists.html",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "page": "/specialists.html",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "page": "/specialists.html",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "page": "/az/specialists.html",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "page": "/az/specialists.html",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "page": "/az/specialists.html",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "page": "/about.html",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "page": "/about.html",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "page": "/about.html",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "page": "/az/about.html",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "page": "/az/about.html",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "page": "/az/about.html",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "page": "/contacts.html",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "page": "/contacts.html",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "page": "/contacts.html",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "page": "/az/contacts.html",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "page": "/az/contacts.html",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "page": "/az/contacts.html",
+      "scroll": 1440,
+      "width": 1440
+    }
+  ],
+  "text200": [
+    {
+      "font": "32px",
+      "page": "/__qa__/ru/index.html",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "font": "32px",
+      "page": "/__qa__/ru/index.html",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "font": "32px",
+      "page": "/__qa__/ru/specialists.html",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "font": "32px",
+      "page": "/__qa__/ru/specialists.html",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "font": "32px",
+      "page": "/__qa__/ru/about.html",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "font": "32px",
+      "page": "/__qa__/ru/about.html",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "font": "32px",
+      "page": "/__qa__/ru/contacts.html",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "font": "32px",
+      "page": "/__qa__/ru/contacts.html",
+      "scroll": 1440,
+      "width": 1440
+    }
+  ]
+}

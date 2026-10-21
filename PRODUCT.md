@@ -53,3 +53,9 @@ The owner-authorized generic store links remain until genuine listings exist. No
 
 ## Training section removal — October 21, 2026
 The owner explicitly removed the complete “From a plan to a workout” homepage section, including its workout demonstration, partner/saved-result scene and exercise catalogue, workout editor and history explanations. This supersedes earlier requirements to retain those three standalone capability entries. The remaining 21 entries stay; do not reintroduce the removed section. Remove its local navigation link and scene-only assets/code in every locale. This changes landing-page scope, not the application's capabilities.
+
+
+## Language scope and legal release reconciliation — October 21, 2026
+The owner clarified that the app will support more languages over time. Do not present EN/RU/AZ as its complete or permanent language set. The website currently has these three locales; the app-preferences section now describes language choice without enumerating or promising a future language count.
+
+The fresh Backend master read at a8e64ba6a97860458c1e26ec53555137e1133c24 still labels all nine legal/support pages as drafts. Its handoff specifies an initial free/social release and age 16+. Website copy now qualifies program purchases and paid personal support as unavailable at launch, avoids a sales claim, and includes the account age in the getting-started FAQ. The form discloses Web3Forms transmission and links its provider policy. The unused persistent language preference write was removed; temporary form draft preservation remains. Approval, website-specific privacy coverage, mailbox routing (confirmed website contact@deviny.me versus legal/app Info@deviny.com), live localized document availability and Android applicability remain unresolved in .impeccable/review/legal-release-step-4.json. This is source reconciliation, not legal approval or publication.

@@ -11,7 +11,8 @@ function fixture({lang = 'ru', query = '?topic=support', response = 'success', d
   const json = id => JSON.parse(html.match(new RegExp(`<script type="application/json" id="${id}">([\\s\\S]*?)</script>`))[1]);
   const config = json('contact-modes'), messages = json('form-messages');
   const nodes = new Map(), calls = [], timers = new Map(), removed = [];
-  const document = {title: '', activeElement: null};
+  const metrics = [];
+  const document = {title: '', activeElement: null, dispatchEvent(event) { metrics.push(event.detail); }};
   class Node {
     constructor(id = '', value = '') {
       this.id = id; this.value = value; this.textContent = ''; this.dataset = {};
@@ -89,11 +90,12 @@ function fixture({lang = 'ru', query = '?topic=support', response = 'success', d
     }
   }
   vm.runInNewContext(source, {document,location,history,URL,URLSearchParams,AbortController,FormData:FormDataMock,fetch,
+    CustomEvent: class { constructor(type, options) { this.type = type; this.detail = options.detail; } },
     matchMedia:()=>({matches:true}),
     sessionStorage:{removeItem:key=>removed.push(key)},
     setTimeout:fn=>{timers.set(++timerId,fn);return timerId;},clearTimeout:id=>timers.delete(id),
   });
-  return {form,fields,config,messages,nodes,document,submit,submitLabel,status,calls,timers,removed,location,
+  return {form,fields,config,messages,nodes,document,submit,submitLabel,status,calls,timers,removed,location,metrics,
     reply(method) { methods.forEach(n=>{n.checked=n.value===method;});return methods.find(n=>n.checked).emit('change'); },
     resolve:()=>resolveRequest(), timeout:()=>[...timers.values()].forEach(fn=>fn())};
 }
@@ -110,16 +112,19 @@ function fixture({lang = 'ru', query = '?topic=support', response = 'success', d
       f.fields.contact_details.value = '  visitor@example.test  ';
       await f.form.emit('submit');
       assert.equal(f.calls.length, 0, 'An inquiry must contain a message');
+      assert.equal(f.metrics.length, 0, 'Invalid form is not a support attempt');
       f.fields.message.value = ' A question about Deviny. ';
       await f.form.emit('submit');
       assert.equal(f.calls.length, 1);
       assert.equal(f.calls[0].data.contact_details, 'visitor@example.test');
+      assert.equal(f.calls[0].data.replyto, 'visitor@example.test');
       assert.equal(f.calls[0].data.message, 'A question about Deviny.');
       assert.equal(f.calls[0].data.subject, f.config.modes[topic].subject);
       assert.equal(f.calls[0].data.topic, topic);
       assert.equal(f.calls[0].data.language, lang);
       assert.equal(f.status.textContent, f.config.modes[topic].success);
       assert.equal(f.status.dataset.state, 'success');
+      assert.equal(JSON.stringify(f.metrics), JSON.stringify([{stage:'attempt',topic},{stage:'result',topic,outcome:'accepted'}]));
       assert.equal(f.fields.topic.value, topic);
       assert.equal(f.submitLabel.textContent, f.config.modes[topic].send);
       assert.equal(f.document.activeElement, f.status);
@@ -154,10 +159,12 @@ function fixture({lang = 'ru', query = '?topic=support', response = 'success', d
   await telegram.reply('Telegram'); telegram.fields.contact_details.value = '@example_user';
   await telegram.form.emit('submit');
   assert.equal(telegram.calls[0].data.reply_method, 'Telegram');
+  assert.equal(telegram.calls[0].data.replyto, undefined);
   const whatsapp = fillInquiry(fixture());
   await whatsapp.reply('WhatsApp'); whatsapp.fields.contact_details.value = '+994 50 123 45 67';
   await whatsapp.form.emit('submit');
   assert.equal(whatsapp.calls[0].data.reply_method, 'WhatsApp');
+  assert.equal(whatsapp.calls[0].data.replyto, undefined);
 
   const change = fixture({query:'?topic=collaboration'});
   change.fields.contact_details.value = 'keep@example.test';
@@ -187,11 +194,13 @@ function fixture({lang = 'ru', query = '?topic=support', response = 'success', d
     assert.equal(f.fields.contact_details.disabled, false);
     assert.equal(f.form.getAttribute('aria-busy'), undefined);
     assert.equal(f.removed.length, 0, 'Failure keeps the language draft');
+    assert.equal(f.metrics[1].outcome, response === 'network' ? 'unconfirmed' : 'failed');
   }
   const slow = fillInquiry(fixture({response:'slow'})); slow.fields.contact_details.value = 'slow@example.test';
   const sending = slow.form.emit('submit');
   await slow.form.emit('submit');
   assert.equal(slow.calls.length, 1, 'Duplicate submissions are ignored');
+  assert.equal(slow.metrics.length, 1, 'Duplicate attempts are not counted');
   assert.equal(slow.submit.disabled, true);
   assert.equal(slow.fields.topic.disabled, true);
   slow.resolve(); await sending;

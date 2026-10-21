@@ -1,0 +1,35 @@
+[
+  {
+    "name": "pageview",
+    "domain": "deviny.me",
+    "url": "https://deviny.me/ru/contacts.html",
+    "props": {
+      "page": "contacts",
+      "language": "ru"
+    },
+    "interactive": true
+  },
+  {
+    "name": "support_attempt",
+    "domain": "deviny.me",
+    "url": "https://deviny.me/ru/contacts.html",
+    "props": {
+      "page": "contacts",
+      "language": "ru",
+      "topic": "support"
+    },
+    "interactive": true
+  },
+  {
+    "name": "support_result",
+    "domain": "deviny.me",
+    "url": "https://deviny.me/ru/contacts.html",
+    "props": {
+      "page": "contacts",
+      "language": "ru",
+      "topic": "support",
+      "outcome": "accepted"
+    },
+    "interactive": true
+  }
+]

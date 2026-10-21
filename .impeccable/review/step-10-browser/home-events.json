@@ -1,0 +1,81 @@
+[
+  {
+    "name": "pageview",
+    "domain": "deviny.me",
+    "url": "https://deviny.me/ru/",
+    "props": {
+      "page": "home",
+      "language": "ru"
+    },
+    "interactive": true
+  },
+  {
+    "name": "section_seen",
+    "domain": "deviny.me",
+    "url": "https://deviny.me/ru/",
+    "props": {
+      "page": "home",
+      "language": "ru",
+      "section": "support"
+    },
+    "interactive": false
+  },
+  {
+    "name": "store_placeholder_click",
+    "domain": "deviny.me",
+    "url": "https://deviny.me/ru/",
+    "props": {
+      "page": "home",
+      "language": "ru",
+      "store": "app_store",
+      "region": "hero"
+    },
+    "interactive": true
+  },
+  {
+    "name": "store_placeholder_click",
+    "domain": "deviny.me",
+    "url": "https://deviny.me/ru/",
+    "props": {
+      "page": "home",
+      "language": "ru",
+      "store": "google_play",
+      "region": "hero"
+    },
+    "interactive": true
+  },
+  {
+    "name": "section_seen",
+    "domain": "deviny.me",
+    "url": "https://deviny.me/ru/",
+    "props": {
+      "page": "home",
+      "language": "ru",
+      "section": "faq"
+    },
+    "interactive": false
+  },
+  {
+    "name": "section_seen",
+    "domain": "deviny.me",
+    "url": "https://deviny.me/ru/",
+    "props": {
+      "page": "home",
+      "language": "ru",
+      "section": "get-started"
+    },
+    "interactive": false
+  },
+  {
+    "name": "store_placeholder_click",
+    "domain": "deviny.me",
+    "url": "https://deviny.me/ru/",
+    "props": {
+      "page": "home",
+      "language": "ru",
+      "store": "app_store",
+      "region": "closing"
+    },
+    "interactive": true
+  }
+]

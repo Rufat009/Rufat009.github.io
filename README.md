@@ -12,6 +12,7 @@ node scripts/check-product-scenes.cjs
 node scripts/check-contact-flow.cjs
 node scripts/check-navigation.cjs
 node scripts/check-home-motion.cjs
+node scripts/check-analytics.cjs
 python3 scripts/preview.py --port 4173
 ```
 
@@ -51,3 +52,13 @@ Current generated photos are `club-outdoors-photo`, `program-strength-photo` and
 Current verification: 12 canonical pages, 3 utility pages, 6 redirects, 438 local references and 75 image elements. Run the commands above plus `node scripts/check-product-scenes.cjs`. Current evidence: `.impeccable/review/final-polish-checks.json`. Browser rendering/capture remains unavailable under the prior security restriction; source and simulated behavioral checks do not certify mobile geometry, animation smoothness or conversion.
 
 Earlier decisions and superseded compositions are recorded chronologically in DESIGN.md and docs/qa-report.md. The current summary in this README takes precedence over historical descriptions of access requests, 28 displayed capabilities, chat previews or stylized illustrations.
+
+## Measurement preparation — October 21, 2026
+
+`content/analytics.json` controls the optional Plausible Events API integration in `analytics.js`. **It is disabled. No analytics account or dashboard has been connected or verified.** The adapter sends only on HTTPS `deviny.me`, respects DNT/GPC, uses no cookies/storage, and never reads form values. Query strings, hashes and referrers are omitted; campaign/source attribution is intentionally not implemented. When enabled, the provider still receives normal network metadata such as IP and User-Agent.
+
+The event definitions, activation checklist, interpretation limits and first-visitor research protocol are in `.impeccable/review/measurement-step-10.json`. Do not call store clicks installations or provider acceptance inbox delivery. Placeholder clicks and real store clicks use separate event names, selected by `content/distribution.json`.
+
+After the owner connects a real Plausible site for `deviny.me`, confirm its data-processing disclosure and plan, create the exact custom-event goals from the report, enable the switch, rebuild and publish through the normal release process. Verify actual events in the dashboard: an HTTP success response alone is insufficient. Never add an automatic pageview script alongside this adapter, which already sends pageviews. No paid account, service subscription or public activation was created by this work.
+
+For local inspection run the preview server and open `/__qa__/ru/index.html?analytics=debug` or `/__qa__/ru/contacts.html?analytics=debug&mock=success`. A local-only expandable panel shows sanitized events; store links are intercepted only in this fixture, and contact submissions are mocked. Normal pages have no panel. Do not use normal contact routes for mock tests. Node tests never send requests.

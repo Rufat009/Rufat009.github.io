@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-21",
+  "task": "Audit step 5: concrete professional proposition and role-specific work",
+  "implemented": [
+    "Preserved specialist hero composition and motion; copy connects professional programs with people",
+    "Replaced repeated three-task row with trainer and nutritionist explanations plus shared meeting scheduling",
+    "Explained profile, document review and first program preparation; publication requires approved documents",
+    "Reframed client trust around professional documents and program content",
+    "Separated launch limitations from future paid services; no revenue, acquisition or health outcome guarantee",
+    "Kept app-store path primary and questions optional; all changes localized EN/RU/AZ"
+  ],
+  "source_evidence": [
+    {
+      "path": "/Users/milada/Documents/Deviny_IOS/Deviny/Deviny/Views/ProgramEditorView.swift",
+      "supports": "Role-specific program editor, description and materials"
+    },
+    {
+      "path": "/Users/milada/Documents/Deviny_IOS/Deviny/Deviny/Views/StudentDetailView.swift",
+      "supports": "Client profile and purchased-program details; role-dependent information"
+    },
+    {
+      "path": "/Users/milada/Documents/Deviny_IOS/Deviny/Deviny/Views/ExpertDashboardView.swift",
+      "supports": "Owned program completion steps and participant progress"
+    },
+    {
+      "path": "/Users/milada/Documents/Deviny_IOS/Deviny/Deviny/Views/ScheduleView.swift",
+      "supports": "Trainer/nutritionist meeting date, participant and location/link"
+    },
+    {
+      "path": "/Users/milada/Documents/Deviny_IOS/Deviny/Deviny/Services/SpecialistVerificationService.swift",
+      "supports": "Professional document review status"
+    },
+    {
+      "repository": "Deviny-me/Deviny_Backend",
+      "sha": "a8e64ba6a97860458c1e26ec53555137e1133c24",
+      "path": "docs/legal-release-handoff.md",
+      "supports": "Initial free/social scope; paid activation unresolved; reviewed during step 4"
+    }
+  ],
+  "verification": {
+    "build": "12 canonical, 3 utility, 6 redirect documents",
+    "static": "432 local references, 81 images, zero errors",
+    "behavior": "Navigation and UI motion suites passed",
+    "structure": "Each localized specialist page has two role articles, one shared scheduling explanation, three onboarding steps, two store pairs, unique IDs and resolved ARIA references; aliases identical",
+    "scope": "Homepage HTML EN/RU/AZ, home.css and home.js byte-identical to this step baseline",
+    "whitespace": "git diff --check passed"
+  },
+  "limits": [
+    "Local implementation only; not published",
+    "Source evidence does not establish production feature availability",
+    "Fresh browser rendering remains unverified under the prior automatic-approval rejection",
+    "Step 4 legal approval remains pending"
+  ]
+}

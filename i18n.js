@@ -20,7 +20,6 @@
     location.replace(target.href);
     return;
   }
-  try { localStorage.setItem('deviny_language', current); } catch { /* Optional preference. */ }
   const storageKey = 'deviny_contact_language_draft';
   const form = document.querySelector('#contact-form');
   if (form) {

@@ -22,6 +22,8 @@ class Handler(SimpleHTTPRequestHandler):
             script='''<script>window.__formMock={mode:MODE,count:0,payloads:[]};const originalFetch=window.fetch.bind(window);window.fetch=async (url,options)=>{if(String(url)!=='https://api.web3forms.com/submit')return originalFetch(url,options);const m=window.__formMock;m.count++;document.documentElement.dataset.mockRequests=String(m.count);m.payloads.push(Object.fromEntries(options.body.entries()));await new Promise((resolve,reject)=>{const timer=setTimeout(resolve,m.mode==='slow'?8000:200);options.signal.addEventListener('abort',()=>{clearTimeout(timer);reject(new DOMException('Aborted','AbortError'))},{once:true})});if(m.mode==='network')throw new TypeError('Mock network failure');if(m.mode==='malformed')return new Response('invalid',{status:200});return new Response(JSON.stringify({success:m.mode!=='failure'}),{status:m.mode==='failure'?422:200,headers:{'Content-Type':'application/json'}})};</script>'''.replace('MODE',json.dumps(mode))
             html=file.read_text()
             options=parse_qs(parsed.query)
+            if options.get('analytics')==['debug']:
+                html=html.replace('<head>', '<head><script src="/scripts/analytics-qa.js"></script>')
             if options.get('motion')==['reduce']:
                 # Local-only emulation of the reduced-motion startup branch.
                 html=html.replace('<head>', '<head><style>*,*:before,*:after{animation:none!important;transition:none!important}</style><script>const nativeMatchMedia=window.matchMedia.bind(window);window.matchMedia=q=>q===\'(prefers-reduced-motion: reduce)\'?{matches:true,media:q,addEventListener(){},removeEventListener(){}}:nativeMatchMedia(q);</script>')

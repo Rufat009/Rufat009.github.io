@@ -1,0 +1,62 @@
+[
+  {
+    "level": "error",
+    "message": "InvalidStateError: Transition was aborted because of invalid state. ViewTransition opt-in disabled",
+    "timestamp": "2026-10-21T12:55:49.800Z",
+    "url": "http://127.0.0.1:4173/"
+  },
+  {
+    "level": "error",
+    "message": "InvalidStateError: Transition was aborted because of invalid state. ViewTransition opt-in disabled",
+    "timestamp": "2026-10-21T12:55:50.073Z",
+    "url": "http://127.0.0.1:4173/az/"
+  },
+  {
+    "level": "error",
+    "message": "InvalidStateError: Transition was aborted because of invalid state. ViewTransition opt-in disabled",
+    "timestamp": "2026-10-21T12:55:50.354Z",
+    "url": "http://127.0.0.1:4173/specialists.html"
+  },
+  {
+    "level": "error",
+    "message": "InvalidStateError: Transition was aborted because of invalid state. Viewport size changed",
+    "timestamp": "2026-10-21T12:55:50.737Z",
+    "url": "http://127.0.0.1:4173/about.html"
+  },
+  {
+    "level": "error",
+    "message": "InvalidStateError: Transition was aborted because of invalid state. Viewport size changed",
+    "timestamp": "2026-10-21T12:55:50.864Z",
+    "url": "http://127.0.0.1:4173/az/about.html"
+  },
+  {
+    "level": "error",
+    "message": "InvalidStateError: Transition was aborted because of invalid state. Viewport size changed",
+    "timestamp": "2026-10-21T12:55:51.001Z",
+    "url": "http://127.0.0.1:4173/contacts.html"
+  },
+  {
+    "level": "error",
+    "message": "InvalidStateError: Transition was aborted because of invalid state. ViewTransition opt-in disabled",
+    "timestamp": "2026-10-21T12:55:57.316Z",
+    "url": "http://127.0.0.1:4173/__qa__/ru/index.html?textscale=2"
+  },
+  {
+    "level": "error",
+    "message": "InvalidStateError: Transition was aborted because of invalid state. ViewTransition opt-in disabled",
+    "timestamp": "2026-10-21T12:55:57.846Z",
+    "url": "http://127.0.0.1:4173/__qa__/ru/contacts.html?textscale=2"
+  },
+  {
+    "level": "error",
+    "message": "InvalidStateError: Transition was aborted because of invalid state. ViewTransition opt-in disabled",
+    "timestamp": "2026-10-21T12:56:58.344Z",
+    "url": "http://127.0.0.1:4173/__qa__/ru/index.html?motion=reduce"
+  },
+  {
+    "level": "error",
+    "message": "InvalidStateError: Transition was aborted because of invalid state. ViewTransition opt-in disabled",
+    "timestamp": "2026-10-21T12:57:48.750Z",
+    "url": "http://127.0.0.1:4173/ru/"
+  }
+]

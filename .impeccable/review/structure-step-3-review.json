@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-21",
+  "task": "Audit step 3: simplify homepage hierarchy and remove repeated explanations",
+  "changes": [
+    "Combine public profile links with social posts and invitations with friends",
+    "Explain program authors in the existing program demonstration; move search beside program selection",
+    "Remove repeated program terms and progress introduction",
+    "Prioritize privacy, contact safety and app lock; make appearance preferences secondary"
+  ],
+  "preserved": [
+    "All 21 capabilities in EN, RU and AZ",
+    "Approved GymBro markup unchanged",
+    "Hero and existing program/theme interactions"
+  ],
+  "verification": {
+    "build": "12 canonical, 3 utility, 6 legacy redirect documents",
+    "static": "432 local references and 81 images; zero errors",
+    "behavior": "Product scenes, UI motion, home motion and navigation checks passed",
+    "structure": "Unique IDs and resolved ARIA references in all three homepages",
+    "copy_counts": "structure-step-3-checks.json",
+    "whitespace": "git diff --check passed"
+  },
+  "limits": [
+    "Local source changes only; not deployed",
+    "Fresh browser rendering remains unverified: automatic approval previously rejected local website access",
+    "Word counts describe source content including both program panels, not rendered page height"
+  ]
+}

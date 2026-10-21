@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-21",
+  "request": "Replace the rejected GymBro preference form with a different composition",
+  "implementation": "Single editorial photo and graphite/gold copy panel; three concise sequential steps; no location value or form controls",
+  "localized": [
+    "en",
+    "ru",
+    "az"
+  ],
+  "removed": [
+    "partner_proof generator",
+    "GymBro select/output handlers",
+    "Form-specific CSS, copy and tests"
+  ],
+  "assets": [
+    "assets/product/gymbro-session-photo.webp",
+    "assets/product/gymbro-session-photo-560.webp"
+  ],
+  "asset_source": "Built-in image_gen; fictional editorial scene; prompt, original path and export hashes in asset sidecars",
+  "verification": {
+    "static": "12 canonical pages, 432 local references, 81 images, zero errors",
+    "program_tabs": "existing keyboard and isolation checks passed",
+    "coverage": "21 unique capabilities per locale; feature-gymbro anchor preserved; no old form markup",
+    "diff": "clean whitespace"
+  },
+  "limits": [
+    "No fresh browser rendering: previously rejected automatic approval for local website access remains in force",
+    "Not deployed",
+    "Photo is illustration, not native UI or real member evidence"
+  ]
+}

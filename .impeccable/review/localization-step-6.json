@@ -1,0 +1,559 @@
+{
+  "date": "2026-10-21",
+  "task": "Editorial localization, audit step 6",
+  "changes": [
+    {
+      "path": "en.faqs.0.1",
+      "before": "Deviny will be available in App Store and Google Play soon. After release, download the app and create an account. Accounts are available to people aged 16 and over.",
+      "after": "Deviny is coming soon to the App Store and Google Play. Once it launches, download the app and create an account. You must be at least 16."
+    },
+    {
+      "path": "en.faqs.2.0",
+      "before": "Does a program include personal support?",
+      "after": "Can I get personal support from a specialist?"
+    },
+    {
+      "path": "en.faqs.2.1",
+      "before": "At launch, you can talk with specialists. Paid personal support and consultations are not yet available.",
+      "after": "At launch, you can talk with specialists. Paid personal support and paid consultations will not be available."
+    },
+    {
+      "path": "en.faqs.3.1",
+      "before": "You choose which results to share and who can see them. You appear in GymBro discovery only after enabling visibility.",
+      "after": "You choose which results to share and who can see them. People can find you in GymBro only when you turn on visibility."
+    },
+    {
+      "path": "en.roles.0.1",
+      "before": "Build a program around exercises and workouts. Open a client’s profile and programs, and follow completed steps in your training program.",
+      "after": "Build a program around exercises and workouts. View client profiles and programs, and follow their progress through your training program."
+    },
+    {
+      "path": "en.teamEnd",
+      "before": "Have something to build together?",
+      "after": "Have an idea for a partnership?"
+    },
+    {
+      "path": "en.teamEndText",
+      "before": "Contact us about collaboration or working with Deviny.",
+      "after": "Tell us how you would like to work with Deviny."
+    },
+    {
+      "path": "en.contactText",
+      "before": "Ask about the app, support or working together. Leave a contact so we can reply.",
+      "after": "Ask about the app, get help or discuss a partnership. Tell us how to reach you so we can reply."
+    },
+    {
+      "path": "en.detailsPlaceholder",
+      "before": "Email address, @username or phone number",
+      "after": "Email address, Telegram @username or phone number"
+    },
+    {
+      "path": "en.messages.failure",
+      "before": "We could not complete your request. Your message is still in the form. Try again or email contact@deviny.me.",
+      "after": "We could not send your message. It is still in the form. Try again or email contact@deviny.me."
+    },
+    {
+      "path": "en.messages.network",
+      "before": "The connection was interrupted. Your message has been kept. Try again or email contact@deviny.me.",
+      "after": "We could not confirm that your message was sent. It is still in the form. Try again or email contact@deviny.me."
+    },
+    {
+      "path": "en.messages.details",
+      "before": "Enter a valid contact: an email, a Telegram username or a phone number.",
+      "after": "Enter a valid Telegram username or phone number for your chosen contact method."
+    },
+    {
+      "path": "en.supportText",
+      "before": "A workout partner, a specialist whose approach suits you or people with shared interests — choose whom to connect with.",
+      "after": "Find a workout partner, a specialist whose approach suits you or people who share your interests."
+    },
+    {
+      "path": "en.specialistFinalText",
+      "before": "After installing Deviny, choose trainer or nutritionist. You can create your profile in the app.",
+      "after": "After installing Deviny, select the trainer or nutritionist role and create your profile in the app."
+    },
+    {
+      "path": "en.aboutPurposeTitle",
+      "before": "Why bring it together",
+      "after": "Why we bring it together"
+    },
+    {
+      "path": "en.aboutPurposeText",
+      "before": "Meeting a partner, choosing a program, training and talking afterwards are connected. We bring that journey into one product to help people move from intention to action.",
+      "after": "Finding a partner, choosing a program, training and staying in touch are all connected. Deviny brings them into one app to help you put your plans into practice."
+    },
+    {
+      "path": "en.aboutChoiceText",
+      "before": "Training independently, following a specialist’s program and joining conversations are your choices. You decide whom to connect with and which results to share.",
+      "after": "Train on your own, follow a specialist’s program or join a conversation. You choose whom to connect with and which results to share."
+    },
+    {
+      "path": "en.aboutTeamText",
+      "before": "The people building the product. Get to know the team through their professional profiles.",
+      "after": "Meet the people building Deviny and explore their professional profiles."
+    },
+    {
+      "path": "en.changeTopic",
+      "before": "A different question",
+      "after": "Change topic"
+    },
+    {
+      "path": "en.contactModes.specialist.messagePlaceholder",
+      "before": "What would you like to know about working in Deviny?",
+      "after": "What would you like to know about the tools for specialists?"
+    },
+    {
+      "path": "en.contactModes.specialist.success",
+      "before": "Your message has been sent. The team will reply using the contact you provided.",
+      "after": "Your message has been sent. The team will reply using the contact details you provided."
+    },
+    {
+      "path": "en.contactModes.support.text",
+      "before": "Ask about the app, support or working together. Leave a contact so we can reply.",
+      "after": "Ask about the app, get help or discuss a partnership. Tell us how to reach you so we can reply."
+    },
+    {
+      "path": "en.contactModes.support.success",
+      "before": "Your message has been sent. The team will reply using the contact you provided.",
+      "after": "Your message has been sent. The team will reply using the contact details you provided."
+    },
+    {
+      "path": "en.contactModes.collaboration.text",
+      "before": "Have an idea for a partnership? Tell us about it and leave a contact for a reply.",
+      "after": "Have an idea for a partnership? Tell us about it and how to reach you."
+    },
+    {
+      "path": "en.contactModes.collaboration.success",
+      "before": "Your message has been sent. The team will reply using the contact you provided.",
+      "after": "Your message has been sent. The team will reply using the contact details you provided."
+    },
+    {
+      "path": "en.proVerificationNote",
+      "before": "Publication requires approved professional documents.",
+      "after": "Your professional documents must be approved before you can publish a program."
+    },
+    {
+      "path": "en.featureGroups.0.items.3.text",
+      "before": "Start topics, ask questions and exchange experience.",
+      "after": "Start discussions, ask questions and share your experience."
+    },
+    {
+      "path": "en.featureGroups.3.items.3.text",
+      "before": "Your purchased materials are collected in your library.",
+      "after": "Find the programs you have purchased in your library."
+    },
+    {
+      "path": "en.featureGroups.4.items.1.text",
+      "before": "Control results visibility and GymBro discovery separately.",
+      "after": "Choose who can see your results and, separately, whether people can find you in GymBro."
+    },
+    {
+      "path": "en.featureGroups.4.items.2.text",
+      "before": "Block unwanted contacts. Report content.",
+      "after": "Block people you do not want to hear from and report content."
+    },
+    {
+      "path": "en.lowerScenes.themeLabel",
+      "before": "Explore light and dark appearance",
+      "after": "Preview light or dark appearance"
+    },
+    {
+      "path": "en.productProof.programRows.0.1",
+      "before": "Exercises and session order",
+      "after": "Exercises and workout order"
+    },
+    {
+      "path": "en.replyChannels",
+      "before": null,
+      "after": {
+        "Email": "Email",
+        "Telegram": "Telegram",
+        "WhatsApp": "WhatsApp"
+      }
+    },
+    {
+      "path": "ru.faqs.0.1",
+      "before": "Deviny скоро появится в App Store и Google Play. После выхода скачайте приложение и создайте аккаунт. Создать аккаунт можно с 16 лет.",
+      "after": "Deviny скоро появится в App Store и Google Play. После выхода скачайте приложение и зарегистрируйтесь. Создать аккаунт можно с 16 лет."
+    },
+    {
+      "path": "ru.faqs.2.0",
+      "before": "Входит ли личная помощь специалиста в программу?",
+      "after": "Можно ли получить личную помощь специалиста?"
+    },
+    {
+      "path": "ru.faqs.2.1",
+      "before": "На старте можно общаться со специалистами. Платное сопровождение и консультации пока недоступны.",
+      "after": "На старте можно общаться со специалистами. Платное сопровождение и платные консультации будут недоступны."
+    },
+    {
+      "path": "ru.faqs.3.1",
+      "before": "Вы выбираете, какие результаты публиковать и кому они видны. В поиске GymBro вы появляетесь только после включения видимости.",
+      "after": "Вы выбираете, какие результаты публиковать и кому их показывать. Найти вас в GymBro можно только после того, как вы включите видимость."
+    },
+    {
+      "path": "ru.roles.0.1",
+      "before": "Соберите программу из упражнений и занятий. Открывайте профиль и программы ученика, следите за выполненными шагами в своей тренировочной программе.",
+      "after": "Соберите программу из упражнений и занятий. Открывайте профили учеников и их программы. Следите, как ученики проходят вашу тренировочную программу."
+    },
+    {
+      "path": "ru.contactText",
+      "before": "Задайте вопрос о приложении, поддержке или сотрудничестве. Оставьте контакт, чтобы мы могли ответить.",
+      "after": "Задайте вопрос о приложении, получите помощь или предложите сотрудничество. Укажите, как с вами связаться."
+    },
+    {
+      "path": "ru.detailsPlaceholder",
+      "before": "Email, @имя в Telegram или номер телефона",
+      "after": "Электронная почта, @имя в Telegram или номер телефона"
+    },
+    {
+      "path": "ru.messages.network",
+      "before": "Соединение прервалось. Сообщение осталось в форме. Повторите попытку или напишите на contact@deviny.me.",
+      "after": "Не удалось подтвердить отправку. Текст остался в форме. Повторите попытку или напишите на contact@deviny.me."
+    },
+    {
+      "path": "ru.messages.email",
+      "before": "Введите корректный email.",
+      "after": "Введите корректный адрес электронной почты."
+    },
+    {
+      "path": "ru.messages.details",
+      "before": "Укажите корректный контакт: email, имя в Telegram или номер телефона.",
+      "after": "Укажите имя в Telegram или номер телефона для выбранного способа связи."
+    },
+    {
+      "path": "ru.supportText",
+      "before": "Партнёр для занятий, специалист с подходящим подходом или люди с общими интересами — выбирайте, с кем быть на связи.",
+      "after": "Найдите партнёра для тренировок, специалиста с близким вам подходом или людей с общими интересами."
+    },
+    {
+      "path": "ru.specialistFinalText",
+      "before": "После установки Deviny выберите роль тренера или нутрициолога. Создать профиль можно прямо в приложении.",
+      "after": "После установки Deviny выберите роль тренера или нутрициолога и создайте профиль в приложении."
+    },
+    {
+      "path": "ru.aboutPurposeText",
+      "before": "Знакомство с партнёром, выбор программы, тренировка и разговор после неё связаны между собой. Мы собираем этот путь в одном продукте, чтобы человеку было проще перейти от намерения к действию.",
+      "after": "Знакомство с партнёром, выбор программы, тренировка и общение связаны между собой. Deviny объединяет их в одном приложении, чтобы было проще перейти от планов к занятиям."
+    },
+    {
+      "path": "ru.aboutChoiceText",
+      "before": "Самостоятельные занятия, программа специалиста и общение — ваш выбор. Вы решаете, с кем связываться и какие результаты показывать.",
+      "after": "Тренируйтесь самостоятельно, занимайтесь по программе специалиста или присоединяйтесь к обсуждениям. Вы решаете, с кем общаться и какими результатами делиться."
+    },
+    {
+      "path": "ru.aboutTeamText",
+      "before": "Люди, которые создают продукт. Познакомьтесь с командой через профессиональные профили.",
+      "after": "Познакомьтесь с людьми, которые создают Deviny, и посмотрите их профессиональные профили."
+    },
+    {
+      "path": "ru.changeTopic",
+      "before": "Другой вопрос",
+      "after": "Изменить тему"
+    },
+    {
+      "path": "ru.contactModes.specialist.messagePlaceholder",
+      "before": "Что вы хотите узнать о работе в Deviny?",
+      "after": "Что вы хотите узнать о возможностях для специалистов?"
+    },
+    {
+      "path": "ru.contactModes.support.text",
+      "before": "Задайте вопрос о приложении, поддержке или сотрудничестве. Оставьте контакт, чтобы мы могли ответить.",
+      "after": "Задайте вопрос о приложении, получите помощь или предложите сотрудничество. Укажите, как с вами связаться."
+    },
+    {
+      "path": "ru.proVerificationNote",
+      "before": "Для публикации нужны одобренные профессиональные документы.",
+      "after": "Для публикации программы ваши профессиональные документы должны пройти проверку и получить одобрение."
+    },
+    {
+      "path": "ru.featureGroups.4.items.1.text",
+      "before": "Отдельно настройте видимость результатов и поиск GymBro.",
+      "after": "Настройте, кто видит ваши результаты, и отдельно — могут ли вас найти в GymBro."
+    },
+    {
+      "path": "ru.featureGroups.4.items.2.text",
+      "before": "Блокируйте контакты. Отправляйте жалобы.",
+      "after": "Блокируйте нежелательные контакты и отправляйте жалобы на контент."
+    },
+    {
+      "path": "ru.featureGroups.4.items.3.text",
+      "before": "Выберите способ входа в приложение.",
+      "after": "Выберите способ разблокировки приложения."
+    },
+    {
+      "path": "ru.lowerScenes.themeLabel",
+      "before": "Посмотрите светлое и тёмное оформление",
+      "after": "Посмотреть светлое или тёмное оформление"
+    },
+    {
+      "path": "ru.replyChannels",
+      "before": null,
+      "after": {
+        "Email": "Эл. почта",
+        "Telegram": "Telegram",
+        "WhatsApp": "WhatsApp"
+      }
+    },
+    {
+      "path": "az.skip",
+      "before": "Məzmuna keç",
+      "after": "Əsas məzmuna keçin"
+    },
+    {
+      "path": "az.navPros",
+      "before": "Mütəxəssislərə",
+      "after": "Mütəxəssislər üçün"
+    },
+    {
+      "path": "az.heroText",
+      "before": "Deviny idman üçün sosial platformadır. Məşq yoldaşları, qoşula biləcəyiniz icma, məşqçi və nutrisioloqların proqramlarını tapın.",
+      "after": "Deviny idman üçün sosial platformadır. Məşq yoldaşları tapın, icmaya qoşulun, məşqçi və nutrisioloqların proqramları ilə tanış olun."
+    },
+    {
+      "path": "az.faqs.0.1",
+      "before": "Deviny tezliklə App Store və Google Play-də yayımlanacaq. Yayımlandıqdan sonra tətbiqi yükləyin və hesab yaradın. Hesab yaratmaq üçün ən azı 16 yaşınız olmalıdır.",
+      "after": "Deviny tezliklə App Store və Google Play-də yayımlanacaq. Bundan sonra tətbiqi yükləyib hesab yarada bilərsiniz. Ən azı 16 yaşınız olmalıdır."
+    },
+    {
+      "path": "az.faqs.2.0",
+      "before": "Proqrama mütəxəssisin fərdi dəstəyi daxildirmi?",
+      "after": "Mütəxəssisdən fərdi dəstək ala bilərəm?"
+    },
+    {
+      "path": "az.faqs.2.1",
+      "before": "İlk buraxılışda mütəxəssislərlə ünsiyyət qura bilərsiniz. Ödənişli fərdi dəstək və konsultasiyalar hələ mövcud deyil.",
+      "after": "İlk buraxılışda mütəxəssislərlə ünsiyyət qura bilərsiniz. Ödənişli fərdi dəstək və ödənişli konsultasiyalar mövcud olmayacaq."
+    },
+    {
+      "path": "az.faqs.3.1",
+      "before": "Hansı nəticələri və kimlərlə paylaşacağınızı özünüz seçirsiniz. GymBro axtarışında yalnız görünmə funksiyasını aktivləşdirdikdən sonra görünürsünüz.",
+      "after": "Hansı nəticələri kimlərlə paylaşacağınızı özünüz seçirsiniz. Başqaları sizi GymBro-da yalnız görünməni aktivləşdirdikdən sonra tapa bilər."
+    },
+    {
+      "path": "az.roles.0.1",
+      "before": "Hərəkət və məşqlərdən ibarət proqram hazırlayın. Müştərinin profilini və proqramlarını açın, öz məşq proqramınızda tamamlanmış addımları izləyin.",
+      "after": "Hərəkət və məşqlərdən ibarət proqram hazırlayın. Müştərilərin profil və proqramlarına baxın, məşq proqramınızda irəliləyişlərini izləyin."
+    },
+    {
+      "path": "az.roles.1.1",
+      "before": "Təsvir və materiallarla qidalanma proqramı yaradın. Müştəri siyahısından onların profillərini və proqramlarını açın.",
+      "after": "Təsvir və materiallarla qidalanma proqramı yaradın. Müştəri siyahısından hər birinin profilinə və proqramlarına keçin."
+    },
+    {
+      "path": "az.contactText",
+      "before": "Tətbiq, dəstək və ya əməkdaşlıq barədə sual verin. Cavab üçün əlaqə məlumatınızı qeyd edin.",
+      "after": "Tətbiq barədə sual verin, kömək istəyin və ya əməkdaşlıq təklif edin. Cavab üçün əlaqə məlumatınızı qeyd edin."
+    },
+    {
+      "path": "az.reply",
+      "before": "Harada cavab verək?",
+      "after": "Sizə hansı vasitə ilə cavab verək?"
+    },
+    {
+      "path": "az.detailsPlaceholder",
+      "before": "Email, Telegram-da @istifadəçi adı və ya telefon",
+      "after": "E-poçt ünvanı, Telegram-da @istifadəçi adı və ya telefon nömrəsi"
+    },
+    {
+      "path": "az.send",
+      "before": "Mesajı göndər",
+      "after": "Mesaj göndərin"
+    },
+    {
+      "path": "az.messages.success",
+      "before": "Mesajınız göndərildi. Komanda qeyd etdiyiniz əlaqə vasitəsi ilə cavab verəcək.",
+      "after": "Mesajınız göndərildi. Komanda qeyd etdiyiniz əlaqə vasitəsilə cavab verəcək."
+    },
+    {
+      "path": "az.messages.network",
+      "before": "Bağlantı kəsildi. Mesajınız saxlanılıb. Yenidən cəhd edin və ya contact@deviny.me ünvanına yazın.",
+      "after": "Mesajın göndərildiyini təsdiqləyə bilmədik. Mətn formadadır. Yenidən cəhd edin və ya contact@deviny.me ünvanına yazın."
+    },
+    {
+      "path": "az.messages.email",
+      "before": "Düzgün email ünvanı daxil edin.",
+      "after": "Düzgün e-poçt ünvanı daxil edin."
+    },
+    {
+      "path": "az.messages.details",
+      "before": "Düzgün əlaqə məlumatı daxil edin: email, Telegram adı və ya telefon nömrəsi.",
+      "after": "Seçdiyiniz əlaqə vasitəsinə uyğun Telegram istifadəçi adı və ya telefon nömrəsi daxil edin."
+    },
+    {
+      "path": "az.specialistFinalText",
+      "before": "Deviny-ni quraşdırdıqdan sonra məşqçi və ya nutrisioloq rolunu seçin. Profilinizi birbaşa tətbiqdə yarada bilərsiniz.",
+      "after": "Deviny-ni quraşdırdıqdan sonra məşqçi və ya nutrisioloq rolunu seçin və tətbiqdə profilinizi yaradın."
+    },
+    {
+      "path": "az.aboutPurposeText",
+      "before": "Məşq yoldaşı ilə tanışlıq, proqram seçimi, məşq və ondan sonrakı ünsiyyət bir-biri ilə bağlıdır. İnsanların niyyətdən fəaliyyətə keçməsini asanlaşdırmaq üçün bu yolu bir məhsulda birləşdiririk.",
+      "after": "Məşq yoldaşı tapmaq, proqram seçmək, məşq etmək və əlaqə saxlamaq bir-biri ilə bağlıdır. Deviny planlarınızı həyata keçirməyə kömək etmək üçün bunları bir tətbiqdə birləşdirir."
+    },
+    {
+      "path": "az.aboutChoiceText",
+      "before": "Tək məşq etmək, mütəxəssisin proqramını izləmək və ünsiyyətə qoşulmaq sizin seçiminizdir. Kiminlə əlaqə quracağınıza və hansı nəticələri paylaşacağınıza özünüz qərar verirsiniz.",
+      "after": "Tək məşq edin, mütəxəssisin proqramını izləyin və ya müzakirələrə qoşulun. Kiminlə ünsiyyət quracağınızı və hansı nəticələri paylaşacağınızı özünüz seçirsiniz."
+    },
+    {
+      "path": "az.aboutTeamText",
+      "before": "Məhsulu yaradan insanlar. Peşəkar profilləri vasitəsilə komanda ilə tanış olun.",
+      "after": "Deviny-ni yaradan insanlarla tanış olun və onların peşəkar profillərinə baxın."
+    },
+    {
+      "path": "az.changeTopic",
+      "before": "Başqa sual",
+      "after": "Mövzunu dəyişin"
+    },
+    {
+      "path": "az.contactModes.specialist.send",
+      "before": "Mesaj göndər",
+      "after": "Mesaj göndərin"
+    },
+    {
+      "path": "az.contactModes.specialist.messagePlaceholder",
+      "before": "Deviny-də iş barədə nəyi bilmək istəyirsiniz?",
+      "after": "Mütəxəssislər üçün imkanlar barədə nəyi bilmək istəyirsiniz?"
+    },
+    {
+      "path": "az.contactModes.specialist.success",
+      "before": "Mesaj göndərildi. Komanda göstərdiyiniz əlaqə vasitəsilə cavab verəcək.",
+      "after": "Mesajınız göndərildi. Komanda qeyd etdiyiniz əlaqə vasitəsilə cavab verəcək."
+    },
+    {
+      "path": "az.contactModes.support.text",
+      "before": "Tətbiq, dəstək və ya əməkdaşlıq barədə sual verin. Cavab üçün əlaqə məlumatınızı qeyd edin.",
+      "after": "Tətbiq barədə sual verin, kömək istəyin və ya əməkdaşlıq təklif edin. Cavab üçün əlaqə məlumatınızı qeyd edin."
+    },
+    {
+      "path": "az.contactModes.support.send",
+      "before": "Mesaj göndər",
+      "after": "Mesaj göndərin"
+    },
+    {
+      "path": "az.contactModes.support.success",
+      "before": "Mesaj göndərildi. Komanda göstərdiyiniz əlaqə vasitəsilə cavab verəcək.",
+      "after": "Mesajınız göndərildi. Komanda qeyd etdiyiniz əlaqə vasitəsilə cavab verəcək."
+    },
+    {
+      "path": "az.contactModes.collaboration.send",
+      "before": "Mesaj göndər",
+      "after": "Mesaj göndərin"
+    },
+    {
+      "path": "az.contactModes.collaboration.success",
+      "before": "Mesaj göndərildi. Komanda göstərdiyiniz əlaqə vasitəsilə cavab verəcək.",
+      "after": "Mesajınız göndərildi. Komanda qeyd etdiyiniz əlaqə vasitəsilə cavab verəcək."
+    },
+    {
+      "path": "az.featureGroups.3.items.3.text",
+      "before": "Alınmış materiallar kitabxananızda toplanır.",
+      "after": "Aldığınız proqramları kitabxananızda tapa bilərsiniz."
+    },
+    {
+      "path": "az.featureGroups.4.items.1.text",
+      "before": "Nəticələrin görünməsini və GymBro axtarışını ayrıca tənzimləyin.",
+      "after": "Nəticələrinizi kimin görə biləcəyini və GymBro-da sizi tapmağın mümkün olub-olmadığını ayrıca tənzimləyin."
+    },
+    {
+      "path": "az.featureGroups.4.items.2.text",
+      "before": "İstənməyən əlaqələri bloklayın. Şikayət göndərin.",
+      "after": "Ünsiyyət qurmaq istəmədiyiniz insanları bloklayın və məzmundan şikayət edin."
+    },
+    {
+      "path": "az.productScenes.partnerOther",
+      "before": "Tərəfdaş",
+      "after": "Məşq yoldaşı"
+    },
+    {
+      "path": "az.productScenes.partnerMatch",
+      "before": "Şəhər, vaxt və məqsədlərə görə tərəfdaş axtarışı",
+      "after": "Şəhər, vaxt və məqsədlərə görə məşq yoldaşı axtarışı"
+    },
+    {
+      "path": "az.lowerScenes.themeLabel",
+      "before": "Açıq və tünd görünüşə baxın",
+      "after": "Açıq və ya tünd görünüşü sınaqdan keçirin"
+    },
+    {
+      "path": "az.replyChannels",
+      "before": null,
+      "after": {
+        "Email": "E-poçt",
+        "Telegram": "Telegram",
+        "WhatsApp": "WhatsApp"
+      }
+    }
+  ],
+  "unchanged_asset_hashes": {
+    "global.css": "1c04bf3c0e580bfd4e106a26dccc35c40bde7853ea7d82a7a91b68b0591aba2c",
+    "home.css": "6c6a5ac1546a2b6821727f0cc566a681243f46bb18f77962e98ac06b217f5fdd",
+    "specialists.css": "a390b734976718f0146c12b31f57fa2b840c7302439ce6327c957b455121f794",
+    "home.js": "5b64d5cc156328ecc663e6144a4c8b94110780b45d435cf1f6577df7cf326933",
+    "product-scenes.js": "c46aa4cac1d84479d623ad1f4b4b4846bf4221ed6a7a22b65dbd6bf47316aa7d",
+    "script.js": "1b2a1375931ad4fee9ccf3d3ed09bd6b861abbd16cc5035b839564017762bdd6",
+    "components/contacts/contacts.js": "782403e5cb2d9492b1b2ddbd8db351263a71b7397cbbee1539bd52f75e4578cc",
+    "i18n.js": "00ef35a88f96f922f5aa5e1973892e2311e77efbc50d38e4abe071671d69aad9"
+  },
+  "limits": [
+    "No independent native-speaker review",
+    "Browser rendering unverified under prior automatic-approval rejection",
+    "No deployment or release-scope changes"
+  ],
+  "verification": {
+    "locales": {
+      "en": {
+        "nested_translation_structure": "matched",
+        "home_capabilities": 21,
+        "reply_labels": "localized; wire values preserved",
+        "form_modes": "consistent",
+        "unintended_cyrillic": "none in EN/AZ",
+        "age_and_launch_scope": "retained"
+      },
+      "ru": {
+        "nested_translation_structure": "matched",
+        "home_capabilities": 21,
+        "reply_labels": "localized; wire values preserved",
+        "form_modes": "consistent",
+        "unintended_cyrillic": "none in EN/AZ",
+        "age_and_launch_scope": "retained"
+      },
+      "az": {
+        "nested_translation_structure": "matched",
+        "home_capabilities": 21,
+        "reply_labels": "localized; wire values preserved",
+        "form_modes": "consistent",
+        "unintended_cyrillic": "none in EN/AZ",
+        "age_and_launch_scope": "retained"
+      }
+    },
+    "static": "12 canonical + 3 utility + 6 redirects; 432 local refs; 81 images; zero errors",
+    "behavior": "Contact flow, navigation and product previews passed; no live requests",
+    "visual_assets": "CSS, JS controllers and imagery unchanged",
+    "diff": "clean whitespace"
+  },
+  "terminology": {
+    "trainer": [
+      "trainer",
+      "тренер",
+      "məşqçi"
+    ],
+    "nutritionist": [
+      "nutritionist",
+      "нутрициолог",
+      "nutrisioloq"
+    ],
+    "program": [
+      "program",
+      "программа",
+      "proqram"
+    ],
+    "workout_partner": [
+      "workout partner",
+      "партнёр для тренировок",
+      "məşq yoldaşı"
+    ],
+    "app_languages": "No fixed app-language list; website locales remain EN/RU/AZ",
+    "paid_services": "Launch-unavailable wording preserved; no future release dates introduced"
+  }
+}

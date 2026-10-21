@@ -1,0 +1,48 @@
+{
+  "task": "Global landing audit — step 2: source-backed product examples",
+  "date": "2026-10-21",
+  "status": "implemented_locally; rendered acceptance pending",
+  "changes": [
+    "GymBro city/time/goal example with local preference controls and a readable no-JS fallback",
+    "Club challenge example with shared progress and member contribution; example data explicitly captioned",
+    "Training/nutrition program previews show creator role, contents and reviews without fabricated people, ratings or testimonials"
+  ],
+  "source_revision": "13cc2ce9e8c0c315ce21954d69c4f0429df985f9",
+  "source_evidence": {
+    "GymBroViews.swift": "discoveryProfileFields 646–705; discoveryProfileSummary 707–739",
+    "ClubsView.swift": "ClubChallengeCard 1917–1964: clubProgress, target, viewerProgress",
+    "ProgramDetailView.swift": "program page description, summary, materials and reviews at 62–95; trainer profile link at 912–960"
+  },
+  "illustrative_values": {
+    "GymBro": "Neutral “Your city” label; time windows and goals are example preferences. No visitor location detection or live matching.",
+    "Club": "18 of 30 workouts and 3 personal workouts are fictional values in an explicitly captioned example"
+  },
+  "preserved": [
+    "Step 1 copy",
+    "Hero template/feed/device functions unchanged against HEAD",
+    "21 capabilities per locale",
+    "Store links and release state",
+    "Removed training and communication blocks remain absent"
+  ],
+  "verification": {
+    "build": "passed",
+    "static_check": "12 canonical pages; 429 local references; 78 images; zero errors",
+    "product_scene_tests": "passed including local preference updates and independent state",
+    "ui_motion_tests": "passed",
+    "hero_motion_tests": "passed",
+    "markup": "unique IDs, resolved ARIA references, no network form in examples, EN/RU/AZ coverage",
+    "diff_check": "passed"
+  },
+  "detector": {
+    "report": "/tmp/deviny-step2-detector.json",
+    "resolved": "New program text colors explicitly adjusted for white print backgrounds",
+    "reviewed": "Progress element has 4.0:1 bar contrast; detector treats fallback progress text as screen body text. Existing print cascade/padding advisories remain, without new browser-rendered confirmation."
+  },
+  "limits": [
+    "No new app screenshots: Simulator exposed no available window",
+    "These are source-backed explanatory website examples, not native screenshots or evidence of live users/results",
+    "Prior automatic browser approval restriction prevents fresh local rendering; not bypassed",
+    "No production deployment, account requests, live form submission or sibling source modification"
+  ],
+  "superseded_gymbro": "Owner rejected the preference form. Replaced by gymbro-story on 2026-10-21; see gymbro-story-review.json. Other step 2 examples remain."
+}

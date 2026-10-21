@@ -1,0 +1,55 @@
+{
+  "task": "Global landing audit — step 1: clarify the reason to choose Deviny",
+  "date": "2026-10-21",
+  "status": "implemented_locally",
+  "primary_message": "Deviny helps people find their fitness community: workout partners, clubs and specialist-created programs.",
+  "category": {
+    "ru": "Социальная платформа для спорта",
+    "en": "A social platform for fitness",
+    "az": "İdman üçün sosial platforma"
+  },
+  "scope": [
+    "Hero explanation",
+    "People, clubs and programs introductory copy",
+    "Closing invitation",
+    "Shared footer",
+    "Homepage search and Open Graph metadata",
+    "Localized social cards"
+  ],
+  "locales": [
+    "en",
+    "ru",
+    "az"
+  ],
+  "preserved": [
+    "Approved headlines and hero visual",
+    "21 homepage capabilities",
+    "Solo-training FAQ",
+    "Store placeholders and release status",
+    "Layouts and interactions",
+    "Specialist offer and legal documents"
+  ],
+  "evidence": [
+    "Owner-confirmed platform positioning in PRODUCT.md",
+    "docs/positioning-correction-20261018.md",
+    "Existing source-backed feature catalogue and GymBro city/time/goal scene"
+  ],
+  "verification": {
+    "build": "passed",
+    "static_checks": {
+      "canonical_pages": 12,
+      "local_references": 429,
+      "images": 78,
+      "errors": 0
+    },
+    "scope_comparison": "passed against HEAD",
+    "whitespace": "passed",
+    "social_cards": "regenerated EN/RU/AZ; RU visually inspected"
+  },
+  "limits": [
+    "No deployment",
+    "No new native-app runtime verification",
+    "No fresh browser render of local changes because of the previously reported browser restriction",
+    "First-visit comprehension and conversion require real-user validation; no measured improvement claimed"
+  ]
+}

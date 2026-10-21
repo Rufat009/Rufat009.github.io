@@ -131,7 +131,15 @@
   document.addEventListener('click', event => {
     if (!event.target.closest('.site-header')) closeMenu();
   });
-  mobile.addEventListener('change', () => setMenu(false, false));
+  mobile.addEventListener('change', () => {
+    const focusInClosingNav = mobile.matches && nav?.contains(document.activeElement);
+    const focusOnHiddenToggle = !mobile.matches && document.activeElement === toggle;
+    setMenu(false, false);
+    if (focusInClosingNav) toggle?.focus({preventScroll: true});
+    else if (focusOnHiddenToggle) nav?.querySelector('a')?.focus({preventScroll: true});
+  });
+  // Hide the fallback links only after their toggle has working handlers.
+  if (toggle && nav) document.documentElement.classList.add('menu-ready');
   // A resize or accessibility preference change settles into the requested state.
   const settle = () => [...motions.values()].forEach(state => state.finish());
   addEventListener('resize', settle, {passive: true});

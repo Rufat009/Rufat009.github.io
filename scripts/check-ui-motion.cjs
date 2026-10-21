@@ -78,6 +78,7 @@ function fixture({reduced = false, mobile = true, waapi = true, has = true} = {}
   });
   const toggle = new Node('button'), nav = new Node('nav', 174);
   const navLink = new Node('link'); nav.children.push(navLink);
+  nav.selectors = {'a': navLink};
   document.documentElement = new Node('html');
   document.querySelector = selector => selector === '.menu-toggle' ? toggle : null;
   document.getElementById = id => id === 'primary-nav' ? nav : null;
@@ -170,6 +171,18 @@ f.media.mobile.matches = false; f.media.mobile.emit('change');
 assert.equal(f.nav.classes.has('is-open'), false);
 assert.equal(f.nav.inert, false, 'Desktop navigation must remain available after resizing');
 assert.equal(f.nav.getAttribute('aria-hidden'), null);
+
+// Crossing a breakpoint must not strand keyboard focus in hidden controls.
+const resizeFocus = fixture({mobile: false});
+assert.equal(resizeFocus.document.documentElement.classes.has('menu-ready'), true);
+resizeFocus.navLink.focus();
+resizeFocus.media.mobile.matches = true; resizeFocus.media.mobile.emit('change');
+assert.equal(resizeFocus.nav.inert, true);
+assert.equal(resizeFocus.document.activeElement, resizeFocus.toggle);
+resizeFocus.media.mobile.matches = false; resizeFocus.media.mobile.emit('change');
+assert.equal(resizeFocus.document.activeElement, resizeFocus.navLink);
+assert.equal(resizeFocus.nav.inert, false);
+
 
 f.details[2].summary.emit('click');
 f.media.reduce.matches = true; f.media.reduce.emit('change');

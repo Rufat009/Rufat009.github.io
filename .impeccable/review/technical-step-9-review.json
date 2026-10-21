@@ -1,0 +1,220 @@
+{
+  "date": "2026-10-21",
+  "task": "Audit step 9: responsive behavior, accessibility, loading and motion",
+  "status": "Source and desktop-browser acceptance completed; physical-device, assistive-technology and production-performance checks remain unverified",
+  "findings_fixed": [
+    {
+      "priority": "P1",
+      "area": "navigation fallback",
+      "file": "global.css / script.js",
+      "problem": "Inline js class hid mobile navigation even if the deferred controller failed to load",
+      "fix": "Collapse links only with menu-ready class after menu handlers are installed; fallback navigation wraps"
+    },
+    {
+      "priority": "P1",
+      "area": "keyboard focus",
+      "file": "script.js",
+      "problem": "Crossing the mobile breakpoint could hide the currently focused nav link or menu toggle",
+      "fix": "Move focus to the menu toggle when nav collapses, or first nav link when toggle disappears; regression scenarios added"
+    },
+    {
+      "priority": "P2",
+      "area": "focus contrast",
+      "file": "specialists.css",
+      "problem": "Gold focus outline on professional graphite section had 2.66:1 contrast",
+      "fix": "Use light gold outline; calculated contrast 8.71:1"
+    },
+    {
+      "priority": "P2",
+      "area": "text preferences",
+      "file": "global.css",
+      "problem": "Root font-size 16px overrode user default font-size preferences",
+      "fix": "Use 100%; default 16px appearance unchanged while honoring browser preference"
+    },
+    {
+      "priority": "P2",
+      "area": "touch targets",
+      "file": "global.css / home.css",
+      "problem": "Footer links and change-topic control below 44px target-height preference",
+      "fix": "Minimum 44px for footer navigation/social/legal links, change-topic button and program tabs"
+    },
+    {
+      "priority": "P2",
+      "area": "forced colors",
+      "file": "home.css",
+      "problem": "Selected preview tabs and theme options depended on backgrounds that forced-color mode can replace",
+      "fix": "Explicit system-color borders, double border for selection and separate focus outline"
+    },
+    {
+      "priority": "P2",
+      "area": "enlarged-text language controls",
+      "file": "global.css",
+      "problem": "At 200% root text size, EN/RU/AZ labels visually ran together",
+      "fix": "Added 4px inline padding and prevented the language group from shrinking; confirmed at 390px with 32px root font"
+    }
+  ],
+  "verification": {
+    "build": "12 canonical + 3 utility + 6 redirects",
+    "static": "432 local refs, 81 image instances, zero errors",
+    "page_semantics": "15 canonical/utility pages checked for unique IDs, resolved ARIA refs, field labels, intrinsic image sizes, deferred external scripts and non-positive tabindex",
+    "behavior": [
+      "UI motion: disclosure reversal/grouping, native reveal, breakpoint focus, reduced motion, no-WAAPI fallback",
+      "Home motion: bounded movement, settling, pointer exit, visibility, mobile and reduced motion",
+      "Program previews: keyboard arrows/Home/End, independent state and inactive-panel isolation",
+      "Navigation: locales, draft preservation and limits, legacy redirects",
+      "Contact: required fields, reply channels, response/error/timeout/duplicate handling; no actual requests"
+    ],
+    "contrast_samples": {
+      "body_on_home": 6.04,
+      "input_placeholder": 5.01,
+      "muted_text_on_graphite": 8.81,
+      "fixed_specialist_focus": 8.71
+    },
+    "whitespace": "git diff --check passed",
+    "browser": {
+      "environment": "Local preview in desktop Chrome; IAB additionally inspected at 662×771",
+      "evidence": "step-9-browser/responsive-results.json",
+      "responsive": "All 12 canonical pages at 320/768/1440px; RU additionally at 390px; RU homepage also 360px. No document horizontal overflow. Image checks apply to loaded images, not all deferred images.",
+      "enlarged_text": "All four RU page types at 390/1440px with 32px root font (local textscale=2 fixture); not browser zoom or a full accessibility certification.",
+      "interactions": [
+        "Menu opens, Escape closes and restores toggle focus",
+        "Resize 390→1440 moves focus from hidden toggle to first nav link; reverse restores toggle focus",
+        "Program tabs ArrowRight/Home selection and nutrition panel click",
+        "Theme radio state and visible dark preview",
+        "FAQ group closes previous question and opens selected answer",
+        "Mock success: one intercepted request, status and form reset",
+        "Empty submission: three aria-invalid fields, focus on contact, no extra request",
+        "Mock failure: understandable status and message preserved",
+        "Scripts-off fixture: all header navigation links visible at 320px; both program panels remain available",
+        "Reduced-motion startup fixture: navigation remains usable; not native OS preference verification"
+      ],
+      "console": "No application exception observed. Chrome logged native ViewTransition cancellation during rapid navigation/viewport changes and entry into the reduced-motion fixture; see step-9-browser/console.json. These cancellations fell back to normal rendering.",
+      "screenshots": [
+        "step-9-browser/home-desktop.jpg",
+        "step-9-browser/home-mobile.jpg",
+        "step-9-browser/text-200-mobile.jpg"
+      ],
+      "cleanup": "Temporary Chrome and IAB viewport overrides reset"
+    }
+  },
+  "performance": {
+    "asset_inventory": "technical-step-9-assets.json",
+    "home_unique_asset_bytes": 1129900,
+    "home_non_lazy_asset_bytes": 633502,
+    "home_html_gzip_bytes_estimate": 7126,
+    "method": "Sum unique local src resources, styles and preloaded font; responsive srcset choice, browser cache, network compression and lazy-loading thresholds are not modeled. Gzip sizes are local estimates, not confirmed hosting responses.",
+    "positive": [
+      "No runtime framework dependency",
+      "Self-hosted preloaded font with swap",
+      "Deferred external JavaScript",
+      "Lower photos lazy-loaded with srcset and dimensions",
+      "Animation controller settles at rest and stops offscreen or when page hidden; reduced-motion alternative tested"
+    ],
+    "runtime_metrics": "LCP, INP, CLS and frame rate not measured"
+  },
+  "detector": {
+    "raw_findings": [
+      {
+        "antipattern": "low-contrast",
+        "name": "Low contrast text",
+        "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+        "severity": "warning",
+        "category": "quality",
+        "file": "/Users/milada/Documents/Rufat009.github.io/index.html",
+        "line": 0,
+        "snippet": "4.0:1 (need 4.5:1) — text #806124 on #d4d8cd"
+      },
+      {
+        "antipattern": "low-contrast",
+        "name": "Low contrast text",
+        "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+        "severity": "warning",
+        "category": "quality",
+        "file": "/Users/milada/Documents/Rufat009.github.io/index.html",
+        "line": 0,
+        "snippet": "1.1:1 (need 4.5:1) — text #333333 on #252d26"
+      },
+      {
+        "antipattern": "cramped-padding",
+        "name": "Cramped padding",
+        "description": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+        "severity": "warning",
+        "category": "quality",
+        "file": "/Users/milada/Documents/Rufat009.github.io/index.html",
+        "line": 0,
+        "snippet": "<section> \"home-hero\": children flush against border-bottom on bottom (no inset)"
+      },
+      {
+        "antipattern": "cramped-padding",
+        "name": "Cramped padding",
+        "description": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+        "severity": "warning",
+        "category": "quality",
+        "file": "/Users/milada/Documents/Rufat009.github.io/index.html",
+        "line": 0,
+        "snippet": "<div> \"progress-trail\": children flush against border-left on left (no inset)"
+      },
+      {
+        "antipattern": "cramped-padding",
+        "name": "Cramped padding",
+        "description": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+        "severity": "warning",
+        "category": "quality",
+        "file": "/Users/milada/Documents/Rufat009.github.io/index.html",
+        "line": 0,
+        "snippet": "<div> \"home-faq-list\": children flush against border-top on top (no inset)"
+      },
+      {
+        "antipattern": "cramped-padding",
+        "name": "Cramped padding",
+        "description": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+        "severity": "warning",
+        "category": "quality",
+        "file": "/Users/milada/Documents/Rufat009.github.io/index.html",
+        "line": 0,
+        "snippet": "<details>: children flush against border-top/bottom+bg on right/left (no inset)"
+      },
+      {
+        "antipattern": "design-system-color",
+        "name": "Color outside DESIGN.md",
+        "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+        "severity": "advisory",
+        "category": "quality",
+        "file": "/Users/milada/Documents/Rufat009.github.io/index.html",
+        "line": 0,
+        "snippet": "text color rgb(51, 51, 51) on p \"Deviny is a social platform for fitness.\" is outside DESIGN.md colors",
+        "advisory": true,
+        "ignoreValue": "rgb(51, 51, 51)"
+      },
+      {
+        "antipattern": "design-system-color",
+        "name": "Color outside DESIGN.md",
+        "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+        "severity": "advisory",
+        "category": "quality",
+        "file": "/Users/milada/Documents/Rufat009.github.io/index.html",
+        "line": 0,
+        "snippet": "border-top rgb(170, 170, 170) on div \"Your clubFind a club or create your own.\" is outside DESIGN.md colors",
+        "advisory": true,
+        "ignoreValue": "rgb(170, 170, 170)"
+      }
+    ],
+    "interpretation": [
+      "4.0:1 gold-on-track finding describes graphical progress fill, not visible body text in supported progress controls",
+      "Print #333 text combined with screen graphite background is a media-cascade false positive; print overrides the background",
+      "Padding flags omit responsive/media cascade or child padding: hero bottom 56px, progress left 32px, FAQ summary and details have explicit padding",
+      "Print-only gray and border colors are intentional, not a new brand palette"
+    ]
+  },
+  "acceptance_pending": [
+    "Native browser zoom, screen-reader traversal and forced-color appearance",
+    "Physical Safari/iOS and Chrome/Android rendering, input and orientation",
+    "Actual slow-network and production Core Web Vitals measurements"
+  ],
+  "limits": [
+    "Earlier browser access limitation superseded: explicit user authorization was followed by successful IAB and Chrome access on 2026-10-21.",
+    "Font glyph coverage scan unavailable: optional fontTools package absent; no dependency installed",
+    "No numeric WCAG/performance/browser certification score assigned without rendered measurements",
+    "Not deployed; no native or sibling source changes; store-placeholder step remains skipped; no analytics or real support submissions"
+  ]
+}

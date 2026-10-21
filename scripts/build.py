@@ -9,6 +9,9 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 COPY = json.loads((ROOT / 'content/site.json').read_text())
 DISTRIBUTION = json.loads((ROOT / 'content/distribution.json').read_text())
+ANALYTICS = json.loads((ROOT / 'content/analytics.json').read_text())
+if type(ANALYTICS.get('enabled')) is not bool or ANALYTICS.get('provider') != 'plausible' or ANALYTICS.get('domain') != 'deviny.me':
+    raise ValueError('Analytics requires an explicit boolean switch and the configured Deviny destination')
 for key, host in [('appStoreUrl', 'apps.apple.com'), ('googlePlayUrl', 'play.google.com')]:
     parsed = urlsplit(DISTRIBUTION[key])
     if parsed.scheme != 'https' or parsed.hostname != host or parsed.username or parsed.password:
@@ -24,7 +27,7 @@ def asset_url(path):
 
 def page_assets(page):
     styles = ['/global.css']
-    scripts = []
+    scripts = ['/analytics.js']
     if page == 'home':
         styles.append('/home.css')
         scripts += ['/home.js', '/product-scenes.js']
@@ -33,7 +36,8 @@ def page_assets(page):
     scripts += ['/i18n.js', '/script.js']
     if page == 'contacts':
         scripts.append('/components/contacts/contacts.js')
-    return ''.join(f'<link rel="stylesheet" href="{asset_url(path)}">' for path in styles) + ''.join(
+    analytics = dict(ANALYTICS, linksArePlaceholders=DISTRIBUTION['linksArePlaceholders'])
+    return '<script type="application/json" id="analytics-config">' + json.dumps(analytics) + '</script>' + ''.join(f'<link rel="stylesheet" href="{asset_url(path)}">' for path in styles) + ''.join(
         f'<script src="{asset_url(path)}" defer></script>' for path in scripts)
 
 def url(lang, page='home'):
@@ -126,7 +130,7 @@ def iphone_frame(content):
 def feature_record(c, key):
     return next(item for group in c['featureGroups'] for item in group['items'] if item['id'] == key)
 
-def story_feature(c, key, cls='story-feature', title=None, icon=None):
+def story_feature(c, key, cls='story-feature', title=None, icon=None, related=None):
     item = feature_record(c, key)
     heading = title if title is not None else e(item['title'])
     symbols = {
@@ -137,7 +141,8 @@ def story_feature(c, key, cls='story-feature', title=None, icon=None):
         'referrals': '<circle cx="9" cy="7" r="4"/><path d="M2 21v-2a7 7 0 0 1 14 0v2m3-14v8m-4-4h8"/>'
     }
     mark = f'<svg class="privacy-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">{symbols[icon]}</svg>' if icon else ''
-    return f'<article class="{cls}" id="feature-{key}" data-capability="{key}"><h3>{mark}{heading}</h3><p>{e(item["text"])}</p></article>'
+    detail = f' <span id="feature-{related}" data-capability="{related}">{e(feature_record(c,related)["text"])}</span>' if related else ''
+    return f'<article class="{cls}" id="feature-{key}" data-capability="{key}"><h3>{mark}{heading}</h3><p>{e(item["text"])}{detail}</p></article>'
 
 def story_photo(c, name, cls, sizes):
     metadata = json.loads((ROOT / f'assets/product/{name}.webp.json').read_text())
@@ -147,39 +152,49 @@ def story_photo(c, name, cls, sizes):
 def scene_tabs(prefix, labels, label):
     return '<div class="scene-switch-controls" role="tablist" aria-label="'+e(label)+'">'+''.join(f'<button type="button" role="tab" id="{prefix}-tab-{i}" aria-controls="{prefix}-panel-{i}" aria-selected="{str(i==0).lower()}" tabindex="{0 if i==0 else -1}">{e(title)}</button>' for i,title in enumerate(labels))+'</div>'
 
+def partner_story(c):
+    p = c['gymbroStory']
+    photo = story_photo(c,'gymbro-session-photo','gymbro-photo','(max-width: 850px) calc(100vw - 40px), (max-width: 1200px) 46vw, 600px')
+    route = ''.join(f'<li><span>{e(step)}</span></li>' for step in p['steps'])
+    return f'<aside class="people-partner gymbro-story" id="feature-gymbro" data-capability="gymbro" aria-labelledby="gymbro-title">{photo}<div class="gymbro-copy"><h3 id="gymbro-title">{p["title"]}</h3><p>{e(p["text"])}</p><ol class="gymbro-route">{route}</ol></div></aside>'
+
 def people_story(c):
     t = c['landingStories']
     return f'''<section class="wrap people-story" id="support" aria-labelledby="why-choose"><span class="story-anchor" id="possibilities"></span><span class="story-anchor" id="how-works"></span>
-<div class="people-story-copy"><h2 id="why-choose">{t['peopleTitle']}</h2><p class="story-lead">{e(t['peopleText'])}</p><div class="people-conversations">{''.join(story_feature(c,key) for key in ['social-feed','friends','discussions'])}</div></div>
-<aside class="people-partner"><div class="partner-match" role="img" aria-label="{e(c['productScenes']['partnerMatch'])}"><div aria-hidden="true"><svg class="partner-connection" viewBox="0 0 480 260" fill="none"><path d="M115 85C240 85 240 175 365 175"/></svg><span class="partner-person partner-you">{e(c['productScenes']['partnerYou'])}</span><span class="partner-person partner-other">{e(c['productScenes']['partnerOther'])}</span><div class="partner-preferences">{''.join('<span>'+e(label)+'</span>' for label in c['productScenes']['partnerTags'])}</div></div></div><div class="partner-details">{story_feature(c,'gymbro','partner-feature')}</div></aside>
+<div class="people-story-copy"><h2 id="why-choose">{t['peopleTitle']}</h2><p class="story-lead">{e(t['peopleText'])}</p><div class="people-conversations">{story_feature(c,'social-feed',related='public-profile')}{story_feature(c,'friends',related='referrals')}{story_feature(c,'discussions')}</div></div>
+{partner_story(c)}
 </section>'''
 
 def clubs_story(c):
     t = c['landingStories']
+    p = c['productProof']
     nodes = ''.join(f'<a class="club-node" href="#feature-{key}">{e(label)}{arrow()}</a>' for key,label in zip(['clubs','club-challenges','club-activity'],t['clubLabels']))
     photo = story_photo(c,'club-outdoors-photo','club-photo','(max-width: 650px) calc(100vw - 40px), (max-width: 1200px) 46vw, 540px')
-    return f'''<section class="clubs-story" id="community" aria-labelledby="clubs-title"><div class="wrap clubs-story-inner"><div class="clubs-intro"><h2 id="clubs-title">{t['clubsTitle']}</h2><p class="story-lead">{e(t['clubsText'])}</p></div><div class="club-media">{photo}<div class="club-links">{nodes}</div></div><div class="club-life">{''.join(story_feature(c,key) for key in ['clubs','club-challenges','club-activity'])}</div></div></section>'''
+    proof = f'<figure class="club-proof">{photo}<div class="club-proof-body"><h3>{e(p["clubTitle"])}</h3><p class="club-target">{e(p["clubTarget"])}</p><div class="club-progress-label" id="club-progress-label">{e(p["clubProgress"])}</div><progress max="30" value="18" aria-labelledby="club-progress-label">18 / 30</progress><dl class="club-contribution"><div><dt>{e(p["clubOwn"])}</dt><dd>{e(p["clubOwnValue"])}</dd></div></dl></div><figcaption>{e(p["clubNote"])}</figcaption></figure>'
+    return f'''<section class="clubs-story" id="community" aria-labelledby="clubs-title"><div class="wrap clubs-story-inner"><div class="clubs-intro"><h2 id="clubs-title">{t['clubsTitle']}</h2><p class="story-lead">{e(t['clubsText'])}</p></div><div class="club-media">{proof}<div class="club-links">{nodes}</div></div><div class="club-life">{''.join(story_feature(c,key) for key in ['clubs','club-challenges','club-activity'])}</div></div></section>'''
 
 def programs_story(c):
     scene = c['productScenes']
+    p = c['productProof']
     tabs = scene_tabs('program', [row[0] for row in c['homeProgramKinds']], scene['programChoice'])
     panels = []
-    for i,(title,text) in enumerate(c['homeProgramKinds']):
+    for i,(title,_) in enumerate(c['homeProgramKinds']):
         photo = story_photo(c,['program-strength-photo','program-nutrition-photo'][i],'program-photo','(max-width: 650px) calc(100vw - 88px), (max-width: 850px) 560px, (max-width: 1200px) 42vw, 500px')
-        panels.append(f'<section class="scene-panel program-preview program-preview-{i}" id="program-panel-{i}" role="tabpanel" aria-labelledby="program-tab-{i}" tabindex="0">{photo}<h3>{e(title)}</h3><p>{e(text)}</p></section>')
-    return f'''<section class="wrap programs-story" id="features" aria-labelledby="program-story-title"><div class="program-story-copy" id="program-tools"><h2 id="program-story-title">{c['programTitle']}</h2><p class="story-lead">{e(c['programText'])}</p><div class="program-decisions">{story_feature(c,'authors-reviews')}{story_feature(c,'program-library')}</div><p class="program-price-note" id="options">{e(c['programPurchase'])}</p></div><div class="program-picker" data-scene-switch data-capability="program-catalog">{tabs}<div class="scene-panels">{''.join(panels)}</div></div><div class="program-search">{story_feature(c,'search-filters')}</div></section>'''
+        contents = ''.join(f'<li>{e(row)}</li>' for row in p['programRows'][i])
+        proof = f'<div class="program-proof"><div class="program-author"><span>{e(p["author"])}</span><strong>{e(p["authorRoles"][i])}</strong><p>{e(p["authorInfo"])}</p></div><div class="program-contents"><h4>{e(p["content"])}</h4><ul>{contents}</ul></div><div class="program-reviews"><h4>{e(p["reviews"])}</h4><p>{e(p["reviewsText"])}</p></div></div>'
+        panels.append(f'<section class="scene-panel program-preview program-preview-{i}" id="program-panel-{i}" role="tabpanel" aria-labelledby="program-tab-{i}" tabindex="0">{photo}<h3>{e(title)}</h3>{proof}</section>')
+    return f'''<section class="wrap programs-story" id="features" aria-labelledby="program-story-title"><div class="program-story-copy" id="program-tools"><h2 id="program-story-title">{c['programTitle']}</h2><p class="story-lead">{e(c['programText'])}</p><div class="program-decisions">{story_feature(c,'program-library')}{story_feature(c,'search-filters')}</div><p class="program-price-note" id="options">{e(c['programPurchase'])}</p></div><div class="program-picker" data-scene-switch data-capability="program-catalog"><div id="feature-authors-reviews" data-capability="authors-reviews">{tabs}<div class="scene-panels">{''.join(panels)}</div></div></div></section>'''
 
 def progress_story(c):
     t = c['landingStories']
-    return f'''<section class="progress-story" id="progress" aria-labelledby="progress-title"><div class="wrap progress-story-inner"><header><h2 id="progress-title">{t['progressTitle']}</h2><p class="story-lead">{e(t['progressText'])}</p></header><div class="progress-composition"><div class="progress-trail">{story_feature(c,"journey","progress-note")}{story_feature(c,"achievements","progress-note")}</div><div class="progress-ranking"><div class="ranking-stage" aria-hidden="true"><span class="ranking-place ranking-second">2</span><span class="ranking-place ranking-first">1</span><span class="ranking-place ranking-third">3</span></div>{story_feature(c,"leaderboards","ranking-note")}</div></div></div></section>'''
+    return f'''<section class="progress-story" id="progress" aria-labelledby="progress-title"><div class="wrap progress-story-inner"><header><h2 id="progress-title">{t['progressTitle']}</h2></header><div class="progress-composition"><div class="progress-trail">{story_feature(c,"journey","progress-note")}{story_feature(c,"achievements","progress-note")}</div><div class="progress-ranking"><div class="ranking-stage" aria-hidden="true"><span class="ranking-place ranking-second">2</span><span class="ranking-place ranking-first">1</span><span class="ranking-place ranking-third">3</span></div>{story_feature(c,"leaderboards","ranking-note")}</div></div></div></section>'''
 
 def personal_story(c):
     t,u = c['landingStories'],c['lowerScenes']
-    facts = ''.join(story_feature(c,key,cls='personal-fact',icon=key) for key in ['public-profile','referrals'])
     appearance = feature_record(c,'appearance')
     lock = feature_record(c,'app-lock')
     biometric = '<svg viewBox="0 0 80 80" fill="none" aria-hidden="true"><path d="M24 8H16a8 8 0 0 0-8 8v8m48-16h8a8 8 0 0 1 8 8v8M8 56v8a8 8 0 0 0 8 8h8m32 0h8a8 8 0 0 0 8-8v-8M28 30v7m24-7v7m-13-7v16h-5m-6 7c6 8 18 8 24 0"/></svg>'
-    return f'''<section class="wrap personal-story" id="personal" aria-labelledby="personal-title"><div class="personal-intro"><h2 id="personal-title">{t['privacyTitle']}</h2><p class="personal-caption">{e(u['privacyLabel'])}</p><div class="personal-details">{facts}</div></div><div class="privacy-console"><div class="personal-appearance" id="feature-appearance" data-capability="appearance"><h3>{e(appearance['title'])}</h3><p><span lang="en">English</span><span lang="ru">Русский</span><span lang="az">Azərbaycanca</span></p></div><fieldset class="privacy-theme"><legend class="sr-only">{e(u['themeLabel'])}</legend><label><input class="sr-only" type="radio" name="privacy-preview-theme" value="light" checked><span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></svg>{e(u['light'])}</span></label><label><input class="sr-only" type="radio" name="privacy-preview-theme" value="dark"><span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 15A9 9 0 0 1 9 4a9 9 0 1 0 11 11Z"/></svg>{e(u['dark'])}</span></label></fieldset><article class="privacy-lock" id="feature-app-lock" data-capability="app-lock"><div class="privacy-lock-art">{biometric}<span class="pin-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div><div><h3>{e(lock['title'])}</h3><p>{e(lock['text'])}</p></div></article><div class="privacy-settings">{''.join(story_feature(c,key,icon=key) for key in ['privacy','safety'])}</div></div></section>'''
+    return f'''<section class="wrap personal-story" id="personal" aria-labelledby="personal-title"><div class="personal-intro"><h2 id="personal-title">{t['privacyTitle']}</h2><p class="personal-caption">{e(u['privacyLabel'])}</p><article class="privacy-lock" id="feature-app-lock" data-capability="app-lock"><div class="privacy-lock-art">{biometric}<span class="pin-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div><div><h3>{e(lock['title'])}</h3><p>{e(lock['text'])}</p></div></article></div><div class="privacy-console"><div class="privacy-settings">{''.join(story_feature(c,key,icon=key) for key in ['privacy','safety'])}</div><div class="personal-preferences"><div class="personal-appearance" id="feature-appearance" data-capability="appearance"><h3>{e(appearance['title'])}</h3><p>{e(appearance["text"])}</p></div><fieldset class="privacy-theme"><legend class="sr-only">{e(u['themeLabel'])}</legend><label><input class="sr-only" type="radio" name="privacy-preview-theme" value="light" checked><span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></svg>{e(u['light'])}</span></label><label><input class="sr-only" type="radio" name="privacy-preview-theme" value="dark"><span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 15A9 9 0 0 1 9 4a9 9 0 1 0 11 11Z"/></svg>{e(u['dark'])}</span></label></fieldset></div></div></section>'''
 
 def professionals_story(lang,c):
     photo = story_photo(c,'specialist-session-photo','professional-photo','(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 38vw, 420px')
@@ -235,11 +250,12 @@ def professional_trust(c):
 def specialists(lang,c):
     workspace = c['specialistWorkspace']
     tools = ''.join(f'<li class="expert-tool"><span class="expert-tool-icon">{feed_icon(icon)}</span><div><strong>{e(title)}</strong><span>{e(text)}</span></div></li>' for icon,(title,text) in zip(['list','person','calendar'],workspace['tools']))
-    workflow = ''.join(f'<li><h2>{e(title)}</h2><p>{e(text)}</p></li>' for title,text in c['specialistWorkflow'])
+    roles = ''.join(f'<article class="expert-role" aria-labelledby="expert-role-{i}"><h2 id="expert-role-{i}">{e(title)}</h2><p>{e(text)}</p></article>' for i,(title,text) in enumerate(c['roles']))
+    schedule_title, schedule_text = c['specialistSchedule']
     return f'''<section class="wrap expert-hero" aria-labelledby="expert-title">
 <div class="expert-hero-copy"><h1 id="expert-title">{c['specialistTitle']}</h1><p class="lead">{c['specialistText']}</p>{store_links(c)}<div class="specialist-question">{link(url(lang,'contacts')+'?topic=specialist',c['specialistCta'])}</div></div>
 <figure class="expert-scene"><figcaption class="sr-only">{e(workspace['label'])}</figcaption><div class="expert-scene-disc" aria-hidden="true"></div><svg class="expert-scene-orbit" viewBox="0 0 560 560" fill="none" aria-hidden="true"><ellipse cx="280" cy="280" rx="267" ry="210" transform="rotate(-28 280 280)" pathLength="1"/></svg><div class="expert-workspace"><span class="expert-workspace-brand" aria-hidden="true">Deviny<span class="expert-brand-mark"></span></span><ul class="expert-tools">{tools}</ul></div></figure>
-<ol class="expert-practice">{workflow}</ol>
+<div class="expert-practice">{roles}<div class="expert-shared"><h2>{e(schedule_title)}</h2><p>{e(schedule_text)}</p></div></div>
 </section>
 {professional_onboarding(c)}
 {professional_trust(c)}
@@ -259,9 +275,9 @@ def contacts(lang,c):
     def field(key,name,placeholder,autocomplete):
         return f'<div class="field"><label id="{name}-label" for="{name}">{c[key]}</label><input id="{name}" name="{name}" autocomplete="{autocomplete}" maxlength="{100 if name=="name" else 254}" required placeholder="{e(c[placeholder])}" aria-describedby="{name}-error"><p class="field-error" id="{name}-error"></p></div>'
     topics=''.join(f'<option value="{v}" {"selected" if v=="support" else ""}>{e(t)}</option>' for v,t in zip(['support','specialist','collaboration'],c['topics']))
-    radios=''.join(f'<label><input type="radio" name="reply_method" value="{v}" {"checked" if v=="Email" else ""}><span>{v}</span></label>' for v in ['Email','Telegram','WhatsApp'])
+    radios=''.join(f'<label><input type="radio" name="reply_method" value="{v}" {"checked" if v=="Email" else ""}><span>{e(c["replyChannels"][v])}</span></label>' for v in ['Email','Telegram','WhatsApp'])
     m = c['contactModes']['support']
-    return f'''<section class="wrap contact-layout"><div class="contact-copy"><h1 id="contact-title"><span>{e(m['heading'][0])}</span><br><em>{e(m['heading'][1])}</em></h1><p class="lead" id="contact-intro">{e(m['text'])}</p><div class="contact-email"><span>{c['emailLabel']}</span><a href="mailto:contact@deviny.me">contact@deviny.me{arrow()}</a></div></div><div class="form-panel"><div class="form-heading"><h2 id="contact-form-title">{e(m['formTitle'])}</h2><button type="button" class="text-button" id="change-topic" hidden>{e(c['changeTopic'])}</button></div><form id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate><input type="hidden" name="access_key" value="d65989bf-2ada-4894-92f6-2623d96a01d4"><input type="hidden" name="subject" value="{e(m['subject'])}"><input type="hidden" name="language" value="{lang}"><input type="checkbox" name="botcheck" class="honeypot" tabindex="-1" aria-hidden="true"><div class="field" id="topic-field"><label for="topic">{c['topic']}</label><select name="topic" id="topic">{topics}</select></div><fieldset><legend>{c['reply']}</legend><div class="reply-options">{radios}</div></fieldset>{field('details','contact_details','detailsPlaceholder','email')}{field('name','name','namePlaceholder','name')}<div class="field"><label id="message-label" for="message">{c['message']}</label><textarea name="message" id="message" rows="5" required minlength="10" maxlength="5000" placeholder="{e(m['messagePlaceholder'])}" aria-describedby="message-error"></textarea><p class="field-error" id="message-error"></p></div><p class="form-disclosure">{c['formDisclosure']} <a href="https://api.deviny.me/legal/privacy.html" hreflang="en">{c['privacy']}</a></p><button type="submit" class="button form-submit" disabled data-enable-submit><span>{e(m['send'])}</span>{arrow()}</button><p class="form-status" id="form-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1"></p><noscript><p>{c['nojs']}</p></noscript></form><script type="application/json" id="form-messages">{json.dumps(c['messages'],ensure_ascii=False)}</script><script type="application/json" id="contact-modes">{json.dumps({'modes':c['contactModes'],'name':c['name'],'message':c['message']},ensure_ascii=False)}</script></div></section>'''
+    return f'''<section class="wrap contact-layout"><div class="contact-copy"><h1 id="contact-title"><span>{e(m['heading'][0])}</span><br><em>{e(m['heading'][1])}</em></h1><p class="lead" id="contact-intro">{e(m['text'])}</p><div class="contact-email"><span>{c['emailLabel']}</span><a href="mailto:contact@deviny.me">contact@deviny.me{arrow()}</a></div></div><div class="form-panel"><div class="form-heading"><h2 id="contact-form-title">{e(m['formTitle'])}</h2><button type="button" class="text-button" id="change-topic" hidden>{e(c['changeTopic'])}</button></div><form id="contact-form" aria-describedby="form-disclosure" action="https://api.web3forms.com/submit" method="POST" novalidate><input type="hidden" name="access_key" value="d65989bf-2ada-4894-92f6-2623d96a01d4"><input type="hidden" name="subject" value="{e(m['subject'])}"><input type="hidden" name="language" value="{lang}"><input type="checkbox" name="botcheck" class="honeypot" tabindex="-1" aria-hidden="true"><div class="field" id="topic-field"><label for="topic">{c['topic']}</label><select name="topic" id="topic">{topics}</select></div><fieldset><legend>{c['reply']}</legend><div class="reply-options">{radios}</div></fieldset>{field('details','contact_details','detailsPlaceholder','email')}{field('name','name','namePlaceholder','name')}<div class="field"><label id="message-label" for="message">{c['message']}</label><textarea name="message" id="message" rows="5" required minlength="10" maxlength="5000" placeholder="{e(m['messagePlaceholder'])}" aria-describedby="message-error"></textarea><p class="field-error" id="message-error"></p></div><p class="form-disclosure" id="form-disclosure">{e(c['formDisclosure'])} <a href="https://api.deviny.me/legal/privacy.html" hreflang="en">{e(c['privacy'])}</a> · <a href="https://web3forms.com/privacy" hreflang="en" rel="noopener noreferrer">{e(c['formProviderPrivacy'])}</a></p><button type="submit" class="button form-submit" disabled data-enable-submit><span>{e(m['send'])}</span>{arrow()}</button><p class="form-status" id="form-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1"></p><noscript><p>{c['nojs']}</p></noscript></form><script type="application/json" id="form-messages">{json.dumps(c['messages'],ensure_ascii=False)}</script><script type="application/json" id="contact-modes">{json.dumps({'modes':c['contactModes'],'name':c['name'],'message':c['message']},ensure_ascii=False)}</script></div></section>'''
 
 def notfound(lang,c):
     return f'''<section class="wrap not-found"><p class="error-code" aria-hidden="true">404</p><h1>{c['notFoundTitle']}</h1><p class="lead">{c['notFoundText']}</p><div class="recovery-actions">{link(url(lang),c['homeLink'],'button')}{link(url(lang,'contacts')+'?topic=support',c['notFoundContact'])}</div></section>'''

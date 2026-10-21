@@ -1,0 +1,257 @@
+{
+  "date": "2026-10-21",
+  "task": "Audit step 10: measurement and first-visitor comprehension",
+  "status": "Instrumentation and heuristic review complete locally; analytics activation and real visitor research pending",
+  "existing_setup": {
+    "repository": "No analytics integration found before this change",
+    "live_page": "Reloaded https://deviny.me/ru/ in Chrome; only inline js marker and home.js/product-scenes.js/i18n.js/script.js were present. No client analytics script found.",
+    "limits": "Does not rule out a private account, CDN/server statistics or a different browser-specific injection. No accessible dashboard was identified."
+  },
+  "implementation": {
+    "provider": "Optional Plausible Events API",
+    "enabled": false,
+    "config": "content/analytics.json",
+    "controller": "analytics.js",
+    "support_instrumentation": "components/contacts/contacts.js",
+    "rationale": "One small local adapter with a strict event schema; no third-party script, identifier storage or runtime framework. An account-specific tracking dashboard is not available, so remote collection remains off.",
+    "hosts": "Only https://deviny.me; loopback debug mode never transmits",
+    "privacy": "No form fields, contact details, names, message text, dynamic error text, query strings, hashes or referrers. No local/sessionStorage or cookies. DNT/GPC stops collection. When enabled, provider receives IP/User-Agent through normal HTTP, so this is not a claim of no personal-data processing.",
+    "reliability": "Best-effort keepalive requests; never delay navigation, retry, block form handling or throw on a blocked collector. Counts can undercount with network failures/ad blockers."
+  },
+  "events": [
+    {
+      "name": "pageview",
+      "meaning": "Visible page load, once per document",
+      "properties": [
+        "page",
+        "language"
+      ],
+      "caveat": "Canonical alias aggregation; not a user identity or installation"
+    },
+    {
+      "name": "section_seen",
+      "meaning": "A major section intersects viewport at the configured 10% threshold, once per document",
+      "properties": [
+        "page",
+        "language",
+        "section"
+      ],
+      "caveat": "Not proof of reading or understanding; non-interactive event"
+    },
+    {
+      "name": "download_intent",
+      "meaning": "Click on a link to the download block",
+      "properties": [
+        "page",
+        "language",
+        "region"
+      ]
+    },
+    {
+      "name": "store_placeholder_click",
+      "meaning": "Click on an owner-authorized generic storefront link",
+      "properties": [
+        "page",
+        "language",
+        "store",
+        "region"
+      ],
+      "caveat": "Pre-release interest only; never install conversion"
+    },
+    {
+      "name": "store_outbound_click",
+      "meaning": "Click on configured real listing after linksArePlaceholders becomes false",
+      "properties": [
+        "page",
+        "language",
+        "store",
+        "region"
+      ],
+      "caveat": "Outbound intent; actual installs require store-side data"
+    },
+    {
+      "name": "specialist_interest",
+      "meaning": "Click toward specialist page",
+      "properties": [
+        "page",
+        "language",
+        "region"
+      ]
+    },
+    {
+      "name": "contact_interest",
+      "meaning": "Click toward contact form",
+      "properties": [
+        "page",
+        "language",
+        "region",
+        "topic"
+      ]
+    },
+    {
+      "name": "support_attempt",
+      "meaning": "Validated non-honeypot form about to call provider",
+      "properties": [
+        "page",
+        "language",
+        "topic"
+      ],
+      "caveat": "Invalid and duplicate submissions excluded"
+    },
+    {
+      "name": "support_result",
+      "meaning": "accepted / failed / unconfirmed provider result",
+      "properties": [
+        "page",
+        "language",
+        "topic",
+        "outcome"
+      ],
+      "caveat": "accepted is success:true + successful HTTP; it is not inbox receipt. A timeout is unconfirmed, not proof the email was never sent."
+    }
+  ],
+  "dashboard_plan": {
+    "pre_release": "Report visitors with store_placeholder_click divided by page visitors for the same page/language/time window; do not label this install conversion.",
+    "post_release": "Use visitors with store_outbound_click divided by visitors of the same page/time window; split store, page, language and hero/closing. Keep placeholder data separate.",
+    "content": "Section reach is diagnostic exposure; a lower section may be skipped by an anchor link. Do not treat the sections as a mandatory linear funnel.",
+    "specialists": "Compare home→specialist_interest and store intent on specialist page; contact_interest is a secondary route, not required access.",
+    "support": "Compare accepted/failed/unconfirmed results with attempt event counts (not unique-visitor counts) in the same window; failures warrant investigation.",
+    "avoid": [
+      "No target conversion percentage invented before traffic exists",
+      "No decisions from tiny samples or raw click counts alone",
+      "No pre/post claims across changed acquisition mix",
+      "No claim of improved comprehension from analytics alone",
+      "Do not use overlapping section event totals as unique people"
+    ]
+  },
+  "comprehension_review": {
+    "method": "Expert walkthrough of current local EN/RU/AZ copy and inspected rendered hierarchy; no participant sessions or synthetic user scores",
+    "first_screen_answers": {
+      "what": "The description explicitly calls Deviny a social platform for fitness/sport",
+      "value": "Partners, community and programs connect people with training; the product is not positioned as a tracker",
+      "audience": "People who train; a dedicated route addresses trainers and nutritionists",
+      "next_step": "App Store / Google Play, clearly paired with coming-soon text",
+      "access": "No access request or mandatory specialist selection"
+    },
+    "paths": [
+      {
+        "audience": "Person looking for a training partner",
+        "path": "Hero → people/GymBro → club/community → stores",
+        "assessment": "The three partnership steps explain mutual choice without claiming auto-location."
+      },
+      {
+        "audience": "Person seeking a plan or guidance",
+        "path": "Programs → author/content/reviews preview → launch limits → FAQ → stores",
+        "assessment": "Programs and help are distinguishable; paid features are explicitly unavailable at launch."
+      },
+      {
+        "audience": "Trainer or nutritionist",
+        "path": "Specialist route → role tools → documents/profile/program preparation → launch limits → stores",
+        "assessment": "Professional purpose and onboarding are concrete; contacting support is optional."
+      }
+    ],
+    "findings": [
+      {
+        "severity": "release dependency",
+        "finding": "Download wording currently opens generic storefronts, not the product listing.",
+        "decision": "Retained exactly as owner requested; separated in measurement. Real listings are required before claiming install conversion."
+      },
+      {
+        "severity": "research hypothesis",
+        "finding": "Program library and review terminology may suggest currently available commerce if a reader skips the launch note.",
+        "decision": "Observe first-visitor answers before another large copy rewrite; the note and FAQ currently state the limitation."
+      },
+      {
+        "severity": "no change",
+        "finding": "No evidence that another feature grid, popup, signup gate or animated block improves comprehension.",
+        "decision": "Preserve approved visual structure; do not reintroduce removed training/chat chapters."
+      }
+    ],
+    "conclusion": "Structure provides a plausible path to future installation and covers key questions. Conversion and comprehension are not yet empirically validated."
+  },
+  "participant_protocol": {
+    "status": "Prepared, not executed",
+    "participants": "A small first qualitative round: 5–8 people unfamiliar with Deviny, including people who train and at least one trainer/nutritionist. Use their strongest language; include mobile and desktop. This is issue discovery, not population validation.",
+    "duration": "10–15 minutes each",
+    "moderation": "Do not explain the product, point at CTAs or suggest the word social. Record paraphrased answers and task outcomes without names/contact details.",
+    "steps": [
+      {
+        "task": "Show the first screen for 5 seconds, then hide it.",
+        "questions": [
+          "Что это за продукт?",
+          "Для кого он?",
+          "Что вы сможете с ним делать?"
+        ],
+        "observe": "Recall of people/community + sport; tracker-only answers indicate positioning trouble."
+      },
+      {
+        "task": "Allow free browsing.",
+        "questions": [
+          "Как бы вы нашли человека для совместных занятий?",
+          "Как бы вы выбрали программу?"
+        ],
+        "observe": "First click, hesitation, expectations after reading, and whether examples are mistaken for real results."
+      },
+      {
+        "task": "Ask how to start using the product.",
+        "questions": [
+          "Можно ли установить приложение сейчас?",
+          "Нужно ли сначала писать команде?"
+        ],
+        "observe": "Understands coming-soon status and no access gate; record confusion caused by authorized placeholder store buttons."
+      },
+      {
+        "task": "For professionals, find the relevant route.",
+        "questions": [
+          "Что здесь полезно вам?",
+          "Что понадобится для публикации программы?",
+          "Что будет недоступно на старте?"
+        ],
+        "observe": "Understands role, document verification and launch limitations."
+      },
+      {
+        "task": "Ask for final explanation in their own words.",
+        "questions": [
+          "Почему вы выбрали бы это приложение?",
+          "Что осталось непонятным?"
+        ],
+        "observe": "Use direct confusion evidence to prioritize the next change."
+      }
+    ],
+    "decision_rule": "Fix task-blocking misconceptions immediately. Repeated confusion across independent participants is a reason to simplify the relevant copy; one subjective visual preference alone is not a redesign brief. Re-test the changed path with new participants.",
+    "record_template": {
+      "participant_code": "P01",
+      "locale": "",
+      "device": "",
+      "product_description": "",
+      "first_click": "",
+      "install_available_now": "",
+      "access_request_needed": "",
+      "launch_limit_understood": "",
+      "task_outcomes": [],
+      "confusion_notes": []
+    }
+  },
+  "verification": {
+    "build": "Passed",
+    "static": "447 local references; 81 images; no errors",
+    "node": "check-analytics.cjs and check-contact-flow.cjs passed without external calls",
+    "browser": "Chrome local debug confirmed canonical pageview, separate store types/regions, section_seen, support_attempt and accepted result. Dummy form content absent from event payloads.",
+    "evidence": [
+      "step-10-browser/home-events.json",
+      "step-10-browser/support-events.json"
+    ]
+  },
+  "activation_required": [
+    "Accessible Plausible site/account for deviny.me (or adapt the transport if the owner has a different existing analytics service)",
+    "Confirm service plan and applicable website disclosure before activation; no purchase/account creation was performed",
+    "Create exact custom event goals from this report; section_seen should remain a diagnostic, not a primary conversion",
+    "Enable config, rebuild and deploy through approved release process",
+    "Confirm event appearance in the real dashboard; the Events API can return 202 even for dropped events",
+    "Run actual first-visitor sessions and record their findings"
+  ],
+  "sources": [
+    "https://plausible.io/docs/events-api",
+    "https://plausible.io/docs/custom-event-goals"
+  ]
+}

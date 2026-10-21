@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-21",
+  "task": "Audit step 8: real support delivery",
+  "status": "Real service acceptance verified; recipient inbox and end-to-end reply still unverified",
+  "change": {
+    "file": "components/contacts/contacts.js",
+    "description": "Set reserved Web3Forms replyto to trimmed contact_details only for Email submissions; Telegram/WhatsApp remain body fields.",
+    "reference": "https://docs.web3forms.com/getting-started/customizations/custom-reply-to"
+  },
+  "real_submission": {
+    "count": 1,
+    "source": "http://127.0.0.1:4173/ru/contacts.html (ordinary route, not QA mock)",
+    "provider": "https://api.web3forms.com/submit",
+    "marker": "DEVINY-SUPPORT-20261021-A1",
+    "reply_contact": "contact@deviny.me",
+    "name": "Deviny — проверка формы",
+    "message_purpose": "Explicitly labelled test requested by owner; no client request and no automatic reply required.",
+    "observed_status": "Сообщение отправлено. Команда ответит по указанному вами контакту.",
+    "success_condition": "Controller requires response.ok and JSON success === true before reset/success status",
+    "console_errors": [],
+    "screenshot": "step-8-delivery/submission-success.jpg"
+  },
+  "mail_routing": {
+    "mx": [
+      "route1.mx.cloudflare.net",
+      "route3.mx.cloudflare.net",
+      "route2.mx.cloudflare.net"
+    ],
+    "inference": "Cloudflare mail routing; public DNS does not reveal forwarding destination. The recipient attached to the existing Web3Forms access key is also not confirmed by source code.",
+    "account_access": "No mail connector, no open inbox/dashboard tab; Apple Mail showed Add Account, so inbox could not be inspected. Add Account was cancelled; no credentials or account configuration changed."
+  },
+  "verification": {
+    "build": "Passed",
+    "static": "432 local references and 81 image instances, no errors",
+    "contact_tests": "EN/RU/AZ and all topics passed; email replyto normalization checked; replyto absent for Telegram/WhatsApp",
+    "diff": "git diff --check passed"
+  },
+  "remaining": [
+    "Find marker in final destination inbox (including Spam) and confirm recipient matches intended support mailbox",
+    "Inspect received Reply-To header and verify reply to a controlled visitor mailbox",
+    "Deploy source fix with accumulated approved website release; current fix remains local"
+  ],
+  "limits": [
+    "Successful form response confirms provider acceptance, not inbox placement, recipient identity or actual reply delivery.",
+    "Only one real test submission; no DNS changes, new service/account creation or deployment."
+  ]
+}
