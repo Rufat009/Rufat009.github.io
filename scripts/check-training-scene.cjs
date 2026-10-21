@@ -14,7 +14,7 @@ function events(target = {}) {
 }
 function fixture({reduced = false, observer = true} = {}) {
   const classes = new Set(), pending = new Map();
-  const scene = {classList: {add: k => classes.add(k), remove: k => classes.delete(k)}};
+  const scene = {getBoundingClientRect: () => ({height:700}), classList: {add: k => classes.add(k), remove: k => classes.delete(k)}};
   const reduce = events({matches: reduced});
   const document = events({hidden: false, querySelector: () => scene});
   let callback, disconnected = false;
@@ -23,7 +23,7 @@ function fixture({reduced = false, observer = true} = {}) {
     observe() {}
     disconnect() { disconnected = true; }
   }
-  const root = events({document, matchMedia: () => reduce,
+  const root = events({document, innerHeight:844, matchMedia: () => reduce,
     setTimeout(cb, ms) { pending.set(1, {cb, ms}); return 1; },
     clearTimeout(id) { pending.delete(id); },
     IntersectionObserver: observer ? IO : undefined,
@@ -35,7 +35,8 @@ function fixture({reduced = false, observer = true} = {}) {
   };
 }
 const f = fixture();
-f.enter(.3); assert.equal(f.classes.size, 0, 'Do not start while mostly offscreen');
+f.root.emit('resize');
+f.enter(.3); assert.equal(f.classes.has('is-playing'), false, 'Do not start while mostly offscreen');
 f.enter(.8); assert.equal(f.classes.has('is-playing'), true);
 assert.equal(f.pending.get(1).ms, 4600, 'Autoplay remains below five seconds');
 f.enter(.9); assert.equal(f.pending.size, 1, 'Only one sequence per visit');
