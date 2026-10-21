@@ -1,0 +1,38 @@
+{
+  "commit": "e7d3b7a",
+  "scope": "Homepage training section only",
+  "build": {
+    "canonical": 12,
+    "utility": 3,
+    "redirects": 6,
+    "localReferences": 435,
+    "images": 78,
+    "errors": []
+  },
+  "behavioralSuites": [
+    "check-training-scene.cjs",
+    "check-ui-motion.cjs",
+    "check-navigation.cjs",
+    "check-product-scenes.cjs"
+  ],
+  "capabilitiesPerLocale": 24,
+  "browser": {
+    "url": "https://deviny.me/ru/#training",
+    "widths": [
+      1470,
+      390
+    ],
+    "horizontalOverflow": false,
+    "observedPlayingClass": true,
+    "observedSettledState": true,
+    "consoleErrors": [],
+    "screenshots": [
+      "training-action-desktop.jpg",
+      "training-action-mobile.jpg"
+    ]
+  },
+  "limitations": [
+    "Rendered captures cover Russian only",
+    "No frame-rate measurement or physical-device check"
+  ]
+}

@@ -285,6 +285,9 @@ body[data-page="home"] .footer-nav a,body[data-page="home"] .social-links a,body
 
 }
 @media print{
+ .workout-stage.is-armed .workout-partner,.workout-stage.is-armed .workout-saved,.workout-stage.is-armed .workout-shared{opacity:1!important}
+ .workout-stage.is-armed .exercise-done path{stroke-dashoffset:0!important}
+ .workout-stage.is-armed .workout-sequence li::before{transform:none!important}
  .home-product-scene{display:none}
  .home-hero,.home-people,.home-programs-inner,.home-closing-inner{display:block}
  .home-programs,.home-closing{background:white;color:#111;--text:#111;--muted:#333;--line:#aaa}
