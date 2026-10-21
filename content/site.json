@@ -21,8 +21,6 @@
     "rights": "© 2026 Deviny",
     "heroTitle": "Train.<br><em>Find your people.</em>",
     "heroText": "Deviny connects finding a training partner or specialist with getting to your next workout. Train together or on your own, with your own plan or a program.",
-    "loopTitle": "From a plan<br><em>to a workout.</em>",
-    "loopText": "With a partner, with a program or on your own — explore a workout in Deviny.",
     "programTitle": "Choose a program.<br>Meet its creator.",
     "programText": "A ready-made training or nutrition plan when you want help choosing an approach.",
     "photoAlt": "An athlete performing an exercise with a dumbbell.",
@@ -207,84 +205,6 @@
         "Profile"
       ]
     },
-    "trainingModeLabel": "Choose a way to train",
-    "trainingModes": [
-      {
-        "id": "solo",
-        "label": "On your own",
-        "title": "Your plan.<br>Your pace.",
-        "text": "Choose your own exercises and the order of your session.",
-        "journey": [
-          [
-            "Build a session",
-            "Choose exercises for your plan."
-          ],
-          [
-            "Train",
-            "Record exercises and sets."
-          ],
-          [
-            "Save your results",
-            "The session stays in your history."
-          ],
-          [
-            "Keep going",
-            "Review your past results."
-          ]
-        ],
-        "journeyLabel": "Your own workout"
-      },
-      {
-        "id": "partner",
-        "label": "With a partner",
-        "title": "Your people.<br>A shared workout.",
-        "text": "Arrange a session and save a record that you trained together.",
-        "journey": [
-          [
-            "Find a partner",
-            "Meet and confirm each other as partners."
-          ],
-          [
-            "Make a plan",
-            "Arrange a session in chat."
-          ],
-          [
-            "Train together",
-            "Do your shared workout."
-          ],
-          [
-            "Save a record",
-            "Mark that you trained together."
-          ]
-        ],
-        "journeyLabel": "A shared workout"
-      },
-      {
-        "id": "program",
-        "label": "With a program",
-        "title": "A plan to follow.<br>A clear next step.",
-        "text": "Pick up from the session where you left off.",
-        "journey": [
-          [
-            "Choose a program",
-            "Explore its author and content."
-          ],
-          [
-            "Open a session",
-            "Go to the session where you left off."
-          ],
-          [
-            "Do the workout",
-            "Save your results."
-          ],
-          [
-            "Keep going",
-            "Return for your next session."
-          ]
-        ],
-        "journeyLabel": "A workout from your plan"
-      }
-    ],
     "navStart": "Download",
     "navFaq": "Questions and answers",
     "specialistFinalTitle": "Your programs.<br>Your clients.",
@@ -442,21 +362,6 @@
         "text": "Train your way and return to what you have already done.",
         "items": [
           {
-            "id": "exercise-catalog",
-            "title": "Exercises and technique",
-            "text": "Find exercises with filters and explore visual movement demonstrations."
-          },
-          {
-            "id": "workout-editor",
-            "title": "Your own workout",
-            "text": "Build a session and record exercises, weight, reps and sets."
-          },
-          {
-            "id": "workout-history",
-            "title": "History and repeat workouts",
-            "text": "Open a past session or repeat it without building everything again."
-          },
-          {
             "id": "journey",
             "title": "My Journey",
             "text": "See your activity and program completion in one place."
@@ -546,7 +451,6 @@
     "landingStories": {
       "peopleTitle": "Start with<br><em>your people.</em>",
       "peopleText": "Meet people, exchange experience and find someone you want to keep training with.",
-      "partnerAction": "Explore training together",
       "clubsTitle": "Your club.<br>A shared goal.<br><em>More together.</em>",
       "clubsText": "Build your community or join a club that suits you. Activity, challenges and each member’s contribution are part of club life.",
       "clubWord": "Club",
@@ -615,38 +519,7 @@
         "Plan a meeting",
         "Choose a date and time, add a participant and details. Find your meetings in the schedule."
       ]
-    ],
-    "trainingScene": {
-      "lead": "Build your workout. Train together. Keep your result.",
-      "session": "Your workout",
-      "example": "Example session",
-      "exercises": [
-        [
-          "Squats",
-          "Legs"
-        ],
-        [
-          "Dumbbell press",
-          "Chest"
-        ],
-        [
-          "Cable row",
-          "Back"
-        ]
-      ],
-      "saved": "Workout saved",
-      "history": "Ready to revisit in your history",
-      "you": "You",
-      "together": "Better together.",
-      "partner": "Your partner is part of the session.",
-      "shared": "Trained together",
-      "sequenceLabel": "From your plan to your result",
-      "steps": [
-        "Choose exercises",
-        "Train with a partner",
-        "Save your result"
-      ]
-    }
+    ]
   },
   "ru": {
     "langName": "Русский",
@@ -670,8 +543,6 @@
     "rights": "© 2026 Deviny",
     "heroTitle": "Тренируйтесь.<br><em>Находите своих.</em>",
     "heroText": "Deviny — приложение, где можно найти партнёра или специалиста и перейти от знакомства к тренировкам. Занимайтесь вместе или самостоятельно, по своему плану или программе.",
-    "loopTitle": "От плана —<br><em>к тренировке.</em>",
-    "loopText": "С партнёром, по программе или самостоятельно — посмотрите, как проходит занятие в Deviny.",
     "programTitle": "Выберите программу.<br>Познакомьтесь с автором.",
     "programText": "Готовый план тренировок или питания — когда нужна помощь с выбором подхода.",
     "photoAlt": "Спортсменка выполняет упражнение с гантелью.",
@@ -856,84 +727,6 @@
         "Профиль"
       ]
     },
-    "trainingModeLabel": "Выберите формат тренировки",
-    "trainingModes": [
-      {
-        "id": "solo",
-        "label": "Свой план",
-        "title": "Ваш план.<br>Ваш темп.",
-        "text": "Вы сами выбираете упражнения и порядок занятия.",
-        "journey": [
-          [
-            "Соберите занятие",
-            "Выберите упражнения под свой план."
-          ],
-          [
-            "Потренируйтесь",
-            "Отмечайте упражнения и подходы."
-          ],
-          [
-            "Сохраните результат",
-            "Занятие останется в истории."
-          ],
-          [
-            "Продолжайте",
-            "Сверьтесь с прошлыми результатами."
-          ]
-        ],
-        "journeyLabel": "Своя тренировка"
-      },
-      {
-        "id": "partner",
-        "label": "С партнёром",
-        "title": "Свой человек.<br>Общая тренировка.",
-        "text": "Договоритесь о занятии и сохраните отметку, что тренировались вместе.",
-        "journey": [
-          [
-            "Найдите партнёра",
-            "Познакомьтесь и подтвердите друг друга как партнёров."
-          ],
-          [
-            "Договоритесь",
-            "Обсудите занятие в чате."
-          ],
-          [
-            "Потренируйтесь вместе",
-            "Проведите совместное занятие."
-          ],
-          [
-            "Сохраните отметку",
-            "Укажите, что тренировались вместе."
-          ]
-        ],
-        "journeyLabel": "Общая тренировка"
-      },
-      {
-        "id": "program",
-        "label": "По программе",
-        "title": "Есть план.<br>Понятен следующий шаг.",
-        "text": "Продолжайте с того занятия, где остановились.",
-        "journey": [
-          [
-            "Выберите программу",
-            "Посмотрите автора и содержание."
-          ],
-          [
-            "Откройте занятие",
-            "Перейдите к занятию, на котором остановились."
-          ],
-          [
-            "Выполните тренировку",
-            "Сохраните результат."
-          ],
-          [
-            "Продолжайте",
-            "Возвращайтесь к следующему занятию."
-          ]
-        ],
-        "journeyLabel": "Тренировка по плану"
-      }
-    ],
     "navStart": "Скачать",
     "navFaq": "Вопросы и ответы",
     "specialistFinalTitle": "Ваши программы.<br>Ваши клиенты.",
@@ -1091,21 +884,6 @@
         "text": "Занимайтесь в своём формате и возвращайтесь к тому, что уже сделали.",
         "items": [
           {
-            "id": "exercise-catalog",
-            "title": "Упражнения и техника",
-            "text": "Находите упражнения с помощью фильтров и смотрите наглядный показ движений."
-          },
-          {
-            "id": "workout-editor",
-            "title": "Своя тренировка",
-            "text": "Собирайте занятие и записывайте упражнения, вес, повторения и подходы."
-          },
-          {
-            "id": "workout-history",
-            "title": "История и повтор занятий",
-            "text": "Откройте прошлую тренировку или повторите её, чтобы не собирать всё заново."
-          },
-          {
             "id": "journey",
             "title": "«Мой путь»",
             "text": "Смотрите свою активность и выполнение программ в одном разделе."
@@ -1195,7 +973,6 @@
     "landingStories": {
       "peopleTitle": "Сначала —<br><em>свои люди.</em>",
       "peopleText": "Знакомьтесь, делитесь опытом и находите тех, с кем хочется продолжать занятия.",
-      "partnerAction": "Как тренироваться вместе",
       "clubsTitle": "Ваш клуб.<br>Общая цель.<br><em>Больше вместе.</em>",
       "clubsText": "Соберите своё сообщество или присоединитесь к подходящему клубу. Общая активность, испытания и вклад каждого — часть его жизни.",
       "clubWord": "Клуб",
@@ -1264,38 +1041,7 @@
         "Запланируйте встречу",
         "Выберите день и время, укажите участника и детали. Возвращайтесь к встречам в расписании."
       ]
-    ],
-    "trainingScene": {
-      "lead": "Соберите занятие. Потренируйтесь вместе. Сохраните результат.",
-      "session": "Ваше занятие",
-      "example": "Пример тренировки",
-      "exercises": [
-        [
-          "Приседания",
-          "Ноги"
-        ],
-        [
-          "Жим гантелей",
-          "Грудь"
-        ],
-        [
-          "Тяга блока",
-          "Спина"
-        ]
-      ],
-      "saved": "Тренировка сохранена",
-      "history": "К ней можно вернуться в истории",
-      "you": "Вы",
-      "together": "Вместе — лучше.",
-      "partner": "Партнёр — часть вашей тренировки.",
-      "shared": "Тренировались вместе",
-      "sequenceLabel": "От плана к результату",
-      "steps": [
-        "Выберите упражнения",
-        "Занимайтесь вместе",
-        "Сохраните результат"
-      ]
-    }
+    ]
   },
   "az": {
     "langName": "Azərbaycanca",
@@ -1319,8 +1065,6 @@
     "rights": "© 2026 Deviny",
     "heroTitle": "Məşq edin.<br><em>Birlikdə davam edin.</em>",
     "heroText": "Deviny-də məşq yoldaşı və ya mütəxəssis tapın, tanışlıqdan məşqə keçin. Birlikdə və ya tək, öz planınızla və ya proqram üzrə məşq edin.",
-    "loopTitle": "Plandan<br><em>məşqə.</em>",
-    "loopText": "Məşq yoldaşı ilə, proqram üzrə və ya tək — Deviny-də məşqin necə keçdiyinə baxın.",
     "programTitle": "Proqram seçin.<br>Müəllifi ilə tanış olun.",
     "programText": "Yanaşma seçməkdə köməyə ehtiyacınız olduqda hazır məşq və ya qidalanma planı.",
     "photoAlt": "Qantellə hərəkət yerinə yetirən idmançı.",
@@ -1505,84 +1249,6 @@
         "Profil"
       ]
     },
-    "trainingModeLabel": "Məşq formasını seçin",
-    "trainingModes": [
-      {
-        "id": "solo",
-        "label": "Tək",
-        "title": "Öz planınız.<br>Öz tempiniz.",
-        "text": "Hərəkətləri və məşqin ardıcıllığını özünüz seçin.",
-        "journey": [
-          [
-            "Məşq qurun",
-            "Planınız üçün hərəkətlər seçin."
-          ],
-          [
-            "Məşq edin",
-            "Hərəkətləri və setləri qeyd edin."
-          ],
-          [
-            "Nəticəni saxlayın",
-            "Məşq tarixçənizdə qalır."
-          ],
-          [
-            "Davam edin",
-            "Keçmiş nəticələrə baxın."
-          ]
-        ],
-        "journeyLabel": "Fərdi məşq"
-      },
-      {
-        "id": "partner",
-        "label": "Məşq yoldaşı ilə",
-        "title": "Sizə uyğun insan.<br>Birgə məşq.",
-        "text": "Məşq barədə razılaşın və birlikdə məşq etdiyinizi qeyd edin.",
-        "journey": [
-          [
-            "Məşq yoldaşı tapın",
-            "Tanış olun və bir-birinizi məşq yoldaşı kimi təsdiqləyin."
-          ],
-          [
-            "Razılaşın",
-            "Çatda məşqi planlaşdırın."
-          ],
-          [
-            "Birlikdə məşq edin",
-            "Birgə məşqinizi keçirin."
-          ],
-          [
-            "Qeydi saxlayın",
-            "Birlikdə məşq etdiyinizi qeyd edin."
-          ]
-        ],
-        "journeyLabel": "Birgə məşq"
-      },
-      {
-        "id": "program",
-        "label": "Proqram üzrə",
-        "title": "Plan var.<br>Növbəti addım aydındır.",
-        "text": "Qaldığınız məşqdən davam edin.",
-        "journey": [
-          [
-            "Proqram seçin",
-            "Müəllif və məzmunla tanış olun."
-          ],
-          [
-            "Məşqi açın",
-            "Qaldığınız məşqə keçin."
-          ],
-          [
-            "Məşqi yerinə yetirin",
-            "Nəticəni saxlayın."
-          ],
-          [
-            "Davam edin",
-            "Növbəti məşq üçün qayıdın."
-          ]
-        ],
-        "journeyLabel": "Plan üzrə məşq"
-      }
-    ],
     "navStart": "Yükləyin",
     "navFaq": "Suallar və cavablar",
     "specialistFinalTitle": "Proqramlarınız.<br>Müştəriləriniz.",
@@ -1740,21 +1406,6 @@
         "text": "Öz formatınızda məşq edin və etdiklərinizə yenidən baxın.",
         "items": [
           {
-            "id": "exercise-catalog",
-            "title": "Hərəkətlər və texnika",
-            "text": "Filtrlərlə hərəkətlər tapın və hərəkətlərin əyani göstərilməsinə baxın."
-          },
-          {
-            "id": "workout-editor",
-            "title": "Öz məşqiniz",
-            "text": "Məşq qurun, hərəkətləri, çəkini, təkrarları və setləri qeyd edin."
-          },
-          {
-            "id": "workout-history",
-            "title": "Tarixçə və təkrar məşq",
-            "text": "Keçmiş məşqi açın və ya yenidən qurmadan təkrarlayın."
-          },
-          {
             "id": "journey",
             "title": "Mənim yolum",
             "text": "Fəaliyyətinizə və proqramların tamamlanmasına bir yerdə baxın."
@@ -1844,7 +1495,6 @@
     "landingStories": {
       "peopleTitle": "Əvvəlcə —<br><em>sizə uyğun insanlar.</em>",
       "peopleText": "Tanış olun, təcrübə bölüşün və birlikdə məşqə davam etmək istədiyiniz insanları tapın.",
-      "partnerAction": "Birgə məşqlə tanış olun",
       "clubsTitle": "Öz klubunuz.<br>Ortaq məqsəd.<br><em>Birlikdə daha çox.</em>",
       "clubsText": "İcmanızı yaradın və ya sizə uyğun kluba qoşulun. Fəaliyyət, sınaqlar və hər üzvün töhfəsi klub həyatının bir hissəsidir.",
       "clubWord": "Klub",
@@ -1913,37 +1563,6 @@
         "Görüş planlaşdırın",
         "Günü və vaxtı seçin, iştirakçını və təfərrüatları əlavə edin. Görüşlərinizə təqvimdə qayıdın."
       ]
-    ],
-    "trainingScene": {
-      "lead": "Məşqinizi qurun. Birlikdə məşq edin. Nəticəni saxlayın.",
-      "session": "Sizin məşqiniz",
-      "example": "Məşq nümunəsi",
-      "exercises": [
-        [
-          "Çömbəlmə",
-          "Ayaqlar"
-        ],
-        [
-          "Qantellə sinə pressi",
-          "Sinə"
-        ],
-        [
-          "Blok dartması",
-          "Kürək"
-        ]
-      ],
-      "saved": "Məşq yadda saxlanıldı",
-      "history": "Tarixçədən yenidən aça bilərsiniz",
-      "you": "Siz",
-      "together": "Birlikdə daha yaxşı.",
-      "partner": "Tərəfdaşınız məşqinizin bir hissəsidir.",
-      "shared": "Birlikdə məşq etdiniz",
-      "sequenceLabel": "Plandan nəticəyə",
-      "steps": [
-        "Hərəkətləri seçin",
-        "Birlikdə məşq edin",
-        "Nəticəni saxlayın"
-      ]
-    }
+    ]
   }
 }

@@ -50,7 +50,6 @@ for lang, content in copy.items():
     check(set(content['contactModes']) == {'collaboration','specialist','support'}, lang, 'Missing contact scenarios')
     for mode, fields in content['contactModes'].items():
         check(set(fields) == set(copy['en']['contactModes'][mode]), lang, f'Missing contact scenario translation: {mode}')
-    check(all(len(mode['journey']) == 4 for mode in content['trainingModes']), lang, 'Incomplete training journey')
 
 distribution = json.loads((ROOT/'content/distribution.json').read_text())
 for key, host in [('appStoreUrl','apps.apple.com'),('googlePlayUrl','play.google.com')]:

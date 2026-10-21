@@ -27,7 +27,7 @@ def page_assets(page):
     scripts = []
     if page == 'home':
         styles.append('/home.css')
-        scripts += ['/home.js', '/product-scenes.js', '/training-scene.js']
+        scripts += ['/home.js', '/product-scenes.js']
     if page == 'specialists':
         styles.append('/specialists.css')
     scripts += ['/i18n.js', '/script.js']
@@ -123,20 +123,6 @@ def hero_feed(c):
 def iphone_frame(content):
     return f'<div class="home-device-frame"><div class="home-device-screen">{content}</div><img class="home-device-shell" src="/assets/product/iphone-17-pro-silver.webp" width="1332" height="2748" alt="" aria-hidden="true" draggable="false" fetchpriority="high"></div>'
 
-def training_modes(lang,c):
-    """One illustrative workout, from exercise selection to a shared result."""
-    t = c['trainingScene']
-    check = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" pathLength="1"/></svg>'
-    rows = ''.join(f'<li class="workout-exercise" style="--row:{i}"><span class="exercise-order">{i+1:02d}</span><span class="exercise-name">{e(name)}<small>{e(group)}</small></span><span class="exercise-done">{check}</span></li>' for i,(name,group) in enumerate(t['exercises']))
-    return f'''<section class="home-training wrap" id="training" aria-labelledby="training-title">
-<div class="training-heading"><h2 id="training-title">{c['loopTitle']}</h2><p>{e(t['lead'])}</p></div>
-<div class="workout-stage" data-workout-scene>
-<div class="workout-sheet"><div class="workout-sheet-head"><h3>{e(t['session'])}</h3><span>{e(t['example'])}</span></div><ol class="workout-exercises">{rows}</ol><div class="workout-saved"><span class="workout-saved-check">{check}</span><span>{e(t['saved'])}<small>{e(t['history'])}</small></span></div></div>
-<div class="workout-partner"><div class="workout-people" aria-hidden="true"><span>{e(t['you'])}</span><span><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="11" r="5"/><path d="M6 28v-3a10 10 0 0 1 20 0v3"/></svg></span></div><h3>{e(t['together'])}</h3><p>{e(t['partner'])}</p><span class="workout-shared">{check}{e(t['shared'])}</span></div>
-<ol class="workout-sequence" aria-label="{e(t['sequenceLabel'])}">{''.join(f'<li style="--step:{i}">{e(label)}</li>' for i,label in enumerate(t['steps']))}</ol>
-</div><div class="training-kit" id="training-tools">{''.join(story_feature(c,key) for key in ['exercise-catalog','workout-editor','workout-history'])}</div>
-</section>'''
-
 def feature_record(c, key):
     return next(item for group in c['featureGroups'] for item in group['items'] if item['id'] == key)
 
@@ -165,7 +151,7 @@ def people_story(c):
     t = c['landingStories']
     return f'''<section class="wrap people-story" id="support" aria-labelledby="why-choose"><span class="story-anchor" id="possibilities"></span><span class="story-anchor" id="how-works"></span>
 <div class="people-story-copy"><h2 id="why-choose">{t['peopleTitle']}</h2><p class="story-lead">{e(t['peopleText'])}</p><div class="people-conversations">{''.join(story_feature(c,key) for key in ['social-feed','friends','discussions'])}</div></div>
-<aside class="people-partner"><div class="partner-match" role="img" aria-label="{e(c['productScenes']['partnerMatch'])}"><div aria-hidden="true"><svg class="partner-connection" viewBox="0 0 480 260" fill="none"><path d="M115 85C240 85 240 175 365 175"/></svg><span class="partner-person partner-you">{e(c['productScenes']['partnerYou'])}</span><span class="partner-person partner-other">{e(c['productScenes']['partnerOther'])}</span><div class="partner-preferences">{''.join('<span>'+e(label)+'</span>' for label in c['productScenes']['partnerTags'])}</div></div></div><div class="partner-details">{story_feature(c,'gymbro','partner-feature')}{link('#training',t['partnerAction'])}</div></aside>
+<aside class="people-partner"><div class="partner-match" role="img" aria-label="{e(c['productScenes']['partnerMatch'])}"><div aria-hidden="true"><svg class="partner-connection" viewBox="0 0 480 260" fill="none"><path d="M115 85C240 85 240 175 365 175"/></svg><span class="partner-person partner-you">{e(c['productScenes']['partnerYou'])}</span><span class="partner-person partner-other">{e(c['productScenes']['partnerOther'])}</span><div class="partner-preferences">{''.join('<span>'+e(label)+'</span>' for label in c['productScenes']['partnerTags'])}</div></div></div><div class="partner-details">{story_feature(c,'gymbro','partner-feature')}</div></aside>
 </section>'''
 
 def clubs_story(c):
@@ -217,7 +203,6 @@ def home(lang,c):
 {people_story(c)}
 {clubs_story(c)}
 {programs_story(c)}
-{training_modes(lang,c)}
 {progress_story(c)}
 {personal_story(c)}
 {professionals_story(lang,c)}
