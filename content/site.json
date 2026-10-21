@@ -615,7 +615,13 @@
         "Plan a meeting",
         "Choose a date and time, add a participant and details. Find your meetings in the schedule."
       ]
-    ]
+    ],
+    "trainingSceneLabels": {
+      "you": "You",
+      "partner": "Your partner",
+      "session": "Workout",
+      "program": "Program"
+    }
   },
   "ru": {
     "langName": "Русский",
@@ -1233,7 +1239,13 @@
         "Запланируйте встречу",
         "Выберите день и время, укажите участника и детали. Возвращайтесь к встречам в расписании."
       ]
-    ]
+    ],
+    "trainingSceneLabels": {
+      "you": "Вы",
+      "partner": "Ваш партнёр",
+      "session": "Тренировка",
+      "program": "Программа"
+    }
   },
   "az": {
     "langName": "Azərbaycanca",
@@ -1851,6 +1863,12 @@
         "Görüş planlaşdırın",
         "Günü və vaxtı seçin, iştirakçını və təfərrüatları əlavə edin. Görüşlərinizə təqvimdə qayıdın."
       ]
-    ]
+    ],
+    "trainingSceneLabels": {
+      "you": "Siz",
+      "partner": "Məşq yoldaşınız",
+      "session": "Məşq",
+      "program": "Proqram"
+    }
   }
 }

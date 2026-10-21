@@ -123,6 +123,19 @@ def hero_feed(c):
 def iphone_frame(content):
     return f'<div class="home-device-frame"><div class="home-device-screen">{content}</div><img class="home-device-shell" src="/assets/product/iphone-17-pro-silver.webp" width="1332" height="2748" alt="" aria-hidden="true" draggable="false" fetchpriority="high"></div>'
 
+def training_diagram(c, mode):
+    labels = c['trainingSceneLabels']
+    def node(x,y,r,kind,label,style):
+        size = 54 if kind == 'weights' else 38
+        return f'<g class="training-diagram-node {style}"><circle cx="{x}" cy="{y}" r="{r}"/><svg x="{x-size/2}" y="{y-size/2}" width="{size}" height="{size}" viewBox="0 0 24 24" fill="none">{feed_icon(kind).split(">",1)[1].rsplit("</svg>",1)[0]}</svg><text x="{x}" y="{y+r+26}" text-anchor="middle">{e(label)}</text></g>'
+    if mode == 'partner':
+        paths = '<path d="M140 54h78q26 0 26 26v9q0 26 26 26h80M140 168h78q26 0 26-26v-1q0-26 26-26"/>'
+        sources = node(98,54,36,'person',labels['you'],'diagram-you') + node(98,168,36,'person',labels['partner'],'diagram-partner')
+    else:
+        paths = '<path d="M147 115h203"/>'
+        sources = node(98,115,42,'list' if mode == 'program' else 'person',labels['program'] if mode == 'program' else labels['you'],'diagram-you')
+    return f'<div class="training-visual" aria-hidden="true"><svg class="training-diagram" viewBox="0 0 520 242" fill="none" focusable="false"><g class="training-diagram-path">{paths}<path d="m337 106 13 9-13 9"/></g>{sources}{node(418,115,60,"weights",labels["session"],"diagram-session")}</svg></div>'
+
 def training_modes(lang,c):
     """Native radios explain concrete workflows; no mock app controls or user data."""
     choices, panels = [], []
@@ -132,6 +145,7 @@ def training_modes(lang,c):
         journey = ''.join(f'<li><span class="training-route-step" aria-hidden="true">{i+1}</span><div><strong>{e(title)}</strong><p>{e(text)}</p></div></li>' for i,(title,text) in enumerate(mode['journey']))
         panels.append(f'''<article class="training-panel" id="training-{key}" data-training-mode="{key}" aria-labelledby="training-{key}-title">
 <div class="training-story"><h3 id="training-{key}-title">{mode['title']}</h3><p>{e(mode['text'])}</p>{primary_action(lang,c,'text-link')}</div>
+{training_diagram(c,key)}
 <ol class="training-journey" aria-label="{e(mode['journeyLabel'])}">{journey}</ol>
 </article>''')
     return f'''<section class="home-training wrap" id="training" aria-labelledby="training-title"><div class="home-training-intro"><h2 id="training-title">{c['loopTitle']}</h2><p>{c['loopText']}</p></div><div class="training-explorer"><fieldset class="training-choices"><legend class="sr-only">{e(c['trainingModeLabel'])}</legend>{''.join(choices)}</fieldset><div class="training-panels">{''.join(panels)}</div></div><div class="training-kit" id="training-tools">{''.join(story_feature(c,key) for key in ['exercise-catalog','workout-editor','workout-history'])}</div></section>'''
@@ -196,7 +210,7 @@ def personal_story(c):
 
 def professionals_story(lang,c):
     photo = story_photo(c,'specialist-session-photo','professional-photo','(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 38vw, 420px')
-    return f'''<aside class="home-professionals wrap" id="specialists" data-capability="professional-tools">{photo}<div class="professional-invitation"><h2>{c['proTitle']}</h2><p>{e(feature_record(c,"professional-tools")["text"])}</p>{link(url(lang,'specialists'),c['proLink'])}</div></aside>'''
+    return f'''<aside class="professional-band" id="specialists" data-capability="professional-tools"><div class="home-professionals wrap">{photo}<div class="professional-invitation"><h2>{c['proTitle']}</h2><p>{e(feature_record(c,"professional-tools")["text"])}</p>{link(url(lang,'specialists'),c['proLink'])}</div></div></aside>'''
 
 def home(lang,c):
     faqs = [list(row) for row in c['faqs']]
