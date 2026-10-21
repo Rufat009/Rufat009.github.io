@@ -145,7 +145,9 @@ def story_feature(c, key, cls='story-feature', title=None, icon=None):
     symbols = {
         'privacy': '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>',
         'safety': '<path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/>',
-        'app-lock': '<rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/>'
+        'app-lock': '<rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/>',
+        'public-profile': '<path d="M12 15V3m-4 4 4-4 4 4M6 10H4v11h16V10h-2"/>',
+        'referrals': '<circle cx="9" cy="7" r="4"/><path d="M2 21v-2a7 7 0 0 1 14 0v2m3-14v8m-4-4h8"/>'
     }
     mark = f'<svg class="privacy-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">{symbols[icon]}</svg>' if icon else ''
     return f'<article class="{cls}" id="feature-{key}" data-capability="{key}"><h3>{mark}{heading}</h3><p>{e(item["text"])}</p></article>'
@@ -186,8 +188,15 @@ def progress_story(c):
 
 def personal_story(c):
     t,u = c['landingStories'],c['lowerScenes']
-    facts = ''.join(f'<p class="personal-fact" id="feature-{key}" data-capability="{key}"><strong>{e(feature_record(c,key)["title"])}.</strong> {e(feature_record(c,key)["text"])}</p>' for key in ['public-profile','appearance','referrals'])
-    return f'''<section class="wrap personal-story" id="personal" aria-labelledby="personal-title"><div class="personal-intro"><h2 id="personal-title">{t['privacyTitle']}</h2><p class="personal-caption">{e(u['privacyLabel'])}</p><div class="personal-details">{facts}</div></div><div class="privacy-console"><fieldset class="privacy-theme"><legend class="sr-only">{e(u['themeLabel'])}</legend><label><input class="sr-only" type="radio" name="privacy-preview-theme" value="light" checked><span>{e(u['light'])}</span></label><label><input class="sr-only" type="radio" name="privacy-preview-theme" value="dark"><span>{e(u['dark'])}</span></label></fieldset><div class="privacy-settings">{''.join(story_feature(c,key,icon=key) for key in ['privacy','safety','app-lock'])}</div></div></section>'''
+    facts = ''.join(story_feature(c,key,cls='personal-fact',icon=key) for key in ['public-profile','referrals'])
+    appearance = feature_record(c,'appearance')
+    lock = feature_record(c,'app-lock')
+    biometric = '<svg viewBox="0 0 80 80" fill="none" aria-hidden="true"><path d="M24 8H16a8 8 0 0 0-8 8v8m48-16h8a8 8 0 0 1 8 8v8M8 56v8a8 8 0 0 0 8 8h8m32 0h8a8 8 0 0 0 8-8v-8M28 30v7m24-7v7m-13-7v16h-5m-6 7c6 8 18 8 24 0"/></svg>'
+    return f'''<section class="wrap personal-story" id="personal" aria-labelledby="personal-title"><div class="personal-intro"><h2 id="personal-title">{t['privacyTitle']}</h2><p class="personal-caption">{e(u['privacyLabel'])}</p><div class="personal-details">{facts}</div></div><div class="privacy-console"><div class="personal-appearance" id="feature-appearance" data-capability="appearance"><h3>{e(appearance['title'])}</h3><p><span lang="en">English</span><span lang="ru">Русский</span><span lang="az">Azərbaycanca</span></p></div><fieldset class="privacy-theme"><legend class="sr-only">{e(u['themeLabel'])}</legend><label><input class="sr-only" type="radio" name="privacy-preview-theme" value="light" checked><span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></svg>{e(u['light'])}</span></label><label><input class="sr-only" type="radio" name="privacy-preview-theme" value="dark"><span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 15A9 9 0 0 1 9 4a9 9 0 1 0 11 11Z"/></svg>{e(u['dark'])}</span></label></fieldset><article class="privacy-lock" id="feature-app-lock" data-capability="app-lock"><div class="privacy-lock-art">{biometric}<span class="pin-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div><div><h3>{e(lock['title'])}</h3><p>{e(lock['text'])}</p></div></article><div class="privacy-settings">{''.join(story_feature(c,key,icon=key) for key in ['privacy','safety'])}</div></div></section>'''
+
+def professionals_story(lang,c):
+    photo = story_photo(c,'specialist-session-photo','professional-photo','(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 38vw, 420px')
+    return f'''<aside class="home-professionals wrap" id="specialists" data-capability="professional-tools">{photo}<div class="professional-invitation"><h2>{c['proTitle']}</h2><p>{e(feature_record(c,"professional-tools")["text"])}</p>{link(url(lang,'specialists'),c['proLink'])}</div></aside>'''
 
 def home(lang,c):
     faqs = [list(row) for row in c['faqs']]
@@ -210,8 +219,8 @@ def home(lang,c):
 {training_modes(lang,c)}
 {progress_story(c)}
 {personal_story(c)}
-<aside class="home-professionals wrap" id="specialists" data-capability="professional-tools"><div><h2>{c['proTitle']}</h2><p>{e(feature_record(c,"professional-tools")["text"])}</p></div>{link(url(lang,'specialists'),c['proLink'])}</aside>
-<section class="home-faq wrap" id="faq" aria-labelledby="faq-title"><div class="faq-intro"><h2 id="faq-title">{c['faqTitle']}</h2><p>{e(c['lowerScenes']['faqText'])}</p><aside class="faq-contact"><h3>{e(c['lowerScenes']['faqHelp'])}</h3>{link(url(lang,'contacts')+'?topic=support',c['lowerScenes']['faqAction'])}</aside></div><div class="home-faq-list">{faq}</div></section>
+{professionals_story(lang,c)}
+<section class="home-faq wrap" id="faq" aria-labelledby="faq-title"><div class="faq-intro"><h2 id="faq-title">{c['faqTitle']}</h2><aside class="faq-contact"><h3>{e(c['lowerScenes']['faqHelp'])}</h3>{link(url(lang,'contacts')+'?topic=support',c['lowerScenes']['faqAction'])}</aside></div><div class="home-faq-list">{faq}</div></section>
 <section class="home-closing" id="get-started"><div class="wrap home-closing-inner"><h2>{c['finalTitle']}</h2><div><p>{closing}</p>{store_links(c,note=False)}</div></div></section>'''
 
 def professional_onboarding(c):

@@ -1,0 +1,18 @@
+{
+  "method": "Built-in image_gen",
+  "promptStorage": "sidecar",
+  "prompt": "Photorealistic editorial photograph for Deviny fitness community website. Horizontal landscape 3:2 composition. A professional female fitness coach in her early thirties wearing muted olive athletic clothes and an adult male client in a plain charcoal t-shirt, sitting beside each other at a light wooden bench in a quiet contemporary training studio, discussing a training plan in an open notebook on her lap. Both naturally engaged, relaxed and credible, not smiling at camera. Mid shot from waist up, human interaction is the focal point, hands anatomically realistic. Warm soft daylight, off-white and muted sage interior, tiny warm ochre accents, subtle blurred gym equipment in background. Real skin texture, restrained premium documentary photography, natural lens and believable proportions. Subjects centered within central 70 percent so the image can crop to square or landscape. No readable writing, no logos, no watermarks, no text overlay, no collage, no cartoons, no 3D rendered look. Do not depict a specific known person or app screen.",
+  "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-987d0e3c-b285-4062-806f-9ab32e7e581d.png",
+  "sourceDimensions": [
+    1536,
+    1024
+  ],
+  "dimensions": [
+    1080,
+    720
+  ],
+  "bytes": 72122,
+  "sha256": "8d0f8ebe5758ca969c6ea57b7d591b2d583ee8b25782758779f83298bf5643e7",
+  "processing": "Proportional Lanczos resize and WebP quality 83; no content edits",
+  "usage": "Fictional editorial illustration; not actual Deviny users or app UI"
+}

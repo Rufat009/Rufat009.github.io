@@ -501,7 +501,7 @@
           {
             "id": "professional-tools",
             "title": "Professional tools",
-            "text": "Create programs, work with clients, plan meetings and view sales statistics. Tools depend on your chosen role."
+            "text": "Programs, clients, meetings and sales — tools for your professional role."
           }
         ]
       },
@@ -518,17 +518,17 @@
           {
             "id": "privacy",
             "title": "Privacy",
-            "text": "Choose who sees your results. Turn on GymBro discovery visibility separately."
+            "text": "Control results visibility and GymBro discovery separately."
           },
           {
             "id": "safety",
             "title": "Blocking and reports",
-            "text": "Block unwanted contacts and report content."
+            "text": "Block unwanted contacts. Report content."
           },
           {
             "id": "app-lock",
             "title": "PIN and biometrics",
-            "text": "Use a PIN or your device’s biometrics."
+            "text": "Choose how to unlock the app."
           },
           {
             "id": "appearance",
@@ -538,7 +538,7 @@
           {
             "id": "referrals",
             "title": "Invite friends",
-            "text": "Invite friends with your personal link or code."
+            "text": "Invite friends with your link or code."
           }
         ]
       }
@@ -599,7 +599,8 @@
     "realisticMediaAlts": {
       "club-outdoors-photo": "Runners talking together in a park",
       "program-strength-photo": "A dumbbell and notebook for planning workouts",
-      "program-nutrition-photo": "A bowl with grains, chicken and vegetables"
+      "program-nutrition-photo": "A bowl with grains, chicken and vegetables",
+      "specialist-session-photo": "A trainer and client discussing a training plan in a studio"
     },
     "specialistWorkflow": [
       [
@@ -1118,7 +1119,7 @@
           {
             "id": "professional-tools",
             "title": "Инструменты специалиста",
-            "text": "Создавайте программы, работайте с клиентами, планируйте встречи и смотрите статистику продаж. Инструменты зависят от выбранной роли."
+            "text": "Программы, клиенты, встречи и продажи — инструменты для вашей профессиональной роли."
           }
         ]
       },
@@ -1135,17 +1136,17 @@
           {
             "id": "privacy",
             "title": "Приватность",
-            "text": "Выбирайте, кто видит результаты. Видимость в поиске GymBro включается отдельно."
+            "text": "Отдельно настройте видимость результатов и поиск GymBro."
           },
           {
             "id": "safety",
             "title": "Блокировка и жалобы",
-            "text": "Блокируйте нежелательные контакты и отправляйте жалобы."
+            "text": "Блокируйте контакты. Отправляйте жалобы."
           },
           {
             "id": "app-lock",
             "title": "PIN и биометрия",
-            "text": "Используйте PIN или биометрию устройства."
+            "text": "Выберите способ входа в приложение."
           },
           {
             "id": "appearance",
@@ -1155,7 +1156,7 @@
           {
             "id": "referrals",
             "title": "Приглашения друзей",
-            "text": "Приглашайте по личной ссылке или коду."
+            "text": "Приглашайте по своей ссылке или коду."
           }
         ]
       }
@@ -1216,7 +1217,8 @@
     "realisticMediaAlts": {
       "club-outdoors-photo": "Участники совместной пробежки общаются в парке",
       "program-strength-photo": "Гантель и блокнот для плана тренировок",
-      "program-nutrition-photo": "Блюдо с крупой, курицей и овощами"
+      "program-nutrition-photo": "Блюдо с крупой, курицей и овощами",
+      "specialist-session-photo": "Тренер и клиент обсуждают план занятий в студии"
     },
     "specialistWorkflow": [
       [
@@ -1735,7 +1737,7 @@
           {
             "id": "professional-tools",
             "title": "Peşəkar alətlər",
-            "text": "Proqramlar yaradın, müştərilərlə işləyin, görüşlər planlaşdırın və satış statistikasına baxın. Alətlər seçdiyiniz roldan asılıdır."
+            "text": "Proqramlar, müştərilər, görüşlər və satışlar — peşəkar rolunuza uyğun alətlər."
           }
         ]
       },
@@ -1752,17 +1754,17 @@
           {
             "id": "privacy",
             "title": "Məxfilik",
-            "text": "Nəticələrinizi kimin gördüyünü seçin. GymBro axtarışında görünməni ayrıca aktivləşdirin."
+            "text": "Nəticələrin görünməsini və GymBro axtarışını ayrıca tənzimləyin."
           },
           {
             "id": "safety",
             "title": "Bloklama və şikayətlər",
-            "text": "İstənməyən əlaqələri bloklayın və şikayət göndərin."
+            "text": "İstənməyən əlaqələri bloklayın. Şikayət göndərin."
           },
           {
             "id": "app-lock",
             "title": "PIN və biometrika",
-            "text": "PIN və ya cihazın biometrikasından istifadə edin."
+            "text": "Tətbiqin kilidini açma üsulunu seçin."
           },
           {
             "id": "appearance",
@@ -1772,7 +1774,7 @@
           {
             "id": "referrals",
             "title": "Dostları dəvət edin",
-            "text": "Şəxsi link və ya kodla dostlarınızı dəvət edin."
+            "text": "Link və ya kodunuzla dostlarınızı dəvət edin."
           }
         ]
       }
@@ -1833,7 +1835,8 @@
     "realisticMediaAlts": {
       "club-outdoors-photo": "Parkda söhbət edən qaçış iştirakçıları",
       "program-strength-photo": "Məşq planı üçün qantel və dəftər",
-      "program-nutrition-photo": "Taxıl, toyuq və tərəvəzli yemək"
+      "program-nutrition-photo": "Taxıl, toyuq və tərəvəzli yemək",
+      "specialist-session-photo": "Məşqçi və müştəri studiyada məşq planını müzakirə edir"
     },
     "specialistWorkflow": [
       [
