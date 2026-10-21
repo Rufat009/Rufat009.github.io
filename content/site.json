@@ -600,7 +600,8 @@
       "club-outdoors-photo": "Runners talking together in a park",
       "program-strength-photo": "A dumbbell and notebook for planning workouts",
       "program-nutrition-photo": "A bowl with grains, chicken and vegetables",
-      "specialist-session-photo": "A trainer and client discussing a training plan in a studio"
+      "specialist-session-photo": "A trainer and client discussing a training plan in a studio",
+      "training-editorial-photo": "Two athletes greeting each other between sets in a gym"
     },
     "specialistWorkflow": [
       [
@@ -615,13 +616,7 @@
         "Plan a meeting",
         "Choose a date and time, add a participant and details. Find your meetings in the schedule."
       ]
-    ],
-    "trainingSceneLabels": {
-      "you": "You",
-      "partner": "Your partner",
-      "session": "Workout",
-      "program": "Program"
-    }
+    ]
   },
   "ru": {
     "langName": "Русский",
@@ -1224,7 +1219,8 @@
       "club-outdoors-photo": "Участники совместной пробежки общаются в парке",
       "program-strength-photo": "Гантель и блокнот для плана тренировок",
       "program-nutrition-photo": "Блюдо с крупой, курицей и овощами",
-      "specialist-session-photo": "Тренер и клиент обсуждают план занятий в студии"
+      "specialist-session-photo": "Тренер и клиент обсуждают план занятий в студии",
+      "training-editorial-photo": "Два спортсмена приветствуют друг друга между подходами в зале"
     },
     "specialistWorkflow": [
       [
@@ -1239,13 +1235,7 @@
         "Запланируйте встречу",
         "Выберите день и время, укажите участника и детали. Возвращайтесь к встречам в расписании."
       ]
-    ],
-    "trainingSceneLabels": {
-      "you": "Вы",
-      "partner": "Ваш партнёр",
-      "session": "Тренировка",
-      "program": "Программа"
-    }
+    ]
   },
   "az": {
     "langName": "Azərbaycanca",
@@ -1848,7 +1838,8 @@
       "club-outdoors-photo": "Parkda söhbət edən qaçış iştirakçıları",
       "program-strength-photo": "Məşq planı üçün qantel və dəftər",
       "program-nutrition-photo": "Taxıl, toyuq və tərəvəzli yemək",
-      "specialist-session-photo": "Məşqçi və müştəri studiyada məşq planını müzakirə edir"
+      "specialist-session-photo": "Məşqçi və müştəri studiyada məşq planını müzakirə edir",
+      "training-editorial-photo": "İdman zalında setlər arasında bir-birini salamlayan iki idmançı"
     },
     "specialistWorkflow": [
       [
@@ -1863,12 +1854,6 @@
         "Görüş planlaşdırın",
         "Günü və vaxtı seçin, iştirakçını və təfərrüatları əlavə edin. Görüşlərinizə təqvimdə qayıdın."
       ]
-    ],
-    "trainingSceneLabels": {
-      "you": "Siz",
-      "partner": "Məşq yoldaşınız",
-      "session": "Məşq",
-      "program": "Proqram"
-    }
+    ]
   }
 }

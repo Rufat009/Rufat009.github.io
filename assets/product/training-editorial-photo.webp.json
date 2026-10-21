@@ -1,0 +1,18 @@
+{
+  "method": "Built-in image_gen",
+  "promptStorage": "sidecar",
+  "prompt": "Use case: photorealistic-natural. Create one premium editorial sports photograph for a fitness community landing page, portrait 4:5 composition. Two fictional adult recreational athletes, one woman and one man, training beside one another in a spacious sunlit contemporary gym. Capture a quiet energetic candid moment between sets: woman in foreground holding a single matte dark dumbbell beside her hip, man just behind offering a relaxed fist bump, hands touching naturally. Framing from just below their chins to knees; do not show full faces. The main subject is the interaction, hands and tactile equipment, not muscular bodies. Natural everyday athletic builds, plain loose charcoal and off-white sportswear with a small muted sage accent, no branding. Pale stone walls, warm oak floor, softly out-of-focus steel gym equipment. Strong side daylight from a large window, honest fine fabric texture and skin, slight real photographic grain, rich restrained graphite shadows, warm neutral tones, documentary 50mm camera aesthetic. Central composition, keep the hands and dumbbell in central 60 percent so a landscape or square crop remains legible. Not posing for camera, no glossy commercial smile, no exaggerated muscles, no cinematic orange-teal grading. Correct believable anatomy, one dumbbell only. No phones, no screens, no readable text, no captions, no logos, no watermark, no graphics, no cartoon or 3D style. The image must look like a real high-quality editorial photograph of a workout, not a rendering.",
+  "source": "/Users/milada/.codex/generated_images/01a0d14f-81b6-7c50-8d9d-02231cec833f/exec-14761c36-2f5a-4d49-b4a7-cf6346f8ec99.png",
+  "sourceDimensions": [
+    1122,
+    1402
+  ],
+  "dimensions": [
+    1080,
+    1350
+  ],
+  "bytes": 109686,
+  "sha256": "342e4896ebb470f4745f2493c6c043330b6035c66972d1630db209fcea34fff8",
+  "processing": "Proportional Lanczos resize and WebP quality 83; no content edits",
+  "usage": "Fictional editorial illustration; not actual Deviny users or app UI"
+}
