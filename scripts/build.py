@@ -262,7 +262,7 @@ def specialists(lang,c):
 <section class="wrap pro-band specialist-closing" id="get-started"><h2>{c['specialistFinalTitle']}</h2><div><p>{c['specialistFinalText']}</p>{store_links(c)}<div class="specialist-question">{link(url(lang,'contacts')+'?topic=specialist',c['specialistCta'])}</div></div></section>'''
 
 def team_cards(c):
-    people=[('Rufat Ahmedov','rufat','rufat-ahmadov-21b531360'),('Emil Abdullaev','emil','emil-abdullayev-846b832a5'),('Timur Sikachevskiy','tima','timur-sikachevskiy-029024288'),('Arkhun Abdullazade','arxun','arhun-abdullazade-5173522a4')]
+    people=[('Rufat Ahmedov','rufat','rufat-ahmadov-21b531360'),('Emil Abdullaev','emil','emil-abdullayev-846b832a5'),('Timur Sikachevskiy','tima','timur-sikachevskiy-029024288'),('Arhun Abdullazade','arxun','arhun-abdullazade-5173522a4')]
     return ''.join(f'<article class="person"><img src="/assets/team/{file}.webp" width="600" height="720" loading="lazy" alt="{name}"><div><h3>{name}</h3><p>{e(c["teamRoles"][i])}</p>{link("https://www.linkedin.com/in/"+profile+"/",c["profile"],extra=SAFE_REL)}</div></article>' for i,(name,file,profile) in enumerate(people))
 
 def about(lang,c):
