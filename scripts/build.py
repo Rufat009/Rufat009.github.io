@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Render committed, crawlable HTML. Python stdlib only; no Pages build dependency."""
 import json
+from base64 import b64encode
 from hashlib import sha256
 from pathlib import Path
 from html import escape as e
@@ -288,7 +289,7 @@ def document(lang,page,c):
     address=url(lang,page)
     alternates='\n'.join(f'<link rel="alternate" hreflang="{l}" href="{ORIGIN}{url(l,page)}">' for l in COPY)
     return f'''<!doctype html>
-<html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f5f0"><title>{e(c['titles'][page])}</title><meta name="description" content="{e(c['descriptions'][page])}">{'<meta name="robots" content="noindex,follow">' if page=='notfound' else ''}<link rel="canonical" href="{ORIGIN}{address}">{alternates}<link rel="alternate" hreflang="x-default" href="{ORIGIN}{url('en',page)}"><meta property="og:type" content="website"><meta property="og:site_name" content="Deviny"><meta property="og:title" content="{e(c['titles'][page])}"><meta property="og:description" content="{e(c['descriptions'][page])}"><meta property="og:url" content="{ORIGIN}{address}"><meta property="og:locale" content="{c['locale']}"><meta property="og:image" content="https://deviny.me/assets/social/deviny-{lang}.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{e(c['socialTitle'].replace(chr(10), ' '))}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://deviny.me/assets/social/deviny-{lang}.png"><link rel="icon" type="image/png" sizes="256x256" href="{asset_url('/assets/favicon.png')}"><link rel="icon" type="image/png" sizes="256x256" media="(prefers-color-scheme: light)" href="{asset_url('/assets/favicon.png')}"><link rel="icon" type="image/png" sizes="256x256" media="(prefers-color-scheme: dark)" href="{asset_url('/assets/favicon-dark.png')}"><script>document.documentElement.classList.add("js")</script><link rel="preload" href="/assets/fonts/deviny-sans.woff2" as="font" type="font/woff2" crossorigin>{page_assets(page)}</head><body data-page="{page}">{header(lang,page,c)}<main id="main">{RENDER[page](lang,c)}</main>{footer(lang,c)}</body></html>'''
+<html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f5f0"><title>{e(c['titles'][page])}</title><meta name="description" content="{e(c['descriptions'][page])}">{'<meta name="robots" content="noindex,follow">' if page=='notfound' else ''}<link rel="canonical" href="{ORIGIN}{address}">{alternates}<link rel="alternate" hreflang="x-default" href="{ORIGIN}{url('en',page)}"><meta property="og:type" content="website"><meta property="og:site_name" content="Deviny"><meta property="og:title" content="{e(c['titles'][page])}"><meta property="og:description" content="{e(c['descriptions'][page])}"><meta property="og:url" content="{ORIGIN}{address}"><meta property="og:locale" content="{c['locale']}"><meta property="og:image" content="https://deviny.me/assets/social/deviny-{lang}.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{e(c['socialTitle'].replace(chr(10), ' '))}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://deviny.me/assets/social/deviny-{lang}.png"><link rel="icon" type="image/png" sizes="256x256" href="{asset_url('/assets/favicon.png')}"><link rel="icon" type="image/svg+xml" sizes="any" href="{asset_url('/assets/favicon.svg')}"><script>document.documentElement.classList.add("js")</script><link rel="preload" href="/assets/fonts/deviny-sans.woff2" as="font" type="font/woff2" crossorigin>{page_assets(page)}</head><body data-page="{page}">{header(lang,page,c)}<main id="main">{RENDER[page](lang,c)}</main>{footer(lang,c)}</body></html>'''
 
 def team_redirect(lang,c):
     destination=url(lang,'about')+'#team'
@@ -296,6 +297,15 @@ def team_redirect(lang,c):
     return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(c['titles']['about'])}</title><meta name="robots" content="noindex,follow"><link rel="canonical" href="{ORIGIN}{url(lang,'about')}"><script>{script}</script><meta http-equiv="refresh" content="0;url={destination}"><link rel="stylesheet" href="{asset_url("/global.css")}"></head><body><main class="wrap page-hero"><h1>{c['aboutTeamTitle']}</h1>{link(destination,c['aboutTeam'],'button')}</main></body></html>'''
 
 def build():
+    # Keep theme selection inside the favicon, where it follows browser chrome.
+    # Embedded PNGs preserve the approved artwork without external image requests.
+    light = b64encode((ROOT/'assets/favicon.png').read_bytes()).decode('ascii')
+    dark = b64encode((ROOT/'assets/favicon-dark.png').read_bytes()).decode('ascii')
+    (ROOT/'assets/favicon.svg').write_text(
+        '<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">'
+        '<style>.dark{display:none}@media(prefers-color-scheme:dark){.light{display:none}.dark{display:block}}</style>'
+        f'<image class="light" width="256" height="256" href="data:image/png;base64,{light}"/>'
+        f'<image class="dark" width="256" height="256" href="data:image/png;base64,{dark}"/></svg>')
     entries=[]
     for lang,c in COPY.items():
         for page in PAGES + ['notfound']:
